@@ -1,0 +1,63 @@
+<style type="text/css">
+label.error {
+	color: red;
+	padding: 3px 10px;
+}
+span.required { 
+	color: red; 
+}
+</style>
+<form id="loginForm" action="$appServer.get('/login/login.htm')" method="post">
+	<input type="hidden" name="c_time" value="1428300280355" />
+    <table>
+        <tr>
+            <th><span class="required">*</span>姓名：</th>
+            <td>
+                #springBind("user.realName")
+                <input type="text" id="realName" name="${status.expression}" value="$!{status.value}" />
+				<label class="error">${status.errorMessage}</label>
+            </td>
+		</tr>
+		<tr>
+            <th><span class="required">*</span>口令：</th>
+            <td>
+                #springBind("user.password")
+                <input type="text" id="password" name="${status.expression}" value="" />
+				<label class="error">${status.errorMessage}</label>
+            </td>
+		</tr>
+		<tr>
+            <th><span class="required">*</span>ajax校验：</th>
+            <td>
+                <img src="$appServer.get('/checkcode/simple.htm')" />
+                <input type="text" id="ajaxanswer" name="ajaxanswer" value="" />
+            </td>
+		</tr>
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$("#ajaxanswer").blur(function(){
+		var ajaxanswerValue = "$appServer.get('/checkcode/check.json?token=')" + $("#ajaxanswer").val();
+		alert(ajaxanswerValue);
+		jQuery.getJSON(ajaxanswerValue,
+			function(data){
+				alert(data);
+			}); 
+		});
+	})
+</script>
+		<tr>
+            <th><span class="required">*</span>提交验证：</th>
+            <td>
+                <img src="$appServer.get('/checkcode/arithmetic.htm')" />
+                #springBind("answer")
+                <input type="text" id="answer" name="${answer}" value="" />
+				<label class="error">${status.errorMessage}</label>
+            </td>
+		</tr>
+		<tr>	
+            <th>
+                <input type="submit" value="登录" />
+            </th>
+        </tr>
+    </table>
+</form>

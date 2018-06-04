@@ -1,0 +1,10 @@
+#set($acss = $appServer.get('/bptest/b.css'))
+#set($ajs = $appServer.get('/bptest/b.js'))
+#css($acss)
+#js($ajs)
+B睡了一下"${times}"毫秒，真爽
+##在异步时候,需要引用的外部js需要这样声明,但AsynchronContainTask中的js输出有问题,那样输出的js引用是异步的
+#jscode()
+alert("123");
+#end
+##异步时候css需要如下

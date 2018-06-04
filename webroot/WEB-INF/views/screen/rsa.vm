@@ -1,0 +1,47 @@
+#set($jsbn = $imageServer.get('script/rsa/jsbn.js'))
+#set($prng4 = $imageServer.get('script/rsa/prng4.js'))
+#set($rng = $imageServer.get('script/rsa/rng.js'))
+#set($rsa = $imageServer.get('script/rsa/rsa.js'))
+#set($base64 = $imageServer.get('script/rsa/base64.js'))
+#js($jsbn)
+#js($prng4)
+#js($rng)
+#js($rsa)
+#js($base64)
+<script language="JavaScript">
+<!--
+function do_encrypt() {
+  var before = new Date();
+  var result = rsancrypt(document.rsaform.itext);
+  var after = new Date();
+  if(result){
+  	document.rsaform.entime.value = (after - before);
+	return true;
+  }
+  else{
+  	return false;
+  }
+}
+function rsancrypt(ele) {
+  	var rsa = new RSAKey();
+  	var pkey = b64tohex('$!{pkey}');
+  	rsa.setPublic(pkey, '$!{pxo}');
+  	var res = rsa.encrypt(ele.value);
+  	var after = new Date();
+ 	if(res) {
+    	ele.value = hex2b64(res);
+		return true;
+  	}
+  	else{
+  		return false;
+  	}
+}
+//-->
+</script>
+<form name="rsaform" action="$appServer.get('rsa.htm')" method="post" onSubmit="return do_encrypt();">
+	<input type="hidden" name="entime" value="" />
+	<input id="in_text" type="text" name="itext" value="$!{plaintext}" /><br/>
+	<input type="submit" name="sb" value="提交" />
+</form>
+	<br/>
+#if($plaintext) 密文: $!{itext} <br/>解密得到 $!{plaintext} <br/> js加密耗时:$!{entime}ms java解密用时:$!{detime}ms #end

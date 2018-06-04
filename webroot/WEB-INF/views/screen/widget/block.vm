@@ -1,0 +1,6 @@
+我是主页面<br>
+我的Id是${id}<br>
+$contain.get('/widget/block/a.htm')<br>
+$contain.get('/widget/block/b.htm')<br>
+$contain.get('/widget/block/c.htm')<br>
+$contain.get('/widget/block/d.htm')<br>

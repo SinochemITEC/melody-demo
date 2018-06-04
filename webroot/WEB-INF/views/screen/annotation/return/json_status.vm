@@ -1,0 +1,6 @@
+#set($layout = '')
+{
+	"age":"#direct($!{west.age})",
+	"name":"#direct($!{west.name})",
+	"nick":"#direct($!{west.nick})"
+}

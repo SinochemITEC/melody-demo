@@ -1,0 +1,8 @@
+<font color="red"> 我是admin 的header哦</font>
+<br/>
+#if($vlocale.isLocale('zh','CN'))
+<a href="$appServer/locale/change.htm?locale=en_US">to engish</a>
+#else
+	<a href="$appServer/locale/change.htm?locale=zh_CN">回中文</a>
+#end
+<br/>

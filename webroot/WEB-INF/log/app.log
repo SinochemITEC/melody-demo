@@ -1,0 +1,174 @@
+2017-09-21 16:49:33,284 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2017-09-21 16:49:33,392 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Thu Sep 21 16:49:33 CST 2017]; root of context hierarchy
+2017-09-21 16:49:33,574 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [conf/spring/melody-web-beans.xml]
+2017-09-21 16:49:34,205 INFO [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2017-09-21 16:49:35,272 INFO [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2017-09-21 16:49:35,874 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/conf/spring/service-beans.xml]
+2017-09-21 16:49:36,080 INFO [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2017-09-21 16:49:36,106 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/conf/spring/auto-proxy-beans.xml]
+2017-09-21 16:49:37,501 INFO [com.eyeieye.melody.beans.config.PropertyPlaceholderConfigurer] - Loading properties file from ServletContext resource [/WEB-INF/conf/play.properties]
+2017-09-21 16:49:37,782 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc890e4: defining beans [MelodyResourceConfigurer,demoAttributeCookieStore,resourceService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,administerAction,annotationDemoAction,checkCodeAction,asyncContainAction,downLoadAction,i18nAction,pageSlider,page,outputReportAction,rsaAction,uploadAction,userLoginoutAction,userRegisterAction,modelAction,testAction,org.springframework.scheduling.annotation.internalAsyncAnnotationProcessor,org.springframework.scheduling.annotation.internalScheduledAnnotationProcessor,com.eyeieye.melody.beans.config.OverrideBeanFactoryPostProcessor#0,objectFactory,com.eyeieye.melody.web.servlet.HandlerExceptionResolver#0,mediaTypesHandler,uuidGenerator,webBindingInitializer,validator,appServerBroker,sslAppServerBroker,imageServerBroker,uploadServerBroker,com.eyeieye.melody.web.url.ServletContextInitHelper#0,encodingFilterBean,encode,cookiesManager,noSessionFilter,containFilter,responseOutputBufferFilterBean,performanceMonitorFilterBean,pageCacheFilter,melodyFilter,rsaCrypto,profilerInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0]; root of factory hierarchy
+2017-09-21 16:49:38,333 DEBUG [com.eyeieye.melody.util.crypto.impl.BcprovRsaCryptoImpl] - success load rsa keys from:ServletContext resource [/WEB-INF/conf/rsa.key]
+2017-09-21 16:49:38,545 DEBUG [com.eyeieye.melody.util.BlockingQueueLocate] - use java.util.concurrent.LinkedTransferQueue
+2017-09-21 16:49:38,825 DEBUG [com.eyeieye.melody.util.uuid.UUIDPoolGenerator] - fill the queue with capacity:1000
+2017-09-21 16:49:38,857 DEBUG [com.eyeieye.melody.web.url.ServletContextInitHelper] - Servlet 2.5 implement find.so init context path:
+2017-09-21 16:49:38,869 DEBUG [com.eyeieye.melody.web.url.URLBroker] - init end,server:http://127.0.0.1:8080
+2017-09-21 16:49:38,870 DEBUG [com.eyeieye.melody.web.url.URLBroker] - init end,server:https://127.0.0.1:8080
+2017-09-21 16:49:38,871 DEBUG [com.eyeieye.melody.web.url.StampURLBroker] - init end,server:http://127.0.0.1:8080
+2017-09-21 16:49:39,174 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 5884 ms
+2017-09-21 16:49:39,224 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Initializing servlet 'melodyServlet'
+2017-09-21 16:49:39,260 INFO [com.eyeieye.melody.web.servlet.DispatcherServlet] - FrameworkServlet 'melodyServlet': initialization started
+2017-09-21 16:49:39,261 INFO [com.eyeieye.melody.beans.config.PropertyPlaceholderConfigurer] - Loading properties file from ServletContext resource [/WEB-INF/conf/play.properties]
+2017-09-21 16:49:39,262 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Servlet with name 'melodyServlet' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Thu Sep 21 16:49:33 CST 2017]; root of context hierarchy]
+2017-09-21 16:49:39,272 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'melodyServlet-servlet': startup date [Thu Sep 21 16:49:39 CST 2017]; parent: Root WebApplicationContext
+2017-09-21 16:49:39,275 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [conf/spring/web/melody-web-main.xml]
+2017-09-21 16:49:40,026 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/conf/spring/web/web-main-test.xml]
+2017-09-21 16:49:40,185 INFO [com.eyeieye.melody.beans.config.PropertyPlaceholderConfigurer] - Loading properties file from ServletContext resource [/WEB-INF/conf/play.properties]
+2017-09-21 16:49:40,206 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d4d1391: defining beans [com.eyeieye.melody.beans.config.PropertyPlaceholderConfigurer#0,administerAction,annotationDemoAction,checkCodeAction,asyncContainAction,downLoadAction,i18nAction,pageSlider,page,outputReportAction,rsaAction,uploadAction,userLoginoutAction,userRegisterAction,modelAction,testAction,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,velocityViewCache,velocityConfigurer,viewResolver,internalViewResolver,defaultHandlerInterceptorAdapter,brokersInterceptor,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,com.eyeieye.melody.web.adapter.ExtendableAnnotationMethodHandlerAdapter#0,defaultHandlerMapping,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,lastHandlerMapping,multipartResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc890e4
+2017-09-21 16:49:40,401 DEBUG [com.eyeieye.melody.web.velocity.FixedVelocityConfigurer] - Resource loader path [WEB-INF/views/] resolved to file [D:\code\play\webroot\WEB-INF\views]
+2017-09-21 16:49:42,658 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/admin/main.htm] onto handler 'administerAction'
+2017-09-21 16:49:42,660 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/admin/edit.htm] onto handler 'administerAction'
+2017-09-21 16:49:42,661 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/admin/login.htm] onto handler 'administerAction'
+2017-09-21 16:49:42,663 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/admin/fun1orfun3.htm] onto handler 'administerAction'
+2017-09-21 16:49:42,667 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/return/json] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,669 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/return/json.*] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,671 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/return/json/] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,672 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/return/void.htm] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,673 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/return/string.htm] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,675 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/return/view.htm] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,677 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/param/base.htm] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,680 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/movie/{movieName}/{shipId}.htm] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,686 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/param/json] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,687 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/param/json.*] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,689 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/param/json/] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,691 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/annotation/param/object_bind.htm] onto handler 'annotationDemoAction'
+2017-09-21 16:49:42,693 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/checkcode/simple.htm] onto handler 'checkCodeAction'
+2017-09-21 16:49:42,695 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/checkcode/arithmetic.htm] onto handler 'checkCodeAction'
+2017-09-21 16:49:42,697 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/ct/slow.htm] onto handler 'asyncContainAction'
+2017-09-21 16:49:42,699 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/download/excel.htm] onto handler 'downLoadAction'
+2017-09-21 16:49:42,700 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/i18n/index.htm] onto handler 'i18nAction'
+2017-09-21 16:49:42,705 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/contain/pageSlider.htm] onto handler 'pageSlider'
+2017-09-21 16:49:42,706 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/contain/formPageSlider.htm] onto handler 'pageSlider'
+2017-09-21 16:49:42,708 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/query/seo_page.htm] onto handler 'page'
+2017-09-21 16:49:42,709 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/query/{paramOne}/{paramTwo}/{page}.htm] onto handler 'page'
+2017-09-21 16:49:42,711 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/query/form_page.htm] onto handler 'page'
+2017-09-21 16:49:42,712 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/report/output.htm] onto handler 'outputReportAction'
+2017-09-21 16:49:42,714 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/rsa.htm] onto handler 'rsaAction'
+2017-09-21 16:49:42,716 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/upload/simple.htm] onto handler 'uploadAction'
+2017-09-21 16:49:42,718 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/user_main.htm] onto handler 'userLoginoutAction'
+2017-09-21 16:49:42,722 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/login.htm] onto handler 'userLoginoutAction'
+2017-09-21 16:49:42,723 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/logout.htm] onto handler 'userLoginoutAction'
+2017-09-21 16:49:42,726 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/register.htm] onto handler 'userRegisterAction'
+2017-09-21 16:49:42,727 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/model/{id}] onto handler 'modelAction'
+2017-09-21 16:49:42,729 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/model/{id}.*] onto handler 'modelAction'
+2017-09-21 16:49:42,730 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/model/{id}/] onto handler 'modelAction'
+2017-09-21 16:49:42,732 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/model/json] onto handler 'modelAction'
+2017-09-21 16:49:42,733 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/model/json.*] onto handler 'modelAction'
+2017-09-21 16:49:42,734 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/model/json/] onto handler 'modelAction'
+2017-09-21 16:49:42,741 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/test/123.htm] onto handler 'testAction'
+2017-09-21 16:49:42,743 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/test/345.htm] onto handler 'testAction'
+2017-09-21 16:49:42,744 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/test/456.htm] onto handler 'testAction'
+2017-09-21 16:49:42,821 WARN [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+2017-09-21 16:49:42,874 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Using MultipartResolver [org.springframework.web.multipart.commons.CommonsMultipartResolver@7542d0b0]
+2017-09-21 16:49:42,886 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@17acafaa]
+2017-09-21 16:49:42,904 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@22f81726]
+2017-09-21 16:49:42,921 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1159bb0c]
+2017-09-21 16:49:42,923 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Published WebApplicationContext of servlet 'melodyServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.melodyServlet]
+2017-09-21 16:49:42,925 INFO [com.eyeieye.melody.web.servlet.DispatcherServlet] - FrameworkServlet 'melodyServlet': initialization completed in 3665 ms
+2017-09-21 16:49:42,929 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Servlet 'melodyServlet' configured successfully
+2017-09-21 16:50:49,888 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:50:49,903 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:50:49,910 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:50:49,958 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:50:50,410 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:50:50,411 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:50:50,415 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:51:13,102 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:51:13,105 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:51:13,107 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:51:13,110 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:51:13,146 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:51:13,148 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:51:13,151 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:51:22,257 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:51:22,261 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:51:22,263 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:51:22,264 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:51:22,268 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:51:22,269 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:51:22,271 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:52:06,678 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:52:06,682 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:52:06,683 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:52:06,686 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:52:06,691 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:52:06,696 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:52:06,701 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:52:38,666 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:52:38,669 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:52:38,670 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:52:38,671 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:52:38,677 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:52:38,679 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:52:38,682 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:53:44,131 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:53:44,134 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:53:44,137 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:53:44,139 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:53:44,143 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:53:44,144 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:53:44,147 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:53:46,066 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:53:46,072 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:53:46,075 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:53:46,076 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:53:46,080 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:53:46,081 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:53:46,086 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:54:11,279 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/vpage.htm]
+2017-09-21 16:54:11,282 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/vpage.htm] is: -1
+2017-09-21 16:54:11,283 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:54:11,285 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'vpage'; URL [screen/vpage.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:54:11,289 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in remote contain render for:screen/vpage.vm
+2017-09-21 16:54:11,289 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/vpage.vm]
+2017-09-21 16:54:11,292 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:57:47,077 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/ct/long.htm]
+2017-09-21 16:58:03,514 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/ct/long.htm] is: -1
+2017-09-21 16:58:03,516 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:58:03,524 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'ct/long'; URL [screen/ct/long.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:03,530 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering screen content template [screen/ct/long.vm]
+2017-09-21 16:58:04,340 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Find layout template [layout/default.vm] for:screen/ct/long.vm
+2017-09-21 16:58:04,359 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/contain/htmlhead.htm] is: -1
+2017-09-21 16:58:04,362 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'contain/htmlhead'; URL [screen/contain/htmlhead.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:04,366 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in async or sync contain render for:screen/contain/htmlhead.vm
+2017-09-21 16:58:04,367 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/contain/htmlhead.vm]
+2017-09-21 16:58:04,478 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:58:04,481 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/contain/header.htm] is: -1
+2017-09-21 16:58:04,485 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'contain/header'; URL [screen/contain/header.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:04,493 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in async or sync contain render for:screen/contain/header.vm
+2017-09-21 16:58:04,494 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/contain/header.vm]
+2017-09-21 16:58:04,499 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:58:04,503 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/contain/footer.htm] is: -1
+2017-09-21 16:58:04,509 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'contain/footer'; URL [/WEB-INF/views/screen/contain/footer.jsp]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:04,678 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:58:04,696 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:58:16,887 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - DispatcherServlet with name 'melodyServlet' processing GET request for [/ct/long.htm]
+2017-09-21 16:58:16,890 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/ct/long.htm] is: -1
+2017-09-21 16:58:16,893 DEBUG [com.eyeieye.melody.web.adapter.MediaTypesHandler] - Requested media types is text/html (based on defaultContentType property)
+2017-09-21 16:58:16,898 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'ct/long'; URL [screen/ct/long.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:16,904 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering screen content template [screen/ct/long.vm]
+2017-09-21 16:58:16,940 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Find layout template [layout/default.vm] for:screen/ct/long.vm
+2017-09-21 16:58:16,946 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/contain/htmlhead.htm] is: -1
+2017-09-21 16:58:16,947 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'contain/htmlhead'; URL [screen/contain/htmlhead.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:16,957 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in async or sync contain render for:screen/contain/htmlhead.vm
+2017-09-21 16:58:16,958 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/contain/htmlhead.vm]
+2017-09-21 16:58:16,969 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:58:16,974 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/contain/header.htm] is: -1
+2017-09-21 16:58:16,977 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView: name 'contain/header'; URL [screen/contain/header.vm]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:16,988 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - in async or sync contain render for:screen/contain/header.vm
+2017-09-21 16:58:16,991 DEBUG [com.eyeieye.melody.web.velocity.resolver.FixedVelocityLayoutView] - Rendering contain content template [screen/contain/header.vm]
+2017-09-21 16:58:17,002 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:58:17,009 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Last-Modified value for [/contain/footer.htm] is: -1
+2017-09-21 16:58:17,021 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'contain/footer'; URL [/WEB-INF/views/screen/contain/footer.jsp]] in DispatcherServlet with name 'melodyServlet'
+2017-09-21 16:58:17,026 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request
+2017-09-21 16:58:17,029 DEBUG [com.eyeieye.melody.web.servlet.DispatcherServlet] - Successfully completed request

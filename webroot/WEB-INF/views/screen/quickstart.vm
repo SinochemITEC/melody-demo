@@ -1,0 +1,12 @@
+<a href="$appServer.get('quickstart/properties.htm')">关于配置的一些说明</a> <br/>
+页面放哪里？在 <br/>
+系统默认放在WEB-INF/views下<br/>
+该文件夹下有两个默认的文件夹sceen和layout<br>
+页面就放在这两个文件夹下，screen文件夹放业务页面文件，layout放排版文件<br>
+URLBroker演示<br/>
+我来造个app链接  $appServer.get('index.htm')  <br/>
+再来造个  $appServer.get('search.htm').addQueryData('key','中文搜索').addQueryData('sort','price')  <br/>
+静态资源链接 $imageServer.get('/e/f/ggg.png')<br/>
+系统默认给了三个路径拼装器<br>
+https app链接 $sslAppServer.get('index.htm')<br/>
+多主机链接，直接输出显示配置的一个主机：$uploadServer 构造url(缺省使用链接字符串的hashCode计算):$uploadServer.get('1.jpg') $uploadServer.get('2.jpg') $uploadServer.get('3.jpg') <br/>
