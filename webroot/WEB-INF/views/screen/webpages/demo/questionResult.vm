@@ -1,0 +1,12 @@
+#if($!hero)
+    #if($hero.healthPoint > 0)
+        #if($hero.floor == 6)
+            ${hero.id}号勇士完成了任务
+        #else
+            ${hero.id}号勇士打败了怪物，到达了第${hero.floor}层，剩余血量${hero.healthPoint}<br/>
+        #end
+    #else
+        #set($floor = $hero.floor-1)
+        ${hero.id}号勇士没有打败怪物，倒在了了第${floor}层
+    #end
+#end

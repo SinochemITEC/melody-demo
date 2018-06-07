@@ -5,7 +5,9 @@
 	<body>
 		$contain.get('/contain/header.htm')
 		<hr/>
-		$screen_content
+        <div style="width: 90%; margin-left: 5%">
+            $screen_content
+        </div>
 		<hr/>
 		$contain.get('/contain/footer.htm')
 		$asyncContain.export()

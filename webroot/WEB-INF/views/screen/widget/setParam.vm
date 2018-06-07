@@ -1,0 +1,38 @@
+<ul class="demo-ul-paragraph">
+    <li>request对象</li>
+    contain的页面和主页面共享一个request对象。<br/><br/>
+    <li>$request.setAttrubute()</li>
+    \$request可以的setAttribute方法可以设置参数，设置的参数作用于本页面和contain的页面。另外，\$request也提供了removeAttribute()方法可以移除参数。如代码：<br/>
+    <br/>
+    \$request.setAttribute('my_name','neo')<br/>
+    我的名字是\$!my_name<br/>
+    \$contain.get('/widget/show_name.htm')<br/>
+    \$request.removeAttribute('my_name')<br/>
+    \$contain.get('/widget/show_name.htm')<br/>
+    我的名字是&#36;!my_name<br/><br/>
+    效果：<br/>
+    $request.setAttribute('my_name','neo')
+    我的名字是$!my_name<br/>
+    $contain.get('/widget/show_name.htm')
+    $request.removeAttribute('my_name')
+    $contain.get('/widget/show_name.htm')
+    我的名字是$!my_name<br/><br/>
+    <li>put方法</li>
+    contain也买你的时候可以在get后使用put方法， 其效果与\$request.setAttribute()相同。例如：<br/><br/>
+    \$contain.get('/widget/show_name.htm') .put('my_name','morpheus')<br/> ##FIXME 为什么这里去掉空格后面就会出问题？
+    \$contain.get('/widget/show_name.htm')<br/><br/>
+    效果：<br/>
+    $contain.get('/widget/show_name.htm').put('my_name','morpheus')
+    $contain.get('/widget/show_name.htm')<br/>
+    但是，当put方法与setAttribute同时使用时，对于同名的参数，在被contain的页面中，put方法会覆盖setAttribute方法。例如：<br/><br/>
+    \$request.setAttribute('my_name','Trinity')<br/>
+    \$contain.get('/widget/show_name.htm')<br/>
+    \$contain.get('/widget/show_name.htm') .put('my_name','Smith')<br/>
+    \$contain.get('/widget/show_name.htm')<br/><br/>
+    效果：<br/>
+    $request.setAttribute('my_name','Trinity')
+    $contain.get('/widget/show_name.htm')
+    $contain.get('/widget/show_name.htm').put('my_name','Smith')
+    $contain.get('/widget/show_name.htm')
+
+</ul>

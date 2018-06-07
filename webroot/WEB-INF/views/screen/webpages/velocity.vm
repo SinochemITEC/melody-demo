@@ -40,7 +40,15 @@ Velocity是Apache基金会项目中一个模板语言项目，可以很好的简化页面开发的过程。<br/
     </pre>
     其中&#36;{velocityCount}是循环中的下标，从1开始。<br/>
     如果需要实现for(int i=0;i++;i<10)这样的效果，可以使用&#35;foreach( &#36;key in [0..9] )。<br/>
-    循环中可以使用&#35;break跳出循环
+    循环中可以使用&#35;break跳出循环。
+    <li>引入js和css文件：</li>
+    使用html标签引入js和css文件非常繁琐，但是使用Velocity可以将其变得更为便捷。使用方法如下：<br/>
+    <pre>
+        &#35;set(&#36;jsfile = [jsfilePath])
+        &#35;js(&#36;jsfile)
+        &#35;set(&#36;cssfile = [cssfilePath])
+        &#35;css(&#36;cssfile)
+    </pre>
     <li>更多语法：</li>
     Velocity除以上常用语法外还有其他语法可供使用，详细可查看Velocity在Apache基金会中的引导页 <a href="http://velocity.apache.org/engine/2.0/user-guide.html#property-lookup-rules">Velocity - User Guide</a>。
 </ul>

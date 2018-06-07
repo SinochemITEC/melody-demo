@@ -1,2 +1,41 @@
 contain是用来在页面中动态include一个url的方法，类似于jsp中的jsp:include。<br/>
-<h><font size="5px">基本用法</font></h><br/>
+
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">基本用法</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get('/widget/base.htm')
+    </div>
+</details>
+
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">向页面传递参数</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get('/widget/setParam.htm')
+    </div>
+</details>
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">多个contain页面的响应问题</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get('/widget/block.htm')
+        <br/>
+    </div>
+</details>
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">bigpipe基本使用</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get('/widget/bigpipe.htm')
+        <br/>
+    </div>
+</details>

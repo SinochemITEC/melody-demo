@@ -53,10 +53,10 @@ URLBrokerÊÇÒ»¸ö¹¤¾ßÀà£¬»á¸ù¾İ¶ÔÏóÃû×Ô¶¯×¢ÈëÅäÖÃÎÄ¼şÖĞÅäÖÃµÄµØÖ·£¬Ò»°ãÓÃÓÚ¿ìËÙ»ñµ
 <div class="maintext">
     ¢ÙÔÚÒ³ÃæÖĞ¿ÉÒÔÊ¹ÓÃ$[ServerBeanName]ÒıÓÃÅäÖÃºÃµÄURLBroker¶ÔÏó£¬Èç&#36;mailServerµÄÖµÎª$mailServer<br/>
     ¢ÚÊ¹ÓÃget¿ÉÒÔ»ñµÃÖ¸¶¨ÓòÏÂµÄÁ´½ÓµØÖ·£¬Èç&#36;mailServer.get("index.htm")µÄÖµÎª$mailServer.get("index.htm")<br/>
-    ¢ÛÊ¹ÓÃputºÍaddQueryData¿ÉÒÔÔÚÁ´½ÓºóÔö¼Ó²ÎÊı£¬Èç&#36;mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")µÄÖµÎª$mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")
-    ¢ÜÔÚJSPÎÄ¼şÖĞÒ²¿ÉÒÔÊ¹ÓÃURLBroker£¬Èç<a href="$appServer.get("/dir_url/jsppage.jsp")">±¾ÀıËùÊ¾</a>¡£
+    ¢ÛÊ¹ÓÃputºÍaddQueryData¿ÉÒÔÔÚÁ´½ÓºóÔö¼Ó²ÎÊı£¬Èç&#36;mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")µÄÖµÎª$mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")<br/>
+    ¢ÜÔÚJSPÎÄ¼şÖĞÒ²¿ÉÒÔÊ¹ÓÃURLBroker£¬Èç<a href="$appServer.get("/dir_url/jsppage.htm")" target="_blank">±¾ÀıËùÊ¾</a>¡£
 </div>
-<li>ÔÚºó¶ËÊ¹ÓÃ£º</li>
+<li>ÔÚ·şÎñÆ÷³ÌĞòÊ¹ÓÃ£º</li>
 <div class="maintext">
     ¢ÙÊ¹ÓÃ@Autowired¿ÉÒÔ¶ÔURLBrokerµÄÒıÓÃ½øĞĞ×¢Èë£¬×¢ÈëÄÚÈİÓÉÒıÓÃÃûÈ·¶¨£¬Èç£º
     <xmp>

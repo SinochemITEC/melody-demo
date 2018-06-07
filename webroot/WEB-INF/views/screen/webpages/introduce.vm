@@ -1,19 +1,24 @@
-melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。
+<h><font size="6px">页面制作说明和示例 </font> </h>
+<br/>melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。<br/>
 <br/>
 <details class="menu" close>
     <summary>
         <h><font size="5px">Velocity模板语言</font> </h>
     </summary>
     <br/>
-    $contain.get("velocity.htm")
+    <div style="margin-left: 5%;">
+        $contain.get("velocity.htm")
+    </div>
 </details>
 <br/>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">用contain方法拼接页面</font> </h>
+        <h><font size="5px">用contain拼接页面</font> </h>
     </summary>
     <br/>
-    $contain.get("contain.htm")
+    <div style="margin-left: 5%;">
+        $contain.get("contain.htm")
+    </div>
 </details>
 <br/>
 <details class="menu" close>
@@ -21,5 +26,7 @@ melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。
         <h><font size="5px">示例</font> </h>
     </summary>
     <br/>
-    $contain.get("velocity.htm")
+    <div style="max-width: 5%;">
+        $contain.get(".htm")
+    </div>
 </details>
