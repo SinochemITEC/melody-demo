@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.eyeieye.melody.web.url.URLBroker;
 import nl.captcha.Captcha;
 import nl.captcha.backgrounds.GradiatedBackgroundProducer;
 import nl.captcha.gimpy.BlockGimpyRenderer;
@@ -21,8 +22,10 @@ import nl.captcha.gimpy.RippleGimpyRenderer;
 import nl.captcha.noise.CurvedLineNoiseProducer;
 import nl.captcha.text.producer.TextProducer;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.eyeieye.melody.util.StringUtil;
@@ -38,6 +41,16 @@ import com.eyeieye.melody.web.util.ResponseUtil;
 @Controller
 @RequestMapping("/checkcode")
 public class CheckCodeAction {
+
+	@Autowired
+	private URLBroker mailServer;
+
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String test(){
+		System.out.println(mailServer.get("123.htm").toString());
+		return "/dir_url/introduce";
+	}
+
 
 	private static final List<Font> englishFonts = Arrays.asList(new Font(
 			"Lucida Sans", Font.ITALIC, 55), new Font("SansSerif", Font.ITALIC,

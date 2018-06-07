@@ -1,0 +1,2 @@
+contain是用来在页面中动态include一个url的方法，类似于jsp中的jsp:include。<br/>
+<h><font size="5px">基本用法</font></h><br/>

@@ -1,0 +1,19 @@
+系统使用配置文件进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties。<br/>
+通过配置web.xml文件可以设定指定的配置文件路径：<br/>
+<xmp>
+<context-param>
+    <param-name>melodyConfigLocation</param-name>
+    <param-value>/WEB-INF/conf/play.properties</param-value>
+</context-param></xmp><br/>
+我们这里指定了play.properties为默认的配置文件路径。<br/><br/>
+配置文件中至少配置如下参数即可启动一个项目：<br/>
+<xmp>
+app.server.host=127.0.0.1
+app.server.port=8081
+melody.action.scan=com.eyeieye.melody.demo.web
+system.devMode=true
+template.load.charset=GBK
+web.encoding=GBK
+</xmp><br/>
+参数的具体解释： <br/>
+$contain.get("/config/properties/list.htm")

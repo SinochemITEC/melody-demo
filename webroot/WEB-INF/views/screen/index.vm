@@ -1,6 +1,11 @@
-<a href="$appServer.get('quickstart.htm')">关于配置的一些说明</a> <br/>
-<a href="$appServer.get('quickstart/vpage.htm')">开始第一个velocity页面</a> <br/>
-<a href="$appServer.get('quickstart/jsppage.htm')">也可以使用jsp页面</a> <br/>
+<a href="$appServer.get('config/introduce.htm')">配置文件说明和示例</a> <br/>
+<div class="introText"></div>
+<a href="$appServer.get('dir_url/introduce.htm')">目录结构说明和示例</a> <br/>
+<a href="$appServer.get('webpages/introduce.htm')">页面制作说明和示例</a> <br/>
+<a href="#">传参和返回值说明</a> <br/>
+<a href="#">页面交互说明</a> <br/>
+
+
 
 spring mvc annotation 演示:<br/>
 action方法返回值演示，com.eyeieye.melody.demo.web.action.annotation.AnnotationDemoAction.java

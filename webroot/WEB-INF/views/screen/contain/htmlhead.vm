@@ -1,5 +1,11 @@
 <head>
-  <title>¿ò¼Ü½éÉÜ#if($title)-${title}#end</title>
-  <script type="text/javascript" src="$imageServer.get('script/bigpipe.js')"></script>
-  <script type="text/javascript" src="$imageServer.get('script/jquery-1.4.2.min.js')"></script>
+    <title>¿ò¼Ü½éÉÜ#if($title)-${title}#end</title>
+    #set($bigpipe = $imageServer.get('script/bigpipe.js'))
+    #set($jquery_min = $imageServer.get('script/jquery-1.4.2.min.js'))
+    #set($privateCss = $imageServer.get('script/private.css'))
+
+    #js($bigpipe)
+    #js($jquery_min)
+
+    #css($privateCss)
 </head>

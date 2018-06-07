@@ -1,0 +1,25 @@
+melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。
+<br/>
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">Velocity模板语言</font> </h>
+    </summary>
+    <br/>
+    $contain.get("velocity.htm")
+</details>
+<br/>
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">用contain方法拼接页面</font> </h>
+    </summary>
+    <br/>
+    $contain.get("contain.htm")
+</details>
+<br/>
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">示例</font> </h>
+    </summary>
+    <br/>
+    $contain.get("velocity.htm")
+</details>

@@ -12,8 +12,7 @@ contain可以用来在页面中动态include一个url,类似与jsp 中的 jsp:include<br/>
 	\$contain.get('/contain/show_name.htm')<br/>
 	效果:<br/>
 	$request.setAttribute('my_name','neo')
-	$contain.get('/contain/show_name.htm')
-	$contain.get('/contain/show_name.htm')
+	$contain.get('/widget/show_name.htm')
 	$request.removeAttribute('my_name')
 	$contain.get('/widget/show_name.htm')
 </li>

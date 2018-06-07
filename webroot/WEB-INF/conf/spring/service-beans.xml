@@ -10,4 +10,34 @@
 	<bean id="rsaCrypto" class="com.eyeieye.melody.util.crypto.impl.BcprovRsaCryptoImpl">
 		<property name="rsaKeyFile" value="WEB-INF/conf/rsa.key"></property>
 	</bean>
+
+	<bean class="com.eyeieye.melody.web.url.URLBrokerLauncherInterceptor">
+		<property name="brokers">
+			<map>
+				<entry key="mailServer" value-ref="mailServer"/>
+			</map>
+		</property>
+	</bean>
+
+	<bean class="com.eyeieye.melody.web.url.ServletContextInitHelper">
+		<property name="brokers">
+			<list>
+				<ref bean="mailServer" />
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="mailServer" class="com.eyeieye.melody.web.url.URLBroker">
+		<property name="encoding" value="${web.encoding}"></property>
+		<property name="config">
+			<bean class="com.eyeieye.melody.web.url.URLConfig">
+				<property name="host" value="${mail.server.host}"></property>
+				<property name="port" value="${mail.server.port}"></property>
+				<property name="path" value="${mail.server.path}"></property>
+				<property name="followContextPath" value="true"></property>
+			</bean>
+		</property>
+	</bean>
+
 </beans>
