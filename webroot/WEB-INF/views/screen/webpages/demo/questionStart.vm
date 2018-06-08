@@ -1,17 +1,8 @@
 <h><font size="7px">bigpipe示例</font></h><br/>
-招募两个勇士攻略地下城：
-<form action="$appServer.get('/webpages/demo/quetionStart.htm')" method="get">
-    <label>勇士A的等级：</label> <input type="text" name="levelA" placeholder="建议50~150之间"/>
-    <label>勇士B的等级：</label> <input type="text" name="levelB" placeholder="建议50~150之间"/>
+招募勇士攻略地下城：
+<form action="$appServer.get('/webpages/demo/quetionStart.htm')" method="post">
+    <label>勇士的等级：</label> <input type="text" name="level" placeholder="建议50~150之间"/>
+
     <input type="submit" value="招募勇士"/>
 </form>
-##$contain.get('questionExecute.htm')
-#if($!A)
-    #jscode()
-    alert(${A.id})
-    #end
-$asyncContain.get('questionExecute.htm').put("id",${A.id})
-#end
-#if($!B)
-$asyncContain.get('questionExecute.htm').put("id",${B.id})
-#end
+

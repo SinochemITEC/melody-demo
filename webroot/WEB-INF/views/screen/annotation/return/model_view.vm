@@ -1,1 +1,13 @@
-我是返回View的方法，当前时间 $!{currentTime}
+我是返回ModelAndView的方法，当前时间 $!{currentTime}<br/>
+设置返回的页面资源的方法为
+<pre>
+    <code>
+        ModelAndView modelAndView = new ModelAndView("/annotation/return/model_view");
+    </code>
+</pre>
+设置参数的方法为
+<pre>
+    <code>
+        modelAndView.addObject("currentTime",new Date());
+    </code>
+</pre>

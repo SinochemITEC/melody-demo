@@ -1,7 +1,7 @@
 <h><font size="6px">页面制作说明和示例 </font> </h>
 <br/>melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。<br/>
 <br/>
-<details class="menu" close>
+<details close>
     <summary>
         <h><font size="5px">Velocity模板语言</font> </h>
     </summary>
@@ -26,7 +26,7 @@
         <h><font size="5px">示例</font> </h>
     </summary>
     <br/>
-    <div style="max-width: 5%;">
-        $contain.get(".htm")
+    <div style="margin-left: 5%;">
+       <a href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipe使用实例</a>
     </div>
 </details>

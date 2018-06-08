@@ -1,0 +1,26 @@
+
+<form id="form">
+    <label>电影名：</label>
+    <input id="movieName" type="text" value=""/>
+    <label>飞船id：</label>
+    <input id="shipId" type="text" value=""/>
+    <input type="button" id="restful" value="提交"/><br/>
+</form>
+得到的对象如下:<br/>
+电影名字:$!{movieName}　<br/>
+飞船编号:$!{shipId}<br/>
+<br/>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#restful").click(function(){
+           var path = '/annotation/movie/'+$('#movieName').eq(0).val()+'/'+$('#shipId').eq(0).val()+'.htm';
+           var url = '$appServer'+path;
+            var form=document.getElementById('form');
+            form.method='post';
+            form.action=url;
+            form.submit();
+        });
+    })
+</script>
+

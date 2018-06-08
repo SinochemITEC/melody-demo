@@ -11,6 +11,7 @@ URLBrokerÊÇÒ»¸ö¹¤¾ßÀà£¬»á¸ù¾Ý¶ÔÏóÃû×Ô¶¯×¢ÈëÅäÖÃÎÄ¼þÖÐÅäÖÃµÄµØÖ·£¬Ò»°ãÓÃÓÚ¿ìËÙ»ñµ
                 <property name="host" value="<app.server.host>"></property>
                 <property name="port" value="<app.server.port>"></property>
                 <property name="path" value="<app.server.path>"></property>
+                <property name="path" value="<app.server.path>"></property>
                 <property name="followContextPath" value="true"></property>
             </bean>
         </property>

@@ -1,0 +1,22 @@
+<h><font size="6px">传参、返回值说明和示例</font> </h>
+<br/>这一部分介绍页面与服务器交互的方式，包括页面向服务器传递参数和服务器返回数据的方式。<br/>
+本页面对应的java文件为com.eyeieye.melody.demo.web.action.annotation.AnnotationDemoAction.java<br/>
+<br/>
+<details open>
+    <summary>
+        <h><font size="5px">传入参数</font> </h>
+    </summary>
+
+    <div style="margin-left: 5%;">
+        $contain.get("/annotation/param/mainPage.htm")
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">返回值</font> </h>
+    </summary>
+
+    <div style="margin-left: 5%;">
+        $contain.get("/annotation/return/mainPage.htm")
+    </div>
+</details>

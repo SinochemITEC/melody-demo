@@ -1,0 +1,12 @@
+<input type="button" id="json_return" value="点击请求一个json串"/>
+<script>
+    $(document).ready(function () {
+        $("#json_return").click(function () {
+            jQuery.getJSON("$appServer.get('/annotation/return/json.json')",
+                    function (data) {
+                        alert('返回的json串为：'+ JSON.stringify(data));
+                        alert('name:' + data.name + ' \nnick:' + data.nick + ' \nage:' + data.age);
+                    });
+        });
+    });
+</script>

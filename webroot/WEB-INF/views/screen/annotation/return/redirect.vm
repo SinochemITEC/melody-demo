@@ -1,0 +1,2 @@
+我是返回String的方法，类型为redirect，当前时间 $!{currentTime}<br/>
+原链接访问的是string_redirect.htm，但是页面重定向到了redirect.htm，同时ModelMap中的参数通过写在url中带到了新页面

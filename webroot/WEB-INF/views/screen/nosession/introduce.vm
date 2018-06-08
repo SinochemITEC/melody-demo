@@ -1,0 +1,13 @@
+NoSession是为了解决微服务中session同步问题而提出的解决方案。<br/>
+NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以取得用户的session。<br/>
+
+
+设置session.meta.cookie.domain
+编写domain类
+编写cookieStore类
+使用HttpSession
+
+实例：
+验证码
+登录
+国际化？

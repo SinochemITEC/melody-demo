@@ -1,0 +1,32 @@
+    <label>姓名：</label>
+    <input id="name" type="text" value=""/>
+    <label>昵称：</label>
+    <input id="nick" type="text" value=""/>
+    <label>年龄：</label>
+    <input id="west" type="text" value=""/>
+    <input type="button" id="json_bind" value="提交"/><br/>
+
+得到的对象如下:<br/>
+名字:${west.name}<br/>
+称呼:${west.nick}<br/>
+年龄:${west.age}<br/>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#json_bind").click(function(){
+                jQuery.ajax({
+                    type: "POST",
+                    url:"$appServer.get('/annotation/param/json.json')",
+                    contentType:"application/json",
+                    data:'{"name":"'+$("#name").eq(0).val()+'","nick":"'+$("#nick").eq(0).val()+'","age":'+$("#age").eq(0).val()+'}',
+                    dataType:"json",
+                    success:function(data){
+                        alert('name:'+data.name+' nick:'+data.nick+' age:'+data.age);
+                    }
+                })
+            });
+        })
+    </script>
+
+    ##TODO 传不过去

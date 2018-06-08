@@ -1,11 +1,9 @@
-#if($!hero)
-    #jscode()
-    alert('qwe');
-    #end
-    ${hero.id}号勇士开始攻略地下城了！<br/>
-    $asyncContain.get('questionResult.htm').put("heroId", ${hero.id}).put("sleep",1000)
-    $asyncContain.get('questionResult.htm').put("heroId", ${hero.id}).put("sleep",2000)
-    $asyncContain.get('questionResult.htm').put("heroId", ${hero.id}).put("sleep",3000)
-    $asyncContain.get('questionResult.htm').put("heroId", ${hero.id}).put("sleep",4000)
-    $asyncContain.get('questionResult.htm').put("heroId", ${hero.id}).put("sleep",5000)
+
+#if($!id)
+    ${id}号勇士开始攻略地下城了！<br/>
+    $asyncContain.get('/webpages/demo/questionResult.htm').put("id", ${id}).put("sleep",1000)
+    $asyncContain.get('/webpages/demo/questionResult.htm').put("id", ${id}).put("sleep",2000)
+    $asyncContain.get('/webpages/demo/questionResult.htm').put("id", ${id}).put("sleep",3000)
+    $asyncContain.get('/webpages/demo/questionResult.htm').put("id", ${id}).put("sleep",4000)
+    $asyncContain.get('/webpages/demo/questionResult.htm').put("id", ${id}).put("sleep",5000)
 #end

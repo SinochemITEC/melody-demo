@@ -2,57 +2,9 @@
 <div class="introText"></div>
 <a href="$appServer.get('dir_url/introduce.htm')">目录结构说明和示例</a> <br/>
 <a href="$appServer.get('webpages/introduce.htm')">页面制作说明和示例</a> <br/>
-<a href="#">传参和返回值说明</a> <br/>
-<a href="#">页面交互说明</a> <br/>
+<a href="$appServer.get('annotation/introduce.htm')">传参、返回值说明和示例</a> <br/>
+<a href="#">nosession技术</a> <br/>
 
-
-
-spring mvc annotation 演示:<br/>
-action方法返回值演示，com.eyeieye.melody.demo.web.action.annotation.AnnotationDemoAction.java
-<ul>
-<li><a href="$appServer.get('/annotation/return/void.htm')">返回 void -- Method:annotationVoid</a></li>
-<li><a href="$appServer.get('/annotation/return/string.htm')">返回 String -- Method:annotationString</a></li>
-<li><a href="$appServer.get('/annotation/return/view.htm')">返回 view -- Method:annotationModelAndView</a></li>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$("#json_return_href").click(function(){
-		alert("123");
-		jQuery.getJSON("$appServer.get('/annotation/return/json.json')",
-			function(data){
-				alert('name:'+data.name+' nick:'+data.nick+' age:'+data.age);
-			}); 
-		});
-		$("#json_bind_href").click(function(){
-		jQuery.ajax({
-			type: "POST",
-			url:"$appServer.get('/annotation/param/json.json')",
-			contentType:"application/json",
-			data:'{"name":"shaseng","nick":"sanshidi","age":250}',
-			dataType:"json",
-			success:function(data){
-				alert('name:'+data.name+' nick:'+data.nick+' age:'+data.age);
-			}
-		  })	
-		});
-	})
-</script>
-<li><a href="#" id="json_return_href">返回 json -- Method:annotationJson</a></li>
-</ul> 
-<br/>
-action入参演示 ,com.eyeieye.melody.demo.web.action.annotation.AnnotationDemoAction.java
-<ul>
-<li><a href="$appServer.get('annotation/param/base.htm').addQueryData('name','齐天')">基本 -- Method:annotationBase</a></li>
-<li><a href="$appServer.get('annotation/param/object_bind.htm').addQueryData('name','八戒').addQueryData('nick','二师兄').addQueryData('age','500')">对象属性自带绑定 -- Method:annotationObjectBind</a></li>
-<li><a href="#" id="json_bind_href">json对象绑定 -- Method:annotationJsonBind</a></li>
-<li><a href="${appServer.get('annotation/movie/matrix/66.htm')}">REST风格URL path参数绑定 -- Method:annotationRestBind</a></li>
-</ul>
-<hr/>
-contain使用演示:<br/>
-<ul>
-<li><a href="$appServer.get('widget/base.htm')">基本使用方法</a></li>
-<li><a href="$appServer.get('widget/block.htm')">单实例演示</a></li>
-<li><a href="$appServer.get('widget/async.htm')">bigpipe基本使用</a></li>
-</ul>
 <hr/>
 校验码演示:<br/>
 <hr/>

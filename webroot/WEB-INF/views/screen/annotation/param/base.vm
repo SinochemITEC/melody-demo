@@ -1,4 +1,5 @@
-基本入参显示<br/>
-你的ip:$!{ip}<br/>
+示例对应的方法为AnnotationDemoAction.annotationBase<br/>
+示例通过addQueryData方法在链接后添加参数，同理同样适用于表单提交。<br/><br/>
+request对象中取到的ip值:$!{ip}<br/>
 入参中name的值:$!{name}<br/>
 入参中size的值:$!{size}<br/>
