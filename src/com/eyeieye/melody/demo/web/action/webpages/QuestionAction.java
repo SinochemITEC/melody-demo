@@ -3,12 +3,10 @@ package com.eyeieye.melody.demo.web.action.webpages;
 
 import com.eyeieye.melody.demo.domain.DemoHero;
 import com.eyeieye.melody.demo.service.impl.SimpleCacheManager;
-import com.sun.deploy.net.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Random;

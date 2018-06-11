@@ -13,11 +13,6 @@
      <class>com.eyeieye.melody.util.DateUtil</class>    
    </tool>
    <tool>
-     <key>iDemand</key>
-     <scope>request</scope>
-     <class>com.eyeieye.melody.web.velocity.IDemand</class>
-   </tool>
-   <tool>
      <key>adminAccess</key>
      <scope>request</scope>
      <class>com.eyeieye.melody.demo.access.AdminAccessVMTool</class>
