@@ -1,4 +1,9 @@
 melody国际化除了action层异常信息,不使用标准java资源文件<br/>
+#if($vlocale.isLocale('zh','CN'))
+<a href="javascript:switchLanguage('zh_CN')">to engish</a>
+#else
+<a href="javascript:switchLanguage('en_US')">回中文</a>
+#end
 vm上国际化有两种方法:<br/>
 	1.vm本身国际化,比如 index.vm(缺省),index_zh_CN.vm(中文简体),index_zh_TW(中文繁体)<br/>
 		国际化的可以是screen,layout,contain,遵循以下规则如果当前访问者对应的 $view_$language_$country.$suffix 存在则使用此模板,否则使用$view.suffix
@@ -15,3 +20,10 @@ vm上国际化有两种方法:<br/>
 	<br/>
 		<hr/>
 	如果在velocoty中配置了LocaleReferenceInsertionEventHandler,则会自动调用LocaleRender做国际化输出,比如:${cb.nameLocale}(CommonBean)
+
+<script>
+    function switchLanguage(lang)  {
+        document.cookie= "_l_="+lang+";domain=.mycrudeoil.com;path=/;";
+        window.location.reload();
+    }
+</script>

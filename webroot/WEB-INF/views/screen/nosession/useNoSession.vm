@@ -1,0 +1,18 @@
+<ul class="demo-ul-paragraph">
+    <li>1、设置session.meta.cookie.domain</li>
+    因为NoSession技术使用的是cookie存储session，所以需要先配置一下所用到的cookie的作用域。<br/>
+    如果没有进行配置，则默认为配置文件中的app.server.host<br/>
+    例如，我需要在sinochem.com下的网站中使用nosession，那么就需要配置：
+    <pre><code>session.meta.cookie.domain=.sinochem.com</code></pre>
+    <li>2、编写domain类</li>
+    cookie中存储信息使用了java序列化，所以需要编写一个用于存放信息的实体类。<br/>
+    该类需要实现Serializable接口，保证实体类可以序列化。<br/>
+    示例参见com.eyeieye.melody.demo.web.action.login.User类。
+    <li>3、编写CookieStore类</li>
+    Cookiestore类是用来配置cookie相关属性的类，其需要实现AttributeCookieStore接口，其中有8个方法需要实现，下面依次介绍：<br/>
+    ##TODO 完善
+    <li>4、使用HttpSession</li>
+    首先，在action的方法中加入HttpSession session这样的参数，方法便可以自动取得HttpSession对象。<br/>
+    然后使用setAttribute(String name, Object obj)方法便可以将实体类写入HttpSession，其中name为实体类对应的NAME，obj为实体类对象。<br/>
+    待页面返回时，会将cookie写到用户的浏览器中。
+</ul>

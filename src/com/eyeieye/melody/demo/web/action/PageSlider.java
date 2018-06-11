@@ -113,7 +113,6 @@ public class PageSlider {
 
 	/**
 	 * 使用GET方式,也就是普通超连接方式分页,入参为. 必需:put('slider_builder',$PagingURLBuilder)
-	 * 
 	 */
 	@RequestMapping("/contain/pageSlider.htm")
 	public ModelAndView handleRequest(HttpServletRequest request)

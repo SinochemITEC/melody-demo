@@ -1,8 +1,8 @@
 #if($agent)
 	当前登录用户名字:$!{agent.realName}<br/>
 	当前登录用户登录时间:$!{agent.loginTime}<br/>
-	当前登录用户省:$!{agent.province}<br/>
-	当前登录用户市:$!{agent.city}<br/>
+	当前登录用户省:$!{agent.nativePlace.province}<br/>
+	当前登录用户市:$!{agent.nativePlace.city}<br/>
 	<a href="$appServer.get('logout.htm')">退出</a>
 #else
 	当前用户未登录<a href="$!{appServer}/login.htm">登录</a>

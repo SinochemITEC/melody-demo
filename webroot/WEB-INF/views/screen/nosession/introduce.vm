@@ -1,13 +1,25 @@
+<h><font size="6px">NoSession</font> </h><br/>
+
 NoSession是为了解决微服务中session同步问题而提出的解决方案。<br/>
 NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以取得用户的session。<br/>
 
-
-设置session.meta.cookie.domain
-编写domain类
-编写cookieStore类
-使用HttpSession
-
-实例：
-验证码
-登录
-国际化？
+<details open>
+    <summary>
+        <h><font size="5px">使用步骤</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("useNoSession.htm")
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">示例</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        1、实体类示例：com.eyeieye.melody.demo.web.action.User<br/>
+        2、CookieStore类示例：com.eyeieye.melody.demo.web.action.UserAttributeCookieStore<br/>
+        3、应用实例：请查看<a href="#*TODO $appServer.get(用户登录)*#">用户登录</a>部分的具体实现
+    </div>
+</details>

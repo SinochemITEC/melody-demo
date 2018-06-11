@@ -1,0 +1,65 @@
+<h><font size="6px">其他功能说明和示例</font> </h><br/>
+<details open>
+    <summary>
+        <h><font size="5px">文件上传和下载</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        <li>文件上传可以使用表单提交的方式，使用type为file的input标签选择文件，并将form的enctype属性设置为multipart/form-data即可。<br/>
+        在服务器端使用MultipartFile接收参数。示例参照类com.eyeieye.melody.demo.web.action.upload.UploadAction<br/>
+        文件下载使用的是HttpServletResponse，将文件返回到页面，需要注意的是，需要将HttpServletResponse的"Content-Disposition属性设置为attachment;Filename=[文件名]"
+        </li>
+        <li>
+            示例：<br/>
+            <a href="$appServer.get('/upload/simple.htm')">文件上传</a>
+            <a href="$appServer.get('/download/excel.htm')">文件下载</a>
+        </li>
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">分页</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        分页有两种分页方式，分别是form提交分页和seo话静态链接分页。<br/>
+        两种分页方式分别通过contain分页栏实现分页，通过put部分参数进行配置，下面分别介绍其参数：<br/>
+        <li>公共参数：</li>
+        ①slider_query：必要参数，入参为QueryBase的子类，一般在请求页面时初始化并传递到页面；<br/>
+        ②slider_broker：非必要参数，指定路径时用于生成url的URLBroker对象，默认为\$appServer；<br/>
+        ③slider_path：非必要参数，指定vm时使用；<br/>##TODO 这个是做什么用的？
+        ④slider_width：非必要参数，指定浮动窗大小，默认为5。<br/>
+        <br/>
+        <li>form提交分页：</li>
+        在该demo中contain的页面为/contain/formPageSlider.vm。<br/>
+        ①slider_target：必要参数，入参为分页提交的目标url；<br/>
+        ②slider_page：非必要参数，用于指定分页变量名，默认为&#36;page；<br/>
+        ③slider_method：非必要参数，用于指定form提交的方式，默认为'get'。<br/>
+        <li>form提交分页：</li>
+        在该demo中contain的页面为/contain/pageSlider.vm。<br/>
+        ○ slider_builder：必要参数，获取页面时需要初始化到页面中去，需要实现PagingURLBuilder接口。<br/>
+        <li>示例：</li>
+        <a href="$appServer.get('/query/form_page.htm')">form提交分页</a><br/>
+        <a href="$appServer.get('/query/seo_page.htm')">seo化静态链接分页</a><br/>
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">国际化</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        国际化的语言选择通过用户的locale属性来实现，更改locale属性是需要将相应的语言加入cookie中，然后刷新页面即可。
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">文件上传和下载</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+
+    </div>
+</details>
+
+

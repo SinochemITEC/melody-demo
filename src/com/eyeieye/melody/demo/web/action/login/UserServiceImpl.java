@@ -3,7 +3,8 @@ package com.eyeieye.melody.demo.web.action.login;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.stereotype.Component;
+import com.eyeieye.melody.util.StringUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,6 +22,28 @@ public class UserServiceImpl implements UserService {
 	public User getUserByNamePasswd(String realName, String password) {
 		User user = users.get(realName);
 		return user;
+	}
+
+	@Override
+	public boolean arithmeticCheck(User user, String token) {
+		String sessionToken = user.getLastToken();
+		if (StringUtil.isEmpty(sessionToken)) {
+			return false;
+		}
+
+		int answer = 0;
+		if(sessionToken.contains("+")){
+			answer = Integer.valueOf(sessionToken.split("\\+")[0]) + Integer.valueOf(sessionToken.split("\\+")[1]);
+		}else if(sessionToken.contains("-")){
+			answer = Integer.valueOf(sessionToken.split("-")[0]) - Integer.valueOf(sessionToken.split("-")[1]);
+		}else{
+			return false;
+		}
+
+		if (String.valueOf(answer).equals(token)) {
+			return true;
+		}
+		return false;
 	}
 
 }

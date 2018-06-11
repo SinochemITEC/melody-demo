@@ -64,20 +64,20 @@ public class UserRegisterAction {
 	 * <p>
 	 * 
 	 * @InitBinder这个注解用于绑定各种PropertyEditor，即将表单提交过来的字符串， 
-	 *                                                   根据注册到WebDataBinder中的PropertyEditor转换为具体的某一类对象
-	 *                                                   。
-	 *                                                   <p>
-	 *                                                   例如：CustomDateEditor 将符合
-	 *                                                   "yyyy-MM-dd"
-	 *                                                   格式的字符串转换为Data类型。
-	 *                                                   <p>
-	 *                                                   <b>注意：<br>
-	 *                                                   
-	 *                                                   1、该方法仅在Controller初始化的时候执行一次
-	 *                                                   ；<br>
-	 *                                                   
-	 *                                                   2、标记有该注解的方法入参必须要有WebDataBinder
-	 *                                                   。</b>
+	 * 根据注册到WebDataBinder中的PropertyEditor转换为具体的某一类对象
+	 * 。
+	 * <p>
+	 * 例如：CustomDateEditor 将符合
+	 * "yyyy-MM-dd"
+	 * 格式的字符串转换为Data类型。
+	 * <p>
+	 * <b>注意：<br>
+	 *
+	 * 1、该方法仅在Controller初始化的时候执行一次
+	 * ；<br>
+	 *
+	 * 2、标记有该注解的方法入参必须要有WebDataBinder
+	 * 。</b>
 	 * 
 	 * @param binder
 	 */

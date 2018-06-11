@@ -21,7 +21,7 @@
             redirect方式：服务器会要求浏览器重定向到新的url，使用方法时返回的字符串以"redirect:"开头，并连接上完整链接或本地网页文件的path。
         </li>
         <a href="$appServer.get("/annotation/return/string_forward.htm")" target="_blank">点击查看示例</a><br/>
-        <a href="$appServer.get("/annotation/return/string_redirect2.htm")" target="_blank">点击查看示例</a><br/>
+        <a href="$appServer.get("/annotation/return/string_redirect.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>

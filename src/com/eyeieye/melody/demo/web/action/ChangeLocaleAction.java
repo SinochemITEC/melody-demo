@@ -15,11 +15,12 @@ import org.springframework.web.servlet.LocaleResolver;
 
 import com.eyeieye.melody.util.StringUtil;
 
-//@Controller
+@Controller
 @RequestMapping(value = "/locale")
 public class ChangeLocaleAction {
 	@Autowired
 	private LocaleResolver localeResolver;
+
 
 	@RequestMapping("/change.htm")
 	public void change(@RequestParam("locale") String locale,

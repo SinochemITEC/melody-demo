@@ -27,37 +27,23 @@ span.required {
             </td>
 		</tr>
 		<tr>
-            <th><span class="required">*</span>ajax校验：</th>
-            <td>
-                <img src="$appServer.get('/checkcode/simple.htm')" />
-                <input type="text" id="ajaxanswer" name="ajaxanswer" value="" />
-            </td>
-		</tr>
-		<script type="text/javascript">
-	$(document).ready(function() {
-		$("#ajaxanswer").blur(function(){
-		var ajaxanswerValue = "$appServer.get('/checkcode/check.json?token=')" + $("#ajaxanswer").val();
-		alert(ajaxanswerValue);
-		jQuery.getJSON(ajaxanswerValue,
-			function(data){
-				alert(data);
-			}); 
-		});
-	})
-</script>
-		<tr>
             <th><span class="required">*</span>提交验证：</th>
             <td>
                 <img src="$appServer.get('/checkcode/arithmetic.htm')" />
                 #springBind("answer")
-                <input type="text" id="answer" name="${answer}" value="" />
+                <input type="text" id="answer" name="answer"/>
 				<label class="error">${status.errorMessage}</label>
             </td>
 		</tr>
 		<tr>	
             <th>
-                <input type="submit" value="登录" />
+                <input type="submit" value="登录"  />
             </th>
         </tr>
     </table>
 </form>
+<script type="application/javascript">
+    function show(){
+        alert($('#answer').eq(0).val());
+    }
+</script>

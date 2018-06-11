@@ -26,4 +26,12 @@ public interface UserService {
 	 */
 	public User getUserByNamePasswd(String realName, String password);
 
+	/**
+	 * 校验验证码
+	 * @param user
+	 * @param token
+	 * @return
+	 */
+	public boolean arithmeticCheck(User user, String token);
+
 }

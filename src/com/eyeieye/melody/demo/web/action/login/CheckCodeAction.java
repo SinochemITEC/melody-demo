@@ -34,9 +34,9 @@ import com.eyeieye.melody.util.captcha.FixedWordRenderer;
 import com.eyeieye.melody.web.util.ResponseUtil;
 
 /**
- * 
+ *
  * @author fish
- * 
+ *
  */
 @Controller
 @RequestMapping("/checkcode")
@@ -45,12 +45,6 @@ public class CheckCodeAction {
 	@Autowired
 	private URLBroker mailServer;
 
-	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String test(){
-		System.out.println(mailServer.get("123.htm").toString());
-		return "/dir_url/introduce";
-	}
-
 
 	private static final List<Font> englishFonts = Arrays.asList(new Font(
 			"Lucida Sans", Font.ITALIC, 55), new Font("SansSerif", Font.ITALIC,
@@ -58,8 +52,8 @@ public class CheckCodeAction {
 
 	/**
 	 * 检查验证码，ajax检查
-	 * 
-	 * @param userAgent
+	 *
+	 * @param user
 	 * @param token
 	 * @return
 	 */
