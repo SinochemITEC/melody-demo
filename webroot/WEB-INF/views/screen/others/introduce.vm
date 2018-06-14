@@ -54,7 +54,53 @@
 </details>
 <details open>
     <summary>
-        <h><font size="5px">文件上传和下载</font></h>
+        <h><font size="5px">Velocity的页面cache</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        如果想cache页面中的某段,则需要用 &#35;cache() .... &#35;end　包含需要cache的部分
+        如:<br/>
+        &#35;cache()<br/>
+        我是被cache的<br/>
+        &#35;end<br/>
+        这样的方式中,存放于cache中的key由模板名称,当前所在的行,列数自动生成,如果需要直接指定key名称,则:<br/>
+        &#35;cache('demo.cache.key')<br/>
+        我也是被cache的<br/>
+        &#35;end<br/>
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">页面统计工具</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        <li>页面统计工具可以记录服务器启动以来的页面访问数据，其提供四个数据，分别是'总输出数据量(KB)'，'总执行次数'，'平均输出数据量(KB)'和'最大输出数据(KB)'  <br/>
+        使用方法为，使用通过注入的方式获得ResponseOutputBufferFilter的对象，然后使用getReport()方法即可获得OutputReport对象。</li>
+        <li>示例：</li>
+        <a href="$appServer.get('/report/output.htm')">统计记录</a><br/>
+    </div>
+</details>
+
+
+<details open>
+    <summary>
+        <h><font size="5px">权限控制</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        <li>权限控制可以通过@AdminAccess注解进行设置，具体拦截逻辑需要在Interceptor类中进行设置。<br/>
+        以本demo为例，在本例中以AdministerAgent作为用户登录标识，其中存储了用户权限信息。<br/>
+        AdminAuthorityHandlerInterceptor类实现了AnnotationMethodHandlerInterceptorAdapter接口，
+        在其逻辑中，添加了@AdminAccess注解的action方法只有登陆用户可以访问，同时，@AdminAccess中可以添加参数，
+        参数类型为枚举类，参数值为具体权限，添加了具体权限的方法，至少拥有一个权限的用户才能访问。</li><br/>
+        <li>示例：</li>
+        <a href="$appServer.get('/access/testPage.htm')"></a>
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">修改cookie</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">

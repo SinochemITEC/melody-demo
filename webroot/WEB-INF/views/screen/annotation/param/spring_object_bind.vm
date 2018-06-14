@@ -1,13 +1,13 @@
 <form action="$appServer.get('/annotation/param/spring_object_bind.htm')" method="post">
     <label>姓名：</label>
     #springBind("west.name")
-    <input id="name" type="text" value=""/>
+    <input id="name" type="text" name="${status.expression}" value=""/>
     <label>昵称：</label>
     #springBind("west.nick")
-    <input id="nick" type="text" value=""/>
+    <input id="nick" type="text" name="${status.expression}"  value=""/>
     <label>年龄：</label>
     #springBind("west.age")
-    <input id="west" type="text" value=""/>
+    <input id="west" type="text" name="${status.expression}"  value=""/>
     <input type="submit" value="提交"/>
 </form>
 
@@ -15,5 +15,3 @@
 名字:${west.name}<br/>
 称呼:${west.nick}<br/>
 年龄:${west.age}<br/>
-
-##TODO 传不过去

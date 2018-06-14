@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.ServletWebRequest;
 
@@ -18,13 +19,18 @@ import com.eyeieye.melody.demo.enums.FunctionsEnum;
  * @author fish
  * 
  */
+@Component
 public class AdminAuthorityHandlerInterceptor extends AnnotationMethodHandlerInterceptorAdapter {
 
 	private static final Integer placeholder = Integer.valueOf(0);
 
 	@Override
 	public void preInvoke(Method handlerMethod, Object handler, ServletWebRequest webRequest) {
-		AdministerAgent agent = (AdministerAgent) webRequest.getAttribute(AdministerAgent.AdministerTag, RequestAttributes.SCOPE_REQUEST);
+	    Object agentObj = webRequest.getAttribute(AdministerAgent.AdministerTag, RequestAttributes.SCOPE_REQUEST);
+        AdministerAgent agent = null;
+	    if(agentObj != null) {
+            agent = (AdministerAgent)agentObj;
+        }
 		if (!pass(agent, handlerMethod, handler)) {
 			throw new AdminAccessDeniedException();
 			// 到异常控制类中去处理

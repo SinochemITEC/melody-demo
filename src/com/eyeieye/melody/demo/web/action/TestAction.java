@@ -16,4 +16,9 @@ public class TestAction {
         System.out.println(mailServer.get("123.htm").toString());
         return "/dir_url/introduce";
     }
+
+    public static void main(String[] args) {
+        System.out.println(-6 << 1);
+    }
+
 }

@@ -39,19 +39,21 @@ public class UserLoginoutAction {
 
 	@RequestMapping(value = "/login.htm", method = POST)
 	public String login(@ModelAttribute("user") User user,
-                        @ModelAttribute("answer") String answer,
+                        String answer,
 			            BindingResult result,
                         HttpSession session,
-                        HttpServletRequest httpServletRequest
+                        HttpServletRequest httpServletRequest,
+						ModelMap modelMap
 			            ) {
 		loginValidator.validate(user, result);
 
 
-		//TODO answer取不到，但是在httpServletRequest中可以取到
-		/*if(!userService.arithmeticCheck(user,answer)){
-		    result.rejectValue("answer","Check Code Error");
+		//FIXME 用springbind的话answer取不到，但是在httpServletRequest中可以取到
+		if(!userService.arithmeticCheck(user,answer)){
+			modelMap.put("checkCodeErr","验证码错误");
+			return "login/login";
         }
-        */
+
 		// 错误回显
 		if (result.hasErrors()) {
 			return "login/login";

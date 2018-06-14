@@ -19,7 +19,7 @@
     我的名字是$!my_name<br/><br/>
     <li>put方法</li>
     contain也买你的时候可以在get后使用put方法， 其效果与\$request.setAttribute()相同。例如：<br/><br/>
-    \$contain.get('/widget/show_name.htm') .put('my_name','morpheus')<br/> ##FIXME 为什么这里去掉空格后面就会出问题？
+    \$contain.get('/widget/show_name.htm') .put('my_name','morpheus')<br/>
     \$contain.get('/widget/show_name.htm')<br/><br/>
     效果：<br/>
     $contain.get('/widget/show_name.htm').put('my_name','morpheus')

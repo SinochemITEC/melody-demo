@@ -39,7 +39,7 @@
     <br/>
     <div style="margin-left: 5%;">
         <li>将参数名和参数值拼接成json发送到服务器，action的方法会自动接收到参数并封装到方法的参数中</li>
-        <a href="$appServer.get('annotation/param/spring_object_bind.htm')" target="_blank">点击查看示例</a><br/>
+        <a href="$appServer.get('annotation/param/json_object_bind.htm')" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>

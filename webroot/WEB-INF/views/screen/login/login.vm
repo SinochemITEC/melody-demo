@@ -30,9 +30,9 @@ span.required {
             <th><span class="required">*</span>提交验证：</th>
             <td>
                 <img src="$appServer.get('/checkcode/arithmetic.htm')" />
-                #springBind("answer")
+
                 <input type="text" id="answer" name="answer"/>
-				<label class="error">${status.errorMessage}</label>
+				<label class="error">$!{checkCodeErr}</label>
             </td>
 		</tr>
 		<tr>	

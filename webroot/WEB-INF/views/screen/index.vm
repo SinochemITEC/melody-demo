@@ -7,19 +7,3 @@
 <a href="$appServer.get('login/introduce.htm')">表单提交和表单校验</a> <br/>
 <a href="$appServer.get('others/introduce.htm')">其他功能说明和示例</a> <br/>
 
-
-
-
-
-<a href="$appServer.get('/cache/demo.htm')">velocity页面cache</a><br/>
-
-<a href="$appServer.get('/i18n/index.htm')">国际化</a><br/>
-<hr/>
-页面输出统计：<br>
-<a href="$appServer.get('/report/output.htm')">统计</a><br/>
-<hr/>
-
-$request.setAttribute('page_no_cache','true')<br/>
-<hr/>
-js rsa加密例子:<a href="$appServer.get('/rsa.htm')">点我</a>
-

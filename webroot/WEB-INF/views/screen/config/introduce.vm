@@ -1,3 +1,4 @@
+
 <h><font size="6px">配置文件说明和示例</font></h>
 <br/>
 系统使用配置文件进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties。<br/>
@@ -17,5 +18,5 @@ system.devMode=true
 template.load.charset=GBK
 web.encoding=GBK
 </xmp><br/>
-参数的具体解释： <br/>
+参数的具体解释： <br/><br/>
 $contain.get("/config/properties/list.htm")

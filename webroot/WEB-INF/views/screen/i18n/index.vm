@@ -23,7 +23,7 @@ vm上国际化有两种方法:<br/>
 
 <script>
     function switchLanguage(lang)  {
-        document.cookie= "_l_="+lang+";domain=.mycrudeoil.com;path=/;";
+        document.cookie= "_l_="+lang+";domain=127.0.0.1;path=/;";
         window.location.reload();
     }
 </script>

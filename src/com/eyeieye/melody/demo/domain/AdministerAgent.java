@@ -3,6 +3,7 @@ package com.eyeieye.melody.demo.domain;
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.List;
+import java.util.Random;
 
 import com.eyeieye.melody.demo.enums.FunctionsEnum;
 
@@ -27,6 +28,7 @@ public class AdministerAgent implements Serializable {
 
 	public AdministerAgent() {
 		super();
+		//functions = new BigInteger("0");
 	}
 
 	public AdministerAgent(Administer admin) {
@@ -71,6 +73,10 @@ public class AdministerAgent implements Serializable {
 			this.functions = new BigInteger("0");
 		}
 		this.functions = this.functions.setBit(pos);
+	}
+
+	public void clearFunctions(){
+		this.functions = new BigInteger("0");
 	}
 
 	public String getLoginId() {
