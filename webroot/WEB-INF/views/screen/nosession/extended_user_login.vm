@@ -1,0 +1,10 @@
+<form action="$appServer.get('/login/extended_user_login.htm')" method="post">
+<li><input type="submit" value="登录一个测试用户"></li>
+</form>
+<li>ExtendedUser中的数据</li>
+ExtendedUser.User.realName：$!{exUser.user.realName} <br/>
+ExtendedUser.User.age：$!{exUser.user.age}<br/>
+ExtednedUser.extendAttributes：<br/>
+#foreach($attr in $exUser.extendAttributes)
+    <div>信息${velocityCount}：$!{attr}</div>
+#end

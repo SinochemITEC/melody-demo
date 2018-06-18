@@ -1,0 +1,11 @@
+<ul class="demo-ul-paragraph">
+有时服务器需要用到一些信息，但是这些信息数量较多不适合存储在cookie中，这时可以通过cookie的拓展进行实现。使用cookie的拓展的方法如下：
+    <li>1、建立拓展类</li>
+    以User类为例，通过编写一个包含User的拓展类，，在该类中添加需要拓展的成员变量或方法。
+    <li>2、修改Interceptor类</li>
+    通过分别实现AnnotationMethodHandlerInterceptorAdapter和WebArgumentResolver两个接口，可以在指定的action上将User对象转换为拓展对象。
+    <li>3、在对应的action中添加写入缓存的方法</li>
+    如在login时，将User的拓展类内容写入缓存，实现一次写入多次读取。
+    <li>4、在需要的action上添加注解，将拓展类注入到参数中。</li>
+    <li><a href="$appServer.get('/login/extended_user_login.htm')">示例</a></li>
+</ul>

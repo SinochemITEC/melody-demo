@@ -98,14 +98,5 @@
         <a href="$appServer.get('/access/testPage.htm')"></a>
     </div>
 </details>
-<details open>
-    <summary>
-        <h><font size="5px">ÐÞ¸Äcookie</font></h>
-    </summary>
-    <br/>
-    <div style="margin-left: 5%;">
-
-    </div>
-</details>
 
 

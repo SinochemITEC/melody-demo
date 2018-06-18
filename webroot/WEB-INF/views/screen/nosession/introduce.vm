@@ -14,6 +14,15 @@ NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以
 </details>
 <details open>
     <summary>
+        <h><font size="5px">cookie的拓展</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("extends.htm")
+    </div>
+</details>
+<details open>
+    <summary>
         <h><font size="5px">示例</font></h>
     </summary>
     <br/>

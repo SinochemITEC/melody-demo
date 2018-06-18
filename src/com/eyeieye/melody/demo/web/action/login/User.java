@@ -1,5 +1,7 @@
 package com.eyeieye.melody.demo.web.action.login;
 
+import com.eyeieye.melody.demo.util.util.MD5Encode;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -13,6 +15,7 @@ public class User implements Serializable {
 
 	public static final String NAME = "user";
 
+	private String uuid="";
 	private String realName;
 	private Date birthday;
 	private Integer age;
@@ -74,7 +77,18 @@ public class User implements Serializable {
 	}
 
 	public void setAge(Integer age) {
-		this.age = age;
+	this.age = age;
 	}
 
+	public String getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
+
+	public void updateUuid() throws Exception {
+		this.uuid = MD5Encode.encode(realName+new Date().getTime());
+    }
 }

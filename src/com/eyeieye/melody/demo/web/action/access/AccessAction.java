@@ -65,10 +65,7 @@ public class AccessAction {
         agent.setLoginId("" + new Random().nextInt(10000));
         agent.setFunctions(4);
         session.setAttribute(AdministerAgent.AdministerTag, agent);
-
-
         return "redirect:/access/testPage.htm";
-
     }
 
     @RequestMapping(value = "logout.htm", method = RequestMethod.GET)

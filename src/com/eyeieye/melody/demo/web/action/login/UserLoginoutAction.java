@@ -5,10 +5,13 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 import java.net.InetAddress;
 import java.util.Date;
+import java.util.Random;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.eyeieye.melody.demo.cache.CacheManager;
+import com.eyeieye.melody.web.url.URLBroker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -123,5 +126,44 @@ public class UserLoginoutAction {
         }
         return ip;
     }
+
+    @RequestMapping(value = "extended_user_login.htm",method = GET)
+	@Extended
+	public String exLoginPage(ExtendedUser exUser,ModelMap modelMap){
+    	modelMap.put("exUser",exUser);
+    	return "/nosession/extended_user_login";
+	}
+
+	@Autowired
+	private CacheManager<ExtendedUserCacheEntry> cacheManager;
+    @Autowired
+	private URLBroker appServerBroker;
+
+	@RequestMapping(value = "extended_user_login.htm",method = POST)
+	public String exLogin(HttpSession httpSession){
+
+		User user = new User();
+		user.setRealName("TestUser");
+		user.setAge(new Random().nextInt(20)+10);
+		try {
+			user.updateUuid();
+		} catch (Exception e) {
+			return "/nosession/extended_user_login";
+		}
+		httpSession.setAttribute(User.NAME,user);
+
+		ExtendedUser exUser = new ExtendedUser();
+		exUser.setUser(user);
+		exUser.addExtendAttribute("Extend message 1");
+		exUser.addExtendAttribute("Extend message 2");
+
+		ExtendedUserCacheEntry extendedUserCacheEntry = new ExtendedUserCacheEntry();
+		extendedUserCacheEntry.setExtendedUser(exUser);
+
+		cacheManager.add(ExtendedUserCacheEntry.class.getName(),extendedUserCacheEntry);
+
+		return "redirect:"+appServerBroker.get("/login/extended_user_login.htm");
+	}
+
 
 }
