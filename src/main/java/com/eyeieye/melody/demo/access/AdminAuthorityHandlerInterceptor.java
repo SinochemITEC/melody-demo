@@ -26,7 +26,7 @@ public class AdminAuthorityHandlerInterceptor extends AnnotationMethodHandlerInt
 
 	@Override
 	public void preInvoke(Method handlerMethod, Object handler, ServletWebRequest webRequest) {
-	    Object agentObj = webRequest.getAttribute(AdministerAgent.AdministerTag, RequestAttributes.SCOPE_REQUEST);
+	    Object agentObj = webRequest.getAttribute(AdministerAgent.AdministerTag, RequestAttributes.SCOPE_SESSION);
         AdministerAgent agent = null;
 	    if(agentObj != null) {
             agent = (AdministerAgent)agentObj;

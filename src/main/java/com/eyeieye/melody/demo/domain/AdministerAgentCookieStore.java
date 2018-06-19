@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component
-public class AdminsterAgentCookieStore implements AttributeCookieStore, InitializingBean {
+public class AdministerAgentCookieStore implements AttributeCookieStore, InitializingBean {
     @Autowired
     private Encode encode;
 

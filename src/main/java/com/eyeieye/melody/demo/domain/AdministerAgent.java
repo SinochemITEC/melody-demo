@@ -20,7 +20,7 @@ public class AdministerAgent implements Serializable {
 	 */
 	private static final long serialVersionUID = 9163698778206514702L;
 
-	public static final String AdministerTag = "administerAgent";
+	public static final String AdministerTag = "_administerAgent";
 
 	private String loginId;
 

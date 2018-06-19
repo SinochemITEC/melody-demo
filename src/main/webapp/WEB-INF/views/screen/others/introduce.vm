@@ -95,7 +95,7 @@
         在其逻辑中，添加了@AdminAccess注解的action方法只有登陆用户可以访问，同时，@AdminAccess中可以添加参数，
         参数类型为枚举类，参数值为具体权限，添加了具体权限的方法，至少拥有一个权限的用户才能访问。</li><br/>
         <li>示例：</li>
-        <a href="$appServer.get('/access/testPage.htm')"></a>
+        <a href="$appServer.get('/access/testPage.htm')">示例</a>
     </div>
 </details>
 
