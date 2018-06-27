@@ -1,11 +1,19 @@
 <head>
     <title>øÚº‹ΩÈ…‹#if($title)-${title}#end</title>
     #set($bigpipe = $imageServer.get('script/bigpipe.js'))
-    #set($jquery_min = $imageServer.get('script/jquery-1.4.2.min.js'))
+    #set($jquery_min = $imageServer.get('script/jquery-1.8.3.min.js'))
     #set($privateCss = $imageServer.get('script/private.css'))
+    #set($commonCss = $imageServer.get('css/common.css'))
+    #set($styleCss = $imageServer.get('fonts/wikifonts/style.css'))
+    #set($melodyCss = $imageServer.get('css/melody.css'))
+    #set($ieCss = $imageServer.get('css/ie.css'))
+
 
     #js($bigpipe)
     #js($jquery_min)
-
     #css($privateCss)
+    #css($commonCss)
+    #css($styleCss)
+    #css($melodyCss)
+    #css($ieCss)
 </head>

@@ -1,0 +1,25 @@
+<div class="melody-d-side">
+    <ul class="melody-d-menu">
+        <li class="md-menu-item cur">
+            <a class="menu-item-a" href="$appServer.get('config/introduce.htm')">配置文件说明和示例<i class="icon-light"></i></a>
+        </li>
+        <li class="md-menu-item">
+            <a class="menu-item-a" href="$appServer.get('dir_url/introduce.htm')">目录结构说明和示例<i class="icon-light"></i></a>
+        </li>
+        <li class="md-menu-item">
+            <a class="menu-item-a" href="$appServer.get('webpages/introduce.htm')">页面制作说明和示例<i class="icon-light"></i></a>
+        </li>
+        <li class="md-menu-item">
+            <a class="menu-item-a" href="$appServer.get('annotation/introduce.htm')">传参、返回值说明和示例<i class="icon-light"></i></a>
+        </li>
+        <li class="md-menu-item">
+            <a class="menu-item-a" href="$appServer.get('nosession/introduce.htm')">nosession技术<i class="icon-light"></i></a>
+        </li>
+        <li class="md-menu-item">
+            <a class="menu-item-a" href="$appServer.get('login/introduce.htm')">表单提交和表单校验<i class="icon-light"></i></a>
+        </li>
+        <li class="md-menu-item">
+            <a class="menu-item-a" href="$appServer.get('others/introduce.htm')">其他功能说明和示例<i class="icon-light"></i></a>
+        </li>
+    </ul>
+</div>

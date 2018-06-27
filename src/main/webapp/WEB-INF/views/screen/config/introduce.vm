@@ -1,22 +1,11 @@
-
-<h><font size="6px">配置文件说明和示例</font></h>
-<br/>
-系统使用配置文件进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties。<br/>
-通过配置web.xml文件可以设定指定的配置文件路径：<br/>
-<xmp>
-<context-param>
-    <param-name>melodyConfigLocation</param-name>
-    <param-value>/WEB-INF/conf/play.properties</param-value>
-</context-param></xmp><br/>
-我们这里指定了play.properties为默认的配置文件路径。<br/><br/>
-配置文件中至少配置如下参数即可启动一个项目：<br/>
-<xmp>
-app.server.host=127.0.0.1
-app.server.port=8081
-melody.action.scan=com.eyeieye.melody.demo.web
-system.devMode=true
-template.load.charset=GBK
-web.encoding=GBK
-</xmp><br/>
+<h2 class="melody-d-title">配置文件说明和示例</h2>
+<p>系统使用配置文件进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties.
+通过配置web.xml文件可以设定制定的配置文件路径：</p>
+<p>&lt;context-param&gt;<br>&lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;<br>&lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;<br>&lt;context-param&gt;
+</p>
+<p>我们这里制定了play.properties为默认的配置文件路径。
+配置文件中至少配置如下参数即可启动一个项目：</p>
+<p>app.server.host=127.0.0,1<br>app.server.port=8081<br>
+    melody.acyion.scan=com.eye.melody.demo.web<br>system.load.charset=UTF-8<br>web.encoding=GBK</p>
 参数的具体解释： <br/><br/>
 $contain.get("/config/properties/list.htm")

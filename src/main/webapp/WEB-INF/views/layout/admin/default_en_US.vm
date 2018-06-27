@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	$contain.get('/contain/htmlhead.htm').put('title',$title)
 	<body>
-		ÎÒÊÇÓ¢ÎÄ°æµÄÀÛ
+		æˆ‘æ˜¯è‹±æ–‡ç‰ˆçš„ç´¯
 		<br/>
 		$contain.get('/contain/admin_header.htm')
 		<hr/>

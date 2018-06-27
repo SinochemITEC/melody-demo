@@ -70,5 +70,5 @@ URLBrokerÊÇÒ»¸ö¹¤¾ßÀà£¬»á¸ù¾İ¶ÔÏóÃû×Ô¶¯×¢ÈëÅäÖÃÎÄ¼şÖĞÅäÖÃµÄµØÖ·£¬Ò»°ãÓÃÓÚ¿ìËÙ»ñµ
 melodyÖĞÒÑ¾­´æÔÚËÄ¸öURLBroker¶ÔÏó£¬·Ö±ğÎª£º<br/>
 appServer:Ò»°ãÅäÖÃÎª±¾ÏîÄ¿×ÔÉíµÄurlµØÖ·<br/>
 sslAppServer:appServerµÄhttpsĞ­ÒéµØÖ·<br/>
-imageServer:<br/>
-uploadServer:<br/>
+imageServer:¾²Ì¬ÎÄ¼ş·şÎñÆ÷<br/>
+uploadServer:ÉÏ´«ÎÄ¼ş·şÎñÆ÷<br/>

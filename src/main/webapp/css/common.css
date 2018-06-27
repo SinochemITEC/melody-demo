@@ -1,0 +1,44 @@
+/** 初始化 **/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,th,td,form,pre{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a:active,a:hover{outline:0}
+img{display:inline-block;border:none;vertical-align:middle;}
+li{list-style:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+table{border-collapse:collapse;border-spacing:0;box-sizing:border-box;}
+h1,h2,h3{font-weight:400;}
+h4,h5,h6{font-size:100%;font-weight:400;}
+button,input,select,textarea{font-size:100%;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;outline:0;}
+pre{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;}
+textarea{overflow:auto;resize:none;}
+
+/*引入字体*/
+@font-face{font-family:fzfsjw;  
+    src:url(../fonts/fzfsjw.eot);  
+    src:local('☺'),  
+        url(../fonts/fzfsjw.eot?#iefix) format('embedded-opentype'),  
+        url(../fonts/fzfsjw.woff) format('woff'),  
+        url(../fonts/fzfsjw.ttf) format('truetype'),  
+        url(../fonts/fzfsjw.svg#fzfsjw) format('svg');  font-weight:normal;font-style:normal;}
+
+/** 初始化全局标签 **/
+html{font-size:calc(112.5% + 4 / 400 * (100vw - 600px) );}
+body{font-family:fzfsjw,FangSong;}
+hr{height:1px;margin:10px 0;border:0;clear:both;}
+a{color:#333;font-family:fzfsjw,FangSong;text-decoration:none;}
+a cite{font-style:normal;*cursor:pointer;}
+i,em{font-style:normal;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#aaa;}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#aaa;}
+input::-moz-placeholder,textarea::-moz-placeholder{color:#aaa;}
+input:-msr-input-placeholder,textarea:-msr-input-placeholder{color:#aaa;}
+::-webkit-scrollbar{width:8px;background-color:#e9edf4;}
+::-webkit-scrollbar-thumb{background-color:#ccc;border-radius:2em;-webkit-border-radius:2em;-moz-border-radius:2em;-o-border-radius:2em;}
+::-webkit-scrollbar-thumb:hover{background-color:#9bbbfa;}
+
+/*清除浮动*/
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+
+.inner{width:100%;max-width:calc(1600px + 10%);box-sizing:border-box;margin:0 auto;padding-left:5%;padding-right:5%;zoom:1;}

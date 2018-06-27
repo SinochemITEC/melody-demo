@@ -1,4 +1,9 @@
-<font color="red"> 我是页面的公用header哦</font>
+<!-- 公用的header页面 -->
+<div class="melody-detail">
+    <div class="melody-head">
+        <a href="index.html" class="logo">WIKI中化信息</a>
+        <span>Melody-demo</span>
+</div>
 <br/>
 #if($vlocale.isLocale('zh','CN'))
 <a href="$appServer/locale/change.htm?locale=en_US">to engish</a>
