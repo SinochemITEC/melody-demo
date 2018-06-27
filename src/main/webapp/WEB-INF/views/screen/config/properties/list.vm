@@ -1,294 +1,290 @@
-<style>
-    table,table tr th, table tr td { border:1px solid #0094ff; }
-    table { width: 100%; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
-</style>
-<table>
+<table class="m-table">
 
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r0'>
-        <td height=19 style='height:14.25pt;width:30%;'>配置项</td>
-        <td  style='width:20%;'>类型或取值范围</td>
-        <td  style='width:30%;'>配置项说明1</td>
-        <td style='width:20%;'>配置项说明2</td>
+    <tr style='mso-height-source:userset;' id='r0'>
+        <th style='width:30%;'>配置项</th>
+        <th style='width:20%;'>类型或取值范围</th>
+        <th style='width:30%;'>配置项说明1</th>
+        <th style='width:20%;'>配置项说明2</th>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r1'>
-        <td height=19 style='height:14.25pt;'>web.encoding</td>
+    <tr style='mso-height-source:userset;' id='r1'>
+        <td>web.encoding</td>
         <td>String</td>
         <td>项目的编码格式，默认为UTF-8</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r2'>
-        <td height=19 style='height:14.25pt;'>template.resource.loader.path</td>
+    <tr style='mso-height-source:userset;' id='r2'>
+        <td>template.resource.loader.path</td>
         <td>String</td>
         <td>velocity的获取地址，默认为WEB-INF/views</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r3'>
-        <td height=19 style='height:14.25pt;'>velocity.onfigurerloader.path</td>
+    <tr style='mso-height-source:userset;' id='r3'>
+        <td>velocity.onfigurerloader.path</td>
         <td>String</td>
         <td>velocity的properties获取地址</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r4'>
-        <td height=19 style='height:14.25pt;'>template.load.charset</td>
+    <tr style='mso-height-source:userset;' id='r4'>
+        <td>template.load.charset</td>
         <td>String</td>
         <td>velocity的模板编码格式，默认为UTF-8</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r5'>
-        <td height=19 style='height:14.25pt;'>system.devMode</td>
+    <tr style='mso-height-source:userset;' id='r5'>
+        <td>system.devMode</td>
         <td>[true,false]</td>
         <td>开发模式,默认为false,开启则启动一些日志,和调试选项.</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r6'>
-        <td height=19 style='height:14.25pt;'>velocity.velocimacro.library</td>
+    <tr style='mso-height-source:userset;' id='r6'>
+        <td>velocity.velocimacro.library</td>
         <td>String</td>
         <td>velocity自定义marco的位置marco.vm文件，未配置则使用自带的文件</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r7'>
-        <td height=19 style='height:14.25pt;'>velocity.user.directive</td>
+    <tr style='mso-height-source:userset;' id='r7'>
+        <td>velocity.user.directive</td>
         <td>String</td>
         <td>velocity自定义命令(class)的位置</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r8'>
-        <td height=19 style='height:14.25pt;'>velocity.eventhandler.invalidreferences.class</td>
+    <tr style='mso-height-source:userset;' id='r8'>
+        <td>velocity.eventhandler.invalidreferences.class</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r9'>
-        <td height=19 style='height:14.25pt;'>velocity.eventhandler.referenceinsertion.class</td>
+    <tr style='mso-height-source:userset;' id='r9'>
+        <td>velocity.eventhandler.referenceinsertion.class</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r10'>
-        <td height=19 style='height:14.25pt;'>velocity.eventhandler.nullset.class</td>
+    <tr style='mso-height-source:userset;' id='r10'>
+        <td>velocity.eventhandler.nullset.class</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r11'>
-        <td height=19 style='height:14.25pt;'>velocity.layout.url</td>
+    <tr style='mso-height-source:userset;' id='r11'>
+        <td>velocity.layout.url</td>
         <td>String</td>
         <td>velocity的布局文件位置,默认为layout/default.vm，对应views/layout</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r12'>
-        <td height=19 style='height:14.25pt;'>toolbox.xml.path</td>
+    <tr style='mso-height-source:userset;' id='r12'>
+        <td>toolbox.xml.path</td>
         <td>String</td>
         <td>velocity的toolbox配置文件地址，默认为WEB-INF/conf/vm-toolbox.xml</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r13'>
-        <td height=19 style='height:14.25pt;'>web.vaild</td>
+    <tr style='mso-height-source:userset;' id='r13'>
+        <td>web.vaild</td>
         <td>[true,false]</td>
         <td>是否启用web校验,默认false</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r14'>
-        <td height=19 style='height:14.25pt;'>use.default.suffix.pattern</td>
+    <tr style='mso-height-source:userset;' id='r14'>
+        <td>use.default.suffix.pattern</td>
         <td>[true,false]</td>
         <td>使用默认的模版文件后缀，默认为true</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r15'>
-        <td height=19 style='height:14.25pt;'>melody.action.scan</td>
+    <tr style='mso-height-source:userset;' id='r15'>
+        <td>melody.action.scan</td>
         <td>String</td>
         <td>controller的包扫描地址</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r16'>
-        <td height=19 style='height:14.25pt;'>velocity.in.jar.files</td>
+    <tr style='mso-height-source:userset;' id='r16'>
+        <td>velocity.in.jar.files</td>
         <td>String</td>
         <td>??</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r17'>
-        <td height=19 style='height:14.25pt;'>velocity.locale.country</td>
+    <tr style='mso-height-source:userset;' id='r17'>
+        <td>velocity.locale.country</td>
         <td>[true,false]</td>
         <td>是否使用velocity模板的国际化配置,国家的配置，默认为true</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r18'>
-        <td height=19 style='height:14.25pt;'>velocity.locale.language</td>
+    <tr style='mso-height-source:userset;' id='r18'>
+        <td>velocity.locale.language</td>
         <td>[true,false]</td>
         <td>是否使用velocity模板的国际化配置,语言，默认为true</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r19'>
-        <td height=19 style='height:14.25pt;'>velocity.locale.language.first</td>
+    <tr style='mso-height-source:userset;' id='r19'>
+        <td>velocity.locale.language.first</td>
         <td>[true,false]</td>
         <td>velocity模板的国际化配置,语言在前，默认为true</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r20'>
-        <td height=19 style='height:14.25pt;'>validation.message.bean.name</td>
+    <tr style='mso-height-source:userset;' id='r20'>
+        <td>validation.message.bean.name</td>
         <td>String</td>
         <td>校验消息类的名称，默认为空</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r22'>
-        <td height=19 style='height:14.25pt;'>performance.monitor.threshold</td>
+    <tr style='mso-height-source:userset;' id='r22'>
+        <td>performance.monitor.threshold</td>
         <td>Integer</td>
         <td>行为监控的时间阈值，超过该阈值的request将会被记录下来，单位为毫秒，默认为100</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r24'>
-        <td height=19 style='height:14.25pt;'>session.max.inacterval</td>
+    <tr style='mso-height-source:userset;' id='r24'>
+        <td>session.max.inacterval</td>
         <td>Integer</td>
         <td>session的过期时间设置,单位为秒，默认为-1，即关闭浏览器session过期</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r25'>
-        <td height=19 style='height:14.25pt;'>session.meta.cookie.name</td>
+    <tr style='mso-height-source:userset;' id='r25'>
+        <td>session.meta.cookie.name</td>
         <td>String</td>
         <td>session在cookie中存储的名称，默认为 _h_ </td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r26'>
-        <td height=19 style='height:14.25pt;'>session.meta.cookie.locale.name</td>
+    <tr style='mso-height-source:userset;' id='r26'>
+        <td>session.meta.cookie.locale.name</td>
         <td>String</td>
         <td>用于存储locale信息的session在cookie中存储的名称，默认为 _l_ </td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r27'>
-        <td height=19 style='height:14.25pt;'>session.meta.cookie.domain</td>
+    <tr style='mso-height-source:userset;' id='r27'>
+        <td>session.meta.cookie.domain</td>
         <td>String</td>
         <td>session在cookie中的域名如.baidu.com前面一定要有点，默认为app.server.host</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r28'>
-        <td height=19 style='height:14.25pt;'>cookies.max.length</td>
+    <tr style='mso-height-source:userset;' id='r28'>
+        <td>cookies.max.length</td>
         <td>Integer</td>
         <td>cookie的最大长度，默认为4095</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r29'>
-        <td height=19 style='height:14.25pt;'>cookies.max.count</td>
+    <tr style='mso-height-source:userset;' id='r29'>
+        <td>cookies.max.count</td>
         <td>Integer</td>
         <td>cookie的最大个数，默认为1</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r30'>
-        <td height=19 style='height:14.25pt;'>suportAsync.onoff</td>
+    <tr style='mso-height-source:userset;' id='r30'>
+        <td>suportAsync.onoff</td>
         <td>[true,false]</td>
         <td>开启异步加载，默认为true</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r31'>
-        <td height=19 style='height:14.25pt;'>app.server.host</td>
+    <tr style='mso-height-source:userset;' id='r31'>
+        <td>app.server.host</td>
         <td>String</td>
         <td>appeserver的域名</td>
         <td rowspan=5 height=95 class=x21 style='height:71.25pt;'>appServer一般用来做服务器内部跳转,链接等</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r32'>
-        <td height=19 style='height:14.25pt;'>app.server.port</td>
+    <tr style='mso-height-source:userset;' id='r32'>
+        <td>app.server.port</td>
         <td>Integer</td>
         <td>appServer的端口,默认80</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r33'>
-        <td height=19 style='height:14.25pt;'>app.server.protocol</td>
+    <tr style='mso-height-source:userset;' id='r33'>
+        <td>app.server.protocol</td>
         <td>String</td>
         <td>appServer的协议,默认http</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r34'>
-        <td height=19 style='height:14.25pt;'>app.server.path</td>
+    <tr style='mso-height-source:userset;' id='r34'>
+        <td>app.server.path</td>
         <td>String</td>
         <td>appServer的路径,默认/</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r35'>
-        <td height=19 style='height:14.25pt;'>app.server.followContextPath</td>
+    <tr style='mso-height-source:userset;' id='r35'>
+        <td>app.server.followContextPath</td>
         <td>[true,false]</td>
         <td>appServer是否使用ContextPath，默认为false</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r36'>
-        <td height=19 style='height:14.25pt;'>image.server.host</td>
+    <tr style='mso-height-source:userset;' id='r36'>
+        <td>image.server.host</td>
         <td>String</td>
         <td>imageServer的域名，默认为${app.server.host}</td>
         <td rowspan=5 height=95 class=x21 style='height:71.25pt;'>imageServer用来获取静态文件,如js,css ,jpg,png等文件</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r37'>
-        <td height=19 style='height:14.25pt;'>image.server.port</td>
+    <tr style='mso-height-source:userset;' id='r37'>
+        <td>image.server.port</td>
         <td>Integer</td>
         <td>imageServer的端口,默认80</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r38'>
-        <td height=19 style='height:14.25pt;'>image.server.protocol</td>
+    <tr style='mso-height-source:userset;' id='r38'>
+        <td>image.server.protocol</td>
         <td>String</td>
         <td>imageServer的协议,默认http</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r39'>
-        <td height=19 style='height:14.25pt;'>image.server.path</td>
+    <tr style='mso-height-source:userset;' id='r39'>
+        <td>image.server.path</td>
         <td>String</td>
         <td>imageServer的路径,默认/</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r40'>
-        <td height=19 style='height:14.25pt;'>image.server.followContextPath</td>
+    <tr style='mso-height-source:userset;' id='r40'>
+        <td>image.server.followContextPath</td>
         <td>[true,false]</td>
         <td>imageServer是否使用ContextPath，默认为false</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r41'>
-        <td height=19 style='height:14.25pt;'>upload.server.host</td>
+    <tr style='mso-height-source:userset;' id='r41'>
+        <td>upload.server.host</td>
         <td>String</td>
         <td>uploadServer的域名，默认为${app.server.host}</td>
         <td rowspan=4 height=76 class=x21 style='height:57pt;'>uploadServer用来获取上传的图片,或者指向上传服务器的地址</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r42'>
-        <td height=19 style='height:14.25pt;'>upload.server.port</td>
+    <tr style='mso-height-source:userset;' id='r42'>
+        <td>upload.server.port</td>
         <td>Integer</td>
         <td>uploadServer的端口,默认80</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r43'>
-        <td height=19 style='height:14.25pt;'>upload.server.protocol</td>
+    <tr style='mso-height-source:userset;' id='r43'>
+        <td>upload.server.protocol</td>
         <td>String</td>
         <td>uploadServer的协议,默认http</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r44'>
-        <td height=19 style='height:14.25pt;'>upload.server.path</td>
+    <tr style='mso-height-source:userset;' id='r44'>
+        <td>upload.server.path</td>
         <td>String</td>
         <td>uploadServer的路径,默认/</td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r45'>
-        <td height=19 style='height:14.25pt;'>httpclient.max.total</td>
+    <tr style='mso-height-source:userset;' id='r45'>
+        <td>httpclient.max.total</td>
         <td>String</td>
         <td>httpclient的最大链接数，默认为200</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r46'>
-        <td height=19 style='height:14.25pt;'>httpclient.max.per.route</td>
+    <tr style='mso-height-source:userset;' id='r46'>
+        <td>httpclient.max.per.route</td>
         <td>Integer</td>
         <td>每一个路由的最大连接数，默认为50</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r47'>
-        <td height=19 style='height:14.25pt;'>httpclient.socket.timeout</td>
+    <tr style='mso-height-source:userset;' id='r47'>
+        <td>httpclient.socket.timeout</td>
         <td>Integer</td>
         <td>httpclient的超时时间，单位毫秒，默认3000</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r48'>
-        <td height=19 style='height:14.25pt;'>httpclient.connection.timeout</td>
+    <tr style='mso-height-source:userset;' id='r48'>
+        <td>httpclient.connection.timeout</td>
         <td>Integer</td>
         <td>http连接的过期时间，单位毫秒，默认3000</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r49'>
-        <td height=19 style='height:14.25pt;'>httpclient.connection.request.timeout</td>
+    <tr style='mso-height-source:userset;' id='r49'>
+        <td>httpclient.connection.request.timeout</td>
         <td>Integer</td>
         <td>http连接的每个请求过期时间，单位毫秒，默认5000</td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r51'>
-        <td height=19 style='height:14.25pt;'>support.locales</td>
+    <tr style='mso-height-source:userset;' id='r51'>
+        <td>support.locales</td>
         <td>String[]</td>
         <td>支持的地域，默认 zh_CN,en_US </td>
         <td></td>
     </tr>
-    <tr height=19 style='mso-height-source:userset;height:14.25pt' id='r52'>
-        <td height=19 style='height:14.25pt;'>default.locales</td>
+    <tr style='mso-height-source:userset;' id='r52'>
+        <td>default.locales</td>
         <td>String</td>
         <td>默认地域,默认 zh_CN</td>
         <td></td>
