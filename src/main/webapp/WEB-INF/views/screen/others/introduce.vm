@@ -51,6 +51,9 @@
     <div style="margin-left: 5%;">
         国际化的语言选择通过用户的locale属性来实现，更改locale属性是需要将相应的语言加入cookie中，然后刷新页面即可。
     </div>
+    <li>示例：</li>
+    <a href="$appServer.get('/i18n/index.htm')">国际化说明示例</a>
+    <br/>
 </details>
 <details open>
     <summary>
