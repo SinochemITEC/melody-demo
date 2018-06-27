@@ -1,5 +1,4 @@
-<h><font size="6px">NoSession</font> </h><br/>
-
+<h2 class="melody-d-title">NoSession</h2>
 NoSession是为了解决微服务中session同步问题而提出的解决方案。<br/>
 NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以取得用户的session。<br/>
 

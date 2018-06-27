@@ -1,4 +1,4 @@
-
+<h2 class="melody-d-title">配置文件说明和示例</h2>
 <p>系统使用配置文件进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties.
 通过配置web.xml文件可以设定制定的配置文件路径：</p>
 <p>&lt;context-param&gt;<br>&lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;<br>&lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;<br>&lt;context-param&gt;

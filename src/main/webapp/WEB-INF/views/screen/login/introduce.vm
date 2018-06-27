@@ -1,4 +1,4 @@
-<h><font size="6px">表单提交和表单校验</font></h><br/><br/>
+<h2 class="melody-d-title">表单提交和表单校验</h2>
 这一部分使用注册、登录、验证码作为例子来讲解表单提交、表单校验。<br/><br/>
 <details open>
     <summary>
