@@ -27,7 +27,7 @@
         <li>公共参数：</li>
         ①slider_query：必要参数，入参为QueryBase的子类，一般在请求页面时初始化并传递到页面；<br/>
         ②slider_broker：非必要参数，指定路径时用于生成url的URLBroker对象，默认为\$appServer；<br/>
-        ③slider_path：非必要参数，指定vm时使用；<br/>##TODO 这个是做什么用的？
+        ③slider_path：非必要参数，指定vm时使用；<br/>
         ④slider_width：非必要参数，指定浮动窗大小，默认为5。<br/>
         <br/>
         <li>form提交分页：</li>

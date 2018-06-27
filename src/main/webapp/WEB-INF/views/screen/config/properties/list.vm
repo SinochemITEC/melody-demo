@@ -99,7 +99,7 @@
     <tr style='mso-height-source:userset;' id='r16'>
         <td>velocity.in.jar.files</td>
         <td>String</td>
-        <td>??</td>
+        <td>jar文件中的velocity模板文件位置</td>
         <td></td>
     </tr>
     <tr style='mso-height-source:userset;' id='r17'>

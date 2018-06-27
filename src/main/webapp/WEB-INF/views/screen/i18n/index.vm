@@ -1,8 +1,8 @@
 melody国际化除了action层异常信息,不使用标准java资源文件<br/>
 #if($vlocale.isLocale('zh','CN'))
-<a href="javascript:switchLanguage('zh_CN')">to engish</a>
+<a href="$appServer/locale/change.htm?locale=en_US">to engish</a>
 #else
-<a href="javascript:switchLanguage('en_US')">回中文</a>
+<a href="$appServer/locale/change.htm?locale=zh_CN">回中文</a>
 #end
 vm上国际化有两种方法:<br/>
 	1.vm本身国际化,比如 index.vm(缺省),index_zh_CN.vm(中文简体),index_zh_TW(中文繁体)<br/>
