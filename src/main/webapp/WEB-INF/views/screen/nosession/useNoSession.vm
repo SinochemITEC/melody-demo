@@ -10,19 +10,19 @@
     示例参见com.eyeieye.melody.demo.web.action.login.User类。
     <li>3、编写CookieStore类</li>
     Cookiestore类是用来配置cookie相关属性的类，其需要实现AttributeCookieStore接口，其中有8个方法需要实现，下面依次介绍：<br/><br/>
-##TODO 待完善
+    ##TODO 待完善
     public int getOrder();<br>
-    <br><br>
+    <br>加载顺序<br>
     public boolean isMatch(String key);<br>
-    <br><br>
+    <br>服务器用来抓取cookie的key值<br>
     public String getCookieName();<br>
     获取浏览器上存储此cookie的名称，直接返回String即可。<br><br>
     public Encode getEncode();<br>
     获取session存储为cookie是使用的加密方式，该方法的返回值为Encode接口的实现类。<br><br>
     public int getMaxInactiveInterval();<br>
-    <br><br>
+    <br>session有效期<br>
     public String getPath();<br>
-    <br><br>
+    <br>所在域下的path，一般为"/"<br>
     public Set&#60;String &#62; getAttributeNames();<br>
     获得此cookie对应的AttributeNames，系统将按照这里返回的所有AttributeName从Session缓存中取出session转储为cookie。<br><br>
     public String getDomain();<br>

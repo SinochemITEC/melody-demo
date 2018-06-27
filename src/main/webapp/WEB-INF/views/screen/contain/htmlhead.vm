@@ -10,7 +10,6 @@
 
     #js($bigpipe)
     #js($jquery_min)
-    #css($privateCss)
     #css($commonCss)
     #css($styleCss)
     #css($melodyCss)

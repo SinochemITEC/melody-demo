@@ -6,7 +6,7 @@
 <div class="melody-detail">
     $contain.get('/contain/header.htm')
     <div class="melody-detail-wrap">
-        $contain.get('/contain/left.htm') ##左侧栏
+        $contain.get('/contain/left.htm').put('selected',$selected) ##左侧栏
         <div class="melody-d-con">
             $screen_content
         </div>
