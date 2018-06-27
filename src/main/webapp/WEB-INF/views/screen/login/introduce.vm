@@ -8,7 +8,7 @@
     <div style="margin-left: 5%;">
         向服务器传递参数的方式前面已经介绍过了，而在表单提交方面，有以下几点需要注意：<br/>
         <li>页面上最好使用&#35;springBind的方式进行绑定，这样便于使用BindingResult进行校验和错误回显。使用方法如下例所示：</li>
-        <pre><code>
+        <pre><code class="m-xmp">
             &lt;tr&gt;
                 &lt;th&gt;年龄：&lt;/th&gt;
                 &lt;td&gt;
@@ -18,11 +18,13 @@
                 &lt;/td&gt;
             &lt;/tr&gt;</code>
         </pre>
+
         其中，<br/>&#36;springBind("user.age")是绑定语句，可以将下一个input标签的值绑定到user.age上。<br/>
         &#36;{status.expression}可以自动填入所绑定变量的变量会名，如这里会填入'age'。<br/>
         &#36;!{status.value}这个表达式在页面有传入vo对象时，会自动将变量的值填入这里。<br/>
         &#36;{status.errorMessage}服务器上校验返回的BingingResult中的错误信息会在这里显示。<br/><br/>
-        <li>另外，常用或者内容较多的表单要创建一个VO对象进行传参，这样便于维护。</li><br/>
+        <li>另外，常用或者内容较多的表单要创建一个VO对象进行传参，这样便于维护。</li>
+        <br/>
     </div>
 </details>
 
@@ -37,7 +39,8 @@
         <li>1、获得校验器，即Validator接口实现类的对象，如本例中的registerValidator。</li>
         <li>2、方法入参中加入BindingResult result这个参数。</li>
         <li>3、使用校验器进行校验，其入参为VO对象和BindingResult，如本例中的：registerValidator.validate(user, result)，校验器会将错误信息写入BindingResult。</li>
-        <li>4、根据校验的结果进行其他操作。</li><br/>
+        <li>4、根据校验的结果进行其他操作。</li>
+        <br/>
     </div>
 </details>
 

@@ -53,7 +53,7 @@
         比如 http://www.sinochem.com/oauth/qq/Ude9c3aae.htm，请求该链接时方法会分别接受到qq和Ude9c3aae两个参数值,<br/>
         在服务器上，接收方法的注解@RequestMapping时需要使用如下写法：
         <pre>
-            <code>
+            <code class="m-xmp">
                 @RequestMapping("/oauth/{type}/{uuid}.htm")
                 public String oauth(@PathVariable("type") String type,
                                     @PathVariable("uuid") String uuid, Model model) {
