@@ -3,9 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
     $contain.get('/contain/htmlhead.htm').put('title',$title)
 <body>
+<div class="s-mod melody">
     $contain.get('/contain/header.htm')
-<div class="melody-detail-wrap">
+    <div class="melody-detail-wrap">
         $screen_content
+    </div>
 </div>
 </body>
 </html>
