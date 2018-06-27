@@ -1,5 +1,5 @@
 <h2 class="melody-d-title">页面制作说明和示例</h2>
-<br/>melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。<br/>
+<p>melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。</p>
 <br/>
 <details close>
     <summary>

@@ -1,14 +1,14 @@
 
-当页面上一节提到同一页面中主页面与contain共享一个request，即浏览器只会向服务器发送一次请求。<br/>
-但是当主页面也contain的页面均有对应的服务器响应方法，那么他们均可以取到自己的方法返回值，如下所示：<br/><br/>
+<p>当页面上一节提到同一页面中主页面与contain共享一个request，即浏览器只会向服务器发送一次请求。</p>
+<p>但是当主页面也contain的页面均有对应的服务器响应方法，那么他们均可以取到自己的方法返回值，如下所示：</p><br/>
 
-我是主页面<br/>
-我的Id是${id}<br/><br/>
-$contain.get('/widget/block/a.htm')<br/>
-$contain.get('/widget/block/b.htm')<br/>
-$contain.get('/widget/block/c.htm')<br/>
-$contain.get('/widget/block/d.htm')<br/>
+<p>我是主页面</p>
+<p>我的Id是${id}</p><br/>
+<p>$contain.get('/widget/block/a.htm')</p>
+<p>$contain.get('/widget/block/b.htm')</p>
+<p>$contain.get('/widget/block/c.htm')</p>
+<p>$contain.get('/widget/block/d.htm')</p>
 
-上述例子中，本页面分别contain了a b c d四个页面，本页面和四个子页面均向服务器请求了id参数，
-主页面和四个子页面各自拿到了不同的参数。同时，下一节会介绍到，contain是同步处理的，所以服务器首先处理的是
-主页面的返回值，然后从上到下依次处理contain页面的返回值。
+<p>上述例子中，本页面分别contain了a b c d四个页面，本页面和四个子页面均向服务器请求了id参数，
+主页面和四个子页面各自拿到了不同的参数。同时，下一节会介绍到，contain是同步处理的，
+所以服务器首先处理的是主页面的返回值，然后从上到下依次处理contain页面的返回值。</p>
