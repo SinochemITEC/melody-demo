@@ -41,6 +41,6 @@
     <br/>
     <div style="margin-left: 5%;">
         <li>方法上注解了@ResponseBody之后，该方法的返回值就不会被spring处理，而是直接写入HttpResponse的body中，可以在页面上取到。</li>
-        <a href="$appServer.get("/annotation/return/responseBody.htm")" target="_blank">点击查看示例</a><br/>
+        <a class="m-detail-link" href="$appServer.get("/annotation/return/responseBody.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
