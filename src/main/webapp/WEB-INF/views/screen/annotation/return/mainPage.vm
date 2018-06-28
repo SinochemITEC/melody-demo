@@ -1,4 +1,4 @@
-<p>action中返回参数的方法大体上分为四种 void、String、ModelandView、@ResponseBody，以下分别介绍。</p>
+<p>action中返回参数的方法大体上分为四种 void、String、ModelandView、@ResponseBody，以下分别介绍。</p><br/>
 
 <details close>
     <summary>
@@ -7,7 +7,7 @@
     <br/>
     <div style="margin-left: 5%;">
         <li>当方法返回值为void的时候，服务器返回的页面资源为url本身对应的页面文件资源，同时将ModelMap中的参数传递到页面</li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/void.htm").addQueryData("name","John")" target="_blank">点击查看示例</a>
+        <a href="$appServer.get("/annotation/return/void.htm").addQueryData("name","John")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>
@@ -20,8 +20,8 @@
             forward方式：服务器会直接将页面资源返回，使用方法是直接返回screen目录中的文件路径，需要注意的是结尾不能带；<br/>
             redirect方式：服务器会要求浏览器重定向到新的url，使用方法时返回的字符串以"redirect:"开头，并连接上完整链接或本地网页文件的path。
         </li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/string_forward.htm")" target="_blank">点击查看示例</a>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/string_redirect.htm")" target="_blank">点击查看示例</a>
+        <a href="$appServer.get("/annotation/return/string_forward.htm")" target="_blank">点击查看示例</a><br/>
+        <a href="$appServer.get("/annotation/return/string_redirect.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>
@@ -31,7 +31,7 @@
     <br/>
     <div style="margin-left: 5%;">
         <li>方法的返回值也可以是ModelAndView，ModelAndView的对象可以设置返回的页面资源文件(forward和redirect均可)，同时也可以通过addObject方法设置返回页面的参数。</li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/view.htm")" target="_blank">点击查看示例</a>
+        <a href="$appServer.get("/annotation/return/view.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>
@@ -41,6 +41,6 @@
     <br/>
     <div style="margin-left: 5%;">
         <li>方法上注解了@ResponseBody之后，该方法的返回值就不会被spring处理，而是直接写入HttpResponse的body中，可以在页面上取到。</li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/responseBody.htm")" target="_blank">点击查看示例</a>
+        <a href="$appServer.get("/annotation/return/responseBody.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>

@@ -6,8 +6,8 @@
     <br/>
     <div style="margin-left: 5%;">
         <li>文件上传可以使用表单提交的方式，使用type为file的input标签选择文件，并将form的enctype属性设置为multipart/form-data即可。<br/>
-        在服务器端使用MultipartFile接收参数。示例参照类com.eyeieye.melody.demo.web.action.upload.UploadAction<br/>
-        文件下载使用的是HttpServletResponse，将文件返回到页面，需要注意的是，需要将HttpServletResponse的"Content-Disposition属性设置为attachment;Filename=[文件名]"
+            在服务器端使用MultipartFile接收参数。示例参照类com.eyeieye.melody.demo.web.action.upload.UploadAction<br/>
+            文件下载使用的是HttpServletResponse，将文件返回到页面，需要注意的是，需要将HttpServletResponse的"Content-Disposition属性设置为attachment;Filename=[文件名]"
         </li>
         <li>
             示例：<br/>
@@ -21,26 +21,32 @@
         <h><font size="5px">分页</font></h>
     </summary>
     <br/>
-    <div style="margin-left: 5%;">
-        分页有两种分页方式，分别是form提交分页和seo话静态链接分页。<br/>
-        两种分页方式分别通过contain分页栏实现分页，通过put部分参数进行配置，下面分别介绍其参数：<br/>
-        <li>公共参数：</li>
+    <p style="margin-left: 5%;">
+    <p>分页有两种分页方式，分别是form提交分页和seo话静态链接分页。<br/>
+        两种分页方式分别通过contain分页栏实现分页，通过put部分参数进行配置，下面分别介绍其参数：</p>
+    <li>公共参数：</li>
+    <p>
         ①slider_query：必要参数，入参为QueryBase的子类，一般在请求页面时初始化并传递到页面；<br/>
         ②slider_broker：非必要参数，指定路径时用于生成url的URLBroker对象，默认为\$appServer；<br/>
         ③slider_path：非必要参数，指定vm时使用；<br/>
-        ④slider_width：非必要参数，指定浮动窗大小，默认为5。<br/>
-        <br/>
-        <li>form提交分页：</li>
+        ④slider_width：非必要参数，指定浮动窗大小，默认为5。
+    </p>
+    <br/>
+    <li>form提交分页：</li>
+    <p>
         在该demo中contain的页面为/contain/formPageSlider.vm。<br/>
         ①slider_target：必要参数，入参为分页提交的目标url；<br/>
         ②slider_page：非必要参数，用于指定分页变量名，默认为&#36;page；<br/>
-        ③slider_method：非必要参数，用于指定form提交的方式，默认为'get'。<br/>
-        <li>form提交分页：</li>
+        ③slider_method：非必要参数，用于指定form提交的方式，默认为'get'。
+    </p>
+    <li>form提交分页：</li>
+    <p>
         在该demo中contain的页面为/contain/pageSlider.vm。<br/>
-        ○ slider_builder：必要参数，获取页面时需要初始化到页面中去，需要实现PagingURLBuilder接口。<br/>
-        <li>示例：</li>
-        <a href="$appServer.get('/query/form_page.htm')">form提交分页</a><br/>
-        <a href="$appServer.get('/query/seo_page.htm')">seo化静态链接分页</a><br/>
+        ○ slider_builder：必要参数，获取页面时需要初始化到页面中去，需要实现PagingURLBuilder接口。
+    </p>
+    <li>示例：</li>
+    <a href="$appServer.get('/query/form_page.htm')">form提交分页</a><br/>
+    <a href="$appServer.get('/query/seo_page.htm')">seo化静态链接分页</a><br/>
     </div>
 </details>
 <details open>
@@ -48,9 +54,7 @@
         <h><font size="5px">国际化</font></h>
     </summary>
     <br/>
-    <div style="margin-left: 5%;">
-        国际化的语言选择通过用户的locale属性来实现，更改locale属性是需要将相应的语言加入cookie中，然后刷新页面即可。
-    </div>
+        <p>国际化的语言选择通过用户的locale属性来实现，更改locale属性是需要将相应的语言加入cookie中，然后刷新页面即可。</p>
     <li>示例：</li>
     <a href="$appServer.get('/i18n/index.htm')">国际化说明示例</a>
     <br/>
@@ -60,29 +64,28 @@
         <h><font size="5px">Velocity的页面cache</font></h>
     </summary>
     <br/>
-    <div style="margin-left: 5%;">
-        如果想cache页面中的某段,则需要用 &#35;cache() .... &#35;end　包含需要cache的部分
-        如:<br/>
-        &#35;cache()<br/>
-        我是被cache的<br/>
-        &#35;end<br/>
-        这样的方式中,存放于cache中的key由模板名称,当前所在的行,列数自动生成,如果需要直接指定key名称,则:<br/>
-        &#35;cache('demo.cache.key')<br/>
-        我也是被cache的<br/>
-        &#35;end<br/>
-    </div>
+        <p>
+            如果想cache页面中的某段,则需要用 &#35;cache() .... &#35;end　包含需要cache的部分
+            如:<br/>
+            &#35;cache()<br/>
+            我是被cache的<br/>
+            &#35;end<br/>
+            这样的方式中,存放于cache中的key由模板名称,当前所在的行,列数自动生成,如果需要直接指定key名称,则:<br/>
+            &#35;cache('demo.cache.key')<br/>
+            我也是被cache的<br/>
+            &#35;end
+        </p>
 </details>
 <details open>
     <summary>
         <h><font size="5px">页面统计工具</font></h>
     </summary>
     <br/>
-    <div style="margin-left: 5%;">
-        <li>页面统计工具可以记录服务器启动以来的页面访问数据，其提供四个数据，分别是'总输出数据量(KB)'，'总执行次数'，'平均输出数据量(KB)'和'最大输出数据(KB)'  <br/>
-        使用方法为，使用通过注入的方式获得ResponseOutputBufferFilter的对象，然后使用getReport()方法即可获得OutputReport对象。</li>
+        <li>页面统计工具可以记录服务器启动以来的页面访问数据，其提供四个数据，分别是'总输出数据量(KB)'，'总执行次数'，'平均输出数据量(KB)'和'最大输出数据(KB)' <br/>
+            使用方法为，使用通过注入的方式获得ResponseOutputBufferFilter的对象，然后使用getReport()方法即可获得OutputReport对象。
+        </li>
         <li>示例：</li>
         <a href="$appServer.get('/report/output.htm')">统计记录</a><br/>
-    </div>
 </details>
 
 
@@ -91,15 +94,15 @@
         <h><font size="5px">权限控制</font></h>
     </summary>
     <br/>
-    <div style="margin-left: 5%;">
         <li>权限控制可以通过@AdminAccess注解进行设置，具体拦截逻辑需要在Interceptor类中进行设置。<br/>
-        以本demo为例，在本例中以AdministerAgent作为用户登录标识，其中存储了用户权限信息。<br/>
-        AdminAuthorityHandlerInterceptor类实现了AnnotationMethodHandlerInterceptorAdapter接口，
-        在其逻辑中，添加了@AdminAccess注解的action方法只有登陆用户可以访问，同时，@AdminAccess中可以添加参数，
-        参数类型为枚举类，参数值为具体权限，添加了具体权限的方法，至少拥有一个权限的用户才能访问。</li><br/>
+            以本demo为例，在本例中以AdministerAgent作为用户登录标识，其中存储了用户权限信息。<br/>
+            AdminAuthorityHandlerInterceptor类实现了AnnotationMethodHandlerInterceptorAdapter接口，
+            在其逻辑中，添加了@AdminAccess注解的action方法只有登陆用户可以访问，同时，@AdminAccess中可以添加参数，
+            参数类型为枚举类，参数值为具体权限，添加了具体权限的方法，至少拥有一个权限的用户才能访问。
+        </li>
+        <br/>
         <li>示例：</li>
         <a href="$appServer.get('/access/testPage.htm')">示例</a>
-    </div>
 </details>
 
 
