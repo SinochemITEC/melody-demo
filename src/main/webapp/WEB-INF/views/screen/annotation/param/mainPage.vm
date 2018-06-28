@@ -1,6 +1,6 @@
-<br/>之前介绍了contain页面时可以用put方法添加参数，但是put方法相当于request.setAttributes()方法，
+<p>之前介绍了contain页面时可以用put方法添加参数，但是put方法相当于request.setAttributes()方法，
 这样传入的参数在action中只能用request.getAttributes()取得。本框架不推荐频繁使用request对象，
-所以下面将介绍其他传入参数的方法。<br/><br/>
+所以下面将介绍其他传入参数的方法。</p>
 
 <details close>
     <summary>
@@ -14,7 +14,7 @@
         <li>在@RequestParam注解中可以添加相关参数为入参配置相关属性，如：</li>
         required = [true, false]：该参数是否可以非空，配置为true时该参数必须有传入值，否则抛出异常<br/>
         defaultValue = [value]：该参数的默认值，如果required配置为true，可以使用这个属性防止异常<br/><br/>
-        <a href="$appServer.get("/annotation/param/base.htm").addQueryData("name","John")" target="_blank">点击查看示例</a><br/>
+        <a class="m-detail-link" href="$appServer.get("/annotation/param/base.htm").addQueryData("name","John")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>

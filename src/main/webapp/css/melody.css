@@ -46,8 +46,8 @@
 .m-table th{background-color:#e6e9f3;font-size:0.6em;font-weight:600;height:50px;line-height:50px;padding:0 10px;}
 .m-table td{border:1px solid #e6e9f3;font-size:0.6em;height:40px;line-height:40px;padding:0 10px;}
 
-
-
+.m-detail-link{color:#39f;font-size:0.66em;display:block;margin:10px 0;}
+.m-detail-link:hover{text-decoration:underline;}
 
 
 
