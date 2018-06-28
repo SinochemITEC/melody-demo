@@ -15,7 +15,7 @@
                     contentType:"application/json",
                     data:'{"name":"'+$("#name").eq(0).val()+'","nick":"'+$("#nick").eq(0).val()+'","age":'+$("#age").eq(0).val()+'}',
                     dataType:"json",
-                    scriptCharset:'GBK',
+                    scriptCharset:'UTF-8',
                     beforeSend:function(){
                         alert('发送的内容为：{"name":"'+$("#name").eq(0).val()+'","nick":"'+$("#nick").eq(0).val()+'","age":'+$("#age").eq(0).val()+'}');
                     },

@@ -1,24 +1,23 @@
-Velocity是Apache基金会项目中一个模板语言项目，可以很好的简化页面开发的过程。<br/><br/>
-<b>基本语法：</b><br/>
+<p>Velocity是Apache基金会项目中一个模板语言项目，可以很好的简化页面开发的过程。</p>
+<h3>基本语法：</h3>
 #set($foo = 'text')
 <ul class="demo-ul-paragraph">
     <li>变量：</li>
-    Velocity的变量由$+{变量名}组成，如&#36;foo = ${foo}。<br/>
-    需要注意的是，变量在已经被赋值时会自动替换成其数值，但是变量为空时会显示为变量的代码本身或抛出异常,
-    如需解决这个问题可以在&#36;后增加'!'，这样在变量为空值时可以便不会显示任何内容。<br/>
-    另外，虽然不需要大括号也能显示变量，但是为保证代码美观和易读性、减少错误，建议使用大括号。<br/>
+    <p>Velocity的变量由$+{变量名}组成，如&#36;foo = ${foo}。</p>
+    <p>需要注意的是，变量在已经被赋值时会自动替换成其数值，但是变量为空时会显示为变量的代码本身或抛出异常,
+    如需解决这个问题可以在&#36;后增加'!'，这样在变量为空值时可以便不会显示任何内容。</p>
+    <p>另外，虽然不需要大括号也能显示变量，但是为保证代码美观和易读性、减少错误，建议使用大括号。</p>
     <li>赋值：</li>
-    Veloctiy中的赋值语句为：&#35;set(&#36;&#60;变量名&#62; = &#60;值&#62; )，如&#35;set(&#36;foo = 'new value')。<br/>
+    <p>Veloctiy中的赋值语句为：&#35;set(&#36;&#60;变量名&#62; = &#60;值&#62; )，如&#35;set(&#36;foo = 'new value')。</p>
     <li>成员变量：</li>
-    Controller层返回的参数是对象，并且含有成员变量时，可以直接获取其成员变量的值，如&#36;{foo.value}。<br/>
-    注意：当对象中有public类型的同名变量时会直接返回该变量值，否则会返回该变量的get方法的返回值。<br/>
+    <p>Controller层返回的参数是对象，并且含有成员变量时，可以直接获取其成员变量的值，如&#36;{foo.value}。</p>
+    <p>注意：当对象中有public类型的同名变量时会直接返回该变量值，否则会返回该变量的get方法的返回值。</p>
     <li>成员方法：</li>
-    Controller层返回的参数是对象，并且含有成员方法时，可以直接获取其成员方法的返回值，如&#36;{foo.getValue()}。<br/>
-    另外，如果方法需要参数，可以直接在调用方法时加入参数，如&#36;page.setTitle( "My Home Page" )，&#36;person.setAttributes( ["Strange", "Weird", "Excited"] )
-    <br/>
+    <p>Controller层返回的参数是对象，并且含有成员方法时，可以直接获取其成员方法的返回值，如&#36;{foo.getValue()}。</p>
+    <p>另外，如果方法需要参数，可以直接在调用方法时加入参数，如&#36;page.setTitle( "My Home Page" )，&#36;person.setAttributes( ["Strange", "Weird", "Excited"] )</p>
     <li>判断语句：</li>
-    Velocity的判断语句是if/elseif/else语句，用法如下所示：
-    <pre>
+    <p>Velocity的判断语句是if/elseif/else语句，用法如下所示：</p>
+    <pre><code class="m-xmp">
     &#35;if( &#36;foo < 10 )
         **Go North**
     &#35;elseif( &#36;foo == 10 )
@@ -27,28 +26,28 @@ Velocity是Apache基金会项目中一个模板语言项目，可以很好的简化页面开发的过程。<br/
         **Go South**
     &#35;else
         **Go West**
-    &#35;end
+    &#35;end</code>
 </pre>
     <li>循环语句：</li>
-    Velocity的循环使用的是foreach循环，如下所示：
-    <pre>
+    <p>Velocity的循环使用的是foreach循环，如下所示：</p>
+    <pre><code class="m-xmp">
         &#60;ui&#62;
             &#35;foreach( &#36;key in &#36;allProducts.keySet() )
                 &#60;li&#62;第&#36;{velocityCount}个元素为 &#36;{key} ，其值为 &#36;{allProducts.get(&#36;key)}&#60;/li&#62;
             &#35;end
-        &#60;/ui&#62;
+        &#60;/ui&#62;</code>
     </pre>
-    其中&#36;{velocityCount}是循环中的下标，从1开始。<br/>
-    如果需要实现for(int i=0;i++;i<10)这样的效果，可以使用&#35;foreach( &#36;key in [0..9] )。<br/>
-    循环中可以使用&#35;break跳出循环。
+    <p>其中&#36;{velocityCount}是循环中的下标，从1开始。</p>
+    <p>如果需要实现for(int i=0;i++;i<10)这样的效果，可以使用&#35;foreach( &#36;key in [0..9] )。</p>
+    <p>循环中可以使用&#35;break跳出循环。</p>
     <li>引入js和css文件：</li>
-    使用html标签引入js和css文件非常繁琐，但是使用Velocity可以将其变得更为便捷。使用方法如下：<br/>
-    <pre>
+    <p>使用html标签引入js和css文件非常繁琐，但是使用Velocity可以将其变得更为便捷。使用方法如下：</p>
+    <pre><code class="m-xmp">
         &#35;set(&#36;jsfile = [jsfilePath])
         &#35;js(&#36;jsfile)
         &#35;set(&#36;cssfile = [cssfilePath])
-        &#35;css(&#36;cssfile)
+        &#35;css(&#36;cssfile)</code>
     </pre>
     <li>更多语法：</li>
-    Velocity除以上常用语法外还有其他语法可供使用，详细可查看Velocity在Apache基金会中的引导页 <a href="http://velocity.apache.org/engine/2.0/user-guide.html#property-lookup-rules">Velocity - User Guide</a>。
+    <p>Velocity除以上常用语法外还有其他语法可供使用，详细可查看Velocity在Apache基金会中的引导页 <a href="http://velocity.apache.org/engine/2.0/user-guide.html#property-lookup-rules">Velocity - User Guide</a>。</p>
 </ul>

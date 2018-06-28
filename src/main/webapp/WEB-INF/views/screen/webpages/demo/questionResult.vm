@@ -1,3 +1,4 @@
+<h2 class="melody-d-title">bigpipeÊ¾Àı</h2>
 #if($!hero)
     #if($hero.healthPoint > 0)
         #if($hero.floor == 6)

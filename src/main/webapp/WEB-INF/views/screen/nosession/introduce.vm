@@ -1,7 +1,6 @@
-<h><font size="6px">NoSession</font> </h><br/>
-
-NoSession是为了解决微服务中session同步问题而提出的解决方案。<br/>
-NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以取得用户的session。<br/>
+<h2 class="melody-d-title">NoSession</h2>
+<p>NoSession是为了解决微服务中session同步问题而提出的解决方案。<br/>
+NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以取得用户的session。<br/></p>
 
 <details open>
     <summary>
@@ -27,8 +26,8 @@ NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        1、实体类示例：com.eyeieye.melody.demo.web.action.User<br/>
+        <p>1、实体类示例：com.eyeieye.melody.demo.web.action.User<br/>
         2、CookieStore类示例：com.eyeieye.melody.demo.web.action.UserAttributeCookieStore<br/>
-        3、应用实例：请查看<a href="$appServer.get('/login/login.htm')">用户登录</a>部分的具体实现
+        3、应用实例：请查看<a href="$appServer.get('/login/login.htm')">用户登录</a>部分的具体实现</p>
     </div>
 </details>

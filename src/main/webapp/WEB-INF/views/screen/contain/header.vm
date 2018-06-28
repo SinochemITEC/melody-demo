@@ -1,8 +1,6 @@
-<font color="red"> 我是页面的公用header哦</font>
-<br/>
-#if($vlocale.isLocale('zh','CN'))
-<a href="$appServer/locale/change.htm?locale=en_US">to engish</a>
-#else
-	<a href="$appServer/locale/change.htm?locale=zh_CN">回中文</a>
-#end
-<br/>
+<!-- 公用的header页面 -->
+
+<div class="melody-head">
+        <a href="$appServer.get('index.htm')" class="logo">WIKI中化信息</a>
+        <span>Melody-demo</span>
+</div>

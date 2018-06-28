@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    $contain.get('/contain/htmlhead.htm').put('title',$title)
+<body>
+<div class="s-mod melody">
+    $contain.get('/contain/header.htm')
+    <div class="melody-detail-wrap">
+        $screen_content
+    </div>
+</div>
+</body>
+</html>

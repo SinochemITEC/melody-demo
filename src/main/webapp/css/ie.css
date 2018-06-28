@@ -1,0 +1,6 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+	body{font-size:200%;}
+	.mod1-txt1{font-size:1.4em;}
+	.mod1-txt2{font-size:0.68em;top:54%;}
+	.nav .icon-menu{font-size:1.2em;}
+}

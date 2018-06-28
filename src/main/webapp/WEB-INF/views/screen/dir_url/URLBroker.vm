@@ -1,8 +1,7 @@
-<b><font size="5px">URLBroker½éÉÜ£º</font></b><br/><br/>
-URLBrokerÊÇÒ»¸ö¹¤¾ßÀà£¬»á¸ù¾İ¶ÔÏóÃû×Ô¶¯×¢ÈëÅäÖÃÎÄ¼şÖĞÅäÖÃµÄµØÖ·£¬Ò»°ãÓÃÓÚ¿ìËÙ»ñµÃÄ³Ò»ÓòÏÂµÄÖ¸¶¨Á´½Ó¡£
-<br/><br/>
-Ê¹ÓÃURLBrokerÊ×ÏÈĞèÒªÔÚspring-beanµÄxmlÎÄ¼şÖĞ½øĞĞÅäÖÃ£º
-<xmp>
+<h3>URLBroker½éÉÜ£º</h3>
+<p>URLBrokerÊÇÒ»¸ö¹¤¾ßÀà£¬»á¸ù¾İ¶ÔÏóÃû×Ô¶¯×¢ÈëÅäÖÃÎÄ¼şÖĞÅäÖÃµÄµØÖ·£¬Ò»°ãÓÃÓÚ¿ìËÙ»ñµÃÄ³Ò»ÓòÏÂµÄÖ¸¶¨Á´½Ó¡£</p>
+<p>Ê¹ÓÃURLBrokerÊ×ÏÈĞèÒªÔÚspring-beanµÄxmlÎÄ¼şÖĞ½øĞĞÅäÖÃ£º</p>
+<xmp class="m-xmp">
     <bean id="<ServerBeanName>" class="com.eyeieye.melody.web.url.URLBroker">
         <property name="encoding" value="<×Ö·û±àÂë>"></property>
         <property name="config">
@@ -17,8 +16,8 @@ URLBrokerÊÇÒ»¸ö¹¤¾ßÀà£¬»á¸ù¾İ¶ÔÏóÃû×Ô¶¯×¢ÈëÅäÖÃÎÄ¼şÖĞÅäÖÃµÄµØÖ·£¬Ò»°ãÓÃÓÚ¿ìËÙ»ñµ
         </property>
     </bean>
 </xmp>
-È»ºóÔÚURLBrokerLauncherInterceptorºÍServletContextInitHelperÖĞ½øĞĞ×¢²á£º
-<xmp>
+<p>È»ºóÔÚURLBrokerLauncherInterceptorºÍServletContextInitHelperÖĞ½øĞĞ×¢²á£º</p>
+<xmp class="m-xmp">
     <bean class="com.eyeieye.melody.web.url.URLBrokerLauncherInterceptor">
         <property name="brokers">
             <map>
@@ -36,39 +35,38 @@ URLBrokerÊÇÒ»¸ö¹¤¾ßÀà£¬»á¸ù¾İ¶ÔÏóÃû×Ô¶¯×¢ÈëÅäÖÃÎÄ¼şÖĞÅäÖÃµÄµØÖ·£¬Ò»°ãÓÃÓÚ¿ìËÙ»ñµ
     </bean>
 
 </xmp>
+<h3>¾ÙÀıËµÃ÷£º</h3>
+<p>&lt;ServerBeanName&gt;ÊÇÒªÓÃµ½µÄURLBrokerµÄ¶ÔÏóÃû£¬Èçmail·şÎñÆ÷µÄURLBroker¶ÔÏó¿ÉÒÔÃüÃûÎªmailServer£»</p>
+<p>&lt;×Ö·û±àÂë&gt;ÊÇÆ´½Ó×Ö·û´®Ê¹ÓÃµÄ×Ö·û±àÂë£¬Ò»°ãÊ¹ÓÃÅäÖÃºÃµÄÈ«¾Ö±äÁ¿£»</p>
+<p>&lt;protocol&gt;ÊÇÁ´½ÓµÄĞ­ÒéÀàĞÍ£¬Ä¬ÈÏÎªhttp£»</p>
+<p>&lt;app.server.host&gt;ÊÇ¸ÃÓòµÄhostµØÖ·£¬Èçmail.sinochem.com£»</p>
+<p>&lt;app.server.port&gt;ÊÇ¸ÃÓòµÄ¶Ë¿Ú£¬Èç8080£»</p>
+<p>&lt;app.server.path&gt;ÊÇ¸ÃÓòµÄpathÂ·¾¶£¬Èçmail£»</p>
+<p>&lt;key&gt;ÊÇ×¢ÈëURLBrokerÊ±ÓÃµ½µÄkey£¬Ò»°ãÓëServerBeanNameÍ¬Ãû£»</p>
+<p>ÒÔÉÏ²ÎÊı¾ù¿ÉÊ¹ÓÃÅäÖÃÎÄ¼ş½øĞĞ×¢Èë</p>
 
-
-¾ÙÀıËµÃ÷£º
-&lt;ServerBeanName&gt;ÊÇÒªÓÃµ½µÄURLBrokerµÄ¶ÔÏóÃû£¬Èçmail·şÎñÆ÷µÄURLBroker¶ÔÏó¿ÉÒÔÃüÃûÎªmailServer£»<br/>
-&lt;×Ö·û±àÂë&gt;ÊÇÆ´½Ó×Ö·û´®Ê¹ÓÃµÄ×Ö·û±àÂë£¬Ò»°ãÊ¹ÓÃÅäÖÃºÃµÄÈ«¾Ö±äÁ¿£»<br/>
-&lt;protocol&gt;ÊÇÁ´½ÓµÄĞ­ÒéÀàĞÍ£¬Ä¬ÈÏÎªhttp£»<br/>
-&lt;app.server.host&gt;ÊÇ¸ÃÓòµÄhostµØÖ·£¬Èçmail.sinochem.com£»<br/>
-&lt;app.server.port&gt;ÊÇ¸ÃÓòµÄ¶Ë¿Ú£¬Èç8080£»<br/>
-&lt;app.server.path&gt;ÊÇ¸ÃÓòµÄpathÂ·¾¶£¬Èçmail£»<br/>
-&lt;key&gt;ÊÇ×¢ÈëURLBrokerÊ±ÓÃµ½µÄkey£¬Ò»°ãÓëServerBeanNameÍ¬Ãû£»<br/>
-ÒÔÉÏ²ÎÊı¾ù¿ÉÊ¹ÓÃÅäÖÃÎÄ¼ş½øĞĞ×¢Èë<br/>
-<br/>
-
-<b>URLBrokerµÄÊ¹ÓÃ£º</b><br/>
-<li>ÔÚÒ³ÃæÖĞÊ¹ÓÃ:</li>
+<h3>URLBrokerµÄÊ¹ÓÃ£º</h3>
+<ul>
+<li><span>ÔÚÒ³ÃæÖĞÊ¹ÓÃ:</span>
 <div class="maintext">
-    ¢ÙÔÚÒ³ÃæÖĞ¿ÉÒÔÊ¹ÓÃ$[ServerBeanName]ÒıÓÃÅäÖÃºÃµÄURLBroker¶ÔÏó£¬Èç&#36;mailServerµÄÖµÎª$mailServer<br/>
-    ¢ÚÊ¹ÓÃget¿ÉÒÔ»ñµÃÖ¸¶¨ÓòÏÂµÄÁ´½ÓµØÖ·£¬Èç&#36;mailServer.get("index.htm")µÄÖµÎª$mailServer.get("index.htm")<br/>
-    ¢ÛÊ¹ÓÃputºÍaddQueryData¿ÉÒÔÔÚÁ´½ÓºóÔö¼Ó²ÎÊı£¬Èç&#36;mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")µÄÖµÎª$mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")<br/>
-    ¢ÜÔÚJSPÎÄ¼şÖĞÒ²¿ÉÒÔÊ¹ÓÃURLBroker£¬Èç<a href="$appServer.get("/dir_url/jsppage.htm")" target="_blank">±¾ÀıËùÊ¾</a>¡£
-</div>
-<li>ÔÚ·şÎñÆ÷³ÌĞòÊ¹ÓÃ£º</li>
+    <span>¢ÙÔÚÒ³ÃæÖĞ¿ÉÒÔÊ¹ÓÃ$[ServerBeanName]ÒıÓÃÅäÖÃºÃµÄURLBroker¶ÔÏó£¬Èç&#36;mailServerµÄÖµÎª$mailServer</span>
+    <span>¢ÚÊ¹ÓÃget¿ÉÒÔ»ñµÃÖ¸¶¨ÓòÏÂµÄÁ´½ÓµØÖ·£¬Èç&#36;mailServer.get("index.htm")µÄÖµÎª$mailServer.get("index.htm")</span>
+    <span>¢ÛÊ¹ÓÃputºÍaddQueryData¿ÉÒÔÔÚÁ´½ÓºóÔö¼Ó²ÎÊı£¬Èç&#36;mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")µÄÖµÎª$mailServer.get("index.htm").addQueryData("key","²ÎÊı1").put("uuid","Ke2Ra")</span>
+    <span>¢ÜÔÚJSPÎÄ¼şÖĞÒ²¿ÉÒÔÊ¹ÓÃURLBroker£¬Èç<a href="$appServer.get("/dir_url/jsppage.htm")" target="_blank">±¾ÀıËùÊ¾</a>¡£</span>
+</div></li>
+<li><span>ÔÚ·şÎñÆ÷³ÌĞòÊ¹ÓÃ£º</span>
 <div class="maintext">
-    ¢ÙÊ¹ÓÃ@Autowired¿ÉÒÔ¶ÔURLBrokerµÄÒıÓÃ½øĞĞ×¢Èë£¬×¢ÈëÄÚÈİÓÉÒıÓÃÃûÈ·¶¨£¬Èç£º
-    <xmp>
+    <span>¢ÙÊ¹ÓÃ@Autowired¿ÉÒÔ¶ÔURLBrokerµÄÒıÓÃ½øĞĞ×¢Èë£¬×¢ÈëÄÚÈİÓÉÒıÓÃÃûÈ·¶¨£¬Èç£º</span>
+    <xmp class="m-xmp">
         @Autowired
         private URLBroker mailServer;
     </xmp>
-    ¢Ú¸ù¾İÍ¬ÔÚÒ³ÃæÖĞÊ¹ÓÃÒ»Ñù£¬¿ÉÒÔÍ¨¹ıget·½·¨Ö¸¶¨Ò»¸öÁ´½Ó£¬Ê¹ÓÃputºÍaddQueryData·½·¨ÔÚÁ´½ÓºóÔö¼Ó²ÎÊı<br/>
-</div>
-<li>ÌáÊ¾£º</li>
-melodyÖĞÒÑ¾­´æÔÚËÄ¸öURLBroker¶ÔÏó£¬·Ö±ğÎª£º<br/>
-appServer:Ò»°ãÅäÖÃÎª±¾ÏîÄ¿×ÔÉíµÄurlµØÖ·<br/>
-sslAppServer:appServerµÄhttpsĞ­ÒéµØÖ·<br/>
-imageServer:<br/>
-uploadServer:<br/>
+    <span>¢Ú¸ù¾İÍ¬ÔÚÒ³ÃæÖĞÊ¹ÓÃÒ»Ñù£¬¿ÉÒÔÍ¨¹ıget·½·¨Ö¸¶¨Ò»¸öÁ´½Ó£¬Ê¹ÓÃputºÍaddQueryData·½·¨ÔÚÁ´½ÓºóÔö¼Ó²ÎÊı</span>
+</div></li>
+<li><span>ÌáÊ¾£º</span>
+    <span>melodyÖĞÒÑ¾­´æÔÚËÄ¸öURLBroker¶ÔÏó£¬·Ö±ğÎª£º</span>
+    <span>appServer:Ò»°ãÅäÖÃÎª±¾ÏîÄ¿×ÔÉíµÄurlµØÖ·</span>
+    <span>sslAppServer:appServerµÄhttpsĞ­ÒéµØÖ·</span>
+    <span>imageServer:¾²Ì¬ÎÄ¼ş·şÎñÆ÷</span>
+    <span>uploadServer:ÉÏ´«ÎÄ¼ş·şÎñÆ÷</span></li>
+</ul>

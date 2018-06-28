@@ -1,4 +1,4 @@
-<br/>action中返回参数的方法大体上分为四种 void、String、ModelandView、@ResponseBody，以下分别介绍。<br/><br/>
+<p>action中返回参数的方法大体上分为四种 void、String、ModelandView、@ResponseBody，以下分别介绍。</p><br/>
 
 <details close>
     <summary>

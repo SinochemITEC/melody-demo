@@ -1,4 +1,4 @@
-contain是用来在页面中动态include一个url的方法，类似于jsp中的jsp:include。<br/>
+<p>contain是用来在页面中动态include一个url的方法，类似于jsp中的jsp:include。</p>
 
 <details class="menu" close>
     <summary>
