@@ -1,14 +1,14 @@
 <div class="melody-wrap">
     <ul class="melody-list clearfix">
-        <li><a href="$appServer.get('config/introduce.htm')"><i class="melody-ico ico-m1"></i><span>配置文件说明和示例</span></a></li>
-        <li><a href="$appServer.get('dir_url/introduce.htm')"><i class="melody-ico ico-m2"></i><span>目录结构说明和示例</span></a></li>
-        <li><a href="$appServer.get('webpages/introduce.htm')"><i class="melody-ico ico-m3"></i><span>页面制作说明和示例</span></a></li>
-        <li><a href="$appServer.get('annotation/introduce.htm')"><i class="melody-ico ico-m4"></i><span>传参、返回值说明和示例</span></a></li>
+        <li><a class="m-detail-link" href="$appServer.get('config/introduce.htm')"><i class="melody-ico ico-m1"></i><span>配置文件说明和示例</span></a></li>
+        <li><a class="m-detail-link" href="$appServer.get('dir_url/introduce.htm')"><i class="melody-ico ico-m2"></i><span>目录结构说明和示例</span></a></li>
+        <li><a class="m-detail-link" href="$appServer.get('webpages/introduce.htm')"><i class="melody-ico ico-m3"></i><span>页面制作说明和示例</span></a></li>
+        <li><a class="m-detail-link" href="$appServer.get('annotation/introduce.htm')"><i class="melody-ico ico-m4"></i><span>传参、返回值说明和示例</span></a></li>
     </ul>
     <ul class="melody-list clearfix">
-        <li><a href="$appServer.get('nosession/introduce.htm')"><i class="melody-ico ico-m5"></i><span>nosession技术</span></a></li>
-        <li><a href="$appServer.get('login/introduce.htm')"><i class="melody-ico ico-m6"></i><span>表单提交和表单校验</span></a></li>
-        <li><a href="$appServer.get('others/introduce.htm')"><i class="melody-ico ico-m7"></i><span>其他功能说明和示例</span></a></li>
+        <li><a class="m-detail-link" href="$appServer.get('nosession/introduce.htm')"><i class="melody-ico ico-m5"></i><span>nosession技术</span></a></li>
+        <li><a class="m-detail-link" href="$appServer.get('login/introduce.htm')"><i class="melody-ico ico-m6"></i><span>表单提交和表单校验</span></a></li>
+        <li><a class="m-detail-link" href="$appServer.get('others/introduce.htm')"><i class="melody-ico ico-m7"></i><span>其他功能说明和示例</span></a></li>
     </ul>
 </div>
 <script>

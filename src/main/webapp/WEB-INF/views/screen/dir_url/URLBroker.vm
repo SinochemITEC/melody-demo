@@ -52,7 +52,7 @@
     <span>①在页面中可以使用$[ServerBeanName]引用配置好的URLBroker对象，如&#36;mailServer的值为$mailServer</span>
     <span>②使用get可以获得指定域下的链接地址，如&#36;mailServer.get("index.htm")的值为$mailServer.get("index.htm")</span>
     <span>③使用put和addQueryData可以在链接后增加参数，如&#36;mailServer.get("index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")的值为$mailServer.get("index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")</span>
-    <span>④在JSP文件中也可以使用URLBroker，如<a href="$appServer.get("/dir_url/jsppage.htm")" target="_blank">本例所示</a>。</span>
+    <span>④在JSP文件中也可以使用URLBroker，如<a class="m-detail-link" href="$appServer.get("/dir_url/jsppage.htm")" target="_blank">本例所示</a>。</span>
 </div></li>
 <li><span>在服务器程序使用：</span>
 <div class="maintext">

@@ -49,5 +49,5 @@
         &#35;css(&#36;cssfile)</code>
     </pre>
     <li>更多语法：</li>
-    <p>Velocity除以上常用语法外还有其他语法可供使用，详细可查看Velocity在Apache基金会中的引导页 <a href="http://velocity.apache.org/engine/2.0/user-guide.html#property-lookup-rules">Velocity - User Guide</a>。</p>
+    <p>Velocity除以上常用语法外还有其他语法可供使用，详细可查看Velocity在Apache基金会中的引导页 <a class="m-detail-link" href="http://velocity.apache.org/engine/2.0/user-guide.html#property-lookup-rules">Velocity - User Guide</a>。</p>
 </ul>
