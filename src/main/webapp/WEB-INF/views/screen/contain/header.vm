@@ -1,6 +1,6 @@
 <!-- 公用的header页面 -->
 
 <div class="melody-head">
-        <a href="$appServer.get('index.htm')" class="logo">WIKI中化信息</a>
+        <a class="m-detail-link" href="$appServer.get('index.htm')" class="logo">WIKI中化信息</a>
         <span>Melody-demo</span>
 </div>
