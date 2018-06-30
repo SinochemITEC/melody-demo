@@ -27,6 +27,6 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-       <a href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipe使用实例</a>
+       <a class="m-detail-link" href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipe使用实例</a>
     </div>
 </details>

@@ -80,9 +80,9 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <a href="$appServer.get('/login/ajaxCheck.htm')">ajax校验验证码</a><br/>
-        <a href="$appServer.get('/login/register.htm')">用户注册</a><br/>
-        <a href="$appServer.get('/login/login.htm')">用户登录</a><br/>
+        <a class="m-detail-link" href="$appServer.get('/login/ajaxCheck.htm')">ajax校验验证码</a><br/>
+        <a class="m-detail-link" href="$appServer.get('/login/register.htm')">用户注册</a><br/>
+        <a class="m-detail-link" href="$appServer.get('/login/login.htm')">用户登录</a><br/>
 
     </div>
 </details>

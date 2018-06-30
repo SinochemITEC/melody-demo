@@ -11,8 +11,8 @@
         </li>
         <li>
             示例：<br/>
-            <a href="$appServer.get('/upload/simple.htm')">文件上传</a>
-            <a href="$appServer.get('/download/excel.htm')">文件下载</a>
+            <a class="m-detail-link" href="$appServer.get('/upload/simple.htm')">文件上传</a>
+            <a class="m-detail-link" href="$appServer.get('/download/excel.htm')">文件下载</a>
         </li>
     </div>
 </details>
@@ -45,8 +45,8 @@
         ○ slider_builder：必要参数，获取页面时需要初始化到页面中去，需要实现PagingURLBuilder接口。
     </p>
     <li>示例：</li>
-    <a href="$appServer.get('/query/form_page.htm')">form提交分页</a><br/>
-    <a href="$appServer.get('/query/seo_page.htm')">seo化静态链接分页</a><br/>
+    <a class="m-detail-link" href="$appServer.get('/query/form_page.htm')">form提交分页</a><br/>
+    <a class="m-detail-link" href="$appServer.get('/query/seo_page.htm')">seo化静态链接分页</a><br/>
     </div>
 </details>
 <details open>
@@ -56,7 +56,7 @@
     <br/>
         <p>国际化的语言选择通过用户的locale属性来实现，更改locale属性是需要将相应的语言加入cookie中，然后刷新页面即可。</p>
     <li>示例：</li>
-    <a href="$appServer.get('/i18n/index.htm')">国际化说明示例</a>
+    <a class="m-detail-link" href="$appServer.get('/i18n/index.htm')">国际化说明示例</a>
     <br/>
 </details>
 <details open>
@@ -85,7 +85,7 @@
             使用方法为，使用通过注入的方式获得ResponseOutputBufferFilter的对象，然后使用getReport()方法即可获得OutputReport对象。
         </li>
         <li>示例：</li>
-        <a href="$appServer.get('/report/output.htm')">统计记录</a><br/>
+        <a class="m-detail-link" href="$appServer.get('/report/output.htm')">统计记录</a><br/>
 </details>
 
 
@@ -102,7 +102,7 @@
         </li>
         <br/>
         <li>示例：</li>
-        <a href="$appServer.get('/access/testPage.htm')">示例</a>
+        <a class="m-detail-link" href="$appServer.get('/access/testPage.htm')">示例</a>
 </details>
 
 

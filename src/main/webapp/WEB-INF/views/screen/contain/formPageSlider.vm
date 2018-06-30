@@ -18,8 +18,8 @@
 	#if($sliderCurrent == '1')
 	<span> &laquo; </span>
 	#else
-	<a href="#" onclick="goto$!{sliderRandom}('1')">&laquo;��ҳ</a>
-	<a href="#" onclick="goto$!{sliderRandom}('${sliderPrev}')">&laquo;</a>
+	<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('1')">&laquo;��ҳ</a>
+	<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${sliderPrev}')">&laquo;</a>
 	#end
 	#foreach($grid in $grids)
 		#if($grid == 0)
@@ -27,14 +27,14 @@
 		#elseif($grid == $sliderCurrent)
 		<span class="current">${grid}</span>
 		#else
-		<a href="#" onclick="goto$!{sliderRandom}('${grid}')">${grid}</a>
+		<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${grid}')">${grid}</a>
 		#end
 	#end
 	#if($sliderCurrent == $sliderTotal )
 		<span class="nextprev"> &raquo; </span>
 	#else
-		<a href="#" onclick="goto$!{sliderRandom}('${sliderNext}')">&raquo;</a>
-		<a href="#" onclick="goto$!{sliderRandom}('${sliderTotal}')">ĩҳ &raquo;</a>
+		<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${sliderNext}')">&raquo;</a>
+		<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${sliderTotal}')">ĩҳ &raquo;</a>
 	#end
 	</form>
 </div>
