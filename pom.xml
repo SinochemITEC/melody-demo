@@ -308,12 +308,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-
-            <dependency>
-                <groupId>com.liferay</groupId>
-                <artifactId>nl.captcha.simplecaptcha</artifactId>
-                <version>1.1.1</version>
-            </dependency>
             <dependency>
                 <groupId>com.eyeieye</groupId>
                 <artifactId>melody</artifactId>
@@ -323,6 +317,12 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.25</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.eyeieye</groupId>
+                <artifactId>simplecaptcha</artifactId>
+                <version>1.2.1</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>

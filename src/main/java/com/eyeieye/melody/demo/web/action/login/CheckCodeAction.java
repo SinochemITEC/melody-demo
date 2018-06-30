@@ -78,7 +78,8 @@ public class CheckCodeAction {
 		Captcha captcha = new Captcha.Builder(220, 80)
 				.addText(new EasyCharTextProducer(),
 						new FixedWordRenderer(Color.black, englishFonts))
-				.gimp(new RippleGimpyRenderer()).gimp(new BlockGimpyRenderer())
+				.gimp(new RippleGimpyRenderer())
+				.gimp(new BlockGimpyRenderer())
 				.gimp(new DropShadowGimpyRenderer())
 				.addBackground(new GradiatedBackgroundProducer())
 				.addNoise(new CurvedLineNoiseProducer(Color.black, 1.8f))
