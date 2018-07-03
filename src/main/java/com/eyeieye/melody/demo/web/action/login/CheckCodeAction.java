@@ -42,9 +42,6 @@ import com.eyeieye.melody.web.util.ResponseUtil;
 @RequestMapping("/checkcode")
 public class CheckCodeAction {
 
-	@Autowired
-	private URLBroker mailServer;
-
 
 	private static final List<Font> englishFonts = Arrays.asList(new Font(
 			"Lucida Sans", Font.ITALIC, 55), new Font("SansSerif", Font.ITALIC,

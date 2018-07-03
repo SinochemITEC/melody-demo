@@ -3,22 +3,22 @@
         <li class="md-menu-item #if($selected == 'config') cur #end">
             <a class="menu-item-a" href="$appServer.get('config/introduce.htm')">配置文件说明和示例<i class="icon-light"></i></a>
         </li>
-        <li class="md-menu-item #if($selected == 'dir_url') cur #end"">
+        <li class="md-menu-item #if($selected == 'dir_url') cur #end">
             <a class="menu-item-a" href="$appServer.get('dir_url/introduce.htm')">目录结构说明和示例<i class="icon-light"></i></a>
         </li>
-        <li class="md-menu-item #if($selected == 'webpages') cur #end"">
+        <li class="md-menu-item #if($selected == 'webpages') cur #end">
             <a class="menu-item-a" href="$appServer.get('webpages/introduce.htm')">页面制作说明和示例<i class="icon-light"></i></a>
         </li>
-        <li class="md-menu-item #if($selected == 'annotation') cur #end"">
+        <li class="md-menu-item #if($selected == 'annotation') cur #end">
             <a class="menu-item-a" href="$appServer.get('annotation/introduce.htm')">传参、返回值说明和示例<i class="icon-light"></i></a>
         </li>
-        <li class="md-menu-item #if($selected == 'nosession') cur #end"">
+        <li class="md-menu-item #if($selected == 'nosession') cur #end">
             <a class="menu-item-a" href="$appServer.get('nosession/introduce.htm')">nosession技术<i class="icon-light"></i></a>
         </li>
-        <li class="md-menu-item #if($selected == 'login') cur #end"">
+        <li class="md-menu-item #if($selected == 'login') cur #end">
             <a class="menu-item-a" href="$appServer.get('login/introduce.htm')">表单提交和表单校验<i class="icon-light"></i></a>
         </li>
-        <li class="md-menu-item #if($selected == 'others') cur #end"">
+        <li class="md-menu-item #if($selected == 'others') cur #end">
             <a class="menu-item-a" href="$appServer.get('others/introduce.htm')">其他功能说明和示例<i class="icon-light"></i></a>
         </li>
     </ul>
