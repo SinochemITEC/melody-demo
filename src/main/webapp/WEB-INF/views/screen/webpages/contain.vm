@@ -2,9 +2,8 @@
 
 <details class="menu" close>
     <summary>
-        <h><font size="5px">基本用法</font></h>
+        <h3>基本用法</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get('/widget/base.htm')
     </div>
@@ -12,30 +11,25 @@
 
 <details class="menu" close>
     <summary>
-        <h><font size="5px">向页面传递参数</font></h>
+        <h3>向页面传递参数</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get('/widget/setParam.htm')
     </div>
 </details>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">多个contain页面的响应问题</font></h>
+        <h3>多个contain页面的响应问题</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get('/widget/block.htm')
-        <br/>
     </div>
 </details>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">bigpipe基本使用</font></h>
+        <h3>bigpipe基本使用</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get('/widget/bigpipe.htm')
-        <br/>
     </div>
 </details>

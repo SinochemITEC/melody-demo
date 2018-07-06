@@ -4,31 +4,28 @@ NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以
 
 <details open>
     <summary>
-        <h><font size="5px">使用步骤</font></h>
+        <h3>使用步骤</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get("useNoSession.htm")
     </div>
-</details>l
+</details>
 <details open>
     <summary>
-        <h><font size="5px">cookie的拓展</font></h>
+        <h3>cookie的拓展</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get("extends.htm")
     </div>
 </details>
 <details open>
     <summary>
-        <h><font size="5px">示例</font></h>
+        <h3>示例</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <p>1、实体类示例：com.eyeieye.melody.demo.web.action.User<br/>
         2、CookieStore类示例：com.eyeieye.melody.demo.web.action.UserAttributeCookieStore<br/>
         <p>3、应用实例：请查看"用户登录"部分的具体实现</p>
-        <a class="m-detail-link" href="$appServer.get('/login/login.htm')">用户登录</a>
+        <p><a class="m-detail-link" href="$appServer.get('/login/login.htm')">用户登录</a></p>
     </div>
 </details>

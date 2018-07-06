@@ -3,9 +3,8 @@
 <br/>
 <details close>
     <summary>
-        <h><font size="5px">Velocity模板语言</font> </h>
+        <h3>Velocity模板语言</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get("velocity.htm")
     </div>
@@ -13,9 +12,8 @@
 <br/>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">用contain拼接页面</font> </h>
+        <h3>用contain拼接页面</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         $contain.get("contain.htm")
     </div>
@@ -23,10 +21,9 @@
 <br/>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">示例</font> </h>
+        <h3>示例</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
-       <a class="m-detail-link" href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipe使用实例</a>
+       <p><a class="m-detail-link" href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipe使用实例</a></p>
     </div>
 </details>
