@@ -9,5 +9,7 @@
         $screen_content
     </div>
 </div>
+    $contain.get('/contain/footer-index.htm')
+    $asyncContain.export()
 </body>
 </html>
