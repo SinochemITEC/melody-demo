@@ -1,11 +1,57 @@
-<h2 class="melody-d-title">ÅäÖÃÎÄ¼şËµÃ÷ºÍÊ¾Àı</h2>
-<p>ÏµÍ³Ê¹ÓÃÅäÖÃÎÄ¼ş½øĞĞÈ«¾ÖÅäÖÃ£¬Ä¬ÈÏµÄÅäÖÃÎÄ¼şÎª/WEB-INF/conf/server.properties.
-Í¨¹ıÅäÖÃweb.xmlÎÄ¼ş¿ÉÒÔÉè¶¨ÖÆ¶¨µÄÅäÖÃÎÄ¼şÂ·¾¶£º</p>
-<p>&lt;context-param&gt;<br>&lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;<br>&lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;<br>&lt;context-param&gt;
-</p>
-<p>ÎÒÃÇÕâÀïÖÆ¶¨ÁËplay.propertiesÎªÄ¬ÈÏµÄÅäÖÃÎÄ¼şÂ·¾¶¡£
-ÅäÖÃÎÄ¼şÖĞÖÁÉÙÅäÖÃÈçÏÂ²ÎÊı¼´¿ÉÆô¶¯Ò»¸öÏîÄ¿£º</p>
-<p>app.server.host=127.0.0,1<br>app.server.port=8081<br>
-    melody.acyion.scan=com.eye.melody.demo.web<br>system.load.charset=UTF-8<br>web.encoding=GBK</p>
-²ÎÊıµÄ¾ßÌå½âÊÍ£º <br/><br/>
-$contain.get("/config/properties/list.htm")
+<h2 class="melody-d-title">é…ç½®æ–‡ä»¶è¯´æ˜å’Œç¤ºä¾‹</h2>
+
+
+<br/>
+<details open>
+    <summary>
+        <h><font size="5px">*.propertiesé…ç½®æ–‡ä»¶</font> </h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("properties/index.htm")
+    </div>
+</details>
+
+<br/>
+<details open>
+    <summary>
+        <h><font size="5px">xmlé…ç½®æ–‡ä»¶</font> </h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("xml/index.htm")
+    </div>
+</details>
+
+<br/>
+<details open>
+    <summary>
+        <h><font size="5px">log4jçš„é…ç½®</font> </h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("log4j/index.htm")
+    </div>
+</details>
+
+<br/>
+<details open>
+    <summary>
+        <h><font size="5px">velocityçš„é…ç½®</font> </h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("velocity/index.htm")
+    </div>
+</details>
+
+<br/>
+<details open>
+    <summary>
+        <h><font size="5px">web.xml</font> </h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("webxml/index.htm")
+    </div>
+</details>

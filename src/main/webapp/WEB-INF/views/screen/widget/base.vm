@@ -1,4 +1,4 @@
-<p>¢Ù$contain.get([path])ÊÇcontainµÄ»ù±¾ÓÃ·¨£¬¿ÉÒÔinclude±¾·şÎñÆ÷ÖĞpath¶ÔÓ¦µÄurl¡£</p>
-<p>¢Ú$contain.get([path]).setHost([serverHost]) ¸Ã·½·¨»á½«pathÆ´½Óµ½serverHostÖ®ºó£¬²¢½«µÃµ½µÄĞÂÁ´½Óincludeµ½Ò³ÃæÖĞ¡£</p>
+<p>â‘ $contain.get([path])æ˜¯containçš„åŸºæœ¬ç”¨æ³•ï¼Œå¯ä»¥includeæœ¬æœåŠ¡å™¨ä¸­pathå¯¹åº”çš„urlã€‚</p>
+<p>â‘¡$contain.get([path]).setHost([serverHost]) è¯¥æ–¹æ³•ä¼šå°†pathæ‹¼æ¥åˆ°serverHostä¹‹åï¼Œå¹¶å°†å¾—åˆ°çš„æ–°é“¾æ¥includeåˆ°é¡µé¢ä¸­ã€‚</p>
 <br/>
-<p>ĞèÒª×¢ÒâµÄÊÇ£¬Ê¹ÓÃcontainÊÇĞèÒª±ÜÃâµİ¹éÒıÓÃ£¬ÈçÔÚbÒ³ÃæÖĞÊ¹ÓÃÁË\$contain.get('a.htm')£¬ÓÖÔÚaÒ³ÃæÖĞÊ¹ÓÃÁË\$contain.get('b.htm')¡£</p>
+<p>éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œä½¿ç”¨containæ˜¯éœ€è¦é¿å…é€’å½’å¼•ç”¨ï¼Œå¦‚åœ¨bé¡µé¢ä¸­ä½¿ç”¨äº†\$contain.get('a.htm')ï¼Œåˆåœ¨aé¡µé¢ä¸­ä½¿ç”¨äº†\$contain.get('b.htm')ã€‚</p>

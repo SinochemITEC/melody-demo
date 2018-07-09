@@ -1,8 +1,8 @@
-<p>containÊÇÓÃÀ´ÔÚÒ³ÃæÖĞ¶¯Ì¬includeÒ»¸öurlµÄ·½·¨£¬ÀàËÆÓÚjspÖĞµÄjsp:include¡£</p>
+<p>containæ˜¯ç”¨æ¥åœ¨é¡µé¢ä¸­åŠ¨æ€includeä¸€ä¸ªurlçš„æ–¹æ³•ï¼Œç±»ä¼¼äºjspä¸­çš„jsp:includeã€‚</p>
 
 <details class="menu" close>
     <summary>
-        <h><font size="5px">»ù±¾ÓÃ·¨</font></h>
+        <h><font size="5px">åŸºæœ¬ç”¨æ³•</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -12,7 +12,7 @@
 
 <details class="menu" close>
     <summary>
-        <h><font size="5px">ÏòÒ³Ãæ´«µİ²ÎÊı</font></h>
+        <h><font size="5px">å‘é¡µé¢ä¼ é€’å‚æ•°</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -21,7 +21,7 @@
 </details>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">¶à¸öcontainÒ³ÃæµÄÏìÓ¦ÎÊÌâ</font></h>
+        <h><font size="5px">å¤šä¸ªcontainé¡µé¢çš„å“åº”é—®é¢˜</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -31,7 +31,7 @@
 </details>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">bigpipe»ù±¾Ê¹ÓÃ</font></h>
+        <h><font size="5px">bigpipeåŸºæœ¬ä½¿ç”¨</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">

@@ -13,7 +13,7 @@
     <p>
     <table>
         <tr>
-            <th><span class="required">*</span>–’√˚£∫</th>
+            <th><span class="required">*</span>ÂßìÂêçÔºö</th>
             <td>
                 #springBind("user.realName")
                 <input type="text" id="realName" name="${status.expression}" value="$!{status.value}"/>
@@ -21,7 +21,7 @@
             </td>
         </tr>
         <tr>
-            <th><span class="required">*</span>ø⁄¡Ó£∫</th>
+            <th><span class="required">*</span>Âè£‰ª§Ôºö</th>
             <td>
                 #springBind("user.password")
                 <input type="text" id="password" name="${status.expression}" value=""/>
@@ -29,7 +29,7 @@
             </td>
         </tr>
         <tr>
-            <th><span class="required">*</span>Ã·Ωª—È÷§£∫</th>
+            <th><span class="required">*</span>Êèê‰∫§È™åËØÅÔºö</th>
             <td>
                 <img src="$appServer.get('/checkcode/arithmetic.htm')"/>
 
@@ -39,7 +39,7 @@
         </tr>
         <tr>
             <th>
-                <input type="submit" value="µ«¬º"/>
+                <input type="submit" value="ÁôªÂΩï"/>
             </th>
         </tr>
     </table>

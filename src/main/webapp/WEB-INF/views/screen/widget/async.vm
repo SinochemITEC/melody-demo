@@ -1,5 +1,5 @@
-async contain可以用来在页面中动态include一个url,类似与jsp 中的 jsp:include<br/>
-和同步的contain的区别就是contain是同步渲染，asyncContain是并行渲染，bp输出，可以大大的增强客户的体验感<br/>
+async contain鍙互鐢ㄦ潵鍦ㄩ〉闈腑鍔ㄦ�乮nclude涓�涓猽rl,绫讳技涓巎sp 涓殑 jsp:include<br/>
+鍜屽悓姝ョ殑contain鐨勫尯鍒氨鏄痗ontain鏄悓姝ユ覆鏌擄紝asyncContain鏄苟琛屾覆鏌擄紝bp杈撳嚭锛屽彲浠ュぇ澶х殑澧炲己瀹㈡埛鐨勪綋楠屾劅<br/>
 $asyncContain.get('/widget/slow1.htm').put('range',1000)
 $contain.get('/widget/slow.htm').put('range',5000)
-<br/>输出结束<br/>
+<br/>杈撳嚭缁撴潫<br/>

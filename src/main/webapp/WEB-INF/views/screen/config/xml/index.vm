@@ -1,0 +1,8 @@
+<p>xml配置文件主要配置了spring bean相关的内容。</p>
+<p>本项目中：</p>
+<p>auto-proxy-beans.xml 配置的是自动代理bean的内容</p>
+<p>service-beans.xml 包含如下配置项：</p>
+<li>component-scan配置了扫描bean的地址</li>
+<li>URLBrokerLauncherInterceptor、ServletContextInitHelper和URLBroker配置的是自定义URLBroker的内容</li>
+<p>jedis-beans.xml 配置的是redis的相关内容</p>
+

@@ -1,8 +1,8 @@
-<h2 class="melody-d-title">bigpipe示例</h2>
-<p>招募勇士攻略地下城：</p>
+<h2 class="melody-d-title">bigpipe绀轰緥</h2>
+<p>鎷涘嫙鍕囧＋鏀荤暐鍦颁笅鍩庯細</p>
 <form action="$appServer.get('/webpages/demo/quetionStart.htm')" method="post">
-    <label>勇士的等级：</label> <input type="text" name="level" placeholder="建议50~150之间"/>
+    <label>鍕囧＋鐨勭瓑绾э細</label> <input type="text" name="level" placeholder="寤鸿50~150涔嬮棿"/>
 
-    <input type="submit" value="招募勇士"/>
+    <input type="submit" value="鎷涘嫙鍕囧＋"/>
 </form>
 

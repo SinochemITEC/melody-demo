@@ -1,0 +1,2 @@
+$contain.get('/login/introduce.htm')
+$contain.get('/annotation/introduce.htm')

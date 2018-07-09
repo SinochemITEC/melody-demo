@@ -10,7 +10,7 @@ span.required {
 <form id="registerForm" action="$appServer.get('/login/register.htm')" method="post">
     <table>
         <tr>
-            <th><span class="required">*</span>ĞÕÃû£º</th>
+            <th><span class="required">*</span>å§“åï¼š</th>
             <td>
                 #springBind("user.realName")
                 <input type="text" id="realName" name="${status.expression}" value="$!{status.value}" />
@@ -18,7 +18,7 @@ span.required {
             </td>
 		</tr>
 		<tr>
-            <th><span class="required">*</span>¿ÚÁî£º</th>
+            <th><span class="required">*</span>å£ä»¤ï¼š</th>
             <td>
                 #springBind("user.password")
                 <input type="text" id="password" name="${status.expression}" value="" />
@@ -26,7 +26,7 @@ span.required {
             </td>
 		</tr>
 		<tr>
-            <th><span class="required">*</span>³öÉúÄêÔÂÈÕ£º</th>
+            <th><span class="required">*</span>å‡ºç”Ÿå¹´æœˆæ—¥ï¼š</th>
             <td>
                 #springBind("user.birthday")
                 <input type="text" id="birthday" name="${status.expression}" value="$!{status.value}" />
@@ -34,7 +34,7 @@ span.required {
             </td>
 		</tr>
 		<tr>
-            <th>ÄêÁä£º</th>
+            <th>å¹´é¾„ï¼š</th>
             <td>
                 #springBind("user.age")
                 <input type="text" id="birthday" name="${status.expression}" value="$!{status.value}" />
@@ -42,11 +42,11 @@ span.required {
             </td>
 		</tr>
 		<tr>
-            <th>¼®¹á£º</th>
+            <th>ç±è´¯ï¼š</th>
             <td>
                 #springBind("user.nativePlace.province")
                 <select id="province" name="${status.expression}">
-                    <option value="">ÇëÑ¡Ôñ</option>
+                    <option value="">è¯·é€‰æ‹©</option>
                     #if($!{provinces} && !${provinces.empty})
                         #foreach($e in $provinces)
                             <option value="$!{e.value}" #if($!{status.value} == $!{e.value}) selected="selected" #end>$!{e.name}</option>
@@ -55,7 +55,7 @@ span.required {
                 </select>
                 #springBind("user.nativePlace.city")
                 <select id="city" name="${status.expression}">
-                    <option value="">ÇëÑ¡Ôñ</option>
+                    <option value="">è¯·é€‰æ‹©</option>
                     #if($!{cities} && !${cities.empty})
                         #foreach($e in $cities)
                             <option value="$!{e.value}" #if($!{status.value} == $!{e.value}) selected="selected" #end>$!{e.name}</option>
@@ -66,7 +66,7 @@ span.required {
 		</tr>
 		<tr>	
             <th>
-                <input type="submit" value="×¢²á" />
+                <input type="submit" value="æ³¨å†Œ" />
             </th>
         </tr>
     </table>

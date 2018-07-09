@@ -1,57 +1,57 @@
-<p>Ö®Ç°½éÉÜÁËcontainÒ³ÃæÊ±¿ÉÒÔÓÃput·½·¨Ìí¼Ó²ÎÊý£¬µ«ÊÇput·½·¨Ïàµ±ÓÚrequest.setAttributes()·½·¨£¬
-ÕâÑù´«ÈëµÄ²ÎÊýÔÚactionÖÐÖ»ÄÜÓÃrequest.getAttributes()È¡µÃ¡£±¾¿ò¼Ü²»ÍÆ¼öÆµ·±Ê¹ÓÃrequest¶ÔÏó£¬
-ËùÒÔÏÂÃæ½«½éÉÜÆäËû´«Èë²ÎÊýµÄ·½·¨¡£</p>
+<p>ä¹‹å‰ä»‹ç»äº†containé¡µé¢æ—¶å¯ä»¥ç”¨putæ–¹æ³•æ·»åŠ å‚æ•°ï¼Œä½†æ˜¯putæ–¹æ³•ç›¸å½“äºŽrequest.setAttributes()æ–¹æ³•ï¼Œ
+è¿™æ ·ä¼ å…¥çš„å‚æ•°åœ¨actionä¸­åªèƒ½ç”¨request.getAttributes()å–å¾—ã€‚æœ¬æ¡†æž¶ä¸æŽ¨èé¢‘ç¹ä½¿ç”¨requestå¯¹è±¡ï¼Œ
+æ‰€ä»¥ä¸‹é¢å°†ä»‹ç»å…¶ä»–ä¼ å…¥å‚æ•°çš„æ–¹æ³•ã€‚</p>
 
 <details close>
     <summary>
-        <h><font size="5px">»ù±¾µÄÈë²Î·½Ê½</font></h>
+        <h><font size="5px">åŸºæœ¬çš„å…¥å‚æ–¹å¼</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <li>Ò³Ãæ´«ÈëµÄ²ÎÊýparamÀàÐÍµÄ²ÎÊý¿ÉÒÔ±»actionÖÐ¶ÔÓ¦µÄ·½·¨²¶×½µ½£¬
-        Óë´«Èë²ÎÊýÍ¬ÃûµÄ·½·¨²ÎÊý»ò·½·¨ÖÐÌí¼ÓÁË@RequestParam×¢½âµÄ²ÎÊý»á±»×Ô¶¯×¢Èë´«ÈëµÄ²ÎÊýÖµ¡£</li>
+        <li>é¡µé¢ä¼ å…¥çš„å‚æ•°paramç±»åž‹çš„å‚æ•°å¯ä»¥è¢«actionä¸­å¯¹åº”çš„æ–¹æ³•æ•æ‰åˆ°ï¼Œ
+        ä¸Žä¼ å…¥å‚æ•°åŒåçš„æ–¹æ³•å‚æ•°æˆ–æ–¹æ³•ä¸­æ·»åŠ äº†@RequestParamæ³¨è§£çš„å‚æ•°ä¼šè¢«è‡ªåŠ¨æ³¨å…¥ä¼ å…¥çš„å‚æ•°å€¼ã€‚</li>
         <br/>
-        <li>ÔÚ@RequestParam×¢½âÖÐ¿ÉÒÔÌí¼ÓÏà¹Ø²ÎÊýÎªÈë²ÎÅäÖÃÏà¹ØÊôÐÔ£¬Èç£º</li>
-        <p>required = [true, false]£º¸Ã²ÎÊýÊÇ·ñ¿ÉÒÔ·Ç¿Õ£¬ÅäÖÃÎªtrueÊ±¸Ã²ÎÊý±ØÐëÓÐ´«ÈëÖµ£¬·ñÔòÅ×³öÒì³£</p>
-        <p>defaultValue = [value]£º¸Ã²ÎÊýµÄÄ¬ÈÏÖµ£¬Èç¹ûrequiredÅäÖÃÎªtrue£¬¿ÉÒÔÊ¹ÓÃÕâ¸öÊôÐÔ·ÀÖ¹Òì³£</p><br/>
-        <a class="m-detail-link" href="$appServer.get("/annotation/param/base.htm").addQueryData("name","John")" target="_blank">µã»÷²é¿´Ê¾Àý</a><br/>
+        <li>åœ¨@RequestParamæ³¨è§£ä¸­å¯ä»¥æ·»åŠ ç›¸å…³å‚æ•°ä¸ºå…¥å‚é…ç½®ç›¸å…³å±žæ€§ï¼Œå¦‚ï¼š</li>
+        <p>required = [true, false]ï¼šè¯¥å‚æ•°æ˜¯å¦å¯ä»¥éžç©ºï¼Œé…ç½®ä¸ºtrueæ—¶è¯¥å‚æ•°å¿…é¡»æœ‰ä¼ å…¥å€¼ï¼Œå¦åˆ™æŠ›å‡ºå¼‚å¸¸</p>
+        <p>defaultValue = [value]ï¼šè¯¥å‚æ•°çš„é»˜è®¤å€¼ï¼Œå¦‚æžœrequiredé…ç½®ä¸ºtrueï¼Œå¯ä»¥ä½¿ç”¨è¿™ä¸ªå±žæ€§é˜²æ­¢å¼‚å¸¸</p><br/>
+        <a class="m-detail-link" href="$appServer.get("/annotation/param/base.htm").addQueryData("name","John")" target="_blank">ç‚¹å‡»æŸ¥çœ‹ç¤ºä¾‹</a><br/>
     </div>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">´«Èë²ÎÊý×Ô¶¯°ó¶¨µ½¶ÔÏóÊôÐÔ</font></h>
+        <h><font size="5px">ä¼ å…¥å‚æ•°è‡ªåŠ¨ç»‘å®šåˆ°å¯¹è±¡å±žæ€§</font></h>
     </summary>
     <br/>
 
     <div style="margin-left: 5%;">
-        <li>ÔÚactionµÄ·½·¨µÄÈë²ÎÖÐ£¬Èç¹ûÓÐJavaBeanÀàÐÍµÄ²ÎÊý£¬ÇÒ´«Èë²ÎÊýÓëJavaBeanµÄ³ÉÔ±±äÁ¿Í¬ÃûÍ¬ÀàÐÍ£¬
-            ÔòÒ³Ãæ´«Èë²ÎÊýÊ±¿ÉÒÔÖµ»áÖ±½Ó×¢Èëµ½Æä¶ÔÏóµÄ³ÉÔ±±äÁ¿ÖÐÈ¥¡£</li>
+        <li>åœ¨actionçš„æ–¹æ³•çš„å…¥å‚ä¸­ï¼Œå¦‚æžœæœ‰JavaBeanç±»åž‹çš„å‚æ•°ï¼Œä¸”ä¼ å…¥å‚æ•°ä¸ŽJavaBeançš„æˆå‘˜å˜é‡åŒååŒç±»åž‹ï¼Œ
+            åˆ™é¡µé¢ä¼ å…¥å‚æ•°æ—¶å¯ä»¥å€¼ä¼šç›´æŽ¥æ³¨å…¥åˆ°å…¶å¯¹è±¡çš„æˆå‘˜å˜é‡ä¸­åŽ»ã€‚</li>
         <a class="m-detail-link" href="$appServer.get('annotation/param/simple_object_bind.htm').addQueryData(
-            'name','Jonathan Joestar').addQueryData('nick','JoJo').addQueryData('age','500')" target="_blank">µã»÷²é¿´Ê¾Àý</a><br/>
-        <li>´ËÍâ£¬¿ÉÒÔÊ¹ÓÃ&#36;springBind·½·¨½«±íµ¥²ÎÊý°ó¶¨µ½·½·¨µÄbeanÀàÐÍ²ÎÊýÉÏÈ¥£¬·½·¨²ÎÊýÇ°ÐèÒªÌí¼Ó@ModelAttribute×¢½â</li>
-        <a class="m-detail-link" href="$appServer.get('annotation/param/spring_object_bind.htm')" target="_blank">µã»÷²é¿´Ê¾Àý</a><br/>
+            'name','Jonathan Joestar').addQueryData('nick','JoJo').addQueryData('age','500')" target="_blank">ç‚¹å‡»æŸ¥çœ‹ç¤ºä¾‹</a><br/>
+        <li>æ­¤å¤–ï¼Œå¯ä»¥ä½¿ç”¨&#36;springBindæ–¹æ³•å°†è¡¨å•å‚æ•°ç»‘å®šåˆ°æ–¹æ³•çš„beanç±»åž‹å‚æ•°ä¸ŠåŽ»ï¼Œæ–¹æ³•å‚æ•°å‰éœ€è¦æ·»åŠ @ModelAttributeæ³¨è§£</li>
+        <a class="m-detail-link" href="$appServer.get('annotation/param/spring_object_bind.htm')" target="_blank">ç‚¹å‡»æŸ¥çœ‹ç¤ºä¾‹</a><br/>
     </div>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">Ê¹ÓÃjson½«²ÎÊý×Ô¶¯°ó¶¨µ½¶ÔÏó</font></h>
+        <h><font size="5px">ä½¿ç”¨jsonå°†å‚æ•°è‡ªåŠ¨ç»‘å®šåˆ°å¯¹è±¡</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <li>½«²ÎÊýÃûºÍ²ÎÊýÖµÆ´½Ó³Éjson·¢ËÍµ½·þÎñÆ÷£¬actionµÄ·½·¨»á×Ô¶¯½ÓÊÕµ½²ÎÊý²¢·â×°µ½·½·¨µÄ²ÎÊýÖÐ</li>
-        <a class="m-detail-link" href="$appServer.get('annotation/param/json_object_bind.htm')" target="_blank">µã»÷²é¿´Ê¾Àý</a><br/>
+        <li>å°†å‚æ•°åå’Œå‚æ•°å€¼æ‹¼æŽ¥æˆjsonå‘é€åˆ°æœåŠ¡å™¨ï¼Œactionçš„æ–¹æ³•ä¼šè‡ªåŠ¨æŽ¥æ”¶åˆ°å‚æ•°å¹¶å°è£…åˆ°æ–¹æ³•çš„å‚æ•°ä¸­</li>
+        <a class="m-detail-link" href="$appServer.get('annotation/param/json_object_bind.htm')" target="_blank">ç‚¹å‡»æŸ¥çœ‹ç¤ºä¾‹</a><br/>
     </div>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">RESTful´«²Î</font></h>
+        <h><font size="5px">RESTfulä¼ å‚</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <p>RESTful´«²Î·½Ê½ÊÇ½«²ÎÊý·ÅÔÚurlÖÐ£¬Æä×÷ÎªurlµÄÒ»²¿·ÖÇëÇó·þÎñÆ÷¡£<br/>
-        Ê¾Àý£ºhttp://www.sinochem.com/oauth/[type]/[uuid].htm£¬ÆäÖÐ[type]ºÍ[uuid]¶¼ÊÇÒª´«ÈëµÄ²ÎÊý£¬<br/>
-        ±ÈÈç http://www.sinochem.com/oauth/qq/Ude9c3aae.htm£¬ÇëÇó¸ÃÁ´½ÓÊ±·½·¨»á·Ö±ð½ÓÊÜµ½qqºÍUde9c3aaeÁ½¸ö²ÎÊýÖµ,<br/>
-        ÔÚ·þÎñÆ÷ÉÏ£¬½ÓÊÕ·½·¨µÄ×¢½â@RequestMappingÊ±ÐèÒªÊ¹ÓÃÈçÏÂÐ´·¨£º</p>
+        <p>RESTfulä¼ å‚æ–¹å¼æ˜¯å°†å‚æ•°æ”¾åœ¨urlä¸­ï¼Œå…¶ä½œä¸ºurlçš„ä¸€éƒ¨åˆ†è¯·æ±‚æœåŠ¡å™¨ã€‚<br/>
+        ç¤ºä¾‹ï¼šhttp://www.sinochem.com/oauth/[type]/[uuid].htmï¼Œå…¶ä¸­[type]å’Œ[uuid]éƒ½æ˜¯è¦ä¼ å…¥çš„å‚æ•°ï¼Œ<br/>
+        æ¯”å¦‚ http://www.sinochem.com/oauth/qq/Ude9c3aae.htmï¼Œè¯·æ±‚è¯¥é“¾æŽ¥æ—¶æ–¹æ³•ä¼šåˆ†åˆ«æŽ¥å—åˆ°qqå’ŒUde9c3aaeä¸¤ä¸ªå‚æ•°å€¼,<br/>
+        åœ¨æœåŠ¡å™¨ä¸Šï¼ŒæŽ¥æ”¶æ–¹æ³•çš„æ³¨è§£@RequestMappingæ—¶éœ€è¦ä½¿ç”¨å¦‚ä¸‹å†™æ³•ï¼š</p>
         <pre>
             <code class="m-xmp">
                 @RequestMapping("/oauth/{type}/{uuid}.htm")
@@ -59,7 +59,7 @@
                                     @PathVariable("uuid") String uuid, Model model)
             </code>
         </pre>
-        <p>¼´£¬½«´«ÈëµÄ²ÎÊýÔÚpathÖÐÓÃ{}×¢Ã÷£¬²¢ÔÚ·½·¨²ÎÊý´¦Ìí¼Ó@PathVariable×¢½â¡£</p>
-        <a class="m-detail-link" href="$appServer.get('annotation/param/RESTful.htm')" target="_blank">µã»÷²é¿´Ê¾Àý</a><br/>
+        <p>å³ï¼Œå°†ä¼ å…¥çš„å‚æ•°åœ¨pathä¸­ç”¨{}æ³¨æ˜Žï¼Œå¹¶åœ¨æ–¹æ³•å‚æ•°å¤„æ·»åŠ @PathVariableæ³¨è§£ã€‚</p>
+        <a class="m-detail-link" href="$appServer.get('annotation/param/RESTful.htm')" target="_blank">ç‚¹å‡»æŸ¥çœ‹ç¤ºä¾‹</a><br/>
     </div>
 </details>

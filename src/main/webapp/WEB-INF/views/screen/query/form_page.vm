@@ -1,12 +1,12 @@
-#set($title = 'form·ÖÒ³')
-À´À´À´,ÎÒinclude Ò»¸ö·ÖÒ³¼òµ¥slider<br/>
+#set($title = 'formåˆ†é¡µ')
+æ¥æ¥æ¥,æˆ‘include ä¸€ä¸ªåˆ†é¡µç®€å•slider<br/>
 $contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm")
 <br/>
-ÔÙ¹¹ÔìÒ»¸ö¸¡¶¯´°Îª9µÄ·ÖÒ³
+å†æ„é€ ä¸€ä¸ªæµ®åŠ¨çª—ä¸º9çš„åˆ†é¡µ
 $contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put("slider_width",9)
 <br/>
-ÔÙ¹¹ÔìÒ»¸ö·ÖÒ³²ÎÊıÎªapageµÄ·ÖÒ³
+å†æ„é€ ä¸€ä¸ªåˆ†é¡µå‚æ•°ä¸ºapageçš„åˆ†é¡µ
 $contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put("slider_page",'apage')
 <br/>
-ÔÙ¹¹ÔìÒ»¸öÉñÆæµÄ¿ÉÒÔÖ±½ÓÊäÈëÒ³ÂëµÄ·ÖÒ³
+å†æ„é€ ä¸€ä¸ªç¥å¥‡çš„å¯ä»¥ç›´æ¥è¾“å…¥é¡µç çš„åˆ†é¡µ
 $contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put('slider_path','/contain/formPagingPageSlider')

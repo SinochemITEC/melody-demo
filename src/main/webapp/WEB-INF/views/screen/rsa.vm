@@ -41,7 +41,7 @@ function rsancrypt(ele) {
 <form name="rsaform" action="$appServer.get('rsa.htm')" method="post" onSubmit="return do_encrypt();">
 	<input type="hidden" name="entime" value="" />
 	<input id="in_text" type="text" name="itext" value="$!{plaintext}" /><br/>
-	<input type="submit" name="sb" value="提交" />
+	<input type="submit" name="sb" value="鎻愪氦" />
 </form>
 	<br/>
-#if($plaintext) 密文: $!{itext} <br/>解密得到 $!{plaintext} <br/> js加密耗时:$!{entime}ms java解密用时:$!{detime}ms #end
+#if($plaintext) 瀵嗘枃: $!{itext} <br/>瑙ｅ瘑寰楀埌 $!{plaintext} <br/> js鍔犲瘑鑰楁椂:$!{entime}ms java瑙ｅ瘑鐢ㄦ椂:$!{detime}ms #end

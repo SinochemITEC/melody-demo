@@ -1,6 +1,6 @@
-<!-- 公用的header页面 -->
+<!-- 鍏敤鐨刪eader椤甸潰 -->
 
 <div class="melody-head">
-        <a href="$appServer.get('index.htm')" class="logo">WIKI中化信息</a>
+        <a href="$appServer.get('index.htm')" class="logo">WIKI涓寲淇℃伅</a>
         <span>Melody-demo</span>
 </div>

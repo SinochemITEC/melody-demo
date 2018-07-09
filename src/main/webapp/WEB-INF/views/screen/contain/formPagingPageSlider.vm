@@ -17,7 +17,7 @@
 	#if($sliderCurrent == '1')
 	<span> &laquo; </span>
 	#else
-	<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('1')">&laquo;��ҳ</a>
+	<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('1')">&laquo;首页</a>
 	<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${sliderPrev}')">&laquo;</a>
 	#end
 	#foreach($grid in $grids)
@@ -33,10 +33,10 @@
 		<span class="nextprev"> &raquo; </span>
 	#else
 		<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${sliderNext}')">&raquo;</a>
-		<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${sliderTotal}')">ĩҳ &raquo;</a>
+		<a class="m-detail-link" href="#" onclick="goto$!{sliderRandom}('${sliderTotal}')">末页 &raquo;</a>
 	#end
 	<input type="text" name="$!{sliderPage}" value="$sliderQuery.currentPage"/>
-	<input type="submit" name="sb" value="ֱ�ӵ�"/>
+	<input type="submit" name="sb" value="直接到"/>
     </ins>
 	</form>
 </div>

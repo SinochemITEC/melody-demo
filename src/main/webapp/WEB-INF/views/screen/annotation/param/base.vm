@@ -1,5 +1,5 @@
-<p>Ê¾Àý¶ÔÓ¦µÄ·½·¨ÎªAnnotationDemoAction.annotationBase</p>
-<p>Ê¾ÀýÍ¨¹ýaddQueryData·½·¨ÔÚÁ´½ÓºóÌí¼Ó²ÎÊý£¬Í¬ÀíÍ¬ÑùÊÊÓÃÓÚ±íµ¥Ìá½»¡£</p>
-<p>request¶ÔÏóÖÐÈ¡µ½µÄipÖµ:$!{ip}</p>
-<p>Èë²ÎÖÐnameµÄÖµ:$!{name}</p>
-<p>Èë²ÎÖÐsizeµÄÖµ:$!{size}</p>
+<p>ç¤ºä¾‹å¯¹åº”çš„æ–¹æ³•ä¸ºAnnotationDemoAction.annotationBase</p>
+<p>ç¤ºä¾‹é€šè¿‡addQueryDataæ–¹æ³•åœ¨é“¾æŽ¥åŽæ·»åŠ å‚æ•°ï¼ŒåŒç†åŒæ ·é€‚ç”¨äºŽè¡¨å•æäº¤ã€‚</p>
+<p>requestå¯¹è±¡ä¸­å–åˆ°çš„ipå€¼:$!{ip}</p>
+<p>å…¥å‚ä¸­nameçš„å€¼:$!{name}</p>
+<p>å…¥å‚ä¸­sizeçš„å€¼:$!{size}</p>

@@ -1,0 +1,16 @@
+<p>log4j.properties文件中配置的是项目输出的配置内容：</p>
+<li>log4j.rootLogger： 输出级别和输出地址</li>
+<li>log4j.logger.java.sql： 数据库相关信息的输出级别和输出地址</li>
+<li>velocity print out部分： Velocity相关信息的输出级别和输出地址</li>
+<li>app print out部分： 应用运行信息输出级别和输出地址</li>
+
+<p>下面的各appender设置是配置的各输出文件的输出格式、输出位置、文件生成时间间隔等</p>
+
+<p>appender中涉及的一个#{play.root}这样一个参数，该参数配置在web.xml中，会被自动赋值为web程序根目录路径</p>
+#*
+<li>standout log appender部分： 运行信息输出到控制台的配置</li>
+<li>common log appender部分： 运行信息输出到文件的配置</li>
+<li>error log appender部分： 错误信息输出到文件的配置</li>
+<li>sql log appender部分： 数据库信息输出到文件的配置</li>
+<li>velocity log appender部分： velocity的运行信息输出到文件的配置</li>
+<li>profile appender部分： ？？的运行信息输出到文件的配置</li>*#

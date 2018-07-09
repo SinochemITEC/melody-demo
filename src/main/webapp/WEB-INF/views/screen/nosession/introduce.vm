@@ -1,19 +1,19 @@
 <h2 class="melody-d-title">NoSession</h2>
-<p>NoSessionÊÇÎªÁË½â¾öÎ¢·şÎñÖĞsessionÍ¬²½ÎÊÌâ¶øÌá³öµÄ½â¾ö·½°¸¡£<br/>
-NoSessionµÄÉè¼ÆË¼Â·ÊÇ½«session¾­¹ı¼ÓÃÜºó´æ´¢µ½cookieÖĞ£¬ÒÔ±£Ö¤²»Í¬µÄ·şÎñÆ÷¾ù¿ÉÒÔÈ¡µÃÓÃ»§µÄsession¡£<br/></p>
+<p>NoSessionæ˜¯ä¸ºäº†è§£å†³å¾®æœåŠ¡ä¸­sessionåŒæ­¥é—®é¢˜è€Œæå‡ºçš„è§£å†³æ–¹æ¡ˆã€‚<br/>
+NoSessionçš„è®¾è®¡æ€è·¯æ˜¯å°†sessionç»è¿‡åŠ å¯†åå­˜å‚¨åˆ°cookieä¸­ï¼Œä»¥ä¿è¯ä¸åŒçš„æœåŠ¡å™¨å‡å¯ä»¥å–å¾—ç”¨æˆ·çš„sessionã€‚<br/></p>
 
 <details open>
     <summary>
-        <h><font size="5px">Ê¹ÓÃ²½Öè</font></h>
+        <h><font size="5px">ä½¿ç”¨æ­¥éª¤</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
         $contain.get("useNoSession.htm")
     </div>
-</details>l
+</details>
 <details open>
     <summary>
-        <h><font size="5px">cookieµÄÍØÕ¹</font></h>
+        <h><font size="5px">cookieçš„æ‹“å±•</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -22,13 +22,13 @@ NoSessionµÄÉè¼ÆË¼Â·ÊÇ½«session¾­¹ı¼ÓÃÜºó´æ´¢µ½cookieÖĞ£¬ÒÔ±£Ö¤²»Í¬µÄ·şÎñÆ÷¾ù¿ÉÒÔ
 </details>
 <details open>
     <summary>
-        <h><font size="5px">Ê¾Àı</font></h>
+        <h><font size="5px">ç¤ºä¾‹</font></h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <p>1¡¢ÊµÌåÀàÊ¾Àı£ºcom.eyeieye.melody.demo.web.action.User<br/>
-        2¡¢CookieStoreÀàÊ¾Àı£ºcom.eyeieye.melody.demo.web.action.UserAttributeCookieStore<br/>
-        <p>3¡¢Ó¦ÓÃÊµÀı£ºÇë²é¿´"ÓÃ»§µÇÂ¼"²¿·ÖµÄ¾ßÌåÊµÏÖ</p>
-        <a class="m-detail-link" href="$appServer.get('/login/login.htm')">ÓÃ»§µÇÂ¼</a>
+        <p>1ã€å®ä½“ç±»ç¤ºä¾‹ï¼šcom.eyeieye.melody.demo.web.action.User<br/>
+        2ã€CookieStoreç±»ç¤ºä¾‹ï¼šcom.eyeieye.melody.demo.web.action.UserAttributeCookieStore<br/>
+        <p>3ã€åº”ç”¨å®ä¾‹ï¼šè¯·æŸ¥çœ‹"ç”¨æˆ·ç™»å½•"éƒ¨åˆ†çš„å…·ä½“å®ç°</p>
+        <a class="m-detail-link" href="$appServer.get('/login/login.htm')">ç”¨æˆ·ç™»å½•</a>
     </div>
 </details>

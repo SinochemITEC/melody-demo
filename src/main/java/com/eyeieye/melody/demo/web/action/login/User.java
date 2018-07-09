@@ -1,6 +1,6 @@
 package com.eyeieye.melody.demo.web.action.login;
 
-import com.eyeieye.melody.demo.util.util.MD5Encode;
+import com.eyeieye.melody.demo.util.MD5Encode;
 
 import java.io.Serializable;
 import java.util.Date;

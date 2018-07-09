@@ -12,7 +12,7 @@
         </div>
     </div>
 </div>
-##$contain.get('/contain/footer.htm')
+    $contain.get('/contain/footer.htm')
     $asyncContain.export()
 </body>
 </html>

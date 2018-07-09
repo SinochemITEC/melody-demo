@@ -1,9 +1,9 @@
-<h2 class="melody-d-title">Ò³ÃæÖÆ×÷ËµÃ÷ºÍÊ¾Àı</h2>
-<p>melody½¨ÒéÊ¹ÓÃÕßÊ¹ÓÃVelocity¹¹½¨Ò³Ãæ£¬Ê¹ÓÃcontain·½·¨Æ´½ÓÒ³Ãæ¡£</p>
+<h2 class="melody-d-title">é¡µé¢åˆ¶ä½œè¯´æ˜å’Œç¤ºä¾‹</h2>
+<p>melodyå»ºè®®ä½¿ç”¨è€…ä½¿ç”¨Velocityæ„å»ºé¡µé¢ï¼Œä½¿ç”¨containæ–¹æ³•æ‹¼æ¥é¡µé¢ã€‚</p>
 <br/>
 <details close>
     <summary>
-        <h><font size="5px">VelocityÄ£°åÓïÑÔ</font> </h>
+        <h><font size="5px">Velocityæ¨¡æ¿è¯­è¨€</font> </h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -11,22 +11,35 @@
     </div>
 </details>
 <br/>
+
 <details class="menu" close>
     <summary>
-        <h><font size="5px">ÓÃcontainÆ´½ÓÒ³Ãæ</font> </h>
+        <h><font size="5px">ç”¨containæ‹¼æ¥é¡µé¢</font> </h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
         $contain.get("contain.htm")
     </div>
 </details>
+
 <br/>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">Ê¾Àı</font> </h>
+        <h><font size="5px">jsCode</font> </h>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-       <a class="m-detail-link" href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipeÊ¹ÓÃÊµÀı</a>
+
+    </div>
+</details>
+
+<br/>
+<details class="menu" close>
+    <summary>
+        <h><font size="5px">ç¤ºä¾‹</font> </h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+       <a class="m-detail-link" href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipeä½¿ç”¨å®ä¾‹</a>
     </div>
 </details>

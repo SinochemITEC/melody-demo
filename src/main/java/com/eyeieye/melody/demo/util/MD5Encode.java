@@ -1,4 +1,4 @@
-package com.eyeieye.melody.demo.util.util;
+package com.eyeieye.melody.demo.util;
 
 
 import com.eyeieye.melody.util.StringUtil;

@@ -1,2 +1,2 @@
-���Ƿ���String�ķ���������Ϊforward����ǰʱ�� $!{currentTime} <br/>
-ԭ���ӷ��ʵ���string_forward.htm��ʵ�ʷ��ص���ԴΪforward.vm�ļ���
+我是返回String的方法，类型为forward，当前时间 $!{currentTime} <br/>
+原链接访问的是string_forward.htm，实际返回的资源为forward.vm文件。

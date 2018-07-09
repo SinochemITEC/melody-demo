@@ -1,0 +1,28 @@
+<p>melody内置了多个工具了，主要有如下几个：
+- DateUtil
+- StringUtil
+- HostUtil
+- MoneyUtil
+- ArrayUtil
+- ObjectFactory</p>
+
+<p>工具类的方法均为静态方法，可通过类名直接调用，各工具类的具体功能如下所示：</p>
+
+<details open>
+    <summary>
+        <h><font size="5px">DateUtil</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("DateUtil.htm")
+    </div>
+</details>
+<details open>
+    <summary>
+        <h><font size="5px">StringUtil</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("StringUtil.htm")
+    </div>
+</details>

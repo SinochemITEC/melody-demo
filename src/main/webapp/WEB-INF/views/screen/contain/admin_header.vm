@@ -1,8 +1,8 @@
-<font color="red"> ÎÒÊÇadmin µÄheaderÅ¶</font>
+<font color="red"> æˆ‘æ˜¯admin çš„headerå“¦</font>
 <br/>
 #if($vlocale.isLocale('zh','CN'))
 <a class="m-detail-link" href="$appServer/locale/change.htm?locale=en_US">to engish</a>
 #else
-	<a class="m-detail-link" href="$appServer/locale/change.htm?locale=zh_CN">»ØÖĞÎÄ</a>
+	<a class="m-detail-link" href="$appServer/locale/change.htm?locale=zh_CN">å›ä¸­æ–‡</a>
 #end
 <br/>

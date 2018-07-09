@@ -1,8 +1,8 @@
-<span class="required">*</span>ajaxÐ£Ñé£º
+<span class="required">*</span>ajaxæ ¡éªŒï¼š
 
 <img src="$appServer.get('/checkcode/simple.htm')"/>
 <input type="text" id="ajaxanswer" name="ajaxanswer" value=""/>
-<input type="button" id="ajaxCheck" value="µã»÷Ð£Ñé"/>
+<input type="button" id="ajaxCheck" value="ç‚¹å‡»æ ¡éªŒ"/>
 <script type="text/javascript">
     $(document).ready(function () {
         $("#ajaxCheck").click(function () {

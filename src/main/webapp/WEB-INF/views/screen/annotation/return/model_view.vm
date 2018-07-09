@@ -1,11 +1,11 @@
-<p>ÎÒÊÇ·µ»ØModelAndViewµÄ·½·¨£¬µ±Ç°Ê±¼ä $!{currentTime}</p>
-<p>ÉèÖÃ·µ»ØµÄÒ³Ãæ×ÊÔ´µÄ·½·¨Îª</p>
+<p>æˆ‘æ˜¯è¿”å›ModelAndViewçš„æ–¹æ³•ï¼Œå½“å‰æ—¶é—´ $!{currentTime}</p>
+<p>è®¾ç½®è¿”å›çš„é¡µé¢èµ„æºçš„æ–¹æ³•ä¸º</p>
 <pre>
     <code class="m-xmp">
         ModelAndView modelAndView = new ModelAndView("/annotation/return/model_view");
     </code>
 </pre>
-<p>ÉèÖÃ²ÎÊıµÄ·½·¨Îª</p>
+<p>è®¾ç½®å‚æ•°çš„æ–¹æ³•ä¸º</p>
 <pre>
     <code class="m-xmp">
         modelAndView.addObject("currentTime",new Date());

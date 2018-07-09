@@ -1,0 +1,118 @@
+<p>DateUtil是对时间数据进行处理的工具类，所在位置为<i>com.eyeieye.melody.util.DateUtil</i>，提供了对时间数据转换和获取时间的方法：</p>
+
+
+<li>getToday()</li>
+<p>
+    获取当前日期。<br/>
+    返回类型：Calendar<br/>
+</p>
+
+<li>getCurrentDay()</li>
+<p>
+    获取当前日期。<br/>
+    返回类型：Calendar<br/>
+</p>
+
+<li>getDatePattern()</li>
+<p>
+    获取一个日期格式，返回为"yyyy-MM-dd"。<br/>
+    返回类型：String<br/>
+</p>
+
+<li>getDateTiemPattern()</li>
+<p>
+    获取一个日期格式，返回为"yyyy-MM-dd HH:mm:ss.S"。<br/>
+    返回类型：String<br/>
+</p>
+
+<li>getDateTime(String aMask, Date aDate)</li>
+<p>
+    获取一个date，按照aMask的格式将date的时间返回为一个字符串<br/>
+    返回类型：String
+</p>
+
+<li>getDate(Date aDate) </li>
+<p>
+    获得一个date，将日期按照getDatePattern()返回的格式返回一个字符串<br/>
+    返回类型：String<br/>
+</p>
+
+<li>getTimeNow(Date theTime) </li>
+<p>
+    获得一个date的时间，将时、分按照"HH:mm"的格式返回<br/>
+    返回类型：String<br/>
+</p>
+
+<li>getTimestampToString(Timestamp obj)</li>
+<p>
+将Timestamp类型转换为String类型<br/>
+返回类型：String<br/>
+</p>
+
+<li>getTimestampToString(String formatPattern,Timestamp obj)</li>
+<p>
+将Timestamp类型按照fromatPattern的格式转换为String类型<br/>
+返回类型：String<br/>
+</p>
+
+<li>getStringToTimestamp(String str)</li>
+<p>
+    将String类型的日期转换为Timestamp类型的日期<br/>
+    返回类型：Timestamp
+</p>
+
+<li>strToDate(String str, String pattern)</li>
+<p>
+    将String类型的日期按照pattern的格式转换为Date类型<br/>
+    返回类型：Date
+</p>
+
+<li>getDay(Date date)</li>
+<p>
+    根据日期获得星期几<br/>
+    返回类型：int
+</p>
+
+<li>getRelativeDate(Date startDate, int day)</li>
+<p>
+    取得从startDate开始的前(正)/后(负)day天<br/>
+    返回类型：Date
+</p>
+
+<li>convertStringToDate(Sttring aMask, String strDate)</li>
+<p>
+    将String类型的日期按照aMask的格式转换为Date类型<br/>
+    返回类型：Date
+</p>
+
+<li>convertStringToDate(String strDate)</li>
+<p>
+    将String类型的日期按照getDatePattern()返回的格式转换为Date类型<br/>
+    返回类型：Date
+</p>
+
+<li>convertDateToString(String pattern, Date aDate) </li>
+<p>
+将Date类型的日期按照pattern的格式转换为String类型
+返回类型：String
+</p>
+
+<li>convertDateToString(Date aDate) </li>
+<p>
+将Date类型的日期按照getDatePattern()的格式转换为String类型
+返回类型：String
+</p>
+
+
+
+<li>getTimestampToString(Timestamp obj)</li>
+<p>
+    将Timestamp类型转换为String类型<br/>
+    返回类型：String<br/>
+</p>
+
+<li>countDays(String beginStr, String endStr, String Foramt)</li>
+<p>
+    统计两个时间差，返回的是天数(即24小时算一天，少于24小时就为0，用这个的时候最好把小时、分钟等去掉)<br/>
+    返回类型：int<br/>
+</p>

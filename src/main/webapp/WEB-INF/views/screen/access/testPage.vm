@@ -1,13 +1,13 @@
-ÄãµÄµÇÂ¼Çé¿ö£º #if($logined == true) ÒÑµÇÂ¼ #else Î´µÇÂ¼  #end <br/>
-±¾Ò³ÃæÖ»ÓĞµÇÂ½²ÅÄÜ·ÃÎÊ£º<a class="m-detail-link" href="$appServer.get('/access/admin.htm')">µÇÂ¼ºó²ÅÄÜ·ÃÎÊµÄÒ³Ãæ</a><br/>
-<a class="m-detail-link" href="$appServer.get('/access/login.htm')"><input type="button"  value="µÇÂ¼"/></a>
-<a class="m-detail-link" href="$appServer.get('/access/logout.htm')"><input type="button"  value="µÇ³ö"/></a><br/>
+ä½ çš„ç™»å½•æƒ…å†µï¼š #if($logined == true) å·²ç™»å½• #else æœªç™»å½•  #end <br/>
+æœ¬é¡µé¢åªæœ‰ç™»é™†æ‰èƒ½è®¿é—®ï¼š<a class="m-detail-link" href="$appServer.get('/access/admin.htm')">ç™»å½•åæ‰èƒ½è®¿é—®çš„é¡µé¢</a><br/>
+<a class="m-detail-link" href="$appServer.get('/access/login.htm')"><input type="button"  value="ç™»å½•"/></a>
+<a class="m-detail-link" href="$appServer.get('/access/logout.htm')"><input type="button"  value="ç™»å‡º"/></a><br/>
 
 
-ÄãÓµÓĞµÄÈ¨ÏŞ£º#if(!$auths) ÄãÃ»ÓĞµÇÂ¼»òÃ»ÓĞÈ¨ÏŞ #else  #foreach($auth in $auths) $auth  #end #end<br/>
-<a class="m-detail-link" href="$appServer.get('/access/addFun1.htm')"><input type="button"  value="Ìí¼ÓÈ¨ÏŞFun1"/></a>
-<a class="m-detail-link" href="$appServer.get('/access/addFun2.htm')"><input type="button"  value="Ìí¼ÓÈ¨ÏŞFun2"/></a>
-<a class="m-detail-link" href="$appServer.get('/access/clearFun.htm')"><input type="button"  value="Çå³ıÈ¨ÏŞ"/></a><br/>
+ä½ æ‹¥æœ‰çš„æƒé™ï¼š#if(!$auths) ä½ æ²¡æœ‰ç™»å½•æˆ–æ²¡æœ‰æƒé™ #else  #foreach($auth in $auths) $auth  #end #end<br/>
+<a class="m-detail-link" href="$appServer.get('/access/addFun1.htm')"><input type="button"  value="æ·»åŠ æƒé™Fun1"/></a>
+<a class="m-detail-link" href="$appServer.get('/access/addFun2.htm')"><input type="button"  value="æ·»åŠ æƒé™Fun2"/></a>
+<a class="m-detail-link" href="$appServer.get('/access/clearFun.htm')"><input type="button"  value="æ¸…é™¤æƒé™"/></a><br/>
 
-±¾Ò³ÃæÓµÓĞÈ¨ÏŞFun1»òFun3²ÅÄÜ·ÃÎÊ£º<a class="m-detail-link" href="$appServer.get('/access/fun1orfun3.htm')">ÓµÓĞÈ¨ÏŞ²ÅÄÜ·ÃÎÊµÄÒ³Ãæ</a><br/>
+æœ¬é¡µé¢æ‹¥æœ‰æƒé™Fun1æˆ–Fun3æ‰èƒ½è®¿é—®ï¼š<a class="m-detail-link" href="$appServer.get('/access/fun1orfun3.htm')">æ‹¥æœ‰æƒé™æ‰èƒ½è®¿é—®çš„é¡µé¢</a><br/>
 

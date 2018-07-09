@@ -1,9 +1,9 @@
 <form name="upload" method="post" action="$appServer/upload/simple.htm" enctype="multipart/form-data">
-	ÇëÑ¡ÔñÎÄ¼ş£º<input type="file" name="upfile" />
+	è¯·é€‰æ‹©æ–‡ä»¶ï¼š<input type="file" name="upfile" />
 	<br/>
-	<input type="submit" value="ÉÏ´«" />
+	<input type="submit" value="ä¸Šä¼ " />
 </form>
 	<br/>
 #if($originalFilename)
-	ÉÏ´«ÎÄ¼şÃû $originalFilename,´óĞ¡:$length
+	ä¸Šä¼ æ–‡ä»¶å $originalFilename,å¤§å°:$length
 #end

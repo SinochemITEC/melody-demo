@@ -1,4 +1,4 @@
-<p>action�з��ز����ķ��������Ϸ�Ϊ���� void��String��ModelandView��@ResponseBody�����·ֱ���ܡ�</p><br/>
+<p>action中返回参数的方法大体上分为四种 void、String、ModelandView、@ResponseBody，以下分别介绍。</p><br/>
 
 <details close>
     <summary>
@@ -6,8 +6,8 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <li>����������ֵΪvoid��ʱ�򣬷��������ص�ҳ����ԴΪurl������Ӧ��ҳ���ļ���Դ��ͬʱ��ModelMap�еĲ������ݵ�ҳ��</li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/void.htm").addQueryData("name","John")" target="_blank">����鿴ʾ��</a><br/>
+        <li>当方法返回值为void的时候，服务器返回的页面资源为url本身对应的页面文件资源，同时将ModelMap中的参数传递到页面</li>
+        <a class="m-detail-link" href="$appServer.get("/annotation/return/void.htm").addQueryData("name","John")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>
@@ -16,12 +16,12 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <li>����������ֵΪString��ʱ�򣬷���������ݷ���ֵ�ṩҳ����Դ��ͬʱ�����ط�ʽ��Ϊforward��redirect���֡�<br/>
-            forward��ʽ����������ֱ�ӽ�ҳ����Դ���أ�ʹ�÷�����ֱ�ӷ���screenĿ¼�е��ļ�·������Ҫע����ǽ�β���ܴ���<br/>
-            redirect��ʽ����������Ҫ��������ض����µ�url��ʹ�÷���ʱ���ص��ַ�����"redirect:"��ͷ�����������������ӻ򱾵���ҳ�ļ���path��
+        <li>当方法返回值为String的时候，服务器会根据返回值提供页面资源，同时，返回方式分为forward和redirect两种。<br/>
+            forward方式：服务器会直接将页面资源返回，使用方法是直接返回screen目录中的文件路径，需要注意的是结尾不能带；<br/>
+            redirect方式：服务器会要求浏览器重定向到新的url，使用方法时返回的字符串以"redirect:"开头，并连接上完整链接或本地网页文件的path。
         </li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/string_forward.htm")" target="_blank">����鿴ʾ��</a><br/>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/string_redirect.htm")" target="_blank">����鿴ʾ��</a><br/>
+        <a class="m-detail-link" href="$appServer.get("/annotation/return/string_forward.htm")" target="_blank">点击查看示例</a><br/>
+        <a class="m-detail-link" href="$appServer.get("/annotation/return/string_redirect.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>
@@ -30,8 +30,8 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <li>�����ķ���ֵҲ������ModelAndView��ModelAndView�Ķ���������÷��ص�ҳ����Դ�ļ�(forward��redirect����)��ͬʱҲ����ͨ��addObject�������÷���ҳ��Ĳ�����</li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/view.htm")" target="_blank">����鿴ʾ��</a><br/>
+        <li>方法的返回值也可以是ModelAndView，ModelAndView的对象可以设置返回的页面资源文件(forward和redirect均可)，同时也可以通过addObject方法设置返回页面的参数。</li>
+        <a class="m-detail-link" href="$appServer.get("/annotation/return/view.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>
 <details close>
@@ -40,7 +40,7 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <li>������ע����@ResponseBody֮�󣬸÷����ķ���ֵ�Ͳ��ᱻspring����������ֱ��д��HttpResponse��body�У�������ҳ����ȡ����</li>
-        <a class="m-detail-link" href="$appServer.get("/annotation/return/responseBody.htm")" target="_blank">����鿴ʾ��</a><br/>
+        <li>方法上注解了@ResponseBody之后，该方法的返回值就不会被spring处理，而是直接写入HttpResponse的body中，可以在页面上取到。</li>
+        <a class="m-detail-link" href="$appServer.get("/annotation/return/responseBody.htm")" target="_blank">点击查看示例</a><br/>
     </div>
 </details>

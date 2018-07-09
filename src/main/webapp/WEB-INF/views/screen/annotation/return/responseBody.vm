@@ -1,10 +1,10 @@
-<input type="button" id="json_return" value="µã»÷ÇëÇóÒ»¸öjson´®"/>
+<input type="button" id="json_return" value="ç‚¹å‡»è¯·æ±‚ä¸€ä¸ªjsonä¸²"/>
 <script>
     $(document).ready(function () {
         $("#json_return").click(function () {
             jQuery.getJSON("$appServer.get('/annotation/return/json.json')",
                     function (data) {
-                        alert('·µ»ØµÄjson´®Îª£º'+ JSON.stringify(data));
+                        alert('è¿”å›žçš„jsonä¸²ä¸ºï¼š'+ JSON.stringify(data));
                         alert('name:' + data.name + ' \nnick:' + data.nick + ' \nage:' + data.age);
                     });
         });

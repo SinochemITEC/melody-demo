@@ -1,35 +1,35 @@
 <ul class="demo-ul-paragraph">
-    <li>request¶ÔÏó</li>
-    <p>containµÄÒ³ÃæºÍÖ÷Ò³Ãæ¹²ÏíÒ»¸örequest¶ÔÏó¡£</p><br/>
+    <li>requestå¯¹è±¡</li>
+    <p>containçš„é¡µé¢å’Œä¸»é¡µé¢å…±äº«ä¸€ä¸ªrequestå¯¹è±¡ã€‚</p><br/>
     <li>$request.setAttrubute()</li>
-    <p>\$request¿ÉÒÔµÄsetAttribute·½·¨¿ÉÒÔÉèÖÃ²ÎÊı£¬ÉèÖÃµÄ²ÎÊı×÷ÓÃÓÚ±¾Ò³ÃæºÍcontainµÄÒ³Ãæ¡£ÁíÍâ£¬\$requestÒ²Ìá¹©ÁËremoveAttribute()·½·¨¿ÉÒÔÒÆ³ı²ÎÊı¡£Èç´úÂë£º</p>
+    <p>\$requestå¯ä»¥çš„setAttributeæ–¹æ³•å¯ä»¥è®¾ç½®å‚æ•°ï¼Œè®¾ç½®çš„å‚æ•°ä½œç”¨äºæœ¬é¡µé¢å’Œcontainçš„é¡µé¢ã€‚å¦å¤–ï¼Œ\$requestä¹Ÿæä¾›äº†removeAttribute()æ–¹æ³•å¯ä»¥ç§»é™¤å‚æ•°ã€‚å¦‚ä»£ç ï¼š</p>
     <br/>
     <p>\$request.setAttribute('my_name','neo')</p>
-    <p>ÎÒµÄÃû×ÖÊÇ\$!my_name</p>
+    <p>æˆ‘çš„åå­—æ˜¯\$!my_name</p>
     <p>\$contain.get('/widget/show_name.htm')</p>
     <p>\$request.removeAttribute('my_name')</p>
     <p>\$contain.get('/widget/show_name.htm')</p>
-    <p>ÎÒµÄÃû×ÖÊÇ&#36;!my_name</p><br/>
-    <p>Ğ§¹û£º</p>
+    <p>æˆ‘çš„åå­—æ˜¯&#36;!my_name</p><br/>
+    <p>æ•ˆæœï¼š</p>
     <p>$request.setAttribute('my_name','neo')</p>
-    <p>ÎÒµÄÃû×ÖÊÇ$!my_name</p>
+    <p>æˆ‘çš„åå­—æ˜¯$!my_name</p>
     <p>$contain.get('/widget/show_name.htm')</p>
     <p>$request.removeAttribute('my_name')</p>
     <p>$contain.get('/widget/show_name.htm')</p>
-    <p>ÎÒµÄÃû×ÖÊÇ$!my_name</p><br/>
-    <li>put·½·¨</li>
-    <p>containÒ²ÂòÄãµÄÊ±ºò¿ÉÒÔÔÚgetºóÊ¹ÓÃput·½·¨£¬ ÆäĞ§¹ûÓë\$request.setAttribute()ÏàÍ¬¡£ÀıÈç£º</p><br/>
+    <p>æˆ‘çš„åå­—æ˜¯$!my_name</p><br/>
+    <li>putæ–¹æ³•</li>
+    <p>containä¹Ÿä¹°ä½ çš„æ—¶å€™å¯ä»¥åœ¨getåä½¿ç”¨putæ–¹æ³•ï¼Œ å…¶æ•ˆæœä¸\$request.setAttribute()ç›¸åŒã€‚ä¾‹å¦‚ï¼š</p><br/>
     <p>\$contain.get('/widget/show_name.htm') .put('my_name','morpheus')</p>
     <p>\$contain.get('/widget/show_name.htm')</p><br/>
-    <p>Ğ§¹û£º</p>
+    <p>æ•ˆæœï¼š</p>
     <p>$contain.get('/widget/show_name.htm').put('my_name','morpheus')</p>
     <p>$contain.get('/widget/show_name.htm')</p>
-    <p>µ«ÊÇ£¬µ±put·½·¨ÓësetAttributeÍ¬Ê±Ê¹ÓÃÊ±£¬¶ÔÓÚÍ¬ÃûµÄ²ÎÊı£¬ÔÚ±»containµÄÒ³ÃæÖĞ£¬put·½·¨»á¸²¸ÇsetAttribute·½·¨¡£ÀıÈç£º</p><br/>
+    <p>ä½†æ˜¯ï¼Œå½“putæ–¹æ³•ä¸setAttributeåŒæ—¶ä½¿ç”¨æ—¶ï¼Œå¯¹äºåŒåçš„å‚æ•°ï¼Œåœ¨è¢«containçš„é¡µé¢ä¸­ï¼Œputæ–¹æ³•ä¼šè¦†ç›–setAttributeæ–¹æ³•ã€‚ä¾‹å¦‚ï¼š</p><br/>
     <p>\$request.setAttribute('my_name','Trinity')</p>
     <p>\$contain.get('/widget/show_name.htm')</p>
     <p>\$contain.get('/widget/show_name.htm') .put('my_name','Smith')</p>
     <p>\$contain.get('/widget/show_name.htm')</p><br/>
-    <p>Ğ§¹û£º</p>
+    <p>æ•ˆæœï¼š</p>
     <p>$request.setAttribute('my_name','Trinity')</p>
     <p>$contain.get('/widget/show_name.htm')</p>
     <p>$contain.get('/widget/show_name.htm').put('my_name','Smith')</p>

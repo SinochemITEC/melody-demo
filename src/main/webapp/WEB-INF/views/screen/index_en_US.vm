@@ -1,24 +1,24 @@
-ÎÒÊÇÒ»¸öÓ¢ÎÄÖ÷Ò³ÚÀ
+æˆ‘æ˜¯ä¸€ä¸ªè‹±æ–‡ä¸»é¡µè¯¶
 <br/>
-demoÈ±Ê¡ÅäÖÃÎªÊ¹ÓÃhttp://localhost:8080·ÃÎÊ,Èç¹ûÄãµÄtomcat¶Ë¿Ú²»Í¬,ÇëĞŞ¸ÄWEB-INF/conf/server.properties
+demoç¼ºçœé…ç½®ä¸ºä½¿ç”¨http://localhost:8080è®¿é—®,å¦‚æœä½ çš„tomcatç«¯å£ä¸åŒ,è¯·ä¿®æ”¹WEB-INF/conf/server.properties
 <hr/>
 $iDemand.addJs('jquery')
-URLBrokerÑİÊ¾:<br/>
-ÎÒÀ´Ôì¸öappÁ´½Ó  $appServer.get('index.htm')  <br/>
-ÔÙÀ´Ôì¸ö  $appServer.get('search.htm').addQueryData('key','ÖĞÎÄËÑË÷').addQueryData('sort','price')  <br/>
-¾²Ì¬Í¼Æ¬Á´½Ó $imageServer.get('/e/f/ggg.png')<br/>
-https appÁ´½Ó $sslAppServer.get('index.htm')<br/>
-¶àÖ÷»úÁ´½Ó£¬Ö±½ÓÊä³öÏÔÊ¾ÅäÖÃµÄÒ»¸öÖ÷»ú£º$uploadServer ¹¹Ôìurl(È±Ê¡Ê¹ÓÃÁ´½Ó×Ö·û´®µÄhashCode¼ÆËã):$uploadServer.get('1.jpg') $uploadServer.get('2.jpg') $uploadServer.get('3.jpg') <br/>
+URLBrokeræ¼”ç¤º:<br/>
+æˆ‘æ¥é€ ä¸ªappé“¾æ¥  $appServer.get('index.htm')  <br/>
+å†æ¥é€ ä¸ª  $appServer.get('search.htm').addQueryData('key','ä¸­æ–‡æœç´¢').addQueryData('sort','price')  <br/>
+é™æ€å›¾ç‰‡é“¾æ¥ $imageServer.get('/e/f/ggg.png')<br/>
+https appé“¾æ¥ $sslAppServer.get('index.htm')<br/>
+å¤šä¸»æœºé“¾æ¥ï¼Œç›´æ¥è¾“å‡ºæ˜¾ç¤ºé…ç½®çš„ä¸€ä¸ªä¸»æœºï¼š$uploadServer æ„é€ url(ç¼ºçœä½¿ç”¨é“¾æ¥å­—ç¬¦ä¸²çš„hashCodeè®¡ç®—):$uploadServer.get('1.jpg') $uploadServer.get('2.jpg') $uploadServer.get('3.jpg') <br/>
 <hr/>
-<a class="m-detail-link" href="$appServer.get('vpage.htm')">velocotyÒ³Ãæ</a> <br/>
-<a class="m-detail-link" href="$appServer.get('jsppage.htm')">jspÒ³Ãæ</a> <br/>
+<a class="m-detail-link" href="$appServer.get('vpage.htm')">velocotyé¡µé¢</a> <br/>
+<a class="m-detail-link" href="$appServer.get('jsppage.htm')">jspé¡µé¢</a> <br/>
 <hr/>
-spring mvc annotation ÑİÊ¾:<br/>
-action·½·¨·µ»ØÖµÑİÊ¾£¬AnnotationDemoAction.java
+spring mvc annotation æ¼”ç¤º:<br/>
+actionæ–¹æ³•è¿”å›å€¼æ¼”ç¤ºï¼ŒAnnotationDemoAction.java
 <ul>
-<li><a class="m-detail-link" href="$appServer.get('annotation/return/void.htm')">·µ»Ø void -- Method:annotationVoid</a></li>
-<li><a class="m-detail-link" href="$appServer.get('/annotation/return/string.htm')">·µ»Ø String -- Method:annotationString</a></li>
-<li><a class="m-detail-link" href="$appServer.get('/annotation/return/view.htm')">·µ»Ø view -- Method:annotationModelAndView</a></li>
+<li><a class="m-detail-link" href="$appServer.get('annotation/return/void.htm')">è¿”å› void -- Method:annotationVoid</a></li>
+<li><a class="m-detail-link" href="$appServer.get('/annotation/return/string.htm')">è¿”å› String -- Method:annotationString</a></li>
+<li><a class="m-detail-link" href="$appServer.get('/annotation/return/view.htm')">è¿”å› view -- Method:annotationModelAndView</a></li>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#json_return_href").click(function(){
@@ -41,51 +41,51 @@ action·½·¨·µ»ØÖµÑİÊ¾£¬AnnotationDemoAction.java
 		}); 
 	})
 </script>
-<li><a class="m-detail-link" href="#" id="json_return_href">·µ»Ø json -- Method:annotationJson</a></li>
+<li><a class="m-detail-link" href="#" id="json_return_href">è¿”å› json -- Method:annotationJson</a></li>
 </ul> 
 <br/>
-actionÈë²ÎÑİÊ¾ ,AnnotationDemoAction.java
+actionå…¥å‚æ¼”ç¤º ,AnnotationDemoAction.java
 <ul>
-<li><a class="m-detail-link" href="$appServer.get('annotation/param/base.htm').addQueryData('name','ÆëÌì')">»ù±¾ -- Method:annotationBase</a></li>
-<li><a class="m-detail-link" href="$appServer.get('annotation/param/object_bind.htm').addQueryData('name','°Ë½ä').addQueryData('nick','¶şÊ¦ĞÖ').addQueryData('age','500')">¶ÔÏóÊôĞÔ×Ô´ø°ó¶¨ -- Method:annotationObjectBind</a></li>
-<li><a class="m-detail-link" href="#" id="json_bind_href">json¶ÔÏó°ó¶¨ -- Method:annotationJsonBind</a></li>
-<li><a class="m-detail-link" href="${appServer}/annotation/movie/matrix/66.htm">REST·ç¸ñURL path²ÎÊı°ó¶¨ -- Method:annotationRestBind</a></li>
+<li><a class="m-detail-link" href="$appServer.get('annotation/param/base.htm').addQueryData('name','é½å¤©')">åŸºæœ¬ -- Method:annotationBase</a></li>
+<li><a class="m-detail-link" href="$appServer.get('annotation/param/object_bind.htm').addQueryData('name','å…«æˆ’').addQueryData('nick','äºŒå¸ˆå…„').addQueryData('age','500')">å¯¹è±¡å±æ€§è‡ªå¸¦ç»‘å®š -- Method:annotationObjectBind</a></li>
+<li><a class="m-detail-link" href="#" id="json_bind_href">jsonå¯¹è±¡ç»‘å®š -- Method:annotationJsonBind</a></li>
+<li><a class="m-detail-link" href="${appServer}/annotation/movie/matrix/66.htm">RESTé£æ ¼URL pathå‚æ•°ç»‘å®š -- Method:annotationRestBind</a></li>
 </ul>
 <hr/>
-containÊ¹ÓÃÑİÊ¾:<br/>
+containä½¿ç”¨æ¼”ç¤º:<br/>
 <ul>
-<li><a class="m-detail-link" href="$appServer.get('ct/base.htm')">»ù±¾Ê¹ÓÃ</a></li>
+<li><a class="m-detail-link" href="$appServer.get('ct/base.htm')">åŸºæœ¬ä½¿ç”¨</a></li>
 </ul>
 <hr/>
-Ğ£ÑéÂëÑİÊ¾:<br/>
+æ ¡éªŒç æ¼”ç¤º:<br/>
 <ul>
 <li><img src="$appServer.get('/checkcode/simple.htm')" /></li>
 <li><img src="$appServer.get('/checkcode/arithmetic.htm')" /></li>
 </ul>
 <hr/>
-±íµ¥³õÊ¼»¯/Ğ£Ñé/´¦ÀíÑİÊ¾Èë¿Ú£º<br>
-<a class="m-detail-link" href="$!{appServer}/register.htm">ÓÃ»§×¢²á</a><br/>
-<a class="m-detail-link" href="$!{appServer}/login.htm">ÓÃ»§µÇÂ¼</a><br/>
-<a class="m-detail-link" href="$!{appServer}/admin/login.htm">¹ÜÀíÔ±µÇÂ¼</a><br/>
-<a class="m-detail-link" href="$!{appServer}/admin/main.htm">Ö±½Ó·ÃÎÊÊÜ±£»¤url</a><br/>
-<a class="m-detail-link" href="$!{appServer}/admin/edit.htm?id=13">±à¼­¹ÜÀíÓÃ»§</a><br/>
+è¡¨å•åˆå§‹åŒ–/æ ¡éªŒ/å¤„ç†æ¼”ç¤ºå…¥å£ï¼š<br>
+<a class="m-detail-link" href="$!{appServer}/register.htm">ç”¨æˆ·æ³¨å†Œ</a><br/>
+<a class="m-detail-link" href="$!{appServer}/login.htm">ç”¨æˆ·ç™»å½•</a><br/>
+<a class="m-detail-link" href="$!{appServer}/admin/login.htm">ç®¡ç†å‘˜ç™»å½•</a><br/>
+<a class="m-detail-link" href="$!{appServer}/admin/main.htm">ç›´æ¥è®¿é—®å—ä¿æŠ¤url</a><br/>
+<a class="m-detail-link" href="$!{appServer}/admin/edit.htm?id=13">ç¼–è¾‘ç®¡ç†ç”¨æˆ·</a><br/>
 <hr/>
-ÓÊ¼ş·¢ËÍÑİÊ¾Èë¿Ú£º<br>
-<a class="m-detail-link" href="$!{appServer}/mail/send-simple-mail.htm">¼òµ¥ÓÊ¼ş·¢ËÍ</a>
-<a class="m-detail-link" href="$!{appServer}/mail/send-velocity-mail.htm">¼òµ¥VelocityÄ£°åÓÊ¼ş·¢ËÍ</a>
+é‚®ä»¶å‘é€æ¼”ç¤ºå…¥å£ï¼š<br>
+<a class="m-detail-link" href="$!{appServer}/mail/send-simple-mail.htm">ç®€å•é‚®ä»¶å‘é€</a>
+<a class="m-detail-link" href="$!{appServer}/mail/send-velocity-mail.htm">ç®€å•Velocityæ¨¡æ¿é‚®ä»¶å‘é€</a>
 <br/>
 <hr/>
-ÎÄ¼şÉÏ´«ÏÂÔØÑİÊ¾:<br/>
-<a class="m-detail-link" href="$appServer.get('/upload/simple.htm')">ÎÄ¼şÉÏ´«</a><br/>
-<a class="m-detail-link" href="$appServer.get('/download/excel.htm')">excelÎÄ¼şÏÂÔØ</a><br/>
+æ–‡ä»¶ä¸Šä¼ ä¸‹è½½æ¼”ç¤º:<br/>
+<a class="m-detail-link" href="$appServer.get('/upload/simple.htm')">æ–‡ä»¶ä¸Šä¼ </a><br/>
+<a class="m-detail-link" href="$appServer.get('/download/excel.htm')">excelæ–‡ä»¶ä¸‹è½½</a><br/>
 <hr/>
-<a class="m-detail-link" href="$appServer.get('/cache/demo.htm')">velocityÒ³Ãæcache</a><br/>
+<a class="m-detail-link" href="$appServer.get('/cache/demo.htm')">velocityé¡µé¢cache</a><br/>
 <hr/>
-·ÖÒ³ÑİÊ¾Èë¿Ú£º<br>
-<a class="m-detail-link" href="$appServer.get('/query/form_page.htm')">formÌá½»·ÖÒ³</a><br/>
-<a class="m-detail-link" href="$appServer.get('/query/seo_page.htm')">seo»¯¾²Ì¬Á´½Ó·ÖÒ³</a><br/>
+åˆ†é¡µæ¼”ç¤ºå…¥å£ï¼š<br>
+<a class="m-detail-link" href="$appServer.get('/query/form_page.htm')">formæäº¤åˆ†é¡µ</a><br/>
+<a class="m-detail-link" href="$appServer.get('/query/seo_page.htm')">seoåŒ–é™æ€é“¾æ¥åˆ†é¡µ</a><br/>
 <hr/>
-<a class="m-detail-link" href="$appServer.get('/i18n/index.htm')">¹ú¼Ê»¯</a><br/>
+<a class="m-detail-link" href="$appServer.get('/i18n/index.htm')">å›½é™…åŒ–</a><br/>
 <hr/>
-Ò³ÃæÊä³öÍ³¼Æ£º<br>
-<a class="m-detail-link" href="$appServer.get('/report/output.htm')">Í³¼Æ</a><br/>
+é¡µé¢è¾“å‡ºç»Ÿè®¡ï¼š<br>
+<a class="m-detail-link" href="$appServer.get('/report/output.htm')">ç»Ÿè®¡</a><br/>

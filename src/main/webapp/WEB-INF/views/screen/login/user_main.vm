@@ -1,9 +1,9 @@
 #if($agent)
-	µ±Ç°µÇÂ¼ÓÃ»§Ãû×Ö:$!{agent.realName}<br/>
-	µ±Ç°µÇÂ¼ÓÃ»§µÇÂ¼Ê±¼ä:$!{agent.loginTime}<br/>
-	µ±Ç°µÇÂ¼ÓÃ»§Ê¡:$!{agent.nativePlace.province}<br/>
-	µ±Ç°µÇÂ¼ÓÃ»§ÊĞ:$!{agent.nativePlace.city}<br/>
-	<a class="m-detail-link" href="$appServer.get('logout.htm')">ÍË³ö</a>
+	å½“å‰ç™»å½•ç”¨æˆ·åå­—:$!{agent.realName}<br/>
+	å½“å‰ç™»å½•ç”¨æˆ·ç™»å½•æ—¶é—´:$!{agent.loginTime}<br/>
+	å½“å‰ç™»å½•ç”¨æˆ·çœ:$!{agent.nativePlace.province}<br/>
+	å½“å‰ç™»å½•ç”¨æˆ·å¸‚:$!{agent.nativePlace.city}<br/>
+	<a class="m-detail-link" href="$appServer.get('logout.htm')">é€€å‡º</a>
 #else
-	µ±Ç°ÓÃ»§Î´µÇÂ¼<a class="m-detail-link" href="$!{appServer}/login.htm">µÇÂ¼</a>
+	å½“å‰ç”¨æˆ·æœªç™»å½•<a class="m-detail-link" href="$!{appServer}/login.htm">ç™»å½•</a>
 #end

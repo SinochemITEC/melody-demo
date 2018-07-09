@@ -7,7 +7,7 @@
 	#if($sliderCurrent == '1')
 	<span> &laquo; </span>
 	#else
-	<a class="m-detail-link" href="${s_broker.get("$slider_builder.build($query,1)")}">&laquo;��ҳ</a>
+	<a class="m-detail-link" href="${s_broker.get("$slider_builder.build($query,1)")}">&laquo;首页</a>
 	<a class="m-detail-link" href="${s_broker.get("$slider_builder.build($query,$sliderPrev)")}">&laquo;</a>
 	#end
 	#foreach($grid in $grids)
@@ -23,6 +23,6 @@
 		<span class="nextprev"> &raquo; </span>
 	#else
 		<a class="m-detail-link" href="${s_broker.get("$slider_builder.build($query,$sliderNext)")}" >&raquo;</a>
-		<a class="m-detail-link" href="${s_broker.get("$slider_builder.build($query,$sliderTotal)")}" >ĩҳ &raquo;</a>
+		<a class="m-detail-link" href="${s_broker.get("$slider_builder.build($query,$sliderTotal)")}" >末页 &raquo;</a>
 	#end
 </div>

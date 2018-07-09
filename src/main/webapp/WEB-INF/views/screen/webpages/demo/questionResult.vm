@@ -1,13 +1,13 @@
-<h2 class="melody-d-title">bigpipeÊ¾Àı</h2>
+<h2 class="melody-d-title">bigpipeç¤ºä¾‹</h2>
 #if($!hero)
     #if($hero.healthPoint > 0)
         #if($hero.floor == 6)
-            ${hero.id}ºÅÓÂÊ¿Íê³ÉÁËÈÎÎñ
+            ${hero.id}å·å‹‡å£«å®Œæˆäº†ä»»åŠ¡
         #else
-            ${hero.id}ºÅÓÂÊ¿´ò°ÜÁË¹ÖÎï£¬µ½´ïÁËµÚ${hero.floor}²ã£¬Ê£ÓàÑªÁ¿${hero.healthPoint}<br/>
+            ${hero.id}å·å‹‡å£«æ‰“è´¥äº†æ€ªç‰©ï¼Œåˆ°è¾¾äº†ç¬¬${hero.floor}å±‚ï¼Œå‰©ä½™è¡€é‡${hero.healthPoint}<br/>
         #end
     #else
         #set($floor = ${hero.floor} - 1)
-        ${hero.id}ºÅÓÂÊ¿Ã»ÓĞ´ò°Ü¹ÖÎï£¬µ¹ÔÚÁËµÚ${floor}²ã
+        ${hero.id}å·å‹‡å£«æ²¡æœ‰æ‰“è´¥æ€ªç‰©ï¼Œå€’åœ¨äº†ç¬¬${floor}å±‚
     #end
 #end

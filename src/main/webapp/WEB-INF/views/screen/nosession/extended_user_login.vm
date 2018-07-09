@@ -1,12 +1,12 @@
 <form action="$appServer.get('/login/extended_user_login.htm')" method="post">
-<li><input type="submit" value="µÇÂ¼Ò»¸ö²âÊÔÓÃ»§"></li>
+<li><input type="submit" value="ç™»å½•ä¸€ä¸ªæµ‹è¯•ç”¨æˆ·"></li>
 </form>
-<li>ExtendedUserÖĞµÄÊı¾İ</li>
+<li>ExtendedUserä¸­çš„æ•°æ®</li>
 <p>
-ExtendedUser.User.realName£º$!{exUser.user.realName} <br/>
-ExtendedUser.User.age£º$!{exUser.user.age}<br/>
-ExtednedUser.extendAttributes£º<br/>
+ExtendedUser.User.realNameï¼š$!{exUser.user.realName} <br/>
+ExtendedUser.User.ageï¼š$!{exUser.user.age}<br/>
+ExtednedUser.extendAttributesï¼š<br/>
 #foreach($attr in $exUser.extendAttributes)
-    <div>ĞÅÏ¢${velocityCount}£º$!{attr}</div>
+    <div>ä¿¡æ¯${velocityCount}ï¼š$!{attr}</div>
 #end
 </p>

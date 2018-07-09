@@ -1,4 +1,4 @@
-×ÜÊä³ö:${report.outputTotal}KB  <br/>
-Ö´ĞĞ´ÎÊı:${report.outputCount}  <br/>
-Æ½¾ùÖµ:${report.averageOutput}KB  <br/>
-×î´óÖµ:${report.maxOutput}KB  <br/>
+æ€»è¾“å‡º:${report.outputTotal}KB  <br/>
+æ‰§è¡Œæ¬¡æ•°:${report.outputCount}  <br/>
+å¹³å‡å€¼:${report.averageOutput}KB  <br/>
+æœ€å¤§å€¼:${report.maxOutput}KB  <br/>

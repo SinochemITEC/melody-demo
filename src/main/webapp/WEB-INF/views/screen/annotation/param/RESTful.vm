@@ -1,14 +1,14 @@
 <form id="form">
-    <p><label>µçÓ°Ãû£º</label>
+    <p><label>ç”µå½±åï¼š</label>
         <input id="movieName" type="text" value=""/>
-        <label>·É´¬id£º</label>
+        <label>é£žèˆ¹idï¼š</label>
         <input id="shipId" type="text" value=""/>
-        <input type="button" id="restful" value="Ìá½»"/><br/>
+        <input type="button" id="restful" value="æäº¤"/><br/>
     </p>
 </form>
-µÃµ½µÄ¶ÔÏóÈçÏÂ:<br/>
-µçÓ°Ãû×Ö:$!{movieName}¡¡<br/>
-·É´¬±àºÅ:$!{shipId}<br/>
+å¾—åˆ°çš„å¯¹è±¡å¦‚ä¸‹:<br/>
+ç”µå½±åå­—:$!{movieName}ã€€<br/>
+é£žèˆ¹ç¼–å·:$!{shipId}<br/>
 <br/>
 
 <script type="text/javascript">

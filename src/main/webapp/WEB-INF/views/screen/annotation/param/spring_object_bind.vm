@@ -1,17 +1,17 @@
 <form action="$appServer.get('/annotation/param/spring_object_bind.htm')" method="post">
-    <label>ĞÕÃû£º</label>
+    <label>å§“åï¼š</label>
     #springBind("west.name")
     <input id="name" type="text" name="${status.expression}" value=""/>
-    <label>êÇ³Æ£º</label>
+    <label>æ˜µç§°ï¼š</label>
     #springBind("west.nick")
     <input id="nick" type="text" name="${status.expression}"  value=""/>
-    <label>ÄêÁä£º</label>
+    <label>å¹´é¾„ï¼š</label>
     #springBind("west.age")
     <input id="west" type="text" name="${status.expression}"  value=""/>
-    <input type="submit" value="Ìá½»"/>
+    <input type="submit" value="æäº¤"/>
 </form>
 
-µÃµ½µÄ¶ÔÏóÈçÏÂ:<br/>
-Ãû×Ö:${west.name}<br/>
-³Æºô:${west.nick}<br/>
-ÄêÁä:${west.age}<br/>
+å¾—åˆ°çš„å¯¹è±¡å¦‚ä¸‹:<br/>
+åå­—:${west.name}<br/>
+ç§°å‘¼:${west.nick}<br/>
+å¹´é¾„:${west.age}<br/>

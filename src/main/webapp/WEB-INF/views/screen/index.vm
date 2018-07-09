@@ -1,14 +1,15 @@
 <div class="melody-wrap">
     <ul class="melody-list clearfix">
-        <li><a class="m-detail-link" href="$appServer.get('config/introduce.htm')"><i class="melody-ico ico-m1"></i><span>ÅäÖÃÎÄ¼þËµÃ÷ºÍÊ¾Àý</span></a></li>
-        <li><a class="m-detail-link" href="$appServer.get('dir_url/introduce.htm')"><i class="melody-ico ico-m2"></i><span>Ä¿Â¼½á¹¹ËµÃ÷ºÍÊ¾Àý</span></a></li>
-        <li><a class="m-detail-link" href="$appServer.get('webpages/introduce.htm')"><i class="melody-ico ico-m3"></i><span>Ò³ÃæÖÆ×÷ËµÃ÷ºÍÊ¾Àý</span></a></li>
-        <li><a class="m-detail-link" href="$appServer.get('annotation/introduce.htm')"><i class="melody-ico ico-m4"></i><span>´«²Î¡¢·µ»ØÖµËµÃ÷ºÍÊ¾Àý</span></a></li>
+        <li><a href="$appServer.get('config/introduce.htm')"><i class="melody-ico ico-m1"></i><span>é…ç½®æ–‡ä»¶è¯´æ˜Žå’Œç¤ºä¾‹</span></a></li>
+        <li><a  href="$appServer.get('dir_url/introduce.htm')"><i class="melody-ico ico-m2"></i><span>ç›®å½•ç»“æž„è¯´æ˜Žå’Œç¤ºä¾‹</span></a></li>
+        <li><a  href="$appServer.get('webpages/introduce.htm')"><i class="melody-ico ico-m3"></i><span>é¡µé¢åˆ¶ä½œè¯´æ˜Žå’Œç¤ºä¾‹</span></a></li>
+        <li><a  href="$appServer.get('nosession/introduce.htm')"><i class="melody-ico ico-m5"></i><span>nosessionæŠ€æœ¯</span></a></li>
+        <li><a  href="$appServer.get('utils/introduce.htm')"><i class="melody-ico ico-m5"></i><span>å·¥å…·ç±»</span></a></li>
     </ul>
     <ul class="melody-list clearfix">
-        <li><a class="m-detail-link" href="$appServer.get('nosession/introduce.htm')"><i class="melody-ico ico-m5"></i><span>nosession¼¼Êõ</span></a></li>
-        <li><a class="m-detail-link" href="$appServer.get('login/introduce.htm')"><i class="melody-ico ico-m6"></i><span>±íµ¥Ìá½»ºÍ±íµ¥Ð£Ñé</span></a></li>
-        <li><a class="m-detail-link" href="$appServer.get('others/introduce.htm')"><i class="melody-ico ico-m7"></i><span>ÆäËû¹¦ÄÜËµÃ÷ºÍÊ¾Àý</span></a></li>
+        <li><a  href="$appServer.get('others/introduce.htm')"><i class="melody-ico ico-m7"></i><span>æ‹¦æˆªå™¨</span></a></li>
+        <li><a  href="$appServer.get('others/introduce.htm')"><i class="melody-ico ico-m7"></i><span>å…¶ä»–åŠŸèƒ½è¯´æ˜Žå’Œç¤ºä¾‹</span></a></li>
+        <li><a  href="$appServer.get('spring/introduce.htm')"><i class="melody-ico ico-m7"></i><span>springçŽ°æœ‰åŠŸèƒ½</span></a></li>
     </ul>
 </div>
 <script>
