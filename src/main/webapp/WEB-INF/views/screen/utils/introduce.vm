@@ -1,4 +1,4 @@
-<p>melody内置了多个工具了，主要有如下几个：
+<p>melody在<i>com.eyeieye.melody.util</i> 中内置了多个工具了，主要有如下几个：
 - DateUtil
 - StringUtil
 - HostUtil
