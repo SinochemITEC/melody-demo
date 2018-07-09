@@ -4,9 +4,9 @@
         <li><a  href="$appServer.get('dir_url/introduce.htm')"><i class="melody-ico ico-m2"></i><span>目录结构说明和示例</span></a></li>
         <li><a  href="$appServer.get('webpages/introduce.htm')"><i class="melody-ico ico-m3"></i><span>页面制作说明和示例</span></a></li>
         <li><a  href="$appServer.get('nosession/introduce.htm')"><i class="melody-ico ico-m5"></i><span>nosession技术</span></a></li>
-        <li><a  href="$appServer.get('utils/introduce.htm')"><i class="melody-ico ico-m5"></i><span>工具类</span></a></li>
     </ul>
     <ul class="melody-list clearfix">
+        <li><a  href="$appServer.get('utils/introduce.htm')"><i class="melody-ico ico-m5"></i><span>工具类</span></a></li>
         <li><a  href="$appServer.get('others/introduce.htm')"><i class="melody-ico ico-m7"></i><span>拦截器</span></a></li>
         <li><a  href="$appServer.get('others/introduce.htm')"><i class="melody-ico ico-m7"></i><span>其他功能说明和示例</span></a></li>
         <li><a  href="$appServer.get('spring/introduce.htm')"><i class="melody-ico ico-m7"></i><span>spring现有功能</span></a></li>

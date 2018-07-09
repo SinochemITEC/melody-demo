@@ -17,8 +17,8 @@
 .melody-wrap{box-sizing:border-box;height:100%;width:100%;padding:14% 15% 0;}
 .melody-list{margin:20px 0;}
 .melody-list li{float:left;width:15%;margin:0 5%;text-align:center;}
-.melody-list:last-child{margin:0 10%;}
-.melody-list:last-child li{width:18.8%;margin:0 7.2%;}
+/*.melody-list:last-child{margin:0 10%;}*/
+/*.melody-list:last-child li{width:18.8%;margin:0 7.2%;}*/
 .melody-list li .melody-ico{background-color:#fff;border-radius:100%;}
 .melody-list li span{color:#fff;font-size:0.7em;display:block;line-height:1.8;margin-top:10px;}
 
@@ -37,7 +37,7 @@
 .melody-d-con h3{font-size:0.72em;font-weight:600;padding:10px 0 15px;}
 .melody-d-con summary h3{display:inline-block;padding:0;}
 .melody-d-con p,.melody-d-con li{font-size:0.66em;line-height:1.8;margin:15px 0;}
-.molody-code-wrap{background:#f8f8f8;border-left:4px solid #6f61c9;font-size:0.62em;font-family:Arial;line-height:1.8;padding:20px 40px;margin:5px 0 25px;}
+.melody-code-wrap{background:#f8f8f8;border-left:4px solid #6f61c9;font-size:0.62em;font-family:Arial;line-height:1.8;padding:20px 40px;margin:5px 0 25px;}
 .m-xmp{font-family:fzfsjw,FangSong;font-size:0.66em;line-height:1.8;}
 .melody-d-con ul{padding-left:20px;}
 .melody-d-con li{list-style:disc;}
