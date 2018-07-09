@@ -2,9 +2,8 @@
 <p>这一部分使用注册、登录、验证码作为例子来讲解表单提交、表单校验。</p><br/>
 <details open>
     <summary>
-        <h><font size="5px">表单提交</font></h>
+        <h3>表单提交</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <p>向服务器传递参数的方式前面已经介绍过了，而在表单提交方面，有以下几点需要注意：</p>
         <li>页面上最好使用&#35;springBind的方式进行绑定，这样便于使用BindingResult进行校验和错误回显。使用方法如下例所示：</li>
@@ -30,9 +29,8 @@
 
 <details open>
     <summary>
-        <h><font size="5px">表单校验</font></h>
+        <h3>表单校验</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <p>表单校验使用的是Validator接口，通过实现Validator接口并使用其validate方法，可以对数据进行校验。<br/>
             以com.eyeieye.melody.demo.web.action.login.UserRegisterAction类中的register方法为例，表单验证的使用方法如下：</p>
@@ -46,9 +44,8 @@
 
 #*<details open>
     <summary>
-        <h><font size="5px">验证码</font></h>
+        <h3>验证码</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <p>验证码相关讲解以页面-\login\login.vm 、类-com.eyeieye.melody.demo.web.action.login.UserLoginoutAction 和<br/>类com.eyeieye.melody.demo.web.action.login.CheckCodeAction
             为例进行说明。</p>
@@ -76,9 +73,8 @@
 </details>*#
 <details open>
     <summary>
-        <h><font size="5px">示例</font></h>
+        <h3>示例</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <a class="m-detail-link" href="$appServer.get('/login/ajaxCheck.htm')">ajax校验验证码</a><br/>
         <a class="m-detail-link" href="$appServer.get('/login/register.htm')">用户注册</a><br/>

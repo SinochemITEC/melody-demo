@@ -12,7 +12,7 @@
     <p>Cookiestore类是用来配置cookie相关属性的类，其需要实现AttributeCookieStore接口，其中有8个方法需要实现，下面依次介绍：<br/><br/>
     ##TODO 待完善
         public int getOrder();<br></p>
-    <br>加载顺序<br>
+    <h3>加载顺序</h3>
     <p>public boolean isMatch(String key);<br>
     <br>服务器用来抓取cookie的key值<br>
     public String getCookieName();<br>

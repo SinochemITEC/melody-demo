@@ -4,9 +4,8 @@
 
 <details close>
     <summary>
-        <h><font size="5px">基本的入参方式</font></h>
+        <h3>基本的入参方式</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <li>页面传入的参数param类型的参数可以被action中对应的方法捕捉到，
         与传入参数同名的方法参数或方法中添加了@RequestParam注解的参数会被自动注入传入的参数值。</li>
@@ -19,10 +18,8 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">传入参数自动绑定到对象属性</font></h>
+        <h3>传入参数自动绑定到对象属性</h3>
     </summary>
-    <br/>
-
     <div style="margin-left: 5%;">
         <li>在action的方法的入参中，如果有JavaBean类型的参数，且传入参数与JavaBean的成员变量同名同类型，
             则页面传入参数时可以值会直接注入到其对象的成员变量中去。</li>
@@ -34,9 +31,8 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">使用json将参数自动绑定到对象</font></h>
+        <h3>使用json将参数自动绑定到对象</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <li>将参数名和参数值拼接成json发送到服务器，action的方法会自动接收到参数并封装到方法的参数中</li>
         <a class="m-detail-link" href="$appServer.get('annotation/param/json_object_bind.htm')" target="_blank">点击查看示例</a><br/>
@@ -44,9 +40,8 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">RESTful传参</font></h>
+        <h3>RESTful传参</h3>
     </summary>
-    <br/>
     <div style="margin-left: 5%;">
         <p>RESTful传参方式是将参数放在url中，其作为url的一部分请求服务器。<br/>
         示例：http://www.sinochem.com/oauth/[type]/[uuid].htm，其中[type]和[uuid]都是要传入的参数，<br/>
