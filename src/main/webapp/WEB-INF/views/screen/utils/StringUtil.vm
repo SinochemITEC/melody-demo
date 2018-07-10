@@ -80,6 +80,264 @@
             如果stripChars为空字符串""，返回原字符串。<br/>
         </ul>
     </li>
+    <li>比较方法：<br/>
+        比较方法是比较两个字符串是否相等。
+        <ul>
+            <li>equals(String str1, String str2)</li>
+            如果两个字符串相同或都是null，则返回true；否则返回false。
+            <li>equalsIgnoreCase(String str1, String str2)</li>
+            忽略大小的情况下，如果两个字符串相同或都是null，则返回true；否则返回false。
+        </ul>
+    </li>
+    <li>字符串类型判断方法：<br/>
+        判断字符串类型是否为：字母、数字、空白等。
+        <ul>
+            <li>isAlpha(String str)</li>
+            检查字符串是否只包含Unicode字母。<br/>
+            数字、符号、空格均不属于Unicode字母，如"a2b"、"a-b"、" a b"均为false，字符串为null也返回false，字符串为空("")时，返回true。
+            <li>isAlphaSpace(String str)</li>
+            检查字符串是否只包含Unicode字母和空格。空字符串""也返回true。
+            <li>isAlphanumeric(String str)</li>
+            判断字符串是否只包含unicode字母和数字。空字符串也返回true。
+            <li>isAlphanumericSpace(String str)</li>
+            判断字符串是否只包含unicode字母、数字和空格。空字符串也返回true。
+            <li>isNumeric(String str)</li>
+            判断字符串是否只包含unicode数字。空字符串也返回true。
+            <li>isNumber(String str)</li>
+            判断字符串是否只包含unicode数字，包括小数。空字符串也返回true。
+            <li>isNumericSpace(String str)</li>
+            判断字符串是否只包含unicode数字和空格。空字符串也返回true。
+            <li>isWhitespace(String str)</li>
+            判断字符串是否只包含unicode数字和空格。空字符串也返回true。
+        </ul>
+    </li>
+    <li>大小写转换方法：
+        <ul>
+            <li>toUpperCase(String str) </li>
+            将字符串转换为大写，如果字符串为null则返回null。
+            <li>toLowerCase(String str) </li>
+            将字符串转换为小写，如果字符串为null则返回null。
+            <li>capitalize(String str) </li>
+            将字符串的首字符转成大写，其他字符不变。
+            <li>uncapitalize(String str) </li>
+            将字符串的首字符转成小写，其它字符不变。
+            <li>swapCase(String str) </li>
+            反转字符串的大小写。
+            <li>toCamelCase(String str) </li>
+            将字符串转换成camelCasex(驼峰拼写法)。字符串中的空格和下划线均会被去除并看作一个单词的开头。
+            <li>toPascalCase(String str) </li>
+            将字符串转换成PascalCase，即首字母大写写法。字符串中的空格和下划线均会被取出并看作一个单词的开头。
+            <li>toUpperCaseWithUnderscores(String str) </li>
+            将字符串转换成下划线分隔的大写字符串。空格和下划线会看作一个单词开头，连续多个下划线保持原样。
+            <li>toLowerCaseWithUnderscores(String str) </li>
+            将字符串转换成下划线分隔的小写字符串。空格和下划线会看作一个单词开头，连续多个下划线保持原样。
+        </ul>
+    </li>
+    <li>字符串分割方法：
+        <ul>
+            <li>split(String str)</li>
+            按照空白字符分割字符串。连续空白字符会被看作一个空白字符，首尾的空白字符会被去掉，空字符串返回一个空的数组，null返回null。
+            <li>split(String str, char separatorChar)</li>
+            按照指定字符分割字符串。连续多个指定字符会被看作一个字符，首尾的指定字符会被去掉，空字符串返回一个空的数组，null返回null。
+            <li>split(String str, String separatorChars)</li>
+            按照指定字符串分割字符串。连续多个指定字符串会被看作一个字符串，首尾的指定字符串会被去掉，原字符串为空会返回一个空的数组，null返回null。
+            <li>split(String str, String separatorChars, int max)</li>
+            按照指定字符串分割字符串，并指定返回数组的最大个数。连续多个指定字符串会被看作一个字符串，首尾的指定字符串会被去掉，原字符串为空会返回一个空的数组，null返回null。<br/>
+            如果返回数组的个数设置小于等于0，则表示无限制。
+        </ul>
+    </li>
+    <li>拼接字符串方法：
+        <ul>
+            <li>join(Object[] array)</li>
+            将数组中的元素连接成一个字符串。
+            <li>join(Object[] array, char separator)</li>
+            将数组中的元素连接成一个字符串，并用字符separator分割。
+            <li>join(Object[] array, String separator)</li>
+            将数组中的元素连接成一个字符串，并用字符串separator分割。
+            <li>join(Iterator iterator, char separator)</li>
+            将Iterator中的元素连接成一个字符串，并用字符separator分割。
+            <li>join(Iterator iterator, String separator)</li>
+            将Iterator中的元素连接成一个字符串，并用字符串separator分割。
+        </ul>
+    </li>
+    <li>查找子串方法：
+        <ul>
+            <li>indexOf(String str, char searchChar)</li>
+            在字符串中查找指定字符，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>indexOf(String str, char searchChar, int startPos)</li>
+            从startPos位置开始，在字符串中查找指定字符，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>indexOf(String str, String searchStr)</li>
+            在字符串中查找指定字符串，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>indexOf(String str, String searchStr, int startPos)</li>
+            从startPos位置开始，在字符串中查找指定字符串，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>indexOfAny(String str, char[] searchChars)</li>
+            在字符串中查找指定字符集合中的字符，并返回第一个匹配的起始索引。 如果字符串为null，则返回-1。如果字符集为空或null，也返回-1。
+            <li>indexOfAny(String str, String searchChars)</li>
+            在字符串中查找指定字符集合中的字符，并返回第一个匹配的起始索引。 如果字符串为null，则返回-1。如果字符集为空或null，也返回-1。
+            <li>indexOfAny(String str, String[] searchStrs)</li>
+            在字符串中查找指定字符集合中的字符，并返回第一个匹配的起始索引。<br/>
+            如果字符串为null，则返回-1。如果字符集为空或null，也返回-1。<br/>
+            如果字符串集合包含""且字符串不为null，则返回0。
+            <li>indexOfAnyBut(String str, char[] searchChars)</li>
+            在字符串中查找不在指定字符集合中的字符，并返回第一个匹配的起始索引。 如果查找不到返回0。<br/>
+            如果字符串为null，则返回-1。如果字符集合为null或空，也返回-1。
+            <li>indexOfAnyBut(String str, String searchChars)</li>
+            在字符串中查找不在指定字符集合中的字符，并返回第一个匹配的起始索引。 如果查找不到返回0。<br/>
+            如果字符串为null，则返回-1。如果字符集合为null或空，也返回-1。
+            <li>lastIndexOf(String str, char searchChar)</li>
+            从字符串尾部开始查找指定字符，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>lastIndexOf(String str, char searchChar, int startPos)</li>
+            从字符串尾部startPos的位置开始向前查找指定字符，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>lastIndexOf(String str, String searchStr)</li>
+            从字符串尾部开始查找指定字符串，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>lastIndexOf(String str, String searchStr, int startPos)</li>
+            从字符串尾部的startPos位置开始查找指定字符串，并返回第一个匹配的索引值。如果字符串为null或未找到，则返回-1。
+            <li>lastIndexOfAny(String str, String[] searchStrs)</li>
+            从字符串尾部开始查找指定字符串集合中的字符串，并返回第一个匹配的起始索引。 如果字符串为null，则返回-1。<br/>
+            如果字符串集合为null或空，也返回-1。<br/>
+            如果字符串集合包括""，并且字符串不为null，则返回str.length()。
+            <li>contains(String str, char searchChar)</li>
+            检查字符串中是否包含指定的字符。如果字符串为null，将返回false。
+            <li>contains(String str, String searchStr)</li>
+            检查字符串中是否包含指定的字符串。如果字符串为null，将返回false。
+            <li>containsOnly(String str, char[] valid)</li>
+            检查字符串是否只包含指定字符集合中的字符。<br/>
+            如果字符集合为null则返回false，如果字符串为null则返回false，如果字符串为""则必定返回true。
+            <li>containsOnly(String str, String valid)</li>
+            检查字符串是否只包含指定字符串中的字符。<br/>
+            如果指定字符串为null则返回false，如果原字符串为null则返回false，如果原字符串为""则必定返回true。
+            <li>containsNone(String str, char[] invalid) </li>
+            检查字符串是是否不包含指定字符集合中的字符。<br/>
+            如果字符串为null，则返回false。 如果字符集合为null则返回true。如果字符串为""则必然返回true.
+            <li>containsNone(String str, String invalidChars)</li>
+            检查字符串是是否不包含指定字符集合中的字符。<br/>
+            如果字符串为null，则返回false。 如果字符集合为null则返回true。如果字符串为""则必然返回true.
+            <li>countMatches(String str, String subStr)</li>
+            取得指定子串在字符串中出现的次数。如果字符串str为空或null，则返回0。
+        </ul>
+    </li>
+    <li>按照位置取子串方法：
+        <ul>
 
+            <li>substring(String str, int start)</li>
+            于str中，从start位置开始取到结尾，返回子串。如果start为负值则表示从后向前取。
+            <li>substring(String str, int start, int end)</li>
+            于str中，从start位置开始取到end位置，返回子串。如果start和end为负值则表示从后向前取。
+            <li>left(String str, int len)</li>
+            取得长度为指定字符数的最左边的子串。
+            <li>right(String str, int len) </li>
+            取得长度为指定字符数的最右边的子串。
+            <li>mid(String str, int pos, int len)</li>
+            取得从指定索引开始计算的、长度为指定字符数的子串。如果pos为负，则看作0，如果len为负则看作0。
+        </ul>
+    </li>
+    <li>搜索并取子串方法：
+        <ul>
 
+            <li>substringBefore(String str, String separator) </li>
+            取得第一个出现的分隔子串之前的子串。如果分隔子串为null或未找到该子串，则返回原字符串。
+            <li>substringAfter(String str, String separator) </li>
+            取得第一个出现的分隔子串之后的子串。如果分隔子串为null或未找到该子串，则返回原字符串。
+            <li>substringBeforeLast(String str, String separator) </li>
+            取得最后一个的分隔子串之前的子串。如果分隔子串为null或未找到该子串，则返回原字符串。
+            <li>substringAfterLast(String str, String separator) </li>
+            取得最后一个的分隔子串之后的子串。如果分隔子串为null或未找到该子串，则返回原字符串。
+            <li>substringBetween(String str, String tag) </li>
+            取得指定分隔符的前两次出现之间的子串。如果原字符串为null，则返回null，如果分割字符串为null，也返回null。
+            <li>substringBetween(String str, String open, String close) </li>
+            取得两个分隔符之间的子串。如果原字符串为null，则返回null，如果分割字符串为null，也返回null。
+            <li>substringBetween(String str, String open, String close, int fromIndex) </li>
+            从fromIndex位置开始搜索，取得两个分隔符之间的子串。如果原字符串为null，则返回null，如果分割字符串为null，也返回null。
+        </ul>
+    </li>
+    <li>删除字符：
+        <ul>
+            <li>deleteWhitespace(String str)</li>
+            删除所有在Character.isWhitespace(char)中所定义的空白字符。
+        </ul>
+    </li>
+    <li>替换子串：
+        <ul>
+            <li>replaceOnce(String text, String repl, String with)</li>
+            用with替换text中第一次出现的repl。
+            <li>replace(String text, String repl, String with)</li>
+            用with替换text中所有出现的repl。
+            <li>replace(String text, String repl, String with, int max)</li>
+            用with替换text中所有出现的repl，替换max次。
+            <li>replaceChars(String str, char searchChar, char replaceChar)</li>
+            将字符串str中所有指定的字符(searchChar)，替换成replaceChar。
+            <li>replaceChars(String str, String searchChars, String replaceChars)</li>
+            将字符串中所有指定的字符，替换成另一个。<br/>
+            一般来说searchChars与replaceChars应该是等长的，以保证每个字符都有对应的替换字符。但是，如果searchChars比replaceChars长，则searchChars中超出的部分会在替换时被去掉。<br/>
+            如果searchChars比replaceChars短，则replaceChars中多出的部分会被忽略
+            <li>overlay(String str, String overlay, int start, int end)</li>
+            将指定的子串用另一指定子串覆盖。如果字符串为null，则返回null。 负的索引值将被看作0，越界的索引值将被设置成字符串的长度相同的值。
+        </ul>
+    </li>
+    <li> Perl风格的chomp和chop函数：
+        <ul>
+
+            <li>chomp(String str) </li>
+            删除字符串末尾的换行符。如果字符串不以换行结尾，则什么也不做。
+            <li>chomp(String str, String separator) </li>
+            删除字符串末尾的指定字符串。如果字符串不以该字符串结尾，则什么也不做。
+            <li>chop(String str) </li>
+            删除最后一个字符。
+        </ul>
+    </li>
+    <li>重复/对齐字符串方法：
+        <ul>
+            <li>repeat(String str, int repeat)</li>
+            将指定字符串重复n遍。
+            <li>alignLeft(String str, int size)</li>
+            扩展并左对齐字符串，用空格' '填充右边。
+            <li>alignLeft(String str, int size, char padChar) </li>
+            扩展并左对齐字符串，用指定字符填充右边。填充后的长度为size，如果长度不够则重复填充padChar直到长度足够。
+            <li>alignLeft(String str, int size, String padStr)</li>
+            扩展并左对齐字符串，用指定字符串填充右边。填充后的长度为size，如果长度不够则重复填充padStr直到长度足够。
+            <li>alignRight(String str, int size)</li>
+            扩展并右对齐字符串，用空格' '填充左边。
+            <li>alignRight(String str, int size, char padChar)</li>
+            扩展并右对齐字符串，用指定字符填充左边。填充后的长度为size，如果长度不够则重复填充padChar直到长度足够。
+            <li>alignRight(String str, int size, String padStr)</li>
+            扩展并右对齐字符串，用指定字符串填充左边。填充后的长度为size，如果长度不够则重复填充padStr直到长度足够。
+            <li>center(String str, int size)</li>
+            扩展并居中字符串，用空格' '填充两边。
+            <li>center(String str, int size, char padChar)</li>
+            扩展并居中字符串，用指定字符填充两边。填充后的长度为size，如果长度不够则重复填充padChar直到长度足够，且优先填充右侧。
+            <li>center(String str, int size, String padStr)</li>
+            扩展并居中字符串，用指定字符串填充两边。填充后的长度为size，如果长度不够则重复填充padStr直到长度足够，且优先填充右侧。
+        </ul>
+    </li>
+    <li>反转字符串的方法：
+        <ul>
+            <li>reverse(String str)</li>
+            反转字符串中的字符顺序。
+            <li>reverseDelimited(String str, char separatorChar)</li>
+            反转指定分隔符分隔的各子串的顺序。(反转各子串的位置顺序，不改变子串内部的字符顺序。)
+            <li>reverseDelimited(String str, String separatorChars, String separator)</li>
+            反转指定分隔符分隔的各子串的顺序，并用分隔符separator分隔。
+        </ul>
+    </li>
+    <li>取得字符串的缩略的方法：
+        <ul>
+            <li> abbreviate(String str, int maxWidth)</li>
+            将字符串转换成指定长度的缩略，例如： 将"Now is the time for all good men"转换成"Now is the time for..."。<br/>
+            ##注：maxWidth是包括省略号的长度的，省略号长度为3所以maxWidth需要大于3。 ##FIXME:实测和注释不一样，不会报错
+            <li>abbreviate(String str, int offset, int maxWidth)</li>
+            将字符串转换成指定长度的缩略，同时满足左边界offset位置的字符一定会出现，当offset左侧长度大于4时，左侧部分会转换为"..."。<br/>
+        </ul>
+    </li>
+    <li>比较字符串的异同的方法：
+        <ul>
+            <li>difference(String str1, String str2)</li>
+            比较两个字符串，取得第二个字符串中，和第一个字符串不同的部分。从字符串开头开始比较，找到第一个不相同的位置，并从此处返回第二个字符串剩下的部分，如果两个字符串相同则返回""。
+            <li>indexOfDifference(String str1, String str2)</li>
+            比较两个字符串，取得两字符串开始不同的索引值。
+            <li>getLevenshteinDistance(String s, String t)</li>
+            取得两个字符串的相似度，0代表字符串相等，数字越大表示字符串越不像。
+        </ul>
+    </li>
 </ul>
+
+

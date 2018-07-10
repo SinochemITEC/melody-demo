@@ -2,6 +2,7 @@ package com.eyeieye.melody.demo.web.action.utils;
 
 import com.eyeieye.melody.demo.web.action.login.User;
 import com.eyeieye.melody.util.DateUtil;
+import com.eyeieye.melody.util.StringUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,7 @@ import java.util.Date;
 public class UtilsAction {
 
     @RequestMapping("demo/DateUtil")
-    public void dateUtilPage(User user, Integer afterDays, Integer beforeDays, ModelMap modelMap) {
+    public void dateUtilPage(Integer afterDays, Integer beforeDays, ModelMap modelMap) {
         //获取当前日期时间
         String nowDateTime = DateUtil.getDateTime(DateUtil.getDatePattern(), new Date());
         //获取今天是星期几：
@@ -40,6 +41,28 @@ public class UtilsAction {
 
 
     }
+
+    @RequestMapping("demo/StringUtil")
+    public void stringUtilPage(String str1, String str2, ModelMap modelMap){
+        modelMap.put("str1",str1);
+        modelMap.put("str2",str2);
+        modelMap.put("isEmpty",StringUtil.isEmpty(str1));
+        modelMap.put("default",StringUtil.defaultIfBlank(str1,"_") );
+        modelMap.put("trim",StringUtil.trim(str1));
+        modelMap.put("isNumber",StringUtil.isNumber(str1));
+        modelMap.put("toUpper",StringUtil.toUpperCase(str1));
+        modelMap.put("toLower",StringUtil.toLowerCase(str1));
+        modelMap.put("subString",StringUtil.substring(str1,0,2));
+        modelMap.put("alignLeft",StringUtil.alignLeft(str1,10,"abc"));
+        modelMap.put("camelCase",StringUtil.toCamelCase(str1));
+        modelMap.put("equal",StringUtil.equals(str1,str2));
+        String[] array = {str1, str2};
+        modelMap.put("join",StringUtil.join(array));
+        modelMap.put("indexOf",StringUtil.indexOf(str1,str2));
+        modelMap.put("replace",StringUtil.replace(str1,str2,"jojo"));
+        modelMap.put("difference",StringUtil.difference(str1,str2));
+    }
+
 
     public static void main(String[] args) throws ParseException, InterruptedException {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");

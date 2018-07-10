@@ -16,6 +16,7 @@
     <div style="margin-left: 5%;">
         $contain.get("DateUtil.htm")
     </div>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/DateUtil.htm')">DateUtil示例</a> </p>
 </details>
 <details open>
     <summary>
@@ -25,4 +26,5 @@
     <div style="margin-left: 5%;">
         $contain.get("StringUtil.htm")
     </div>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/StringUtil.htm')">StringUtil示例</a> </p>
 </details>

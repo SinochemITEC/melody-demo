@@ -1,0 +1,24 @@
+<form action="$appServer.get('/utils/demo/StringUtil.htm')" method="get">
+    <p>请输入字符串1：<input type="text" value="$!{str1}" name="str1"/>
+        请输入字符串2：<input type="text" value="$!{str2}" name="str2"/>
+        <input type="submit" value="提交"/></p>
+</form>
+
+<p>字符串1：</p>
+<div style="margin-left: 5%;">
+    <p>是否为空:$!{isEmpty}</p>
+    <p>空格默认替换为下划线:$!{default}</p>
+    <p>去掉首尾空格:$!{trim}</p>
+    <p>是否是纯数字:$!{isNumber}</p>
+    <p>转换为大写字母:$!{toUpper}</p>
+    <p>转换为小写字母:$!{toLower}</p>
+    <p>从头部开始截取3位$!{subString}</p>
+    <p>字符串1左对齐10位并用"abc"补齐:$!{alignLeft}</p>
+    <p>字符串1转换为驼峰格式:$!{camelCase}</p>
+</div>
+<br/>
+<p>字符串1和字符串2是否相等:$!{equal}</p>
+<p>拼接字符串1和字符串2:$!{join}</p>
+<p>字符串2在字符串1中第一次出现的索引位置:$!{indexOf}</p>
+<p>将字符串1中和字符串2相同的内容替换为"jojo":$!{replace}</p>
+<p>字符串2和字符串1不相同的部分:$!{difference}</p>

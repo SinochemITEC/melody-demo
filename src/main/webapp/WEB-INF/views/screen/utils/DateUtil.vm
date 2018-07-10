@@ -5,7 +5,7 @@
 <p>
     获取当前日期。<br/>
     返回类型：Calendar<br/>
-</p>''‘’‘’‘’‘’‘
+</p>
 
 <li>getCurrentDay()</li>
 <p>

@@ -2,7 +2,7 @@
 <p>今天是星期几：$!{weeks}</p>
 
 <form action="$appServer.get('/utils/demo/DateUtil.htm')" method="get">
-    <p><input type="text" name="afterDays" style="float: left" placeholder="请输入数字" value="${afterDays}"/>天后是星期几:$!{nextWeeks}</p>
-    <p><input type="text" name="beforeDays" style="float: left" placeholder="请输入数字" value=""${beforeDays}"/>天前是星期几:$!{lastWeeks}</p>
+    <p><input type="text" name="afterDays" style="float: left" placeholder="请输入数字" value="$!{afterDays}"/>天后是星期几:$!{nextWeeks}</p>
+    <p><input type="text" name="beforeDays" style="float: left" placeholder="请输入数字" value="$!{beforeDays}"/>天前是星期几:$!{lastWeeks}</p>
     <input type="submit" value="提交"/>
 </form>

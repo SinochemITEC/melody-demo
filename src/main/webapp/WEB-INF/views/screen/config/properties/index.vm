@@ -1,4 +1,4 @@
-<p>properties配置文件可以用来进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties，通过配置web.xml可以在在conf目录下添加其他.properties文件，但是同名配置会被覆盖</p>>
+<p>properties配置文件可以用来进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties，通过配置web.xml可以在在conf目录下添加其他.properties文件，但是同名配置会被覆盖</p>
 通过配置web.xml文件可以设定指定的配置文件路径：</p>
 <p>&lt;context-param&gt;<br/>&lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;<br/>&lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;<br/>&lt;context-param&gt;
 </p>
