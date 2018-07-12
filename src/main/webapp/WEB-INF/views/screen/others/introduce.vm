@@ -8,10 +8,9 @@
             在服务器端使用MultipartFile接收参数。示例参照类com.eyeieye.melody.demo.web.action.upload.UploadAction<br/>
             文件下载使用的是HttpServletResponse，将文件返回到页面，需要注意的是，需要将HttpServletResponse的"Content-Disposition属性设置为attachment;Filename=[文件名]"
         </li>
-        <li>
-            示例：</li>
-            <a class="m-detail-link" href="$appServer.get('/upload/simple.htm')">文件上传</a>
-            <a class="m-detail-link" href="$appServer.get('/download/excel.htm')">文件下载</a>
+        <li>示例：</li>
+            <p><a class="m-detail-link" href="$appServer.get('/upload/simple.htm')">文件上传</a></p>
+            <p><a class="m-detail-link" href="$appServer.get('/download/excel.htm')">文件下载</a></p>
         
     </div>
 </details>
@@ -20,7 +19,7 @@
         <h3>分页</h3>
     </summary>
     <br/>
-    <p style="margin-left: 5%;">
+    <div style="margin-left: 5%;">
     <p>分页有两种分页方式，分别是form提交分页和seo话静态链接分页。<br/>
         两种分页方式分别通过contain分页栏实现分页，通过put部分参数进行配置，下面分别介绍其参数：</p>
     <li>公共参数：</li>
@@ -45,7 +44,7 @@
     </p>
     <li>示例：</li>
     <p><a class="m-detail-link" href="$appServer.get('/query/form_page.htm')">form提交分页</a></p>
-    <p><a class="m-detail-link" href="$appServer.get('/query/seo_page.htm')">seo化静态链接分页</a></p>
+        <p><a class="m-detail-link" href="$appServer.get('/query/seo_page.htm')">seo化静态链接分页</a></p>
     </div>
 </details>
 <details open>
@@ -56,7 +55,7 @@
     <div style="margin-left: 5%;">
         <p>国际化的语言选择通过用户的locale属性来实现，更改locale属性是需要将相应的语言加入cookie中，然后刷新页面即可。</p>
     <li>示例：</li>
-    <a class="m-detail-link" href="$appServer.get('/i18n/index.htm')">国际化说明示例</a>
+    <p><a class="m-detail-link" href="$appServer.get('/i18n/index.htm')">国际化说明示例</a></p>
     <br/>
     </div>
 </details>
@@ -88,7 +87,7 @@
             使用方法为，使用通过注入的方式获得ResponseOutputBufferFilter的对象，然后使用getReport()方法即可获得OutputReport对象。
         </li>
         <li>示例：</li>
-        <a class="m-detail-link" href="$appServer.get('/report/output.htm')">统计记录</a><br/>
+         <p><a class="m-detail-link" href="$appServer.get('/report/output.htm')">统计记录</a><br/></p>
         </div>
 </details>
 
@@ -106,7 +105,7 @@
         </li>
         <br/>
         <li>示例：</li>
-        <a class="m-detail-link" href="$appServer.get('/access/testPage.htm')">示例</a>
+        <p><a class="m-detail-link" href="$appServer.get('/access/testPage.htm')">示例</a></p>
         </div>
 </details>
 

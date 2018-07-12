@@ -1,1 +1,48 @@
-����һ�����飺
+<p>为直观表现功能，这里直接放上代码，可尝试本地运行本页代码：</p>
+<div class="melody-code-wrap"><pre><code>
+Double[] array1 = new Double[5];
+Double[] array2 = null;
+Random ra = new Random(10000);
+for(int i =0; i<5 ; i++){
+    array1[i] =ra.nextDouble();
+}
+
+//判断数组是否为空
+System.out.println("判断数组是否为空：array1:"+ArrayUtil.isEmpty(array1)+" | array2:"+ArrayUtil.isEmpty(array2));
+
+//数组转字符串
+System.out.println("数组转字符串：array1:"+ArrayUtil.toString(array1));
+
+//反转数组
+ArrayUtil.reverse(array1);
+System.out.println("反转数组"+ArrayUtil.toString(array1));
+
+//toFixedList和toList
+List toFixedList = ArrayUtil.toFixedList(array1);
+List toList = ArrayUtil.toList(array1);
+Double[] clone = (Double[]) ArrayUtil.clone(array1);
+System.out.println("toFixedList和toList");
+System.out.println("toFixedList的第一个值："+toFixedList.get(0));
+System.out.println("toList的第一个值："+toList.get(0));
+System.out.println("**********\n将array1中第一个元素修改为10.0后");
+array1[0] = 10.0D;
+System.out.println("toFixedList的第一个值："+toFixedList.get(0));
+System.out.println("toList的第一个值："+toList.get(0));
+</code></pre>
+</div>
+
+<p>执行效果如下：</p>
+<div class="melody-code-wrap"><pre><code>
+判断数组是否为空：array1:false | array2:true
+数组转字符串：array1:[0.8838866919292535, 0.45234761769631304, 0.3698349530795322, 0.7904812984337817, 0.3091989657879798]
+反转数组[0.3091989657879798, 0.7904812984337817, 0.3698349530795322, 0.45234761769631304, 0.8838866919292535]
+toFixedList和toList
+toFixedList的第一个值：0.3091989657879798
+toList的第一个值：0.3091989657879798
+**********
+将array1中第一个元素修改为10.0后
+toFixedList的第一个值：10.0
+toList的第一个值：0.3091989657879798
+        
+    </code></pre>
+</div>

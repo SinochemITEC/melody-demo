@@ -1,0 +1,28 @@
+<p>ObjectFactory对获取bean方法的封装，ObjectFactory需要通过注入的方式来使用。</p>
+<div class="melody-code-wrap"><pre><code>
+@Autowired
+ObjectFactory objectFactory;
+</code></pre></div>
+
+<li> &lt;T&gt; T createBean(Class&lt;T&gt; beanClass, boolean dependencyCheck)</li>
+<p>根据类名创建一个bean。</p>
+
+<li>void autowireBeanProperties(Object existingBean)</li>
+<p>自动组装bean。可以将没有完成组装的bean完成组装。</p>
+
+<li> &lt;T&gt; T getBean(Class&lt;T&gt; beanClass)</li>
+<li> Object getBean(String name)</li>
+<p>根据类名获得当前已经加载的bean。</p>
+
+<li>&lt;T&gt; Map&lt;String, T&gt; getBeansOfType4Map(Class&lt;T&gt; beanClass)</li>
+<p>通过类名获得当前已经加载的bean，并返回一个以类名为key，以bean为value的map对象。</p>
+
+<li>&lt;T&gt; List&lt;T&gt; getBeansOfType4List(Class&lt;T&gt; beanClass)</li>
+<p>通过类型获得当前已经加载的bean，并返回一个包含该bean的List对象。</p>
+
+<li><T> T[] getBeansOfType4Array(Class&lt;T&gt; beanClass)</li>
+<p>通过类型获得当前已经加载的bean，并返回一个包含该bean的数组对象。</p>
+
+<li>String getBeanName(Class&lt;?&gt; beanClass)</li>
+<p>通过类名获得对应bean的bean名。</p>
+

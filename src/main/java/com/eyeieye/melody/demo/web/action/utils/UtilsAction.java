@@ -1,10 +1,9 @@
 package com.eyeieye.melody.demo.web.action.utils;
 
 import com.eyeieye.melody.demo.web.action.login.User;
-import com.eyeieye.melody.util.DateUtil;
-import com.eyeieye.melody.util.HostUtil;
-import com.eyeieye.melody.util.Money;
-import com.eyeieye.melody.util.StringUtil;
+import com.eyeieye.melody.util.*;
+import com.eyeieye.melody.web.util.ObjectFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,12 +12,14 @@ import org.springmodules.validation.bean.conf.loader.annotation.handler.RegExp;
 import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Currency;
-import java.util.Date;
+import java.util.*;
 
 @Controller
 @RequestMapping("utils")
 public class UtilsAction {
+
+    @Autowired
+    private DemoBean demoBean;
 
     private static final String CHINA_CURRENCY_CODE = "CNY";
     private static final String AMERICA_CURRENCY_CODE = "USD";
@@ -114,15 +115,46 @@ public class UtilsAction {
 
     }
 
+    public void ArrayUtil(){
+        Double[] array1 = new Double[5];
+        Double[] array2 = null;
+        Random ra = new Random(10000);
+        for(int i =0; i<5 ; i++){
+            array1[i] =ra.nextDouble();
+        }
+
+        //判断数组是否为空
+        System.out.println("判断数组是否为空：array1:"+ArrayUtil.isEmpty(array1)+" | array2:"+ArrayUtil.isEmpty(array2));
+
+        //数组转字符串
+        System.out.println("数组转字符串：array1:"+ArrayUtil.toString(array1));
+
+        //反转数组
+        ArrayUtil.reverse(array1);
+        System.out.println("反转数组"+ArrayUtil.toString(array1));
+
+        //toFixedList和toList
+        List toFixedList = ArrayUtil.toFixedList(array1);
+        List toList = ArrayUtil.toList(array1);
+        Double[] clone = (Double[]) ArrayUtil.clone(array1);
+        System.out.println("toFixedList和toList");
+        System.out.println("toFixedList的第一个值："+toFixedList.get(0));
+        System.out.println("toList的第一个值："+toList.get(0));
+        System.out.println("**********\n将array1中第一个元素修改为10.0后");
+        array1[0] = 10.0D;
+        System.out.println("toFixedList的第一个值："+toFixedList.get(0));
+        System.out.println("toList的第一个值："+toList.get(0));
+
+    }
+
+    @RequestMapping("demo/ObjectFactory")
+    public void ObjectFactoryDemo(){
+       demoBean.ObjectFactoryDemo();
+    }
+
 
     public static void main(String[] args) throws ParseException, InterruptedException {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-        System.out.println(df.format(DateUtil.getCurrentDay().getTime()));
-
-        Date date = new Date();
-        System.out.println(DateUtil.getTimeNow(date));
-
-        System.out.println(DateUtil.getDatePattern());
+        new UtilsAction().ArrayUtil();
 
     }
 
