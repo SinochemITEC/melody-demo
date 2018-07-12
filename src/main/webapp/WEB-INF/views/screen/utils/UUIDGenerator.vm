@@ -1,0 +1,2 @@
+<p>UUIDGenerator是一个生成UUID的工具类，他只有一个公开方法为generate()，该方法可以生成一个32位的UUID，<br/>
+如：$!{UUID}</p>

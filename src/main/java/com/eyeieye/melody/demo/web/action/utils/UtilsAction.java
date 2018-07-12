@@ -152,6 +152,11 @@ public class UtilsAction {
        demoBean.ObjectFactoryDemo();
     }
 
+    @RequestMapping("UUIDGenerator")
+    public void uuid(ModelMap modelMap){
+        modelMap.put("UUID",UUIDGenerator.generate());
+    }
+
 
     public static void main(String[] args) throws ParseException, InterruptedException {
         new UtilsAction().ArrayUtil();

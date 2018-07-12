@@ -1,12 +1,17 @@
 <form action="$appServer.get('/login/extended_user_login.htm')" method="post">
-<li><input type="submit" value="登录一个测试用户"></li>
+    <p><input type="submit" value="登录一个测试用户"></p>
 </form>
 <li>ExtendedUser中的数据</li>
 <p>
-ExtendedUser.User.realName：$!{exUser.user.realName} <br/>
-ExtendedUser.User.age：$!{exUser.user.age}<br/>
-ExtednedUser.extendAttributes：<br/>
-#foreach($attr in $exUser.extendAttributes)
-    <div>信息${velocityCount}：$!{attr}</div>
-#end
+<ul>
+    <li>ExtendedUser.User.realName：$!{exUser.user.realName} </li>
+    <li>ExtendedUser.User.age：$!{exUser.user.age}</li>
+    <li>ExtednedUser.extendAttributes：
+        <ul>
+            #foreach($attr in $exUser.extendAttributes)
+                <li><div>信息${velocityCount}：$!{attr}</div></li>
+            #end
+        </ul>
+    </li>
+</ul>
 </p>

@@ -69,3 +69,12 @@
     <p>示例：该工具类无法直接演示，可以访问本demo中com.eyeieye.melody.demo.web.action.utils.UtilsAction的ObjectFactoryDemo方法，并查看运行结果。</p>
     <p>从本例子中可以看出，本工具类中，createBean和autowireBeanProperties两个方法是获得新的bean，而其他方法是获得当前spring已经加载的bean。</p>
 </details>
+<details close>
+    <summary>
+        <h><font size="5px">UUIDGenerator</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("UUIDGenerator.htm")
+    </div>
+</details>

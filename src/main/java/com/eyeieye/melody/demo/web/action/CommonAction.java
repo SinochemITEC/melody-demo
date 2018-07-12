@@ -30,13 +30,21 @@ public class CommonAction {
     public void nosessionIntro(ModelMap modelMap){
         modelMap.put("selected","nosession");
     }
-    @RequestMapping(value = "login/introduce",method = RequestMethod.GET)
-    public void loginIntro(ModelMap modelMap){
-        modelMap.put("selected","login");
+    @RequestMapping(value = "utils/introduce",method = RequestMethod.GET)
+    public void utilsIntro(ModelMap modelMap){
+        modelMap.put("selected","utils");
+    }
+    @RequestMapping(value = "interceptor/introduce",method = RequestMethod.GET)
+    public void interceptorIntro(ModelMap modelMap){
+        modelMap.put("selected","interceptor");
     }
     @RequestMapping(value = "others/introduce",method = RequestMethod.GET)
     public void othersIntro(ModelMap modelMap){
         modelMap.put("selected","others");
+    }
+    @RequestMapping(value = "spring/introduce",method = RequestMethod.GET)
+    public void springIntro(ModelMap modelMap){
+        modelMap.put("selected","spring");
     }
 
     @RequestMapping("contain/header")
