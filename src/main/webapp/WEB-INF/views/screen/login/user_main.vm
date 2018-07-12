@@ -3,7 +3,7 @@
 	当前登录用户登录时间:$!{agent.loginTime}<br/>
 	当前登录用户省:$!{agent.nativePlace.province}<br/>
 	当前登录用户市:$!{agent.nativePlace.city}<br/>
-	<a class="m-detail-link" href="$appServer.get('logout.htm')">退出</a>
+	<a class="m-detail-link" href="$appServer.get('/login/logout.htm')">退出</a>
 #else
-	当前用户未登录<a class="m-detail-link" href="$!{appServer}/login.htm">登录</a>
+	当前用户未登录<a class="m-detail-link" href="$appServer.get('/login/login.htm')">登录</a>
 #end

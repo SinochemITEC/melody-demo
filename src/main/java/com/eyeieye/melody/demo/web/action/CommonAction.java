@@ -1,5 +1,7 @@
 package com.eyeieye.melody.demo.web.action;
 
+import com.eyeieye.melody.demo.web.action.login.User;
+import com.eyeieye.melody.util.StringUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,6 +37,15 @@ public class CommonAction {
     @RequestMapping(value = "others/introduce",method = RequestMethod.GET)
     public void othersIntro(ModelMap modelMap){
         modelMap.put("selected","others");
+    }
+
+    @RequestMapping("contain/header")
+    public void header(User user, ModelMap modelMap){
+        if(StringUtil.isEmpty(user.getUuid()) == false){
+            modelMap.put("logined",true);
+        }else{
+            modelMap.put("logined",false);
+        }
     }
 
 }

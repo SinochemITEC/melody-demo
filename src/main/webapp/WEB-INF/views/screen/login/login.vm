@@ -29,15 +29,6 @@
             </td>
         </tr>
         <tr>
-            <th><span class="required">*</span>提交验证：</th>
-            <td>
-                <img src="$appServer.get('/checkcode/arithmetic.htm')"/>
-
-                <input type="text" id="answer" name="answer"/>
-                <label class="error">$!{checkCodeErr}</label>
-            </td>
-        </tr>
-        <tr>
             <th>
                 <input type="submit" value="登录"/>
             </th>

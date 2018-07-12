@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.eyeieye.melody.demo.cache.CacheManager;
+import com.eyeieye.melody.util.UUIDGenerator;
 import com.eyeieye.melody.web.url.URLBroker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -42,20 +43,12 @@ public class UserLoginoutAction {
 
 	@RequestMapping(value = "/login.htm", method = POST)
 	public String login(@ModelAttribute("user") User user,
-                        String answer,
 			            BindingResult result,
                         HttpSession session,
                         HttpServletRequest httpServletRequest,
 						ModelMap modelMap
 			            ) {
 		loginValidator.validate(user, result);
-
-
-		//FIXME 用springbind的话answer取不到，但是在httpServletRequest中可以取到
-		if(!userService.arithmeticCheck(user,answer)){
-			modelMap.put("checkCodeErr","验证码错误");
-			return "login/login";
-        }
 
 		// 错误回显
 		if (result.hasErrors()) {
@@ -68,7 +61,6 @@ public class UserLoginoutAction {
 		if (u == null) {
 			return "login/login";
 		}
-
 		String ip = getIpAddr(httpServletRequest);
 		NativePlace nativePlace = new NativePlace();
 		nativePlace.setProvince("ip地址为："+ip+"，无法获取省份");
@@ -82,7 +74,7 @@ public class UserLoginoutAction {
 	@RequestMapping(value = "/logout.htm")
 	public String logout(HttpSession session) {
 		session.removeAttribute(User.NAME);
-		return "redirect:/login/login.htm";
+		return "redirect:"+appServerBroker;
 	}
 
 	/**

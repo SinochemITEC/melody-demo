@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.eyeieye.melody.util.StringUtil;
+import com.eyeieye.melody.util.UUIDGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User register(User user) {
+		user.setUuid(UUIDGenerator.generate());
 		users.put(user.getRealName(), user);
 		return user;
 	}

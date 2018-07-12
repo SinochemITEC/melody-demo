@@ -137,7 +137,7 @@ public class UtilsAction {
         List toFixedList = ArrayUtil.toFixedList(array1);
         List toList = ArrayUtil.toList(array1);
         Double[] clone = (Double[]) ArrayUtil.clone(array1);
-        System.out.println("toFixedList和toList");
+        System.out.println("\n----------toFixedList和toList----------");
         System.out.println("toFixedList的第一个值："+toFixedList.get(0));
         System.out.println("toList的第一个值："+toList.get(0));
         System.out.println("**********\n将array1中第一个元素修改为10.0后");
