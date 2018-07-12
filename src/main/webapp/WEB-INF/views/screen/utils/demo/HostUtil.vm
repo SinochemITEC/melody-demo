@@ -1,0 +1,8 @@
+<p>本地服务器名为：$!{hostName}</p>
+<p>本地服务器地址为：$!{hostAddress}</p>
+<p>本地服务器配置的ipv4地址有：
+#foreach($address in $!{ipv4Addresses})
+    $address
+#end
+</p>
+<p>本地服务器配置的ipv4地址中第一个地址是：$!{firstAddress}</p>

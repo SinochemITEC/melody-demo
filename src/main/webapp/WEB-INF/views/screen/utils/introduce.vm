@@ -8,7 +8,7 @@
 
 <p>工具类的方法均为静态方法，可通过类名直接调用，各工具类的具体功能如下所示：</p>
 
-<details open>
+<details close>
     <summary>
         <h><font size="5px">DateUtil</font></h>
     </summary>
@@ -16,9 +16,9 @@
     <div style="margin-left: 5%;">
         $contain.get("DateUtil.htm")
     </div>
-    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/DateUtil.htm')">DateUtil示例</a> </p>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/DateUtil.htm')" target="_blank">DateUtil示例</a> </p>
 </details>
-<details open>
+<details close>
     <summary>
         <h><font size="5px">StringUtil</font></h>
     </summary>
@@ -26,5 +26,35 @@
     <div style="margin-left: 5%;">
         $contain.get("StringUtil.htm")
     </div>
-    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/StringUtil.htm')">StringUtil示例</a> </p>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/StringUtil.htm')" target="_blank">StringUtil示例</a> </p>
+</details>
+<details close>
+    <summary>
+        <h><font size="5px">HostUtil</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("HostUtil.htm")
+    </div>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/HostUtil.htm')" target="_blank">HostUtil示例</a> </p>
+</details>
+<details close>
+    <summary>
+        <h><font size="5px">MoneyUtil</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("MoneyUtil.htm")
+    </div>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/MoneyUtil.htm')" target="_blank">MoneyUtil示例</a> </p>
+</details>
+<details close>
+    <summary>
+        <h><font size="5px">ArrayUtil</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("ArrayUtil.htm")
+    </div>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/ArrayUtil.htm')" target="_blank">ArrayUtil示例</a> </p>
 </details>

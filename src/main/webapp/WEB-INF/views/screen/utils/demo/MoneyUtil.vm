@@ -1,0 +1,38 @@
+<form action="$appServer.get('/utils/demo/MoneyUtil.htm')" method="get">
+    <p>请输入金额：<input type="text" placeholder="请输入纯数字" name="amount"
+                    value="#if($!{amount}) ${amount} #else 0 #end"/></p>
+    <p>请选择币种：<select name="currencyCodeIndex">
+        #if($!{currencyCodes})
+            #foreach($currencyCode in $currencyCodes)
+                <option value="$!{velocityCount}" #if($!{velocityCount} == $!{currencyCodeIndex})
+                        selected="selected" #end>$!{currencyCode}</option>
+            #end
+        #end
+    </select>
+    </p>
+    <p><input type="submit" value="提交"/></p>
+</form>
+<p>比当前币种100元：
+    #if($!{compare} == -1)
+    少
+    #elseif($!{compare} == 0)
+    不多不少
+    #elseif($!{compare} == 1)
+    多
+    #end
+</p>
+
+<p>加上当前币种10元：$!{add}</p>
+
+<p>金额乘以2：$!{multiply}</p>
+<p>金额平分为5份：
+    #foreach($amount in $!{allocate1})
+        $amount
+    #end
+</p>
+
+<p>金额按照1:2:3分为三份：
+    #foreach($amount in $!{allocate2})
+        $amount
+    #end
+</p>

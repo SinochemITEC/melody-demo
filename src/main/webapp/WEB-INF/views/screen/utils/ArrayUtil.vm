@@ -1,0 +1,136 @@
+<p>ArrayUtil是针对数组的工具类，提供了判空[]、比较[]、数据处理等方法。</p>
+<p>ArrayUtil可以处理的数组类型有Object[]、long[]、int[]、short[]、byte[]、byte[]、double[]、float[]、boolean[]、char[]</p>
+<p>例外的是isEmpty可以处理Collection&lt;?&gt; 类型的对象。 </p>
+
+<li>isEmpty</li>
+<p>isEmpty([type][] array) 是判断数组是否为空的方法，如果array == null 或者 array.length == 0 (或是 collection.size() == 0)则返回true，否则返回false。</p>
+
+<li>isNotEmpty</li>
+<p>isNotEmpty([type][] array) 是判断数组是否为空的方法，如果array == null 或者 array.length == 0则返回false，否则返回true。</p>
+
+<li>defaultIfNull</li>
+<p>如果数组是<code>null</code>，则返回空数组<code>[]</code>，否则返回数组本身。</p>
+
+<li>defaultIfEmpty</li>
+<p>如果数组是<code>null</code>或空数组<code>[]</code>，则返回空数组<code>[]</code>，否则返回数组本身。</p>
+
+<li>equals(Object array1, Object array2)</li>
+<p>递归地比较两个数组是否相同，支持多维数组。如果比较的对象不是数组，则此方法的结果同<code>ObjectUtil.equals</code>。</p>
+
+<li>hashCode(Object array)</li>
+<p>取得数组的hash值, 如果数组为<code>null</code>, 则返回<code>0</code>。如果对象不是数组，则此方法的结果同<code>ObjectUtil.hashCode</code>。</p>
+
+<li>toFixedList(Object[] array)</li>
+<p>将数组映射成固定长度的<code>List</code>，当改变这个<code>List</code>中的值时。数组中的相应值也被改变。</p>
+<p>如果输入数组为<code>null</code>，则返回<code>null</code>。</p>
+<p>该方法等效于<code>java.util.Arrays.asList</code></p>
+
+<li>List toList(Object array)</li>
+<p>将数组转换成<code>List</code>。</p>
+<p>如果输入数组为<code>null</code>，则返回<code>null</code>。</p>
+<p>该方法比asList慢。</p>
+
+<li>toList(Object array, List list)</li>
+<p>将数组转换成<code>List</code>，并填充到list中。</p>
+
+<li>toMap(Object[] array)</li>
+<p>将数组转换成<code>Map</code>。数组的元素必须是<code>Map.Entry</code>或元素个数多于2的子数组。</p>
+<p>如果输入数组为<code>null</code>，则返回<code>null</code>。</p>
+
+<li>toMap(Object[] array， Map map)</li>
+<p>将数组转换成<code>Map</code>，并填充到map中。数组的元素必须是<code>Map.Entry</code>或元素个数多于2的子数组。</p>
+<p>如果输入数组为<code>null</code>，则返回<code>null</code>。</p>
+
+<li>clone([type][] array)</li>
+<p>复制一个数组。如果数组为<code>null</code>，则返回<code>null</code>。</p>
+<p>该方法为浅复制，该方法不处理多维数组。</p>
+
+<li>isSameLength([type][] array)</li>
+<p>判断两个数组是否具有相同的长度。如果数组为<code>null</code>则被看作长度为<code>0</code>。</p>
+
+<li>reverse([type][] array)</li>
+<p>反转数组的元素顺序。如果数组为<code>null</code>，则什么也不做。</p>
+
+<br/>
+<h3>ArrayUtil可以对数组中的元素进行查找，并返回元素的脚标或是否存在。</h3>
+<li>indexOf([type][] array, [type] objectToFind)</li>
+<p>在数组中查找一个元素。如果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+
+<li>indexOf([type][] array, [type][] arrayToFind)</li>
+<p>在数组中查找一个元素序列。如果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+
+<li>indexOf([type][] array, [type] objectToFind, int startIndex)</li>
+<p>在数组中查找一个元素。果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+<p>起始索引小于<code>0</code>则看作<code>0</code>，超出数组长度的起始索引则返回<code>-1</code>。</p>
+
+<li>indexOf([type][] array, [type] objectToFind, int startIndex, int startIndex)</li>
+<p>在数组中从末尾开始查找一个元素序列。果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+<p>起始索引小于<code>0</code>则看作<code>0</code>，超出数组长度的起始索引则返回<code>-1</code>。</p>
+
+<li>lastIndexOf([type][] array, [type] objectToFind)</li>
+<p>在数组中从末尾开始查找一个元素。如果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+
+<li>lastIndexOf([type][] array, [type][] arrayToFind)</li>
+<p>在数组中从末尾开始查找一个元素序列。如果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+
+<li>lastIndexOf([type][] array, [type] objectToFind, int startIndex)</li>
+<p>在数组中从末尾开始查找一个元素。果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+<p>起始索引小于<code>0</code>则看作<code>0</code>，超出数组长度的起始索引则返回<code>-1</code>。</p>
+
+<li>lastIndexOf([type][] array, [type] objectToFind, int startIndex, int startIndex)</li>
+<p>在数组中从末尾开始查找一个元素序列。果未找到或数组为<code>null</code>则返回<code>-1</code>。</p>
+<p>起始索引小于<code>0</code>则看作<code>0</code>，超出数组长度的起始索引则返回<code>-1</code>。</p>
+
+<li>contain([type][] array, [type] objectToFind)</li>
+<p>判断指定对象是否存在于指定数组中。如果数组为<code>null</code>则返回<code>false</code>。</p>
+
+<li>contains([type][] array, [type][] objectToFind)</li>
+<p>判断指定元素序列是否存在于指定数组中。如果数组为<code>null</code>则返回<code>false</code>。</p>
+
+<br/>
+<h3>对于double和float类型的数组还可以指定搜索的误差</h3>
+
+<li>indexOf([type][] array, [type] doubleToFind, [type] tolerance)</li>
+<p>在数组中查找一个元素，误差范围为tolerance。</p>
+
+<li>indexOf([type][] array, [type][] arrayToFind, [type] tolerance)</li>
+<p>在数组中查找一个元素序列，误差范围为tolerance。</p>
+
+<li>indexOf([type][] array, [type] doubleToFind, int startIndex, [type] tolerance)</li>
+<p>从startIndex为起始位置，在数组中查找一个元素，误差范围为tolerance。</p>
+
+<li> indexOf([type][] array, [type][] arrayToFind, int startIndex, [type] tolerance)</li>
+<p>从startIndex为起始位置，在数组中查找一个元素序列，误差范围为tolerance。</p>
+
+<li>lastIndexOf([type][] array, [type] doubleToFind, [type] tolerance)</li>
+<p>在数组中从末尾开始查找一个元素，误差范围为tolerance。</p>
+
+<li>lastIndexOf([type][] array, [type][] arrayToFind, [type] tolerance)</li>
+<p>在数组中从末尾开始查找一个元素序列，误差范围为tolerance。</p>
+
+<li>lastIndexOf([type][] array, [type] doubleToFind, int startIndex, [type] tolerance)</li>
+<p>以startIndex为起始位置，在数组中从末尾开始查找一个元素，误差范围为tolerance。</p>
+
+<li> lastIndexOf([type][] array, [type][] arrayToFind, int startIndex, [type] tolerance)</li>
+<p>以startIndex为起始位置，在数组中从末尾开始查找一个元素序列，误差范围为tolerance。</p>
+
+<li>contains([type][] array, [type] doubleToFind, [type] tolerance)</li>
+<p>判断指定对象是否存在于指定数组中，误差范围为tolerance。</p>
+
+<li>contains([type][] array, [type][] arrayToFind, [type] tolerance)</li>
+<p>判断指定元素序列是否存在于指定数组中，误差范围为tolerance。</p>
+
+<h3>toString方法：</h3>
+
+<li>toString(Object array)</li>
+<p>支持多维数组。如果数组是<code>null</code>则返回<code>[]</code>。
+如果数组元素为<code>null</code>，则显示<code>&lt;null&gt;</code>。</p>
+
+<li>toString(Object array, String nullArrayStr)</li>
+<p>数组转字符串，如果数组为<code>null</code>则返回nullArrayStr。</p>
+
+<li>toString(Object array, String nullArrayStr, String nullElementStr)</li>
+<p>数组转字符串，如果数组为<code>null</code>则返回nullArrayStr，如果数组元素为<code>null</code>则用nullElementStr替代。</p>
+
+<li>toString(StringBuffer buffer, Object array, String nullArrayStr, String nullElementStr) </li>
+<p>数组转字符串，并将结果放入buffer中。</p>

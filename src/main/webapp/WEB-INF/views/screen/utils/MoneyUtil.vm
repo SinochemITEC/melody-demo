@@ -1,0 +1,167 @@
+<p>Money是一个针对货币数据的工具类，提供了单币种货币类，处理货币算术、币种和取整的方法。</p>
+<p>使用Money类时需要先通过构造器获取一个Money类的对象才能进行后续处理。</p>
+<br/>
+<h3>构造器</h3>
+<li>Money()</li>
+<p>缺省构造器，创建一个具有缺省金额（0）和缺省币种的货币对象。</p>
+<li>Money(long yuan, int cent)</li>
+<p>创建一个具有金额<code>yuan</code>元<code>cent</code>分和缺省币种的货币对象。</p>
+<li>Money(long yuan, int cent, Currency currency)</li>
+<p>创建一个具有金额<code>yuan</code>元<code>cent</code>分和指定币种的货币对象。</p>
+<li>Money(String amount)</li>
+<p>创建一个具有金额<code>amount</code>元和缺省币种的货币对象。</p>
+<li>Money(String amount, Currency currency)</li>
+<p>创建一个具有金额<code>amount</code>元和指定币种<code>currency</code>的货币对象。</p>
+<li>Money(String amount, Currency currency, int roundingMode)</li>
+<p>创建一个具有金额<code>amount</code>元和指定币种<code>currency</code>的货币对象。</p>
+<li>Money(double amount)</li>
+<p>创建一个具有参数<code>amount</code>指定金额和缺省币种的货币对象。 如果金额不能转换为整数分，则使用四舍五入方式取整。</p>
+<li>Money(double amount, Currency currency)</li>
+<p>创建一个具有金额<code>amount</code>和指定币种的货币对象。 如果金额不能转换为整数分，则使用四舍五入方式取整。</p>
+<li>Money(BigDecimal amount)</li>
+<p>创建一个具有金额<code>amount</code>和缺省币种的货币对象。 如果金额不能转换为整数分，则使用缺省取整模式<code>DEFAULT_ROUNDING_MODE</code>取整。</p>
+<li>Money(BigDecimal amount, int roundingMode)</li>
+<p>创建一个具有参数<code>amount</code>指定金额和缺省币种的货币对象。 如果金额不能转换为整数分，则使用指定的取整模式<code>roundingMode</code>取整。</p>
+<li>Money(BigDecimal amount, Currency currency)</li>
+<p>创建一个具有金额<code>amount</code>和指定币种的货币对象。 如果金额不能转换为整数分，则使用缺省的取整模式<code>DEFAULT_ROUNDING_MODE</code>进行取整。</p>
+<li>Money(BigDecimal amount, Currency currency, int roundingMode)</li>
+<p>创建一个具有金额<code>amount</code>和指定币种的货币对象。 如果金额不能转换为整数分，则使用指定的取整模式<code>roundingMode</code>取整。</p>
+<br/>
+<h3>函数：</h3>
+
+<li>getAmount()</li>
+<p>获取本货币对象代表的金额数，以元为单位。</p>
+
+<li>setAmount(BigDecimal amount)</li>
+<p>设置本货币对象代表的金额数，以元为单位。</p>
+
+<li>getCent() </li>
+<p>获取本货币对象代表的金额数，以分为单位。</p>
+
+<li>getCurrency()</li>
+<p>获取本货币对象代表的币种。</p>
+
+<li>getCentFactor()</li>
+<p>获取本货币币种的元/分换算比率。</p>
+
+<li>equals(Object other)</li>
+<p>判断本货币对象与另一对象是否相等。</p>
+<p>本货币对象与另一对象相等的充分必要条件是：</p>
+<ul>
+    <li>另一对象也属货币对象类。
+
+
+    <li>金额相同。
+
+
+    <li>币种相同。
+
+
+</ul>
+
+<li>equals(Money other)</li>
+<p>判断本货币对象与另一货币对象是否相等。</p>
+
+<li>hashCode()</li>
+<p>计算本货币对象的杂凑值。</p>
+
+<li>compareTo(Object other)</li>
+<p>比较本对象与另一对象的大小。 <br/>
+    如果待比较的对象的类型不是<code>Money</code>，则抛出<code>java.lang.ClassCastException</code>。<br/>
+    如果待比较的两个货币对象的币种不同，则抛出<code>java.lang.IllegalArgumentException</code>。<br/>
+    如果本货币对象的金额少于待比较货币对象，则返回-1。 <br/>
+    如果本货币对象的金额等于待比较货币对象，则返回0。<br/>
+    如果本货币对象的金额大于待比较货币对象，则返回1。</p>
+
+<li>compareTo(Money other)</li>
+<p>比较本货币对象与另一货币对象的大小。<br/>
+    如果待比较的两个货币对象的币种不同，则抛出<code>java.lang.IllegalArgumentException</code>。<br/>
+    如果本货币对象的金额少于待比较货币对象，则返回-1。 <br/>
+    如果本货币对象的金额等于待比较货币对象，则返回0。<br/>
+    如果本货币对象的金额大于待比较货币对象，则返回1。</p>
+
+<li>greaterThan(Money other)</li>
+<p>判断本货币对象是否大于另一货币对象。<br/>
+    如果待比较的两个货币对象的币种不同，则抛出<code>java.lang.IllegalArgumentException</code>。<br/>
+    如果本货币对象的金额大于待比较货币对象，则返回true，否则返回false。</p>
+<li>add(Money other)</li>
+<p>货币金额加法。<br/>
+    如果两货币币种相同，则<u>返回一个新的相同币种的货币对象</u>，其金额为两货币对象金额之和，<u>本货币对象的值不变</u>。<br/>
+    如果两货币对象币种不同，抛出<code>java.lang.IllegalArgumentException</code>。</p>
+<li>addTo(Money other)</li>
+<p>货币金额累加方法。
+如果两货币币种相同，则本货币对象的金额等于两货币对象金额之和，并<u>返回本货币对象的引用</u>。 如果两货币对象币种不同，抛出<code>java.lang.IllegalArgumentException</code>。</p>
+<li>subtract(Money other)</li>
+<p>货币金额减法。<br/>
+    如果两货币币种相同，则<u>返回一个新的相同币种的货币对象</u>，其金额为本货币对象的金额减去参数货币对象的金额。<u>本货币对象的值不变</u>。
+    如果两货币币种不同，抛出<code>java.lang.IllegalArgumentException</code>。
+    </p>
+<li>subtractFrom(Money other)</li>
+<p>货币累减方法。<br/>
+    如果两货币币种相同，则本货币对象的金额等于两货币对象金额之差，并<u>返回本货币对象的引用</u>。
+    如果两货币币种不同，抛出<code>java.lang.IllegalArgumentException</code>。</p>
+<li>multiply(long val)</li>
+<p>货币金额乘法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额乘以乘数。 <u>本货币对象的值不变</u>。</p>
+<li>multiplyBy(long val)</li>
+<p>货币金额累乘方法。<br/>
+    本货币对象金额乘以乘数，<u>并返回本货币对象</u>。</p>
+<li>multiply(double val)</li>
+<p>货币金额乘法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额乘以乘数。 <u>本货币对象的值不变</u>。</p>
+<li>multiplyBy(double val)</li>
+<p><br/>
+    本货币对象金额乘以乘数，<u>并返回本货币对象</u>。</p>
+<li>multiply(BigDecimal val)</li>
+<p>货币金额乘法。<br/>
+    返回一个新的货币对象，币种与本货币对象相同，金额为本货币对象的金额乘以乘数。<br/>
+    本货币对象的值不变。如果相乘后的金额不能转换为整数分，使用缺省的取整模式 <code>DEFUALT_ROUNDING_MODE</code>
+    进行取整。</p>
+<li>multiplyBy(BigDecimal val)</li>
+<p>货币金额累乘方法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额乘以乘数。<br/>
+    本货币对象的值不变。如果相乘后的金额不能转换为整数分，使用指定的取整方式 <code>roundingMode</code>进行取整。</p>
+<li>multiply(BigDecimal val, int roundingMode)</li>
+<p>货币金额乘法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额乘以乘数。<br/>
+    <u>本货币对象的值不变</u>。如果相乘后的金额不能转换为整数分，使用缺省的取整模式 <code>DEFUALT_ROUNDING_MODE</code>
+    进行取整。</p>
+<li>multiplyBy(BigDecimal val, int roundingMode)</li>
+<p>货币金额累乘方法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额乘以乘数。<br/>
+    本货币对象的值不变。如果相乘后的金额不能转换为整数分，使用指定的取整方式 <code>roundingMode</code>进行取整。</p>
+<li>divide(double val)</li>
+<p>货币除法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额除以除数。<br/>
+    <u>本货币对象的值不变</u>。如果相除后的金额不能转换为整数分，使用四舍五入方式取整。
+</p>
+<li>divideBy(double val)</li>
+<p>货币累除方法。<br/>
+    本货币对象金额除以除数，并<u>返回本货币对象</u>。 如果相除后的金额不能转换为整数分，使用四舍五入方式取整。</p>
+<li>divide(BigDecimal val)</li>
+<p>货币除法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额除以除数。<br/>
+    <u>本货币对象的值不变</u>。如果相除后的金额不能转换为整数分，使用指定的取整模式 <code>DEFAULT_ROUNDING_MODE</code>进行取整。</p>
+<li>divide(BigDecimal val, int roundingMode)</li>
+<p>货币除法。<br/>
+    <u>返回一个新的货币对象</u>，币种与本货币对象相同，金额为本货币对象的金额除以除数。<br/>
+    <u>本货币对象的值不变</u>。如果相除后的金额不能转换为整数分，使用指定的取整模式 <code>roundingMode</code>进行取整。</p>
+<li>divideBy(BigDecimal val)</li>
+<p>货币累除方法。<br/>
+    本货币对象金额除以除数，<u>并返回本货币对象</u>。 如果相除后的金额不能转换为整数分，使用缺省的取整模式
+    <code>DEFAULT_ROUNDING_MODE</code>进行取整。</p>
+<li>divideBy(BigDecimal val, int roundingMode)</li>
+<p>货币累除方法。<br/>
+    本货币对象金额除以除数，<u>并返回本货币对象</u>。 如果相除后的金额不能转换为整数分，使用缺省的取整模式
+    <code>roundingMode</code>进行取整。</p>
+<li>allocate(int targets)</li>
+<p>将本货币对象尽可能平均分配成<code>targets</code>份。 如果不能平均分配尽，则将零头放到开始的若干份中。分配运算能够确保不会丢失金额零头。</p>
+<li>allocate(long[] ratios)</li>
+<p>将本货币对象按照规定的比例分配成若干份。分配所剩的零头从第一份开始顺序分配。分配运算确保不会丢失金额零头。</p>
+<li>toString()</li>
+<p>生成本对象的缺省字符串表示。</p>
+
+
+
+<p><span style="color:red">*</span>注意：①本类中缺省的币种为人民币(CNY)，缺省的取整方式为四舍五入(BigDecimal.ROUND_HALF_EVEN)；<br/>
+②取整方式请查看java.math.BigDecimal类。</p>

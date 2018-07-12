@@ -1,14 +1,14 @@
 <p>properties配置文件可以用来进行全局配置，默认的配置文件为/WEB-INF/conf/server.properties，通过配置web.xml可以在在conf目录下添加其他.properties文件，但是同名配置会被覆盖</p>
-通过配置web.xml文件可以设定指定的配置文件路径：</p>
-<p>&lt;context-param&gt;<br/>&lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;<br/>&lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;<br/>&lt;context-param&gt;
-</p>
+<p>通过配置web.xml文件可以设定指定的配置文件路径：</p>
+<div class="molody-code-wrap">&lt;context-param&gt;<br/>&lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;<br/>&lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;<br/>&lt;context-param&gt;
+</div>
 <p>我们这里指定了play.properties为默认的配置文件路径。
 配置文件中至少配置如下参数即可启动一个项目：</p>
-<p>
+<div class="molody-code-wrap">
     app.server.host=127.0.0,1<br/>
     app.server.port=8080<br/>
     melody.acyion.scan=com.eye.melody.demo.web<br/>
     system.load.charset=UTF-8<br/>
     web.encoding=UTF-8
-</p>
+</div>
 <p>参数的具体解释请查看该页面：</p><a class="m-detail-link" href="$appServer.get('/config/properties/list.htm')">详细参数介绍</a><br/><br/> ##FIXME a标签样式

@@ -1,4 +1,4 @@
-<p>DateUtil是对时间数据进行处理的工具类，所在位置为<i>com.eyeieye.melody.util.DateUtil</i>，提供了对时间数据转换和获取时间的方法：</p>
+<p>DateUtil是对时间数据进行处理的工具类，提供了对时间数据转换和获取时间的方法：</p>
 
 
 <li>getToday()</li>
