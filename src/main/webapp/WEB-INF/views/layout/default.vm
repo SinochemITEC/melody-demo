@@ -11,8 +11,8 @@
             $screen_content
         </div>
     </div>
-</div>
     $contain.get('/contain/footer.htm')
+</div>
     $asyncContain.export()
 </body>
 </html>
