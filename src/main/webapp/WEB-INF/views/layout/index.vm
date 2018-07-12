@@ -8,8 +8,9 @@
     <div class="melody-detail-wrap">
         $screen_content
     </div>
-</div>
     $contain.get('/contain/footer-index.htm')
+</div>
+
     $asyncContain.export()
 </body>
 </html>
