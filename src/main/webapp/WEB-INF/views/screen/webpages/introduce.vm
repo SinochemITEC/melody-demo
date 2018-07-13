@@ -1,3 +1,4 @@
+
 <h2 class="melody-d-title">页面制作说明和示例</h2>
 <p>melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。</p>
 <br/>
@@ -23,20 +24,32 @@
 <br/>
 <details class="menu" close>
     <summary>
-        <h3>jsCode</h3>
+        <h3>jscode</h3>
     </summary>
     <div style="margin-left: 5%;">
-
+<p>在使用异步(bigpipe)的时候，如果需要执行js语句，则需要使用jscode方法，否则js的内容也会异步执行，容易导致问题。</p>
+        <p>jscode的使用方法如下所示</p>
+        <div class="melody-code-wrap"><pre><code>
+\#jscode()
+     alert("执行jscode中的方法");
+\#end
+        </code></pre></div>
+        <p>具体示例可以查看“本地异步示例”中的内容。</p>
     </div>
 </details>
 
 <br/>
 <details class="menu" close>
     <summary>
-        <h><font size="5px">示例</font> </h>
+        <h3>示例</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-       <a class="m-detail-link" href="$appServer.get('/webpages/demo/questionStart.htm')">bigpipe使用实例</a>
+        <p>
+       <a class="m-detail-link1" href="$appServer.get('/webpages/demo/local_sync.htm')">本地同步示例</a>
+       <a class="m-detail-link1" href="$appServer.get('/webpages/demo/local_async.htm')">本地异步示例</a>
+       <a class="m-detail-link1" href="$appServer.get('/webpages/demo/remote_sync.htm')">远程同步示例</a>
+       <a class="m-detail-link1" href="$appServer.get('/webpages/demo/remote_async.htm')">远程异步示例</a>
+        </p>
     </div>
 </details>

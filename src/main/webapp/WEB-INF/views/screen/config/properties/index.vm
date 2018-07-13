@@ -19,5 +19,5 @@
     system.load.charset=UTF-8<br/>
     web.encoding=UTF-8
 </div>
-<p>参数的具体解释请查看该页面：</p><a class="m-detail-link" href="$appServer.get('/config/properties/list.htm')">详细参数介绍</a><br/>
-<br/> ##FIXME a标签样式
+<p>参数的具体解释请查看该页面：<a class="m-detail-link1" href="$appServer.get('/config/properties/list.htm')">详细参数介绍</a></p><br/>
+<br/>

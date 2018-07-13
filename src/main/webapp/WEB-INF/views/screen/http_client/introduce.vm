@@ -1,0 +1,19 @@
+<p>Melody针对apache的HttpClient，提供了一个ConnectionManager类。</p>
+<p>该工具类对HttpClient进行了统一化的处理，可以通过该类来获取HttpClient对象。</p>
+<p>ConnectionManager通过注入的方式获得其对象：</p>
+<div class="melody-code-wrap">
+<pre><code>@Autowired
+ConnetionManager connectionManager;
+</code></pre></div>
+<p>该类提供了几个方法可以使用：</p>
+<li>int executeGet(String url, HttpServletRequest request, HttpServletResponse response)</li>
+<p>该方法可以执行一个http请求，并返回执行后的状态码。</p>
+
+<li>CloseableHttpClient getHttpClient())</li>
+<p>获取一个HttpClient对象。</p>
+
+<li>HttpRequestBase doRequest(String url, HttpServletRequest request)</li>
+<p>通过url和request对象处理得到一个HttpRequestBase对象(可以强制转换为HttpGet对象)，其包含有url和request中的协议、请求头，并对host进行了处理，避免nginx的转发。</p>
+
+<li>void doResponse(HttpServletResponse servletRes, CloseableHttpResponse proxyRes)</li>
+<p>处理响应。</p>

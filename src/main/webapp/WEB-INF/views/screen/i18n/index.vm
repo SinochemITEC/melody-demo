@@ -1,27 +1,34 @@
+<h3>1、默认语言配置</h3>
+<p>使用国际化需要配置默认语言，在项目的properties文件中添加如下配置内容：</p>
+<div class="melody-code-wrap"><pre><code>
+support.locales=zh_CN,en_US
+default.locales=zh_CN
+</code></pre>
+</div>
+<p>以上配置配置了支持语言包括zh_CN和en_US，默认语言为zh_CN</p>
+<br/>
+<h3>2、在页面上使用国际化</h3>
 <p>
     melody国际化除了action层异常信息,不使用标准java资源文件<br/>
     #if($vlocale.isLocale('zh','CN'))
-        <a class="m-detail-link1" href="$appServer/locale/change.htm?locale=en_US">to engish</a>
+        <a class="m-detail-link1" href="$appServer.get('/locale/change.htm?locale=en_US')">to engish</a>
     #else
-        <a class="m-detail-link1" href="$appServer/locale/change.htm?locale=zh_CN">回中文</a>
+        <a class="m-detail-link1" href="$appServer.get('/locale/change.htm?locale=zh_CN')">回中文</a>
     #end
     vm上国际化有两种方法:<br/>
-    1.vm本身国际化,比如 index.vm(缺省),index_zh_CN.vm(中文简体),index_zh_TW(中文繁体)<br/>
+    <u>(1) vm本身国际化</u>,比如 index.vm(缺省),index_zh_CN.vm(中文简体),index_zh_TW(中文繁体)<br/>
     国际化的可以是screen,layout,contain,遵循以下规则如果当前访问者对应的 $view_$language_$country.$suffix 存在则使用此模板,否则使用$view.suffix
     <br/>
-    需要注意的是vm的编码,如果有除中,英文外的语言化,vm尽量使用utf-8
+    需要注意的是vm的编码,如果有除中,英文外的语言化,vm尽量使用utf-8。
     <br/>
-    2.在vm上使用map结构描述国际化消息,比如以下输出在中文和英文选择下会不同:
+    点击<a class="m-detail-link1" href="$appServer.get('/i18n/demopage.htm')">本链接</a>查看当前语言下的demopage页面。<br/>
+    <u>(2) 在vm上使用map结构描述国际化消息</u>,比如以下输出在中文和英文选择下会不同:
     $vlocale.i18n({'zh_CN':'我是中文哈','en_US':'i am engish!'})
     <br/>
     注意的是如果当前用户没有locale(异常情况,一般不应该发生)时,或者当前对应的locale以及缺省locale都没有在参数中出现,则得到空字符串。
     <br/><br/>
-    页面错误信息显示请看用户注册这个示例的用户名输入,注意此例子中,资源文件编码非标准java的iso-8859-1并且需要转码,而是使用utf-8作为文件编码。<br/><br/>
-    如果在velocoty中配置了LocaleReferenceInsertionEventHandler,则会自动调用LocaleRender做国际化输出,比如:${cb.nameLocale}(CommonBean)
 </p>
-<script>
-    function switchLanguage(lang) {
-        document.cookie = "_l_=" + lang + ";domain=127.0.0.1;path=/;";
-        window.location.reload();
-    }
-</script>
+<h3>3、使用工具类实现国际化</h3>
+<p>如果在velocoty中配置了LocaleReferenceInsertionEventHandler,则会自动识别LocaleRender，并国际化输出,比如:${cb.nameLocale}(CommonBean)</p>
+<p>可以查看CommonBean这个类，该类获取name的方法getNameLocale()，该方法返回一个LocaleRender对象，在返回时匿名实现了LocaleRender接口的getByLocale方法，根据locale返回了不同的内容。</p>
+<p>实际使用时只需要在CommonBean中填入不同语言下的内容，在页面只需要使用getNameLocale方法即可显示不同语言下的内容。</p>

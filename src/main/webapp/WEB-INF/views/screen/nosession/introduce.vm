@@ -26,6 +26,6 @@ NoSession的设计思路是将session经过加密后存储到cookie中，以保�
         <p>1、实体类示例：com.eyeieye.melody.demo.web.action.User<br/>
         2、CookieStore类示例：com.eyeieye.melody.demo.web.action.UserAttributeCookieStore<br/>
         <p>3、应用实例：请查看"用户登录"部分的具体实现</p>
-        <a class="m-detail-link" href="$appServer.get('/login/login.htm')">用户登录</a>
+        <p><a class="m-detail-link1" href="$appServer.get('/login/login.htm')">用户登录</a></p>
     </div>
 </details>

@@ -1,40 +1,39 @@
 <h3>URLBroker介绍：</h3>
 <p>URLBroker是一个工具类，会根据对象名自动注入配置文件中配置的地址，一般用于快速获得某一域下的指定链接。</p>
 <p>使用URLBroker首先需要在spring-bean的xml文件中进行配置：</p>
-<xmp class="m-xmp">
-    <bean id="<ServerBeanName>" class="com.eyeieye.melody.web.url.URLBroker">
-        <property name="encoding" value="<字符编码>"></property>
-        <property name="config">
-            <bean class="com.eyeieye.melody.web.url.URLConfig">
-                <property name="protocol" value="<protocol>"></property>
-                <property name="host" value="<app.server.host>"></property>
-                <property name="port" value="<app.server.port>"></property>
-                <property name="path" value="<app.server.path>"></property>
-                <property name="path" value="<app.server.path>"></property>
-                <property name="followContextPath" value="true"></property>
-            </bean>
-        </property>
-    </bean>
-</xmp>
+<div class="melody-code-wrap">
+<pre><code>&lt;bean id=&quot;&lt;ServerBeanName&gt;&quot; class=&quot;com.eyeieye.melody.web.url.URLBroker&quot;&gt;
+&lt;property name=&quot;encoding&quot; value=&quot;&lt;字符编码&gt;&quot;&gt;&lt;/property&gt;
+&lt;property name=&quot;config&quot;&gt;
+&lt;bean class=&quot;com.eyeieye.melody.web.url.URLConfig&quot;&gt;
+&lt;property name=&quot;protocol&quot; value=&quot;&lt;protocol&gt;&quot;&gt;&lt;/property&gt;
+&lt;property name=&quot;host&quot; value=&quot;&lt;app.server.host&gt;&quot;&gt;&lt;/property&gt;
+&lt;property name=&quot;port&quot; value=&quot;&lt;app.server.port&gt;&quot;&gt;&lt;/property&gt;
+&lt;property name=&quot;path&quot; value=&quot;&lt;app.server.path&gt;&quot;&gt;&lt;/property&gt;
+&lt;property name=&quot;path&quot; value=&quot;&lt;app.server.path&gt;&quot;&gt;&lt;/property&gt;
+&lt;property name=&quot;followContextPath&quot; value=&quot;true&quot;&gt;&lt;/property&gt;
+&lt;/bean&gt;
+&lt;/property&gt;
+&lt;/bean&gt;</code></pre>
+</div>
 <p>然后在URLBrokerLauncherInterceptor和ServletContextInitHelper中进行注册：</p>
-<xmp class="m-xmp">
-    <bean class="com.eyeieye.melody.web.url.URLBrokerLauncherInterceptor">
-        <property name="brokers">
-            <map>
-                <entry key="<key>" value-ref="<ServerBeanName>"/>
-            </map>
-        </property>
-    </bean>
+<div class="melody-code-wrap">
+<pre><code>&lt;bean class=&quot;com.eyeieye.melody.web.url.URLBrokerLauncherInterceptor&quot;&gt;
+        &lt;property name=&quot;brokers&quot;&gt;
+            &lt;map&gt;
+                &lt;entry key=&quot;&lt;key&gt;&quot; value-ref=&quot;&lt;ServerBeanName&gt;&quot;/&gt;
+            &lt;/map&gt;
+        &lt;/property&gt;
+    &lt;/bean&gt;
 
-    <bean class="com.eyeieye.melody.web.url.ServletContextInitHelper">
-        <property name="brokers">
-            <list>
-                <ref bean="<ServerBeanName>" />
-            </list>
-        </property>
-    </bean>
-
-</xmp>
+    &lt;bean class=&quot;com.eyeieye.melody.web.url.ServletContextInitHelper&quot;&gt;
+        &lt;property name=&quot;brokers&quot;&gt;
+            &lt;list&gt;
+                &lt;ref bean=&quot;&lt;ServerBeanName&gt;&quot; /&gt;
+            &lt;/list&gt;
+        &lt;/property&gt;
+    &lt;/bean&gt;</code></pre>
+</div>
 <h3>举例说明：</h3>
 <p>&lt;ServerBeanName&gt;是要用到的URLBroker的对象名，如mail服务器的URLBroker对象可以命名为mailServer；</p>
 <p>&lt;字符编码&gt;是拼接字符串使用的字符编码，一般使用配置好的全局变量；</p>
@@ -47,26 +46,27 @@
 
 <h3>URLBroker的使用：</h3>
 <ul>
-<li><span>在页面中使用:</span>
-<div class="maintext">
-    <span>①在页面中可以使用$[ServerBeanName]引用配置好的URLBroker对象，如&#36;mailServer的值为$mailServer</span>
-    <span>②使用get可以获得指定域下的链接地址，如&#36;mailServer.get("index.htm")的值为$mailServer.get("index.htm")</span>
-    <span>③使用put和addQueryData可以在链接后增加参数，如&#36;mailServer.get("index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")的值为$mailServer.get("index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")</span>
-    <span>④在JSP文件中也可以使用URLBroker，如<a class="m-detail-link" href="$appServer.get("/dir_url/jsppage.htm")" target="_blank">本例所示</a>。</span>
-</div></li>
-<li><span>在服务器程序使用：</span>
-<div class="maintext">
-    <span>①使用@Autowired可以对URLBroker的引用进行注入，注入内容由引用名确定，如：</span>
-    <xmp class="m-xmp">
-        @Autowired
-        private URLBroker mailServer;
-    </xmp>
-    <span>②根据同在页面中使用一样，可以通过get方法指定一个链接，使用put和addQueryData方法在链接后增加参数</span>
-</div></li>
-<li><span>提示：</span>
-    <span>melody中已经存在四个URLBroker对象，分别为：</span>
-    <span>appServer:一般配置为本项目自身的url地址</span>
-    <span>sslAppServer:appServer的https协议地址</span>
-    <span>imageServer:静态文件服务器</span>
-    <span>uploadServer:上传文件服务器</span></li>
+    <li><span>在页面中使用:</span>
+        <div class="maintext">
+            <span>①在页面中可以使用$[ServerBeanName]引用配置好的URLBroker对象，如&#36;mailServer的值为$mailServer</span>
+            <span>②使用get可以获得指定域下的链接地址，如&#36;mailServer.get("index.htm")的值为$mailServer.get("index.htm")</span>
+            <span>③使用put和addQueryData可以在链接后增加参数，如&#36;mailServer.get("index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")的值为$mailServer.get(
+                "index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")</span>
+            <span>④在JSP文件中也可以使用URLBroker，如<a class="m-detail-link" href="$appServer.get("/dir_url/jsppage.htm")"
+                                             target="_blank">本例所示</a>。</span>
+        </div>
+    </li>
+    <li><span>在服务器程序使用：</span></li>
+        <p>①使用@Autowired可以对URLBroker的引用进行注入，注入内容由引用名确定，如：</p>
+    <div class="melody-code-wrap">
+<pre><code>@Autowired
+private URLBroker mailServer;</code></pre>
+    </div>
+    <p>②根据同在页面中使用一样，可以通过get方法指定一个链接，使用put和addQueryData方法在链接后增加参数</p>
+    <li><span>提示：</span>
+        <span>melody中已经存在四个URLBroker对象，分别为：</span>
+        <span>appServer:一般配置为本项目自身的url地址</span>
+        <span>sslAppServer:appServer的https协议地址</span>
+        <span>imageServer:静态文件服务器</span>
+        <span>uploadServer:上传文件服务器</span></li>
 </ul>

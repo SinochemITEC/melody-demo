@@ -4,12 +4,20 @@
     <li>$request.setAttrubute()</li>
     <p>\$request可以的setAttribute方法可以设置参数，设置的参数作用于本页面和contain的页面。另外，\$request也提供了removeAttribute()方法可以移除参数。如代码：</p>
     <br/>
-    <p>\$request.setAttribute('my_name','neo')</p>
-    <p>我的名字是\$!my_name</p>
-    <p>\$contain.get('/widget/show_name.htm')</p>
-    <p>\$request.removeAttribute('my_name')</p>
-    <p>\$contain.get('/widget/show_name.htm')</p>
-    <p>我的名字是&#36;!my_name</p><br/>
+
+    <div class="melody-code-wrap"><pre><code>
+\$request.setAttribute('my_name','neo')
+    </code></pre></div>
+
+    <p>我的名字是\&#36;!{my_name}</p>
+
+    <div class="melody-code-wrap"><pre><code>
+\$contain.get('/widget/show_name.htm')
+\$request.removeAttribute('my_name')
+\$contain.get('/widget/show_name.htm')
+    </code></pre></div>
+
+    <p>我的名字是&#36;!{my_name}</p><br/>
     <p>效果：</p>
     <p>$request.setAttribute('my_name','neo')</p>
     <p>我的名字是$!my_name</p>
@@ -17,18 +25,28 @@
     <p>$request.removeAttribute('my_name')</p>
     <p>$contain.get('/widget/show_name.htm')</p>
     <p>我的名字是$!my_name</p><br/>
+
+
     <li>put方法</li>
     <p>contain也买你的时候可以在get后使用put方法， 其效果与\$request.setAttribute()相同。例如：</p><br/>
-    <p>\$contain.get('/widget/show_name.htm') .put('my_name','morpheus')</p>
-    <p>\$contain.get('/widget/show_name.htm')</p><br/>
+
+    <div class="melody-code-wrap"><pre><code>
+\$contain.get('/widget/show_name.htm') .put('my_name','morpheus')
+\$contain.get('/widget/show_name.htm')
+    </code></pre></div>
+
     <p>效果：</p>
     <p>$contain.get('/widget/show_name.htm').put('my_name','morpheus')</p>
     <p>$contain.get('/widget/show_name.htm')</p>
     <p>但是，当put方法与setAttribute同时使用时，对于同名的参数，在被contain的页面中，put方法会覆盖setAttribute方法。例如：</p><br/>
-    <p>\$request.setAttribute('my_name','Trinity')</p>
-    <p>\$contain.get('/widget/show_name.htm')</p>
-    <p>\$contain.get('/widget/show_name.htm') .put('my_name','Smith')</p>
-    <p>\$contain.get('/widget/show_name.htm')</p><br/>
+
+    <div class="melody-code-wrap"><pre><code>
+\$request.setAttribute('my_name','Trinity')
+\$contain.get('/widget/show_name.htm')
+\$contain.get('/widget/show_name.htm').put('my_name','Smith')
+\$contain.get('/widget/show_name.htm')
+    </code></pre></div>
+
     <p>效果：</p>
     <p>$request.setAttribute('my_name','Trinity')</p>
     <p>$contain.get('/widget/show_name.htm')</p>

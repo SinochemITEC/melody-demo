@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 @Controller
 @RequestMapping("/webpages/demo")
-public class QuestionAction {
+public class WebPagesAction {
 
     SimpleCacheManager cacheManager = new SimpleCacheManager();
 
@@ -62,6 +64,13 @@ public class QuestionAction {
         }else{
             modelMap.put("hero", null);
         }
+    }
+
+    @RequestMapping("contained_page")
+    public void containedPage(ModelMap modelMap){
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss.SS");
+        String loadTime = formatter.format(new Date());
+        modelMap.put("loadTime",loadTime);
     }
 
 

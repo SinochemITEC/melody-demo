@@ -21,3 +21,5 @@ public class NonAutomaticInterceptor extends HandlerInterceptorAdapter {
         logger.debug("\n*********************非自动加载的拦截器：postHandler*********************");
     }
 }
+
+/**FIXME: 这个拦截器没有被加载 **/

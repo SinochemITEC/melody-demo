@@ -1,146 +1,146 @@
 <p>web.xml中有一些设计melody的重要配置</p>
 <li>contextConfigLocation<br>
     配置内容为：
-    <xmp>
-        <context-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;context-param&gt;
+            &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+            &lt;param-value&gt;
                 /WEB-INF/conf/spring/*-beans.xml
-            </param-value>
-        </context-param>
-    </xmp>
+            &lt;/param-value&gt;
+        &lt;/context-param&gt;
+    </code></pre></div>
     该配置用于指定spring的xml配置文件地址。
 </li>
 
 <li>log4jConfigLocation<br>
     配置内容为：
-    <xmp>
-        <context-param>
-            <param-name>log4jConfigLocation</param-name>
-            <param-value>/WEB-INF/conf/log4j.properties</param-value>
-        </context-param>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;context-param&gt;
+            &lt;param-name&gt;log4jConfigLocation&lt;/param-name&gt;
+            &lt;param-value&gt;/WEB-INF/conf/log4j.properties&lt;/param-value&gt;
+        &lt;/context-param&gt;
+    </code></pre></div>
     该配置用于指定log4j的配置文件的地址。
 </li>
 
 <li>log4jExposeWebAppRoot<br>
     配置内容为：
-    <xmp>
-        <context-param>
-            <param-name>log4jExposeWebAppRoot</param-name>
-            <param-value>true</param-value>
-        </context-param>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;context-param&gt;
+            &lt;param-name&gt;log4jExposeWebAppRoot&lt;/param-name&gt;
+            &lt;param-value&gt;true&lt;/param-value&gt;
+        &lt;/context-param&gt;
+    </code></pre></div>
     该配置用于指定应用是否可以通过System.getProperties(“webAppRootKey”)得到当前应用的根路径。
 </li>
 
 <li>log4jRefreshInterval<br>
     配置内容为：
-    <xmp>
-        <context-param>
-            <param-name>log4jRefreshInterval</param-name>
-            <param-value>10000</param-value>
-        </context-param>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;context-param&gt;
+            &lt;param-name&gt;log4jRefreshInterval&lt;/param-name&gt;
+            &lt;param-value&gt;10000&lt;/param-value&gt;
+        &lt;/context-param&gt;
+    </code></pre></div>
     该配置用于指定检测Log4j配置文件是否改变的时间间隔。
 </li>
 
 <li>melodyConfigLocation<br>
     配置内容为：
-    <xmp>
-        <context-param>
-            <param-name>melodyConfigLocation</param-name>
-            <param-value>/WEB-INF/conf/play.properties</param-value>
-        </context-param>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;context-param&gt;
+            &lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;
+            &lt;param-value&gt;/WEB-INF/conf/play.properties&lt;/param-value&gt;
+        &lt;/context-param&gt;
+    </code></pre></div>
     该配置用于指定配置文件的位置，这是不同于默认的server.properties的另一个配置文件，该文件配置的参数会覆盖server.properties的参数。
 </li>
 
 <li>webAppRootKey<br>
     配置内容为：
-    <xmp>
-        <context-param>
-            <param-name>webAppRootKey</param-name>
-            <param-value>play.root</param-value>
-        </context-param>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;context-param&gt;
+            &lt;param-name&gt;webAppRootKey&lt;/param-name&gt;
+            &lt;param-value&gt;play.root&lt;/param-value&gt;
+        &lt;/context-param&gt;
+    </code></pre></div>
     该配置将当前应用的根路径赋值到play.root这个变量中。
 </li>
 
 <li>melodyFilter<br>
     配置内容为：
-    <xmp>
-        <filter>
-            <filter-name>melodyFilter</filter-name>
-            <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-            <init-param>
-                <param-name>targetBeanName</param-name>
-                <param-value>melodyFilter</param-value>
-            </init-param>
-        </filter>
-        <filter-mapping>
-            <filter-name>melodyFilter</filter-name>
-            <url-pattern>*.htm</url-pattern>
-        </filter-mapping>
-        <filter-mapping>
-            <filter-name>melodyFilter</filter-name>
-            <url-pattern>*.json</url-pattern>
-        </filter-mapping>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;filter&gt;
+            &lt;filter-name&gt;melodyFilter&lt;/filter-name&gt;
+            &lt;filter-class&gt;org.springframework.web.filter.DelegatingFilterProxy&lt;/filter-class&gt;
+            &lt;init-param&gt;
+                &lt;param-name&gt;targetBeanName&lt;/param-name&gt;
+                &lt;param-value&gt;melodyFilter&lt;/param-value&gt;
+            &lt;/init-param&gt;
+        &lt;/filter&gt;
+        &lt;filter-mapping&gt;
+            &lt;filter-name&gt;melodyFilter&lt;/filter-name&gt;
+            &lt;url-pattern&gt;*.htm&lt;/url-pattern&gt;
+        &lt;/filter-mapping&gt;
+        &lt;filter-mapping&gt;
+            &lt;filter-name&gt;melodyFilter&lt;/filter-name&gt;
+            &lt;url-pattern&gt;*.json&lt;/url-pattern&gt;
+        &lt;/filter-mapping&gt;
+    </code></pre></div>
     该配置是对url的拦截，指定了.htm和.json的url均由melody处理。
 </li>
 
 <li>melodyFilter<br>
     配置内容为：
-    <xmp>
-        <listener>
-            <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
-        </listener>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;listener&gt;
+            &lt;listener-class&gt;org.springframework.web.util.Log4jConfigListener&lt;/listener-class&gt;
+        &lt;/listener&gt;
+    </code></pre></div>
     该配置项配置了Log4j对配置文件的监听器，保证配置文件改变后不需要重启web应用就可以完成配置。
 </li>
 
 <li>ContextLoaderListener<br>
     配置内容为：
-    <xmp>
-        <listener>
-            <listener-class>com.eyeieye.melody.web.context.ContextLoaderListener</listener-class>
-        </listener>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;listener&gt;
+            &lt;listener-class&gt;com.eyeieye.melody.web.context.ContextLoaderListener&lt;/listener-class&gt;
+        &lt;/listener&gt;
+    </code></pre></div>
     该配置项配置了spring的xml配置文件的监听器。
 </li>
 
 <li>IntrospectorCleanupListener<br>
     配置内容为：
-    <xmp>
-        <listener>
-            <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
-        </listener>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;listener&gt;
+            &lt;listener-class&gt;org.springframework.web.util.IntrospectorCleanupListener&lt;/listener-class&gt;
+        &lt;/listener&gt;
+    </code></pre></div>
     该配置项配置了放置内存泄漏问题的监听器。
 </li>
 
 <li>melodyServlet<br>
     配置内容为：
-    <xmp>
-        <servlet>
-            <servlet-name>melodyServlet</servlet-name>
-            <servlet-class>com.eyeieye.melody.web.servlet.DispatcherServlet</servlet-class>
-            <init-param>
-                <param-name>contextConfigLocation</param-name>
-                <param-value>WEB-INF/conf/spring/web/web-main-test.xml</param-value>
-            </init-param>
-            <load-on-startup>2</load-on-startup>
-        </servlet>
-        <servlet-mapping>
-            <servlet-name>melodyServlet</servlet-name>
-            <url-pattern>*.htm</url-pattern>
-        </servlet-mapping>
-        <servlet-mapping>
-            <servlet-name>melodyServlet</servlet-name>
-            <url-pattern>*.json</url-pattern>
-        </servlet-mapping>
-    </xmp>
+    <div class="melody-code-wrap"><pre><code>
+        &lt;servlet&gt;
+            &lt;servlet-name&gt;melodyServlet&lt;/servlet-name&gt;
+            &lt;servlet-class&gt;com.eyeieye.melody.web.servlet.DispatcherServlet&lt;/servlet-class&gt;
+            &lt;init-param&gt;
+                &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+                &lt;param-value&gt;WEB-INF/conf/spring/web/web-main-test.xml&lt;/param-value&gt;
+            &lt;/init-param&gt;
+            &lt;load-on-startup&gt;2&lt;/load-on-startup&gt;
+        &lt;/servlet&gt;
+        &lt;servlet-mapping&gt;
+            &lt;servlet-name&gt;melodyServlet&lt;/servlet-name&gt;
+            &lt;url-pattern&gt;*.htm&lt;/url-pattern&gt;
+        &lt;/servlet-mapping&gt;
+        &lt;servlet-mapping&gt;
+            &lt;servlet-name&gt;melodyServlet&lt;/servlet-name&gt;
+            &lt;url-pattern&gt;*.json&lt;/url-pattern&gt;
+        &lt;/servlet-mapping&gt;
+    </code></pre></div>
     该配置项配置了melody的DispatcherServlet，该servlet代替了spring的DispatcherServlet。
 </li>
 

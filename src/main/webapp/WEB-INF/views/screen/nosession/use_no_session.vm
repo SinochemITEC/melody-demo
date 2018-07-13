@@ -9,24 +9,23 @@
     该类需要实现Serializable接口，保证实体类可以序列化。<br/>
         示例参见com.eyeieye.melody.demo.web.action.login.User类。</p>
     <li>3、编写CookieStore类</li>
-    <p>Cookiestore类是用来配置cookie相关属性的类，其需要实现AttributeCookieStore接口，其中有8个方法需要实现，下面依次介绍：<br/><br/>
-    ##TODO 待完善
-        public int getOrder();<br></p>
-    <h3>加载顺序</h3>
-    <p>public boolean isMatch(String key);<br>
-    <br>服务器用来抓取cookie的key值<br>
-    public String getCookieName();<br>
-    获取浏览器上存储此cookie的名称，直接返回String即可。<br><br>
-    public Encode getEncode();<br>
-    获取session存储为cookie是使用的加密方式，该方法的返回值为Encode接口的实现类。<br><br>
+    <p>Cookiestore类是用来配置cookie相关属性的类，其需要实现AttributeCookieStore接口，其中有8个方法需要实现，下面依次介绍：</p><br/>
+    <p> public int getOrder();<br/>
+    加载优先级，返回的数字越小优先级越高。<br/><br/>
+    public boolean isMatch(String key);<br/>
+    服务器用来抓取cookie的key值<br/><br/>
+    public String getCookieName();<br/>
+    获取浏览器上存储此cookie的名称，直接返回String即可。<br/><br/>
+    public Encode getEncode();<br/>
+    获取session存储为cookie是使用的加密方式，该方法的返回值为Encode接口的实现类。<br/><br/>
     public int getMaxInactiveInterval();<br>
-    <br>session有效期<br>
-    public String getPath();<br>
-    <br>所在域下的path，一般为"/"<br>
-    public Set&#60;String &#62; getAttributeNames();<br>
+    session有效期<br/><br/>
+    public String getPath();<br/>
+    所在域下的path，一般为"/"<br/><br/>
+    public Set&#60;String &#62; getAttributeNames();<br/>
     获得此cookie对应的AttributeNames，系统将按照这里返回的所有AttributeName从Session缓存中取出session转储为cookie。<br><br>
-    public String getDomain();<br>
-    获得此cookie对应的域<br><br></p>
+    public String getDomain();<br/>
+    获得此cookie对应的域<br/><br/></p>
     <li>4、使用HttpSession</li>
     <p>首先，在action的方法中加入HttpSession session这样的参数，方法便可以自动取得HttpSession对象。<br/>
     然后使用setAttribute(String name, Object obj)方法便可以将实体类写入HttpSession，其中name为实体类对应的NAME，obj为实体类对象。<br/>

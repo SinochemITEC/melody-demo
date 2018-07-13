@@ -1,6 +1,6 @@
 <p>Melody提供了AnnotationMethodHandlerInterceptorAdapter和AbstractHandlerInterceptor两个抽象类，继承这两个类的拦截器会被自动识别加载。</p>
-<p>两个抽象类分别对应方法级别的拦截器和URL级别的拦截器，需要根据需要选择使用。</p>
-<h3>AnnotationMethodHandlerInterceptorAdapter</h3>
+<p>两个抽象类分别对应<u>方法级别</u>的拦截器和<u>URL级别</u>的拦截器，需要根据需要选择使用。</p>
+<h3>方法级别的拦截器：AnnotationMethodHandlerInterceptorAdapter</h3>
 <p>这是方法级别的拦截器，会对每个方法执行进行拦截。<br/>
     继承该接口，可以重写其两个方法，preInvoke和postInvoke方法，分别对应方法执行前的操作和方法执行后的操作。<br/>
 </p>
@@ -15,7 +15,7 @@
 <p>- ServletWebRequest webRequest : 上下文中的request对象;</p>
 <p>- ModelAndView mav : 页面渲染对象;</p>
 
-<h3>AnnotationMethodHandlerInterceptorAdapter</h3>
+<h3>URL级别的拦截器：AnnotationMethodHandlerInterceptorAdapter</h3>
 <p>这是URL级别的拦截器，会对每个请求执行进行拦截。<br/>
     继承该接口，可以重写其三个方法，preInvoke、postInvoke和getOrder方法，分别对应方法执行前的操作、方法执行后的操作和执行顺序等级。<br/>
 </p>

@@ -1,13 +1,18 @@
-<h2 class="melody-d-title">bigpipe示例</h2>
 #if($!hero)
     #if($hero.healthPoint > 0)
         #if($hero.floor == 6)
             ${hero.id}号勇士完成了任务
+            #jscode()
+                alert("挑战成功");
+            #end
         #else
             ${hero.id}号勇士打败了怪物，到达了第${hero.floor}层，剩余血量${hero.healthPoint}<br/>
         #end
     #else
         #set($floor = ${hero.floor} - 1)
         ${hero.id}号勇士没有打败怪物，倒在了第${floor}层
+        #jscode()
+            alert("挑战失败");
+        #end
     #end
 #end

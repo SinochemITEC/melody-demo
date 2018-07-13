@@ -1,6 +1,6 @@
-<p>MelodyÍêÈ«¼æÈİspring£¬ËùÒÔ¿ÉÒÔÊ¹ÓÃspring×ÔÉíµÄ·½·¨ÅäÖÃ¼ÓÔØÀ¹½ØÆ÷¡£·½·¨ÈçÏÂ£º</p>
-<p>1¡¢¼Ì³ĞHandlerInterceptorAdapterÀà£¬ÖØĞ´preHandlerºÍpostHandler·½·¨¡£</p>
-<p>2¡¢ÔÚspringµÄÅäÖÃÎÄ¼şÖĞÌí¼Ó¸ÃÀ¹½ØÆ÷µÄbean£¬Èç£º</p>
+<p>Melodyå®Œå…¨å…¼å®¹springï¼Œæ‰€ä»¥å¯ä»¥ä½¿ç”¨springè‡ªèº«çš„æ–¹æ³•é…ç½®åŠ è½½æ‹¦æˆªå™¨ã€‚æ–¹æ³•å¦‚ä¸‹ï¼š</p>
+<p>1ã€ç»§æ‰¿HandlerInterceptorAdapterç±»ï¼Œé‡å†™preHandlerå’ŒpostHandleræ–¹æ³•ã€‚</p>
+<p>2ã€åœ¨springçš„é…ç½®æ–‡ä»¶ä¸­æ·»åŠ è¯¥æ‹¦æˆªå™¨çš„beanï¼Œå¦‚ï¼š</p>
 <div class="melody-code-wrap"><pre><code>
-
+&lt;bean class=&quot;com.eyeieye.melody.demo.web.action.interceptor.NonAutomaticInterceptor&quot;&gt;&lt;/bean&gt;
 </code></pre></div>

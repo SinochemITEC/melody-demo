@@ -1,4 +1,5 @@
-<h2 class="melody-d-title">bigpipe示例</h2>
+<h2>本地异步contain示例</h2><br/>
+
 <p>招募勇士攻略地下城：</p>
 <form action="$appServer.get('/webpages/demo/quetionStart.htm')" method="post">
     <label>勇士的等级：</label> <input type="text" name="level" placeholder="建议50~150之间"/>

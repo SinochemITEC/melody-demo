@@ -19,7 +19,7 @@
 </details>
 <details class="menu" close>
     <summary>
-        <h3>多个contain页面的响应问题</h3>
+        <h3>多个contain页面的响应问题--同步contain</h3>
     </summary>
     <div style="margin-left: 5%;">
         $contain.get('/widget/block.htm')
@@ -27,7 +27,7 @@
 </details>
 <details class="menu" close>
     <summary>
-        <h3>bigpipe基本使用</h3>
+        <h3>bigpipe基本使用--异步contain</h3>
     </summary>
     <div style="margin-left: 5%;">
         $contain.get('/widget/bigpipe.htm')

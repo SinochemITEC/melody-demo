@@ -54,7 +54,7 @@ public class MethodInterceptor extends AnnotationMethodHandlerInterceptorAdapter
 
         sf.append("\n").append("        *                     返回页面的参数                         *").append("\n");
 
-        if (mav.getModelMap() == null) {
+        if (mav == null || mav.getModelMap() == null) {
             sf.append("null").append("\n");
         } else {
             for (Map.Entry entry : mav.getModelMap().entrySet()) {

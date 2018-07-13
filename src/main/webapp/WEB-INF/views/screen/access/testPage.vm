@@ -1,13 +1,13 @@
-你的登录情况： #if($logined == true) 已登录 #else 未登录  #end <br/>
+<p>你的登录情况： #if($logined == true) 已登录 #else 未登录  #end <br/>
 本页面只有登陆才能访问：<a class="m-detail-link" href="$appServer.get('/access/admin.htm')">登录后才能访问的页面</a><br/>
-<a class="m-detail-link" href="$appServer.get('/access/login.htm')"><input type="button"  value="登录"/></a>
-<a class="m-detail-link" href="$appServer.get('/access/logout.htm')"><input type="button"  value="登出"/></a><br/>
+<a class="m-detail-link1" href="$appServer.get('/access/login.htm')"><input type="button"  value="登录"/></a>
+<a class="m-detail-link1" href="$appServer.get('/access/logout.htm')"><input type="button"  value="登出"/></a><br/>
 
 
 你拥有的权限：#if(!$auths) 你没有登录或没有权限 #else  #foreach($auth in $auths) $auth  #end #end<br/>
-<a class="m-detail-link" href="$appServer.get('/access/addFun1.htm')"><input type="button"  value="添加权限Fun1"/></a>
-<a class="m-detail-link" href="$appServer.get('/access/addFun2.htm')"><input type="button"  value="添加权限Fun2"/></a>
-<a class="m-detail-link" href="$appServer.get('/access/clearFun.htm')"><input type="button"  value="清除权限"/></a><br/>
+<a class="m-detail-link1" href="$appServer.get('/access/addFun1.htm')"><input type="button"  value="添加权限Fun1"/></a>
+<a class="m-detail-link1" href="$appServer.get('/access/addFun2.htm')"><input type="button"  value="添加权限Fun2"/></a>
+<a class="m-detail-link1" href="$appServer.get('/access/clearFun.htm')"><input type="button"  value="清除权限"/></a><br/>
 
 本页面拥有权限Fun1或Fun3才能访问：<a class="m-detail-link" href="$appServer.get('/access/fun1orfun3.htm')">拥有权限才能访问的页面</a><br/>
-
+</p>

@@ -26,7 +26,9 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/DateUtil.htm')" target="_blank">DateUtil示例</a> </p>
+        <li>自动加载-方法级别的拦截器：请查看com.eyeieye.melody.demo.web.action.interceptor.MethodInterceptor类</li>
+        <li>自动加载-URL级别的拦截器：请查看com.eyeieye.melody.demo.web.action.interceptor.UrlInterceptor类</li>
+        <li>非自动加载的拦截器：请查看com.eyeieye.melody.demo.web.action.interceptor.NonAutomaticInterceptor类</li>
     </div>
 </details>
 

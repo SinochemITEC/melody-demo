@@ -8,6 +8,7 @@
         color: red;
     }
 </style>
+<br/><h2>登录演示页面</h2><br/>
 <form id="loginForm" action="$appServer.get('/login/login.htm')" method="post">
     <input type="hidden" name="c_time" value="1428300280355"/>
     <p>

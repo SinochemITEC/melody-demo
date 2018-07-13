@@ -7,6 +7,7 @@ span.required {
 	color: red; 
 }
 </style>
+<br/><h2>注册演示页面</h2><br/>
 <form id="registerForm" action="$appServer.get('/login/register.htm')" method="post">
     <table>
         <tr>
@@ -64,10 +65,11 @@ span.required {
                 </select>                		
             </td>
 		</tr>
-		<tr>	
-            <th>
+		<tr>
+            <td></td>
+            <td>
                 <input type="submit" value="注册" />
-            </th>
+            </td>
         </tr>
     </table>
 </form>

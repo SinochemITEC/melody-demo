@@ -93,6 +93,23 @@
 
 <details open>
     <summary>
+        <h3>性能监控</h3>
+    </summary>
+    <br/>
+     <div style="margin-left: 5%;">
+        <p>Melody提供了性能监控功能，可以在配置文件中添加配置项： </p>
+         <div class="melody-code-wrap"><pre><code>
+performance.monitor.threshold=100
+         </code></pre></div>
+         <p>该配置项为性能监控的记录阈值，单位为毫秒，默认值为100，当一个请求的反应时间超过了该设置，则会将这条请求输出到控制台并记录下来。</p>
+     </div>
+
+</details>
+
+
+
+<details open>
+    <summary>
         <h3>权限控制</h3>
     </summary>
     <br/>
@@ -108,5 +125,33 @@
         <p><a class="m-detail-link" href="$appServer.get('/access/testPage.htm')">示例</a></p>
         </div>
 </details>
+
+
+
+<details open>
+    <summary>
+        <h3>HttpClient</h3>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("/http_client/introduce.htm")
+        <br/>
+    </div>
+</details>
+
+<details open>
+    <summary>
+        <h3>加解密</h3>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("/crypto/introduce.htm")
+        <br/>
+    </div>
+</details>
+
+
+
+
 
 

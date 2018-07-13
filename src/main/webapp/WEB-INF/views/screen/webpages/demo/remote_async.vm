@@ -1,0 +1,8 @@
+<br/>
+<h2>远程异步contain示例</h2>
+<br/>
+
+<h3>加载页面a：</h3>$asyncContain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")
+<h3>加载页面b：</h3>$asyncContain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")
+<h3>加载页面c：</h3>$asyncContain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")
+<h3>加载页面d：</h3>$asyncContain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")

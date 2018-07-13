@@ -17,37 +17,41 @@
     <p>另外，如果方法需要参数，可以直接在调用方法时加入参数，如&#36;page.setTitle( "My Home Page" )，&#36;person.setAttributes( ["Strange", "Weird", "Excited"] )</p>
     <li>判断语句：</li>
     <p>Velocity的判断语句是if/elseif/else语句，用法如下所示：</p>
-    <pre><code class="m-xmp">
-    &#35;if( &#36;foo < 10 )
-        **Go North**
-    &#35;elseif( &#36;foo == 10 )
-        **Go East**
-    &#35;elseif( &#36;bar == 6 )
-        **Go South**
-    &#35;else
-        **Go West**
-    &#35;end</code>
-</pre>
+    <div class="melody-code-wrap">
+    <pre><code>
+&#35;if( &#36;foo < 10 )
+    **Go North**
+&#35;elseif( &#36;foo == 10 )
+    **Go East**
+&#35;elseif( &#36;bar == 6 )
+    **Go South**
+&#35;else
+    **Go West**
+&#35;end</code></pre>
+    </div>
     <li>循环语句：</li>
     <p>Velocity的循环使用的是foreach循环，如下所示：</p>
-    <pre><code class="m-xmp">
-        &#60;ui&#62;
-            &#35;foreach( &#36;key in &#36;allProducts.keySet() )
-                &#60;li&#62;第&#36;{velocityCount}个元素为 &#36;{key} ，其值为 &#36;{allProducts.get(&#36;key)}&#60;/li&#62;
-            &#35;end
-        &#60;/ui&#62;</code>
-    </pre>
+    <div class="melody-code-wrap">
+    <pre><code>
+&#60;ui&#62;
+    &#35;foreach( &#36;key in &#36;allProducts.keySet() )
+        &#60;li&#62;第&#36;{velocityCount}个元素为 &#36;{key} ，其值为 &#36;{allProducts.get(&#36;key)}&#60;/li&#62;
+    &#35;end
+&#60;/ui&#62;</code></pre>
+    </div>
     <p>其中&#36;{velocityCount}是循环中的下标，从1开始。</p>
     <p>如果需要实现for(int i=0;i++;i<10)这样的效果，可以使用&#35;foreach( &#36;key in [0..9] )。</p>
     <p>循环中可以使用&#35;break跳出循环。</p>
     <li>引入js和css文件：</li>
     <p>使用html标签引入js和css文件非常繁琐，但是使用Velocity可以将其变得更为便捷。使用方法如下：</p>
-    <pre><code class="m-xmp">
-        &#35;set(&#36;jsfile = [jsfilePath])
-        &#35;js(&#36;jsfile)
-        &#35;set(&#36;cssfile = [cssfilePath])
-        &#35;css(&#36;cssfile)</code>
-    </pre>
+    <div class="melody-code-wrap"><pre><code>
+&#35;set(&#36;jsfile = [jsfilePath])
+&#35;js(&#36;jsfile)
+&#35;set(&#36;cssfile = [cssfilePath])
+&#35;css(&#36;cssfile)</code></pre>
+    </div>
     <li>更多语法：</li>
-    <p>Velocity除以上常用语法外还有其他语法可供使用，详细可查看Velocity在Apache基金会中的引导页 <a class="m-detail-link" href="http://velocity.apache.org/engine/2.0/user-guide.html#property-lookup-rules">Velocity - User Guide</a>。</p>
+    <p>Velocity除以上常用语法外还有其他语法可供使用，详细可查看Velocity在Apache基金会中的引导页 <a class="m-detail-link1"
+                                                                  href="http://velocity.apache.org/engine/2.0/user-guide.html#property-lookup-rules">Velocity - User Guide</a>。
+    </p>
 </ul>
