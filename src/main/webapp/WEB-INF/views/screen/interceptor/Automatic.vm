@@ -1,0 +1,37 @@
+<p>Melody提供了AnnotationMethodHandlerInterceptorAdapter和AbstractHandlerInterceptor两个抽象类，继承这两个类的拦截器会被自动识别加载。</p>
+<p>两个抽象类分别对应方法级别的拦截器和URL级别的拦截器，需要根据需要选择使用。</p>
+<h3>AnnotationMethodHandlerInterceptorAdapter</h3>
+<p>这是方法级别的拦截器，会对每个方法执行进行拦截。<br/>
+    继承该接口，可以重写其两个方法，preInvoke和postInvoke方法，分别对应方法执行前的操作和方法执行后的操作。<br/>
+</p>
+<li>void preInvoke(Method handlerMethod, Object handler, ServletWebRequest webRequest)</li>
+<p>- Method handlerMethod : 拦截到的方法对象;</p>
+<p>- Object handler : 方法所在的bean对象;</p>
+<p>- ServletWebRequest webRequest : 上下文中的request对象;</p>
+
+<li>void postInvoke(Method handlerMethod, Object handler, ServletWebRequest webRequest, ModelAndView mav)</li>
+<p>- Method handlerMethod : 拦截到的方法对象;</p>
+<p>- Object handler : 方法所在的bean对象;</p>
+<p>- ServletWebRequest webRequest : 上下文中的request对象;</p>
+<p>- ModelAndView mav : 页面渲染对象;</p>
+
+<h3>AnnotationMethodHandlerInterceptorAdapter</h3>
+<p>这是URL级别的拦截器，会对每个请求执行进行拦截。<br/>
+    继承该接口，可以重写其三个方法，preInvoke、postInvoke和getOrder方法，分别对应方法执行前的操作、方法执行后的操作和执行顺序等级。<br/>
+</p>
+
+<li>boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)</li>
+<p>- HttpServletRequest request : 该请求的request对象</p>
+<p>- HttpServletResponse response : 该请求的response对象</p>
+<p>- Object handler : 该请求对应的bean的对象</p>
+<p>该方法返回值可以指定方法是否执行，true为可以执行，false为不能执行。</p>
+
+<li>void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)</li>
+<p>- HttpServletRequest request : 该请求的request对象</p>
+<p>- HttpServletResponse response : 该请求的response对象</p>
+<p>- Object handler : 该请求对应的bean的对象</p>
+<p>- ModelAndView modelAndView : 返回的页面渲染对象</p>
+
+<li>int getrOrder()</li>
+<p>该方法返回一个int值，该值为拦截器的优先级，值越小优先级越高</p>
+

@@ -1,10 +1,14 @@
-<p>melody在<i>com.eyeieye.melody.util</i> 中内置了多个工具了，主要有如下几个：
-- DateUtil
-- StringUtil
-- HostUtil
-- MoneyUtil
-- ArrayUtil
-- ObjectFactory</p>
+<p>melody在<i>com.eyeieye.melody.util</i> 中内置了多个工具了，主要有如下几个：<br/></p>
+
+<pre>
+<p>
+· DateUtil  · StringUtil<br/>
+· HostUtil  · MoneyUtil<br/>
+· ArrayUtil · ObjectFactory<br/>
+· ClassUtil · UUIDGenerator<br/>
+· ShortUUIDGenerator<br/>
+</p>
+</pre>
 
 <p>工具类的方法均为静态方法，可通过类名直接调用，各工具类的具体功能如下所示：</p>
 

@@ -1,0 +1,62 @@
+<br/>
+<h2>Redis的配置</h2>
+<p>因为cookie的拓展需要使用redis，所以这里介绍一下redis的配置方法。</p>
+
+<h3>1、依赖包</h3>
+<p>建议使用maven进行配置，在pom.xml中添加如下内容：</p>
+<div class="melody-code-wrap"><pre><code>
+&lt;dependency&gt;
+	&lt;groupId&gt;redis.clients&lt;/groupId&gt;
+	&lt;artifactId&gt;jedis&lt;/artifactId&gt;
+	&lt;version&gt;2.7.2&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div>
+
+
+<h3>2、Spring配置</h3>
+<p>首先在spring配置中加入redis的存储池的配置：</p>
+<div class="melody-code-wrap"><pre><code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;GB2312&quot;?&gt;
+&lt;!DOCTYPE beans PUBLIC &quot;-//SPRING//DTD BEAN//EN&quot; &quot;http://www.springframework.org/dtd/spring-beans.dtd&quot;&gt;
+&lt;beans default-autowire=&quot;byName&quot;&gt;
+	&lt;bean id=&quot;jedisPoolConfig&quot; class=&quot;redis.clients.jedis.JedisPoolConfig&quot;&gt;
+		&lt;!--&lt;property name=&quot;maxTotal&quot; value=&quot;50&quot; /&gt;--&gt;
+		&lt;property name=&quot;maxIdle&quot; value=&quot;10&quot; /&gt;
+		&lt;!--&lt;property name=&quot;maxWaitMillis&quot; value=&quot;3000&quot; /&gt;--&gt;
+		&lt;property name=&quot;testOnBorrow&quot; value=&quot;true&quot; /&gt;
+	&lt;/bean&gt;
+
+	&lt;bean id=&quot;jedisPool&quot; class=&quot;redis.clients.jedis.JedisPool&quot;&gt;
+		&lt;constructor-arg index=&quot;0&quot; ref=&quot;jedisPoolConfig&quot; /&gt;
+		&lt;constructor-arg index=&quot;1&quot; type=&quot;java.lang.String&quot; value=&quot;${redis.host}&quot; /&gt;
+		&lt;constructor-arg index=&quot;2&quot; type=&quot;int&quot; value=&quot;${redis.port}&quot; /&gt;
+		&lt;constructor-arg index=&quot;3&quot; type=&quot;int&quot; value=&quot;${redis.timeout}&quot; /&gt;
+		&lt;constructor-arg index=&quot;4&quot; type=&quot;java.lang.String&quot; value=&quot;${redis.password}&quot; /&gt;
+		&lt;constructor-arg index=&quot;5&quot; type=&quot;int&quot; value=&quot;${redis.db}&quot; /&gt;
+	&lt;/bean&gt;
+&lt;/beans&gt;
+</code></pre></div>
+
+<h3>3、melody配置</h3>
+<p>在server.properties中需要加入redis的配置内容：</p>
+<div class="melody-code-wrap"><pre><code>
+redis.host=127.0.0.1
+redis.port=6379
+redis.timeout=30000
+redis.password=123456
+redis.db=5
+</code></pre></div>
+
+<h3>4、redis server的设置</h3>
+<p>于本地启动redis还需要对redis_server进行配置，打开redis根目录中的redis.windows.conf文件，在其中添加如下内容。</p>
+
+
+<div class="melody-code-wrap"><pre><code>
+logfile "server_log.txt"
+syslog-enabled yes
+syslog-ident redis
+requirepass 123456
+</code></pre></div>
+
+<p>配置完以上内容后即可启动redis。</p>
+

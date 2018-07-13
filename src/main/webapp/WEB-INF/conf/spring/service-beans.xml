@@ -6,10 +6,13 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<context:component-scan base-package="com.eyeieye.melody.demo.service" />
+	<context:component-scan base-package="com.eyeieye.melody.demo.web.action" />
 
 	<bean id="rsaCrypto" class="com.eyeieye.melody.util.crypto.impl.BcprovRsaCryptoImpl">
 		<property name="rsaKeyFile" value="WEB-INF/conf/rsa.key"></property>
 	</bean>
+
+	<bean class="com.eyeieye.melody.demo.web.action.interceptor.NonAutomaticInterceptor"></bean>
 
 	<bean class="com.eyeieye.melody.web.url.URLBrokerLauncherInterceptor">
 		<property name="brokers">

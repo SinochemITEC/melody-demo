@@ -8,4 +8,6 @@
     <p>如在login时，将User的拓展类内容写入缓存，实现一次写入多次读取。</p>
     <li>4、在需要的action上添加注解，将拓展类注入到参数中。</li>
     <a class="m-detail-link" href="$appServer.get('/login/extended_user_login.htm')">示例</a>
+    <a class="m-detail-link" href="$appServer.get('/nosession/redis_config.htm')">Redis的配置</a>
+
 </ul>

@@ -1,0 +1,6 @@
+<p>Melody完全兼容spring，所以可以使用spring自身的方法配置加载拦截器。方法如下：</p>
+<p>1、继承HandlerInterceptorAdapter类，重写preHandler和postHandler方法。</p>
+<p>2、在spring的配置文件中添加该拦截器的bean，如：</p>
+<div class="melody-code-wrap"><pre><code>
+
+</code></pre></div>

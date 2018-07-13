@@ -1,0 +1,32 @@
+<h2>拦截器</h2>
+<p>Melody中的拦截器提供自动配置和非自动配置两种方法，下面分别介绍：</p>
+<details close>
+    <summary>
+        <h><font size="5px">自动配置</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("Automatic.htm")
+    </div>
+</details>
+
+<details close>
+    <summary>
+        <h><font size="5px">非自动配置</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        $contain.get("NonAutomatic.htm")
+    </div>
+</details>
+
+<details close>
+    <summary>
+        <h><font size="5px">示例</font></h>
+    </summary>
+    <br/>
+    <div style="margin-left: 5%;">
+        <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/DateUtil.htm')" target="_blank">DateUtil示例</a> </p>
+    </div>
+</details>
+
