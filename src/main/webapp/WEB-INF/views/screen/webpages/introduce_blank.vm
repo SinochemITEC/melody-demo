@@ -1,3 +1,4 @@
+#set($layout="/layout/blank.vm")
 
 <h2 class="melody-d-title">页面制作说明和示例</h2>
 <p>melody建议使用者使用Velocity构建页面，使用contain方法拼接页面。</p>
@@ -31,7 +32,7 @@
         <div class="melody-code-wrap"><pre><code>
 \#set($layout="/layout/blank.vm")
         </code></pre></div>
-        <p>上述代码是将页面的模板替换成blank.vm(空模版)，点击<a class="m-detail-link1" href="$appServer.get('webpages\introduce_blank.htm')">此链接</a>查看效果，点击<a class="m-detail-link1" href="$appServer.get('webpages\introduce.htm')">此链接</a>恢复正常模板</p>
+        <p>上述代码是将页面的模板替换成blank.vm(空模版)，点击<a class="m-detail-link1" href="$appServer.get('webpages\introduce.htm').put('useBlank',1)">此链接</a>查看效果，点击<a class="m-detail-link1" href="$appServer.get('webpages\introduce.htm').put('useBlank',0)">此链接</a>恢复正常模板</p>
     </div>
 </details>
 
