@@ -40,7 +40,7 @@ public class AccessAction {
     /**
      * 没有@AdminAccess标签,则表示可任意访问
      */
-    @RequestMapping("/testPage.htm")
+    @RequestMapping("/test_page.htm")
     public void testPage(AdministerAgent agent, ModelMap model) {
         if (agent == null || agent.getLoginId() == null) {
             model.put("logined", false);
@@ -65,14 +65,14 @@ public class AccessAction {
         agent.setLoginId("" + new Random().nextInt(10000));
         agent.setFunctions(4);
         session.setAttribute(AdministerAgent.AdministerTag, agent);
-        return "redirect:/access/testPage.htm";
+        return "redirect:/access/test_page.htm";
     }
 
     @RequestMapping(value = "logout.htm", method = RequestMethod.GET)
     public String logout(HttpSession session) {
         session.removeAttribute(AdministerAgent.AdministerTag);
         session.invalidate();
-        return "redirect:/access/testPage.htm";
+        return "redirect:/access/test_page.htm";
 
     }
 
@@ -80,28 +80,28 @@ public class AccessAction {
     @RequestMapping(value = "/addFun1.htm", method = RequestMethod.GET)
     public String addFun1(AdministerAgent agent, HttpSession session) {
         if (agent == null || agent.getLoginId() == null) {
-            return "redirect:/access/testPage.htm";
+            return "redirect:/access/test_page.htm";
         }
         agent.setFunctions(0);
         session.setAttribute(AdministerAgent.AdministerTag, agent);
-        return "redirect:/access/testPage.htm";
+        return "redirect:/access/test_page.htm";
     }
 
     @RequestMapping(value = "/addFun2.htm", method = RequestMethod.GET)
     public String addFun2(AdministerAgent agent, HttpSession session) {
         if (agent == null || agent.getLoginId() == null) {
-            return "redirect:/access/testPage.htm";
+            return "redirect:/access/test_page.htm";
         }
         agent.setFunctions(1);
         session.setAttribute(AdministerAgent.AdministerTag, agent);
-        return "redirect:/access/testPage.htm";
+        return "redirect:/access/test_page.htm";
     }
 
     @RequestMapping(value = "/clearFun.htm", method = RequestMethod.GET)
     public String clearFun(AdministerAgent agent, HttpSession session) {
         agent.clearFunctions();
         session.setAttribute(AdministerAgent.AdministerTag, agent);
-        return "redirect:/access/testPage.htm";
+        return "redirect:/access/test_page.htm";
     }
 
     /**

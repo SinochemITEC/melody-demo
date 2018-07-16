@@ -1,13 +1,13 @@
 #set($title = 'form分页')
 <p>一个简单的分页slider</p><br/>
-$contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm")
+$contain.get('/contain/form_page_slider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm")
 
 <br/>
 <p>构造一个浮动窗为9的分页</p>
-$contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put("slider_width",9)
+$contain.get('/contain/form_page_slider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put("slider_width",9)
 <br/>
 <p>构造一个分页参数为apage的分页</p>
-$contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put("slider_page",'apage')
+$contain.get('/contain/form_page_slider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put("slider_page",'apage')
 <br/>
 <p>构造一个可以直接输入页码的分页</p>
-$contain.get('/contain/formPageSlider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put('slider_path','/contain/formPagingPageSlider')
+$contain.get('/contain/form_page_slider.htm').put('slider_query',$query).put('slider_target',"/query/form_page.htm").put('slider_path','/contain/form_paging_page_slider')

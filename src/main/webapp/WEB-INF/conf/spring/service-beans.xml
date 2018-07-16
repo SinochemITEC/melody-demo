@@ -41,10 +41,9 @@
 	</bean>
 
 	<!-- ¼Ó½âÃÜµÄbeans -->
-	<bean id="aes" class="com.eyeieye.melody.util.crypto.impl.AESCryptoImpl"></bean>
-    <bean id="rsa" class="com.eyeieye.melody.util.crypto.impl.BcprovRsaCryptoImpl">
+	<bean id="aesCrypto" class="com.eyeieye.melody.util.crypto.impl.AESCryptoImpl"></bean>
+    <bean id="rsaCrypto" class="com.eyeieye.melody.util.crypto.impl.BcprovRsaCryptoImpl">
         <property name="rsaKeyFile" value="WEB-INF/conf/rsa.key"></property>
     </bean>
-    <bean id="blowfish" class="com.eyeieye.melody.util.crypto.impl.BlowfishCryptoImpl"></bean>
 
 </beans>

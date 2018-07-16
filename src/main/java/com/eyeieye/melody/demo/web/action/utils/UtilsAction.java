@@ -24,7 +24,7 @@ public class UtilsAction {
     private static final String CHINA_CURRENCY_CODE = "CNY";
     private static final String AMERICA_CURRENCY_CODE = "USD";
 
-    @RequestMapping("demo/DateUtil")
+    @RequestMapping("demo/dateutil")
     public void dateUtilPage(Integer afterDays, Integer beforeDays, ModelMap modelMap) {
         //获取当前日期时间
         String nowDateTime = DateUtil.getDateTime(DateUtil.getDatePattern(), new Date());
@@ -51,7 +51,7 @@ public class UtilsAction {
 
     }
 
-    @RequestMapping("demo/StringUtil")
+    @RequestMapping("demo/stringutil")
     public void stringUtilPage(String str1, String str2, ModelMap modelMap) {
         modelMap.put("str1", str1);
         modelMap.put("str2", str2);
@@ -72,7 +72,7 @@ public class UtilsAction {
         modelMap.put("difference", StringUtil.difference(str1, str2));
     }
 
-    @RequestMapping("demo/HostUtil")
+    @RequestMapping("demo/hostutil")
     public void hostUtilPage(ModelMap modelMap) {
         HostUtil.HostInfo hostInfo = HostUtil.getHostInfo();
         HostUtil.Ipv4Info ipv4Info = HostUtil.getIpv4Info();
@@ -82,7 +82,7 @@ public class UtilsAction {
         modelMap.put("firstAddress", ipv4Info.getFristAddress());
     }
 
-    @RequestMapping("demo/MoneyUtil")
+    @RequestMapping("demo/moneyutil")
     public void moneyUtilPage(BigDecimal amount, Integer currencyCodeIndex, ModelMap modelMap) {
         String[] currencyCodes = {CHINA_CURRENCY_CODE, AMERICA_CURRENCY_CODE};
         modelMap.put("currencyCodes", currencyCodes);
@@ -147,12 +147,12 @@ public class UtilsAction {
 
     }
 
-    @RequestMapping("demo/ObjectFactory")
+    @RequestMapping("demo/objectfactory")
     public void ObjectFactoryDemo(){
        demoBean.ObjectFactoryDemo();
     }
 
-    @RequestMapping("UUIDGenerator")
+    @RequestMapping("uuidgenerator")
     public void uuid(ModelMap modelMap){
         modelMap.put("UUID",UUIDGenerator.generate());
     }

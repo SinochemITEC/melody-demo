@@ -8,7 +8,7 @@
 <title>这是一个jsp页面</title>
 </head>
 <body>
-   你好,我是一个优雅的jsp页面，我也能调用URLBroker:  <%= appServer.get("index.htm")%><br/>
-  但是我没有layout,没有contain。本框架不鼓励使用jsp，请尽可能使用velocity
+  这是一个jsp页面，也能调用URLBroker:  <%= appServer.get("index.htm")%><br/>
+  但是jsp页面没有layout,没有contain。本框架不鼓励使用jsp，请尽可能使用velocity
 </body>
 </html>

@@ -1,4 +1,4 @@
-<p>①$contain.get([path])是contain的基本用法，可以include本服务器中path对应的url。</p>
-<p>②$contain.get([path]).setHost([serverHost]) 该方法会将path拼接到serverHost之后，并将得到的新链接include到页面中。</p>
+<p>①<u>本地contain</u> : $contain.get([path])是contain的基本用法，可以include本服务器中path对应的url。</p>
+<p>②<u>远程contain</u> : $contain.get([path]).setHost([serverHost]) 该方法会将path拼接到serverHost之后，并将得到的新链接include到页面中。</p>
 <br/>
 <p>需要注意的是，使用contain是需要避免递归引用，如在b页面中使用了\$contain.get('a.htm')，又在a页面中使用了\$contain.get('b.htm')。</p>

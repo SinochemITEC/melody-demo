@@ -90,7 +90,7 @@
     该配置是对url的拦截，指定了.htm和.json的url均由melody处理。
 </li>
 
-<li>melodyFilter<br>
+<li>Log4jConfigListener<br>
     配置内容为：
     <div class="melody-code-wrap"><pre><code>
         &lt;listener&gt;
@@ -117,7 +117,7 @@
             &lt;listener-class&gt;org.springframework.web.util.IntrospectorCleanupListener&lt;/listener-class&gt;
         &lt;/listener&gt;
     </code></pre></div>
-    该配置项配置了放置内存泄漏问题的监听器。
+    该配置项配置了防止内存泄漏问题的监听器。
 </li>
 
 <li>melodyServlet<br>
