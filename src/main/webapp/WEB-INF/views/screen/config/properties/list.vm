@@ -298,8 +298,8 @@
     <tr style='mso-height-source:userset;' id='r52'>
         <td>system.negateDevMode</td>
         <td>Boolean</td>
-        <td>是否启用页面缓存</td>
-        <td>开启页面缓存可以提高加载速度，但是将无法热部署，所以一般开发的时候配置为false，生产环境上设置为true</td>
+        <td>是否启用开发者模式</td>
+        <td>开发者模式下会关闭页面缓存等功能。</td>
     </tr>
 
 </table>

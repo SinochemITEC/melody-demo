@@ -47,13 +47,13 @@
         示例：http://127.0.0.1/oauth/[type]/[uuid].htm，其中[type]和[uuid]都是要传入的参数，<br/>
         比如 http://127.0.0.1/oauth/qq/Ude9c3aae.htm，请求该链接时方法会分别接受到qq和Ude9c3aae两个参数值,<br/>
         在服务器上，接收方法的注解@RequestMapping时需要使用如下写法：</p>
-        <pre>
-            <code class="m-xmp">
+        <div class="melody-code-wrap"><pre>
+            <code>
                 @RequestMapping("/oauth/{type}/{uuid}.htm")
                 public String oauth(@PathVariable("type") String type,
                                     @PathVariable("uuid") String uuid, Model model)
             </code>
-        </pre>
+        </pre></div>
         <p>即，将传入的参数在path中用{}注明，并在方法参数处添加@PathVariable注解。</p>
         <p><a class="m-detail-link" href="$appServer.get('annotation/param/RESTful.htm')" target="_blank">点击查看示例</a></p>
     </div>
