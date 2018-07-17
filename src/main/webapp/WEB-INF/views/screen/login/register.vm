@@ -22,7 +22,7 @@ span.required {
             <th><span class="required">*</span>口令：</th>
             <td>
                 #springBind("user.password")
-                <input type="text" id="password" name="${status.expression}" value="" />
+                <input type="password" id="password" name="${status.expression}" value="" />
 				<label class="error">${status.errorMessage}</label>
             </td>
 		</tr>
@@ -35,7 +35,7 @@ span.required {
             </td>
 		</tr>
 		<tr>
-            <th>年龄：</th>
+            <span class="required">*</span><th>年龄：</th>
             <td>
                 #springBind("user.age")
                 <input type="text" id="birthday" name="${status.expression}" value="$!{status.value}" />

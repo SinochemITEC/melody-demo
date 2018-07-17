@@ -22,6 +22,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.eyeieye.melody.demo.domain.Resource;
 import com.eyeieye.melody.demo.service.ResourceService;
+import org.springmodules.validation.bean.conf.loader.annotation.Validatable;
+import org.springmodules.validation.bean.conf.loader.annotation.handler.Validators;
 
 import javax.validation.Valid;
 
@@ -143,7 +145,7 @@ public class UserRegisterAction {
 	 */
 
 	@RequestMapping(value = "/register.htm", method = POST)
-	public String register(@Valid @ModelAttribute("user") User user,
+	public String register(@ModelAttribute("user") User user,
 			BindingResult result) {
 
 		// 校验注册用户信息

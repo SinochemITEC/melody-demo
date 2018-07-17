@@ -7,6 +7,7 @@ import org.springmodules.validation.bean.conf.loader.annotation.handler.NotBlank
 import org.springmodules.validation.bean.conf.loader.annotation.handler.Range;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import java.io.Serializable;
 import java.util.Date;
@@ -30,7 +31,7 @@ public class User implements Serializable {
 	private Integer age;
 	private NativePlace nativePlace;
 	@NotBlank(message = "密码不能为空")
-    @Length(min = 6, max = 10, message = "密码长度为6到10位之间")
+    @Length(min = 6, max = 20, message = "密码长度为6到20位之间")
 	private String password;
 	private String lastToken;// 最后一次的验证码
 	private Date loginTime;

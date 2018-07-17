@@ -5,6 +5,8 @@ import org.springframework.util.Assert;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
+import java.util.Date;
+
 /**
  * 登陆校验，实现Spring的Validator接口，采用编码的形式验证。
  * 
@@ -31,14 +33,28 @@ public class UserRegisterValidator implements Validator {
         if (StringUtils.isBlank(realName)) {
             // 4个参数分别为：验证对象的属性名、错误信息代码、错误信息参数、默认错误信息。
             // 错误信息可以通过配置MessageResource，指定错误信息代码，而无需在代码里写死错误信息。
-            err.rejectValue("realName", "user.register.realName.empty", null, "请填写姓名");
+            err.rejectValue("realName", "user.register.realName.empty", null, "请填写用户名");
         } else {
             if (realName.length() > 16) {
-                err.rejectValue("realName", "user.register.realName.long", new Integer[]{16}, "姓名不能超过{0}个字符");
+                err.rejectValue("realName", "user.register.realName.long", new Integer[]{16}, "用户名不能超过{0}个字符");
             }
         }
         if(StringUtils.isBlank(user.getPassword())){
         	 err.rejectValue("password", null, null, "请输入口令");
+        }
+        if(user.getPassword().length() < 6 || user.getPassword().length() > 20 ){
+        	 err.rejectValue("password", null, null, "口令长度在6~20之间");
+        }
+        Date date = new Date();
+        if(user.getBirthday().getTime() > date.getTime()){
+            err.rejectValue("birthday", null, null, "出生日期不能在今天之后");
+        }
+        if(user.getAge() == null){
+            err.rejectValue("age", null, null, "请填写年龄");
+        }else{
+            if(user.getAge() < 2 || user.getAge() >120){
+                err.rejectValue("age", null, null, "年龄在2~120之间");
+            }
         }
     }
 
