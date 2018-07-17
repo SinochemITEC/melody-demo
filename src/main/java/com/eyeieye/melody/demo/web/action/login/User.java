@@ -1,7 +1,13 @@
 package com.eyeieye.melody.demo.web.action.login;
 
 import com.eyeieye.melody.demo.util.MD5Encode;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springmodules.validation.bean.conf.loader.annotation.handler.Length;
+import org.springmodules.validation.bean.conf.loader.annotation.handler.NotBlank;
+import org.springmodules.validation.bean.conf.loader.annotation.handler.Range;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Past;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -16,10 +22,15 @@ public class User implements Serializable {
 	public static final String NAME = "user";
 
 	private String uuid="";
+	@NotBlank(message = "用户名不能为空")
 	private String realName;
+	@Past(message = "生日必须是今天之前的日期")
 	private Date birthday;
+	@Range(min=2,max = 120, message = "年龄需要在2到120岁之间")
 	private Integer age;
 	private NativePlace nativePlace;
+	@NotBlank(message = "密码不能为空")
+    @Length(min = 6, max = 10, message = "密码长度为6到10位之间")
 	private String password;
 	private String lastToken;// 最后一次的验证码
 	private Date loginTime;

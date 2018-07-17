@@ -11,6 +11,9 @@
 
 	<bean class="com.eyeieye.melody.demo.web.action.interceptor.NonAutomaticInterceptor"></bean>
 
+	<bean id="objectFactory" class="com.eyeieye.melody.web.util.ObjectFactoryImpl" />
+
+
 	<bean class="com.eyeieye.melody.web.url.URLBrokerLauncherInterceptor">
 		<property name="brokers">
 			<map>
@@ -45,5 +48,23 @@
     <bean id="rsaCrypto" class="com.eyeieye.melody.util.crypto.impl.BcprovRsaCryptoImpl">
         <property name="rsaKeyFile" value="WEB-INF/conf/rsa.key"></property>
     </bean>
+
+	<!-- ะฃั้ -->
+	<bean id="webBindingInitializer"
+		  class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
+		<property name="conversionService">
+			<bean
+					class="org.springframework.format.support.FormattingConversionServiceFactoryBean" />
+		</property>
+		<property name="validator" ref="validator" />
+	</bean>
+
+	<bean id="validator"
+		  class="com.eyeieye.melody.beans.validation.beanvalidation.LocalValidatorFactoryBean">
+		<property name="objectFactory" ref="objectFactory" />
+		<property name="webVaild" value="${web.vaild}" />
+		<property name="validationMessageBeanName" value="${validation.message.bean.name}" />
+	</bean>
+
 
 </beans>

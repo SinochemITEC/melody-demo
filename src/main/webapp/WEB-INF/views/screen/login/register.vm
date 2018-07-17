@@ -30,7 +30,7 @@ span.required {
             <th><span class="required">*</span>出生年月日：</th>
             <td>
                 #springBind("user.birthday")
-                <input type="text" id="birthday" name="${status.expression}" value="$!{status.value}" />
+                <input type="date" id="birthday" name="${status.expression}" value="$!{status.value}" />
 				<label class="error">${status.errorMessage}</label>
             </td>
 		</tr>
