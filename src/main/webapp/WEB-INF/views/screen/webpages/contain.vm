@@ -14,7 +14,7 @@
         <h3>向页面传递参数</h3>
     </summary>
     <div style="margin-left: 5%;">
-        $contain.get('/widget/set_pram.htm')
+        $contain.get('/widget/set_param.htm')
     </div>
 </details>
 <details class="menu" close>

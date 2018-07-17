@@ -8,14 +8,14 @@
         <p>向服务器传递参数的方式前面已经介绍过了，而在表单提交方面，有以下几点需要注意：</p>
         <li>页面上最好使用&#35;springBind的方式进行绑定，这样便于使用BindingResult进行校验和错误回显。使用方法如下例所示：</li>
         <div class="melody-code-wrap"> <pre><code>
-            &lt;tr&gt;
-                &lt;th&gt;年龄：&lt;/th&gt;
-                &lt;td&gt;
-                    &#36;springBind("user.age")
-                    &lt;input type="text" id="birthday" name="&#36;{status.expression}" value="&#36;!{status.value}" /&gt;
-                    &lt;label class="error"&gt;&#36;{status.errorMessage}&lt;/label&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;</code>
+&lt;tr&gt;
+    &lt;th&gt;年龄：&lt;/th&gt;
+    &lt;td&gt;
+        &#36;springBind("user.age")
+        &lt;input type="text" id="birthday" name="&#36;{status.expression}" value="&#36;!{status.value}" /&gt;
+        &lt;label class="error"&gt;&#36;{status.errorMessage}&lt;/label&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</code>
         </pre></div>
 
         <p>其中，<br/>&#36;springBind("user.age")是绑定语句，可以将下一个input标签的值绑定到user.age上。</p>
@@ -47,7 +47,6 @@
         <h3>示例</h3>
     </summary>
     <div style="margin-left: 5%;">
-        <p><a class="m-detail-link" href="$appServer.get('/login/ajaxCheck.htm')">ajax校验验证码</a></p>
         <p><a class="m-detail-link" href="$appServer.get('/login/register.htm')">用户注册</a></p>
         <p><a class="m-detail-link" href="$appServer.get('/login/login.htm')">用户登录</a></p>
 
