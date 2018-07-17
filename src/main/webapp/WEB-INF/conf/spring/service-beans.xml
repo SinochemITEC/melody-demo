@@ -62,7 +62,7 @@
 	<bean id="validator"
 		  class="com.eyeieye.melody.beans.validation.beanvalidation.LocalValidatorFactoryBean">
 		<property name="objectFactory" ref="objectFactory" />
-		<property name="webVaild" value="${web.vaild}" />
+		<property name="webVaild" value="${web.valid}" />
 		<property name="validationMessageBeanName" value="${validation.message.bean.name}" />
 	</bean>
 
