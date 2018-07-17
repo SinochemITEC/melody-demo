@@ -4,7 +4,7 @@
 <br/>
 <details open>
     <summary>
-        <h><font size="5px">*.properties配置文件</font> </h>
+        <h3>*.properties配置文件</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -15,7 +15,7 @@
 <br/>
 <details open>
     <summary>
-        <h><font size="5px">xml配置文件</font> </h>
+        <h3>xml配置文件</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -26,7 +26,7 @@
 <br/>
 <details open>
     <summary>
-        <h><font size="5px">log4j的配置</font> </h>
+        <h3>log4j的配置</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -37,7 +37,7 @@
 <br/>
 <details open>
     <summary>
-        <h><font size="5px">velocity的配置</font> </h>
+        <h3>velocity的配置</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -48,7 +48,7 @@
 <br/>
 <details open>
     <summary>
-        <h><font size="5px">web.xml</font> </h>
+        <h3>web.xml</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">

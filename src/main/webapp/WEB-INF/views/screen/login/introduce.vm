@@ -76,9 +76,9 @@
         <h3>示例</h3>
     </summary>
     <div style="margin-left: 5%;">
-        <a class="m-detail-link" href="$appServer.get('/login/ajaxCheck.htm')">ajax校验验证码</a><br/>
-        <a class="m-detail-link" href="$appServer.get('/login/register.htm')">用户注册</a><br/>
-        <a class="m-detail-link" href="$appServer.get('/login/login.htm')">用户登录</a><br/>
+        <p><a class="m-detail-link" href="$appServer.get('/login/ajaxCheck.htm')">ajax校验验证码</a></p>
+        <p><a class="m-detail-link" href="$appServer.get('/login/register.htm')">用户注册</a></p>
+        <p><a class="m-detail-link" href="$appServer.get('/login/login.htm')">用户登录</a></p>
 
     </div>
 </details>

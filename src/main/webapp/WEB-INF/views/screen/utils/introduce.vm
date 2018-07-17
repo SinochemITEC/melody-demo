@@ -14,7 +14,7 @@
 
 <details close>
     <summary>
-        <h><font size="5px">DateUtil</font></h>
+        <h3>DateUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -24,7 +24,7 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">StringUtil</font></h>
+        <h3>StringUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -34,7 +34,7 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">HostUtil</font></h>
+        <h3>HostUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -44,7 +44,7 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">MoneyUtil</font></h>
+        <h3>MoneyUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -54,7 +54,7 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">ArrayUtil</font></h>
+        <h3>ArrayUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -64,7 +64,7 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">ObjectFactory</font></h>
+        <h3>ObjectFactory</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
@@ -75,7 +75,7 @@
 </details>
 <details close>
     <summary>
-        <h><font size="5px">UUIDGenerator</font></h>
+        <h3>UUIDGenerator</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
