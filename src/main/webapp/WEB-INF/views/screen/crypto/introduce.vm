@@ -6,7 +6,7 @@
     &lt;property name=&quot;rsaKeyFile&quot; value=&quot;WEB-INF/conf/rsa.key&quot;&gt;&lt;/property&gt;
 &lt;/bean&gt;
 </code></pre></div>
-<p>上述配置中已经将三种加密方式都注册成bean，在使用时可以直接注入到Crypto接口的对象中去，如下所示：</p>
+<p>上述配置中已经将两种加密方式都注册成bean，在使用时可以直接注入到Crypto接口的对象中去，如下所示：</p>
 <div class="melody-code-wrap">
 <pre><code>@Autowired
 @Qualifier(&quot;aes&quot;)
