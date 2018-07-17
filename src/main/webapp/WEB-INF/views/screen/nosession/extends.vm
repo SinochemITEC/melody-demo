@@ -3,7 +3,8 @@
     <li>1、建立拓展类</li>
     <p>以User类为例，通过编写一个包含User的拓展类，，在该类中添加需要拓展的成员变量或方法。</p>
     <li>2、修改Interceptor类</li>
-    <p>通过分别实现AnnotationMethodHandlerInterceptorAdapter和WebArgumentResolver两个接口，可以在指定的action上将User对象转换为拓展对象。</p>
+    <p>通过分别实现AnnotationMethodHandlerInterceptorAdapter和WebArgumentResolver两个接口，可以在指定的action上将User对象转换为拓展对象。<br/>、
+      这两个接口是SpringMVC提供的，并非nosession的特性。</p>
     <li>3、在对应的action中添加写入缓存的方法</li>
     <p>如在login时，将User的拓展类内容写入缓存，实现一次写入多次读取。</p>
     <li>4、在需要的action上添加注解，将拓展类注入到参数中。</li>

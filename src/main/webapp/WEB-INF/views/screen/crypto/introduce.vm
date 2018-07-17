@@ -1,11 +1,10 @@
-<p>Melody提供了加解密的方法，其中包括ASE、blowfisg、RSA三种加密方法</p>
+<p>Melody提供了加解密的方法，其中包括ASE、RSA三种加密方法</p>
 <p>使用Melody的加解密工具需要现在xml文件中配置为bean，如下所示：</p>
 <div class="melody-code-wrap">
 <pre><code>&lt;bean id=&quot;aes&quot; class=&quot;com.eyeieye.melody.util.crypto.impl.AESCryptoImpl&quot;&gt;&lt;/bean&gt;
 &lt;bean id=&quot;rsa&quot; class=&quot;com.eyeieye.melody.util.crypto.impl.BcprovRsaCryptoImpl&quot;&gt;
     &lt;property name=&quot;rsaKeyFile&quot; value=&quot;WEB-INF/conf/rsa.key&quot;&gt;&lt;/property&gt;
 &lt;/bean&gt;
-&lt;bean id=&quot;blowfish&quot; class=&quot;com.eyeieye.melody.util.crypto.impl.BlowfishCryptoImpl&quot;&gt;&lt;/bean&gt;
 </code></pre></div>
 <p>上述配置中已经将三种加密方式都注册成bean，在使用时可以直接注入到Crypto接口的对象中去，如下所示：</p>
 <div class="melody-code-wrap">
@@ -15,11 +14,7 @@ Crypto aesCrypto;
 
 @Autowired
 @Qualifier(&quot;rsa&quot;)
-Crypto rsaCrypto;
-
-@Autowired
-@Qualifier(&quot;blowfish&quot;)
-Crypto blowfishCrypto;</code></pre></div>
+Crypto rsaCrypto;</code></pre></div>
 <p>Crypto接口提供了encrypt(加密)和decrypt(方法)，具体使用可查看com.eyeieye.melody.demo.web.action.crypto.CryptoAction</p>
 <p>示例：<a class="m-detail-link1" href="$appServer.get('/crypto/demo.htm')">示例</a></p>
 

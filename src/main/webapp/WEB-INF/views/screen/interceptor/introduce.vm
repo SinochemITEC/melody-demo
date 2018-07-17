@@ -6,7 +6,7 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("Automatic.htm")
+        $contain.get("automatic.htm")
     </div>
 </details>
 
@@ -16,7 +16,7 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("NonAutomatic.htm")
+        $contain.get("nonautomatic.htm")
     </div>
 </details>
 

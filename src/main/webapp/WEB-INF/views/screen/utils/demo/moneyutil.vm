@@ -1,4 +1,4 @@
-<form action="$appServer.get('/utils/demo/MoneyUtil.htm')" method="get">
+<form action="$appServer.get('/utils/demo/moneyutil.htm')" method="get">
     <p>请输入金额：<input type="text" placeholder="请输入纯数字" name="amount"
                     value="#if($!{amount}) ${amount} #else 0 #end"/></p>
     <p>请选择币种：<select name="currencyCodeIndex">

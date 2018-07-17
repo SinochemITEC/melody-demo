@@ -1,4 +1,7 @@
 <div class="footer">
-    <p>版权所有 © 2017 Sinochem 中化信息技术有限公司</p>
-    <p>京ICP备XXXXXXXX号</p>
+    <p>
+    版权所有 © 2017 Sinochem 中化信息技术有限公司
+    京ICP备XXXXXXXX号
+        <a class="m-detail-link1" href="$appServer.get('/index.htm')">返回首页</a>
+    </p>
 </div>

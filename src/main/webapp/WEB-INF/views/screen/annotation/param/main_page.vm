@@ -44,8 +44,8 @@
     </summary>
     <div style="margin-left: 5%;">
         <p>RESTful传参方式是将参数放在url中，其作为url的一部分请求服务器。<br/>
-        示例：http://www.sinochem.com/oauth/[type]/[uuid].htm，其中[type]和[uuid]都是要传入的参数，<br/>
-        比如 http://www.sinochem.com/oauth/qq/Ude9c3aae.htm，请求该链接时方法会分别接受到qq和Ude9c3aae两个参数值,<br/>
+        示例：http://127.0.0.1/oauth/[type]/[uuid].htm，其中[type]和[uuid]都是要传入的参数，<br/>
+        比如 http://127.0.0.1/oauth/qq/Ude9c3aae.htm，请求该链接时方法会分别接受到qq和Ude9c3aae两个参数值,<br/>
         在服务器上，接收方法的注解@RequestMapping时需要使用如下写法：</p>
         <pre>
             <code class="m-xmp">

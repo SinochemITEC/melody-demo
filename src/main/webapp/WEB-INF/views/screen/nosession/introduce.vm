@@ -1,6 +1,6 @@
 <h2 class="melody-d-title">NoSession</h2>
 <p>NoSession是为了解决微服务中session同步问题而提出的解决方案。<br/>
-NoSession的设计思路是将session经过加密后存储到cookie中，以保证不同的服务器均可以取得用户的session。<br/></p>
+NoSession的设计思路分为两个方面，一是将session中的关键信息经过加密后存储到cookie中，以保证不同的服务器均可以取得用户的session；二是将其他信息存储到redis或数据库中，即cookie的拓展功能，这部分内容可以在需要的时候取出成为一个完整的sessino。<br/></p>
 
 <details open>
     <summary>
