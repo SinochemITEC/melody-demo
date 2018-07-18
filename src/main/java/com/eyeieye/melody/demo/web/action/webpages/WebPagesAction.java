@@ -35,10 +35,10 @@ public class WebPagesAction {
         }
 
 
-        return "/webpages/demo/questionExecute";
+        return "/webpages/demo/question_execute";
     }
 
-    @RequestMapping(value = "questionResult.htm")
+    @RequestMapping(value = "question_result.htm")
     public void result(HttpServletRequest request, ModelMap modelMap) throws Exception{
         Integer sleep =(Integer) request.getAttribute("sleep");
         Thread.sleep(sleep);

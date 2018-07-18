@@ -2,27 +2,27 @@
 <p>Melody中的拦截器提供自动配置和非自动配置两种方法，下面分别介绍：</p>
 <details close>
     <summary>
-        <h><font size="5px">自动配置</font></h>
+        <h3>自动配置</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("Automatic.htm")
+        $contain.get("automatic.htm")
     </div>
 </details>
 
 <details close>
     <summary>
-        <h><font size="5px">非自动配置</font></h>
+        <h3>非自动配置</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("NonAutomatic.htm")
+        $contain.get("nonautomatic.htm")
     </div>
 </details>
 
 <details close>
     <summary>
-        <h><font size="5px">示例</font></h>
+        <h3>示例</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">

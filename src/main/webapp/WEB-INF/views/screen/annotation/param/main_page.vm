@@ -12,8 +12,8 @@
         <br/>
         <li>在@RequestParam注解中可以添加相关参数为入参配置相关属性，如：</li>
         <p>required = [true, false]：该参数是否可以非空，配置为true时该参数必须有传入值，否则抛出异常</p>
-        <p>defaultValue = [value]：该参数的默认值，如果required配置为true，可以使用这个属性防止异常</p><br/>
-        <a class="m-detail-link" href="$appServer.get("/annotation/param/base.htm").addQueryData("name","John")" target="_blank">点击查看示例</a><br/>
+        <p>defaultValue = [value]：该参数的默认值，如果required配置为true，可以使用这个属性防止异常</p>
+        <p><a class="m-detail-link" href="$appServer.get("/annotation/param/base.htm").addQueryData("name","John")" target="_blank">点击查看示例</a></p>
     </div>
 </details>
 <details close>
@@ -23,10 +23,10 @@
     <div style="margin-left: 5%;">
         <li>在action的方法的入参中，如果有JavaBean类型的参数，且传入参数与JavaBean的成员变量同名同类型，
             则页面传入参数时可以值会直接注入到其对象的成员变量中去。</li>
-        <a class="m-detail-link" href="$appServer.get('annotation/param/simple_object_bind.htm').addQueryData(
-            'name','Jonathan Joestar').addQueryData('nick','JoJo').addQueryData('age','500')" target="_blank">点击查看示例</a><br/>
+        <p><a class="m-detail-link" href="$appServer.get('annotation/param/simple_object_bind.htm').addQueryData(
+            'name','Jonathan Joestar').addQueryData('nick','JoJo').addQueryData('age','500')" target="_blank">点击查看示例</a></p>
         <li>此外，可以使用&#36;springBind方法将表单参数绑定到方法的bean类型参数上去，方法参数前需要添加@ModelAttribute注解</li>
-        <a class="m-detail-link" href="$appServer.get('annotation/param/spring_object_bind.htm')" target="_blank">点击查看示例</a><br/>
+        <p><a class="m-detail-link" href="$appServer.get('annotation/param/spring_object_bind.htm')" target="_blank">点击查看示例</a></p>
     </div>
 </details>
 <details close>
@@ -35,7 +35,7 @@
     </summary>
     <div style="margin-left: 5%;">
         <li>将参数名和参数值拼接成json发送到服务器，action的方法会自动接收到参数并封装到方法的参数中</li>
-        <a class="m-detail-link" href="$appServer.get('annotation/param/json_object_bind.htm')" target="_blank">点击查看示例</a><br/>
+        <p><a class="m-detail-link" href="$appServer.get('annotation/param/json_object_bind.htm')" target="_blank">点击查看示例</a></p>
     </div>
 </details>
 <details close>
@@ -44,17 +44,17 @@
     </summary>
     <div style="margin-left: 5%;">
         <p>RESTful传参方式是将参数放在url中，其作为url的一部分请求服务器。<br/>
-        示例：http://www.sinochem.com/oauth/[type]/[uuid].htm，其中[type]和[uuid]都是要传入的参数，<br/>
-        比如 http://www.sinochem.com/oauth/qq/Ude9c3aae.htm，请求该链接时方法会分别接受到qq和Ude9c3aae两个参数值,<br/>
+        示例：http://127.0.0.1/oauth/[type]/[uuid].htm，其中[type]和[uuid]都是要传入的参数，<br/>
+        比如 http://127.0.0.1/oauth/qq/Ude9c3aae.htm，请求该链接时方法会分别接受到qq和Ude9c3aae两个参数值,<br/>
         在服务器上，接收方法的注解@RequestMapping时需要使用如下写法：</p>
-        <pre>
-            <code class="m-xmp">
+        <div class="melody-code-wrap"><pre>
+            <code>
                 @RequestMapping("/oauth/{type}/{uuid}.htm")
                 public String oauth(@PathVariable("type") String type,
                                     @PathVariable("uuid") String uuid, Model model)
             </code>
-        </pre>
+        </pre></div>
         <p>即，将传入的参数在path中用{}注明，并在方法参数处添加@PathVariable注解。</p>
-        <a class="m-detail-link" href="$appServer.get('annotation/param/RESTful.htm')" target="_blank">点击查看示例</a><br/>
+        <p><a class="m-detail-link" href="$appServer.get('annotation/param/RESTful.htm')" target="_blank">点击查看示例</a></p>
     </div>
-</details>
+</details><br/><br/>

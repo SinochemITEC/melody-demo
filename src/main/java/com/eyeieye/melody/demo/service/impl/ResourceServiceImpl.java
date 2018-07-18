@@ -17,9 +17,12 @@ public class ResourceServiceImpl implements ResourceService {
 	private static final Map<String, List<Resource>> RESOURCES;
 	static {
 		RESOURCES = new HashMap<String, List<Resource>>();
-		List<Resource> resources = new ArrayList<Resource>();
-		resources.add(new Resource("浙江", "zj", "province", 1));
-		RESOURCES.put("province", resources);
+		List<Resource> province = new ArrayList<Resource>();
+        province.add(new Resource("浙江", "zj", "province", 1));
+		RESOURCES.put("province", province);
+		List<Resource> cities = new ArrayList<Resource>();
+        cities.add(new Resource("杭州", "hz", "city", 1));
+		RESOURCES.put("city", cities);
 	}
 
 	public List<Resource> getResourcesByType(ResourceType type) {

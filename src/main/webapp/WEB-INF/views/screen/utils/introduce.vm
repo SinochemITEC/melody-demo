@@ -14,71 +14,71 @@
 
 <details close>
     <summary>
-        <h><font size="5px">DateUtil</font></h>
+        <h3>DateUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("DateUtil.htm")
+        $contain.get("dateutil.htm")
     </div>
-    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/DateUtil.htm')" target="_blank">DateUtil示例</a> </p>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/dateutil.htm')" target="_blank">DateUtil示例</a> </p>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">StringUtil</font></h>
+        <h3>StringUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("StringUtil.htm")
+        $contain.get("stringutil.htm")
     </div>
-    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/StringUtil.htm')" target="_blank">StringUtil示例</a> </p>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/stringutil.htm')" target="_blank">StringUtil示例</a> </p>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">HostUtil</font></h>
+        <h3>HostUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("HostUtil.htm")
+        $contain.get("hostutil.htm")
     </div>
-    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/HostUtil.htm')" target="_blank">HostUtil示例</a> </p>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/hostutil.htm')" target="_blank">HostUtil示例</a> </p>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">MoneyUtil</font></h>
+        <h3>MoneyUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("MoneyUtil.htm")
+        $contain.get("moneyutil.htm")
     </div>
-    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/MoneyUtil.htm')" target="_blank">MoneyUtil示例</a> </p>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/moneyutil.htm')" target="_blank">MoneyUtil示例</a> </p>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">ArrayUtil</font></h>
+        <h3>ArrayUtil</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("ArrayUtil.htm")
+        $contain.get("arrayutil.htm")
     </div>
-    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/ArrayUtil.htm')" target="_blank">ArrayUtil示例</a> </p>
+    <p>示例：<a class="m-detail-link1" href="$appServer.get('/utils/demo/arrayutil.htm')" target="_blank">ArrayUtil示例</a> </p>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">ObjectFactory</font></h>
+        <h3>ObjectFactory</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("ObjectFactory.htm")
+        $contain.get("objectfactory.htm")
     </div>
     <p>示例：该工具类无法直接演示，可以访问本demo中com.eyeieye.melody.demo.web.action.utils.UtilsAction的ObjectFactoryDemo方法，并查看运行结果。</p>
     <p>从本例子中可以看出，本工具类中，createBean和autowireBeanProperties两个方法是获得新的bean，而其他方法是获得当前spring已经加载的bean。</p>
 </details>
 <details close>
     <summary>
-        <h><font size="5px">UUIDGenerator</font></h>
+        <h3>UUIDGenerator</h3>
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-        $contain.get("UUIDGenerator.htm")
+        $contain.get("uuidgenerator.htm")
     </div>
 </details>

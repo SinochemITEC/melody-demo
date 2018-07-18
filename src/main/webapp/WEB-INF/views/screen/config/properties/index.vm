@@ -3,10 +3,10 @@
 
 <div class="melody-code-wrap">
     <pre><code>
-            &lt;context-param&gt;
-                &lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;
-                &lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;
-            &lt;context-param&gt;
+&lt;context-param&gt;
+    &lt;param-name&gt;melodyConfigLocation&lt;/param-name&gt;
+    &lt;param-name&gt;/WEB-INF/conf/play.properties&lt;/param-name&gt;
+&lt;context-param&gt;
     </code></pre>
 </div>
 

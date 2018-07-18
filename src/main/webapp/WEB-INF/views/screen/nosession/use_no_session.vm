@@ -2,8 +2,8 @@
     <li>1、设置session.meta.cookie.domain</li>
     <p>因为NoSession技术使用的是cookie存储session，所以需要先配置一下所用到的cookie的作用域。<br/>
     如果没有进行配置，则默认为配置文件中的app.server.host<br/>
-    例如，我需要在sinochem.com下的网站中使用nosession，那么就需要配置：</p>
-    <pre><code class="m-xmp">session.meta.cookie.domain=.sinochem.com</code></pre>
+    例如，我需要在127.0.0.1下的网站中使用nosession，那么就需要配置：</p>
+    <pre><code class="m-xmp">session.meta.cookie.domain=127.0.0.1</code></pre>
     <li>2、编写domain类</li>
     <p>cookie中存储信息使用了java序列化，所以需要编写一个用于存放信息的实体类。<br/>
     该类需要实现Serializable接口，保证实体类可以序列化。<br/>
@@ -13,7 +13,7 @@
     <p> public int getOrder();<br/>
     加载优先级，返回的数字越小优先级越高。<br/><br/>
     public boolean isMatch(String key);<br/>
-    服务器用来抓取cookie的key值<br/><br/>
+    判断sessino.attribute中是否被当前的CookieStore处理器识别。<br/><br/>
     public String getCookieName();<br/>
     获取浏览器上存储此cookie的名称，直接返回String即可。<br/><br/>
     public Encode getEncode();<br/>
@@ -23,7 +23,7 @@
     public String getPath();<br/>
     所在域下的path，一般为"/"<br/><br/>
     public Set&#60;String &#62; getAttributeNames();<br/>
-    获得此cookie对应的AttributeNames，系统将按照这里返回的所有AttributeName从Session缓存中取出session转储为cookie。<br><br>
+    获得此cookie对应的AttributeNames，系统将按照这里返回的所有AttributeName从Session缓存中取出session转储为cookie，该方法是isMatch方法的补充。<br><br>
     public String getDomain();<br/>
     获得此cookie对应的域<br/><br/></p>
     <li>4、使用HttpSession</li>

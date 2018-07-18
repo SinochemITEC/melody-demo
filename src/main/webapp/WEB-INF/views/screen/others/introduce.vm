@@ -20,7 +20,7 @@
     </summary>
     <br/>
     <div style="margin-left: 5%;">
-    <p>分页有两种分页方式，分别是form提交分页和seo话静态链接分页。<br/>
+    <p>分页有两种分页方式，分别是form提交分页和seo化静态链接分页。<br/>
         两种分页方式分别通过contain分页栏实现分页，通过put部分参数进行配置，下面分别介绍其参数：</p>
     <li>公共参数：</li>
     <p>
@@ -32,14 +32,14 @@
     
     <li>form提交分页：</li>
     <p>
-        在该demo中contain的页面为/contain/formPageSlider.vm。<br/>
+        在该demo中contain的页面为/contain/form_page_slider.vm。<br/>
         ①slider_target：必要参数，入参为分页提交的目标url；<br/>
         ②slider_page：非必要参数，用于指定分页变量名，默认为&#36;page；<br/>
         ③slider_method：非必要参数，用于指定form提交的方式，默认为'get'。
     </p>
     <li>form提交分页：</li>
     <p>
-        在该demo中contain的页面为/contain/pageSlider.vm。<br/>
+        在该demo中contain的页面为/contain/page_slider.vm。<br/>
         ○ slider_builder：必要参数，获取页面时需要初始化到页面中去，需要实现PagingURLBuilder接口。
     </p>
     <li>示例：</li>
@@ -61,7 +61,7 @@
 </details>
 <details open>
     <summary>
-        <h3">Velocity的页面cache</h3>
+        <h3>Velocity的页面cache</h3>
     </summary>
     <div style="margin-left: 5%;">
         <p>
@@ -122,7 +122,7 @@ performance.monitor.threshold=100
         </li>
         <br/>
         <li>示例：</li>
-        <p><a class="m-detail-link" href="$appServer.get('/access/testPage.htm')">示例</a></p>
+        <p><a class="m-detail-link" href="$appServer.get('/access/test_page.htm')">示例</a></p>
         </div>
 </details>
 

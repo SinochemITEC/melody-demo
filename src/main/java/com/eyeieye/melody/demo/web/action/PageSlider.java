@@ -34,9 +34,9 @@ public class PageSlider {
 	 */
 	private int defaultSliderWidth = 5;
 
-	private String defaultFormSlider = "/contain/formPageSlider";
+	private String defaultFormSlider = "/contain/form_page_slider";
 
-	private String defaultSlider = "/contain/pageSlider";
+	private String defaultSlider = "/contain/page_slider";
 
 	private String defaultPageParameterName = "page";
 
@@ -52,7 +52,7 @@ public class PageSlider {
 	 * 如果要指定分页变量名(缺省为"page"),则put('slider_page',$分页变量名称)
 	 * 如果要指定分页提交为GET方式而不是POST,则put('slider_method','get')
 	 */
-	@RequestMapping("/contain/formPageSlider.htm")
+	@RequestMapping("/contain/form_page_slider.htm")
 	public ModelAndView formPage(HttpServletRequest request) throws Exception {
 		int totalPage = 0;
 		int currentPage = 0;
@@ -114,7 +114,7 @@ public class PageSlider {
 	/**
 	 * 使用GET方式,也就是普通超连接方式分页,入参为. 必需:put('slider_builder',$PagingURLBuilder)
 	 */
-	@RequestMapping("/contain/pageSlider.htm")
+	@RequestMapping("/contain/page_slider.htm")
 	public ModelAndView handleRequest(HttpServletRequest request)
 			throws Exception {
 		int totalPage = 0;

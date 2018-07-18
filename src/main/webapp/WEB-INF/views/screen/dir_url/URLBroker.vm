@@ -38,7 +38,7 @@
 <p>&lt;ServerBeanName&gt;是要用到的URLBroker的对象名，如mail服务器的URLBroker对象可以命名为mailServer；</p>
 <p>&lt;字符编码&gt;是拼接字符串使用的字符编码，一般使用配置好的全局变量；</p>
 <p>&lt;protocol&gt;是链接的协议类型，默认为http；</p>
-<p>&lt;app.server.host&gt;是该域的host地址，如mail.sinochem.com；</p>
+<p>&lt;app.server.host&gt;是该域的host地址，如mail.myWeb.com；</p>
 <p>&lt;app.server.port&gt;是该域的端口，如8080；</p>
 <p>&lt;app.server.path&gt;是该域的path路径，如mail；</p>
 <p>&lt;key&gt;是注入URLBroker时用到的key，一般与ServerBeanName同名；</p>
@@ -52,8 +52,8 @@
             <span>②使用get可以获得指定域下的链接地址，如&#36;mailServer.get("index.htm")的值为$mailServer.get("index.htm")</span>
             <span>③使用put和addQueryData可以在链接后增加参数，如&#36;mailServer.get("index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")的值为$mailServer.get(
                 "index.htm").addQueryData("key","参数1").put("uuid","Ke2Ra")</span>
-            <span>④在JSP文件中也可以使用URLBroker，如<a class="m-detail-link" href="$appServer.get("/dir_url/jsppage.htm")"
-                                             target="_blank">本例所示</a>。</span>
+            <span>④Melody支持多种视图，包括<a class="m-detail-link1" href="$appServer.get("/dir_url/jsppage.htm")"
+                                             target="_blank">jsp页面</a>。</span>
         </div>
     </li>
     <li><span>在服务器程序使用：</span></li>

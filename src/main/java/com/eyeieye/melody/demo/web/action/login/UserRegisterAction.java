@@ -22,6 +22,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.eyeieye.melody.demo.domain.Resource;
 import com.eyeieye.melody.demo.service.ResourceService;
+import org.springmodules.validation.bean.conf.loader.annotation.Validatable;
+import org.springmodules.validation.bean.conf.loader.annotation.handler.Validators;
+
+import javax.validation.Valid;
 
 /**
  * 注册Action，该类主要用于演示一个完整的表单初始化、校验和处理过程。
@@ -126,7 +130,7 @@ public class UserRegisterAction {
 	@RequestMapping(value = "/register.htm", method = GET)
 	public void registerInit(@ModelAttribute("user") User user) {
 
-		// TODO; 加入其它自定义的初始化代码
+
 	}
 
 	// ~ 表单验证、处理
@@ -153,7 +157,6 @@ public class UserRegisterAction {
 
 		// 注册用户
 		userService.register(user);
-		// TODO; 加入其它的业务逻辑
 
 		// 成功跳转
 		return "login/success";

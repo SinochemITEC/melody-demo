@@ -7,7 +7,7 @@
         <h3>传入参数</h3>
     </summary>
     <div style="margin-left: 5%;">
-        $contain.get("/annotation/param/mainPage.htm")
+        $contain.get("/annotation/param/main_page.htm")
     </div>
 </details>
 <details open>
@@ -15,6 +15,6 @@
         <h3>返回参数</h3>
     </summary>
     <div style="margin-left: 5%;">
-        $contain.get("/annotation/return/mainPage.htm")
+        $contain.get("/annotation/return/main_page.htm")
     </div>
 </details>

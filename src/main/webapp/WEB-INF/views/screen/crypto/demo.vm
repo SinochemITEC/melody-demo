@@ -4,16 +4,13 @@
     <p><input type="submit" value="加密"/></p>
     <p>AES加密结果：$!{aesEncrypt}</p>
     <p>RSA加密结果：$!{rsaEncrypt}</p>
-    ##<p>blowfish加密结果：${bfEncrypt}</p>
 </form>
 <br/><br/>
 <form action="$appServer.get('/crypto/decrypt.htm')" method="get">
     <p>请输入要解密的内容：</p>
     <p>AES:<input type="text" name="aesStr" value="$!{aesStr}"/></p>
     <p>RSA:<input type="text" name="rsaStr" value="$!{rsaStr}"/></p>
-    ##<p>blowfish:<input type="text" name="bfStr" value="$!{bfStr}"/></p>
     <p><input type="submit" value="解密"/></p>
     <p>AES解密结果：$!{aesDecrypt}</p>
     <p>RSA解密结果：$!{rsaDecrypt}</p>
-    ##<p>blowfish解密结果：${bfDecrypt}</p>
 </form>
