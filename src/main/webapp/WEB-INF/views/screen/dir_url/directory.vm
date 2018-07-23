@@ -8,7 +8,6 @@
 <p>模板文件可以为多个页面提供公用的模板内容，并将页面文件嵌套其中，关于模板文件的使用有以下几点需要注意：</p>
 <ul>
 <li>layout文件夹下的文件和文件夹与screen中的文件及文件夹有对应关系的，如layout/login/中的模板文件不会对screen/login/之外的页面文件生效。</li>
-<li>default.vm模板文件会对所在文件夹及其子文件夹对应的所有页面文件生效，并且覆盖父文件夹中的default.vm的效果</li>
-<li>非default的模板文件会对其对应位置为同名页面文件生效，且覆盖default文件的效果</li>
-<li>页面文件需要有对应的模板文件，一般会在layout/下放置default.vm文件以保证每个页面都能正确显示。</li>
+<li>模板文件的查找规则遵循<strong><i>相同路径相同名称 > 相同路径default.vm > 上级default.vm > ... > /layout/default.vm</i></strong></li>
+<li>需要至少在layout/下放置default.vm以保障页面正常显示。</li>
 </ul>
