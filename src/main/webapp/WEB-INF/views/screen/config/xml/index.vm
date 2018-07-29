@@ -1,4 +1,6 @@
 <p>xml配置文件主要配置了spring bean相关的内容。</p>
+<p>推荐使用注解方式配置bean，但是melody也支持xml方式配置bean，melody可以自动加载web.xml中contextConfigLocation配置项所指向的xml文件，并加载其中配置的bean。</p>
+
 <p>本项目中：</p>
 <p>auto-proxy-beans.xml 配置的是自动代理bean的内容</p>
 <p>service-beans.xml 包含如下配置项：</p>

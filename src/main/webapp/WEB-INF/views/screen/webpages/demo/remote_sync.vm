@@ -2,7 +2,7 @@
 <h2>远程同步contain示例</h2>
 <br/>
 
-<h3>加载页面a：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")
-<h3>加载页面b：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")
-<h3>加载页面c：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")
-<h3>加载页面d：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost("http://127.0.0.1:8080")
+<h3>加载页面a：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost($appServer.get())
+<h3>加载页面b：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost($appServer.get())
+<h3>加载页面c：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost($appServer.get())
+<h3>加载页面d：</h3>$contain.get("/webpages/demo/contained_page.htm").setHost($appServer.get())

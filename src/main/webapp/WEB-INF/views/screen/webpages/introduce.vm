@@ -31,7 +31,7 @@
         <div class="melody-code-wrap"><pre><code>
 \#set($layout="/layout/blank.vm")
         </code></pre></div>
-        <p>上述代码是将页面的模板替换成blank.vm(空模版)，点击<a class="m-detail-link1" href="$appServer.get('webpages\introduce_blank.htm')">此链接</a>查看效果，点击<a class="m-detail-link1" href="$appServer.get('webpages\introduce.htm')">此链接</a>恢复正常模板</p>
+        <p>上述代码是将页面的模板替换成blank.vm(空模版)，点击<a class="m-detail-link1" href="$appServer.get('\webpages\introduce_blank.htm')">此链接</a>查看效果，点击<a class="m-detail-link1" href="$appServer.get('\webpages\introduce.htm')">此链接</a>恢复正常模板</p>
     </div>
 </details>
 
@@ -40,7 +40,7 @@
     <summary>
         <h3>jscode</h3>
     </summary>
-    <div style="margin-left: 5%;">StringUtil
+    <div style="margin-left: 5%;">
 <p>在使用异步(bigpipe)的时候，如果需要执行js语句，则需要使用jscode方法，否则js语句不一定能够成功执行，容易导致问题。</p>
         <p>jscode的使用方法如下所示</p>
         <div class="melody-code-wrap"><pre><code>

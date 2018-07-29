@@ -1,5 +1,5 @@
 <p>contain是用来在页面中动态include一个url的方法，类似于jsp中的jsp:include。</p>
-
+<p>**jsp:include和contain是有区别的：include是将页面拼接好后之后在进行渲染，而contain是先渲染子页面再拼接，所以contain能够支持异步渲染。</p>
 <details class="menu" close>
     <summary>
         <h3>基本用法</h3>

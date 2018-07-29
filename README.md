@@ -9,4 +9,3 @@ melody2.X的演示代码
   app.server.path=/
   melody.action.scan=com.eyeieye.melody.demo.web(action扫描路径)
 ```
-
